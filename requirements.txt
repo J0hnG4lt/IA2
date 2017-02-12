@@ -1,2 +1,0 @@
-matplotlib ; python_version < '3'
-numpy ; python_version < '3'

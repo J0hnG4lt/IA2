@@ -118,6 +118,28 @@ def regresion_lineal_multiple(dom,
     
     return (coeficientes_por_iteracion,iteraciones,errorPorIteracion)
 
+"""
+#    Funcion de Normalizacion 
+#    
+#    Objetivo: calcula la desviacion estandar y la media por columna
+#    y los usa para normalizar todos las instancias en ese feature usando la
+#    siguiente formula (vector_feature_i - promedio_feature_i) / desviacion_feature_i
+#    
+#    @matriz : matriz de numpy donde cada columna representa un feature y cada
+#              fila es una instancia
+#
+#   @return : retorna la misma matriz con las columnas normalizadas
+#
+"""
+def normalizarZ(matriz) :
+    promedio_por_columna = np.mean(matriz,axis=0)
+    desviacion_por_columna = np.std(matriz,axis=0)
+    (m,n) = matriz.shape
+    for i in range(n):
+        matriz[:,i] = (matriz[:,i] - promedio_por_columna[i])/desviacion_por_columna[i]
+    
+    return matriz
+
 
 ################################################################################
 #                                Ejecucion
@@ -138,13 +160,15 @@ if __name__ == '__main__':
                                 usecols=(1,2))
         f.close()
     
-    datos_x01 = datos_x01 / datos_x01.max(axis=0)   # Normalizacion
+    #datos_x01 = datos_x01 / datos_x01.max(axis=0)   # Normalizacion
+    datos_x01 = normalizarZ(datos_x01)
+    
     
     dominio = datos_x01[:,0]
     rango = datos_x01[:,1]
     
-    aprendizaje = 0.01
-    inicial = 0.1
+    aprendizaje = 0.00000001
+    inicial = 1.0
     coeficientes,iteraciones,errorPorIteracion = regresion_lineal_multiple( dom=dominio, 
                                                                             rango=rango,
                                                                             coeficiente_aprendizaje=aprendizaje,
@@ -158,15 +182,15 @@ if __name__ == '__main__':
     def linea(x,coef):
         return np.array([coef[0] + elem*coef[1] for elem in x])
     
-    x = np.linspace(0,1,10000)
+    x = np.linspace(-1,8,10000)
     
     plt.subplot(1, 3, 1)
     plt.scatter(dominio, rango)
     plt.title("Scatterplot (normalizado)")
     plt.xlabel("Peso Cerebral")
     plt.ylabel("Peso Corporal")
-    plt.text(0.1,1.1, 'Aprendizaje = {:f}'.format(aprendizaje))
-    plt.text(0.1,1.0, 'Inicial = {:f}'.format(inicial))
+    plt.text(0.1,9, 'Aprendizaje = {:f}'.format(aprendizaje))
+    plt.text(0.1,8, 'Inicial = {:f}'.format(inicial))
     plt.plot(x,linea(x,coeficientes[mejor_iter[0][0]]))
     
     plt.subplot(1, 3, 2)
@@ -174,8 +198,8 @@ if __name__ == '__main__':
     plt.title("Convergencia -Peso- (normalizado)")
     plt.xlabel("Numero de Iteraciones")
     plt.ylabel("Error")
-    plt.text(3,0.023, 'Aprendizaje = {:f}'.format(aprendizaje))
-    plt.text(3,0.022, 'Inicial = {:f}'.format(inicial))
+    plt.text(10,1.131671, 'Aprendizaje = {:f}'.format(aprendizaje))
+    plt.text(10,1.13167, 'Inicial = {:f}'.format(inicial))
     
     
     # Se abre el archivo de prueba limpiado
@@ -188,12 +212,13 @@ if __name__ == '__main__':
         f.close()
     
     
-    datos_x08 = datos_x08 / datos_x08.max(axis=0)   # Normalizacion
+    #datos_x08 = datos_x08 / datos_x08.max(axis=0)   # Normalizacion
+    datos_x08 = normalizarZ(datos_x08)
     
     dominio2 = datos_x08[:,0:3]
     rango2 = datos_x08[:,3]
-    aprendizaje2 = 0.01
-    inicial2 = 1.0
+    aprendizaje2 = 0.0000001
+    inicial2 = 0.1
     coeficientes2,iteraciones2,errorPorIteracion2 = regresion_lineal_multiple( dom=dominio2, 
                                                                             rango=rango2,
                                                                             coeficiente_aprendizaje=aprendizaje2,
@@ -208,8 +233,8 @@ if __name__ == '__main__':
     plt.title("Convergencia -Homicidios- (normalizado)")
     plt.xlabel("Numero de Iteraciones")
     plt.ylabel("Error")
-    plt.text(5,3.7, 'Aprendizaje = {:f}'.format(aprendizaje2))
-    plt.text(5,3.5, 'Inicial = {:f}'.format(inicial2))
+    plt.text(5,0.720858, 'Aprendizaje = {:f}'.format(aprendizaje2))
+    plt.text(5,0.720856, 'Inicial = {:f}'.format(inicial2))
     
     plt.show()
 

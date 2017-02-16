@@ -94,27 +94,24 @@ def regresion_lineal_multiple(dom,
     constante = (coeficiente_aprendizaje * inverso_num_atributos)
     iteraciones = 0
     errorPorIteracion = []
-    
-    for i in range(numero_instancias) :
-        
-        # Se obtiene el vector de error
-        error = h(coef_anteriores,dom[i,:]) - rango
-        
-        # Se actualiza cada coeficiente con el vector de error
-        for j in range(numero_atributos) : 
-            derivada = np.dot(error,dom[:,j])
-            coeficientes[j] = coef_anteriores[j] - constante * derivada
-        
-        coef_anteriores = np.copy(coeficientes)
-        
+    while (iteraciones < max_iter) :
+        for i in range(numero_instancias) :
+            
+            # Se obtiene el vector de error
+            error = h(coef_anteriores,dom[i,:]) - rango
+            
+            # Se actualiza cada coeficiente con el vector de error
+            for j in range(numero_atributos) : 
+                derivada = np.dot(error,dom[:,j])
+                coeficientes[j] = coef_anteriores[j] - constante * derivada
+            
+            coef_anteriores = np.copy(coeficientes)
+            
         # Seran utiles al graficar
         coeficientes_por_iteracion.insert(iteraciones, coef_anteriores)
         errorPorIteracion.insert(iteraciones,error_n(coeficientes,dom,rango))
         iteraciones += 1
         
-        # Condicion de parada si hay muchas instancias
-        if iteraciones > max_iter :
-            return (coeficientes_por_iteracion,iteraciones,errorPorIteracion)
     
     return (coeficientes_por_iteracion,iteraciones,errorPorIteracion)
 
@@ -167,7 +164,7 @@ if __name__ == '__main__':
     dominio = datos_x01[:,0]
     rango = datos_x01[:,1]
     
-    aprendizaje = 0.00000001
+    aprendizaje = 0.00000000001
     inicial = 1.0
     coeficientes,iteraciones,errorPorIteracion = regresion_lineal_multiple( dom=dominio, 
                                                                             rango=rango,
@@ -217,7 +214,7 @@ if __name__ == '__main__':
     
     dominio2 = datos_x08[:,0:3]
     rango2 = datos_x08[:,3]
-    aprendizaje2 = 0.0000001
+    aprendizaje2 = 0.0000000001
     inicial2 = 0.1
     coeficientes2,iteraciones2,errorPorIteracion2 = regresion_lineal_multiple( dom=dominio2, 
                                                                             rango=rango2,
@@ -233,8 +230,8 @@ if __name__ == '__main__':
     plt.title("Convergencia -Homicidios- (normalizado)")
     plt.xlabel("Numero de Iteraciones")
     plt.ylabel("Error")
-    plt.text(5,0.720858, 'Aprendizaje = {:f}'.format(aprendizaje2))
-    plt.text(5,0.720856, 'Inicial = {:f}'.format(inicial2))
+    plt.text(5,0.720859, 'Aprendizaje = {:f}'.format(aprendizaje2))
+    plt.text(5,0.7208585, 'Inicial = {:f}'.format(inicial2))
     
     plt.show()
 

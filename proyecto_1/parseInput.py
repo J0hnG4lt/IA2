@@ -5,24 +5,48 @@ keys = []
 
 with open("data.txt","r") as f:
 	lines = f.readlines()
-	print(len(lines)-1)
+
+	keyCounter = 0
+	saleCondition = 0
+	grLiveArea = 0
 	for i in lines[0].split("\t"):
 		# Shaving off newlines
 		i = i.replace("\n","").replace("\r","")
 		keys  += [i.lower()]
 		dataDict[i.lower()] = []
+		
+		#Indice de las palabras para los filtros
+		if i.lower() == "sale condition":
+			saleCondition = keyCounter
+		if i.lower() == "gr liv area":
+			grLiveArea = keyCounter
+		keyCounter += 1
+
 	for line in lines[1:]:
 		counter = 0
-		for word in line.split("\t"):
+		splitLine = line.split("\t")
+
+		# Filtros
+		if splitLine[saleCondition].lower() != "normal":
+			continue
+		if float(splitLine[grLiveArea]) > 1500:
+			continue 
+		
+		for word in splitLine:
 			# Shaving off newlines
 			word = word.replace("\n","").replace("\r","")
 			dataDict[keys[counter]].append(word)
 			counter += 1
 
+mark = {}
 
 for key in keys:
+	mark[key] = 0
 	# Prints missing data
-	print(key,sum(1 for i in dataDict[key] if i == ""))
+	missing = sum(1 for i in dataDict[key] if i == "")
+	print(key,missing)
+	if missing > 0:
+		mark[key] = 1
 
 
 ''' Applying custom values from a file '''
@@ -59,6 +83,19 @@ with open("customValues.txt","r") as f:
 			else:
 				print("Couldn't swap " + proccessedLine[0] + " for " + proccessedLine[1])
 				
+
+''' Let's replace missing values '''
+
+for key in keys:
+	if mark[key] == 1:
+		largo = len(dataDict[key])
+		promedio = sum(int(i) for i in dataDict[key] if i != "")/largo
+		for i in range(len(dataDict[key])):
+			if dataDict[key][i] == "":
+				dataDict[key][i] = promedio
+
+
+
 
 import numpy as np
 import csv

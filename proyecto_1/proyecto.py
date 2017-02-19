@@ -87,7 +87,7 @@ def regresion_lineal_multiple(dom,
     numero_atributos = dom.shape[1]
     
     # Se crea el vector de coeficientes usando el valor inicial dado
-    coeficientes = np.array([uniform(-0.5,0.5) for i in range(numero_atributos)]) # Se generan los valores iniciales para los pesos
+    coeficientes = np.array([uniform(-0.3,0.3) for i in range(numero_atributos)]) # Se generan los valores iniciales para los pesos
     
     # Se genera el vector de coeficientes(pesos) de forma aleatoria, usando
     # números entre 0 y 1 de una distribucion uniforme

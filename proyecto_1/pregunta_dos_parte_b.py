@@ -26,7 +26,7 @@ if __name__ == '__main__':
     dominio = datos_x01[:,0]
     rango = datos_x01[:,1]
     
-    aprendizaje = 0.000001
+    aprendizaje = 0.01
     inicial = 1.0
     coeficientes,iteraciones,errorPorIteracion = regresion_lineal_multiple( dom=dominio, 
                                                                             rango=rango,

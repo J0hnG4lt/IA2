@@ -20,7 +20,7 @@ if __name__ == '__main__':
     
     dominio = datos_x08[:,0:3]
     rango = datos_x08[:,3]
-    aprendizaje = [0.05,0.01,0.03,0.07,0.09,0.01]
+    aprendizaje = [0.1,0.3,0.5,0.7,0.9,1]
     inicial = 0.1
     
     

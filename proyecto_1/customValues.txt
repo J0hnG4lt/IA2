@@ -203,7 +203,7 @@ Stone	-2
 Ex	2
 Gd	1
 TA	0
-FA	-1
+Fa	-1
 Po	-2
 #VALUE	Exter Cond
 Ex	2

@@ -4,9 +4,11 @@
 
 {"Alley" : "Grvl":0,"Pave":1,"NA":-1}
 
-{"Land Contour": {"Reg":1,"IR1":0,"IR2":-1,"IR3":-2}}
+{"Lot Shape": {"Reg":1,"IR1":0,"IR2":-1,"IR3":-2}}
 
-{"utilities": {"Lvl":1,"Bnk":0,"HLS":-1,"Low":-2}}
+{"Land Contour": {"Lvl":1,"Bnk":0,"HLS":-1,"Low":-2}}
+
+{"Utilities": {"AllPub":1,"NoSewr":0,"NoSeWa":-1}}
 
 {"Lot Config" : {"Inside":2,"Corner":1,"CulDSac":0,"FR2":-1,"FR3":-2}}
 
@@ -20,7 +22,7 @@
 
 {"Bldg Type":{"1Fam":2,"2fmCon":1,"Duplex":0,"TwnhsE":-1,"Twnhs":-2}}
 
-{"House Style":{"1Story":3,1."5Fin":2,1."5Unf":1,"2Story":0,2."5Fin":-1,2."5Unf":-2,"SFoyer":-3,"SLvl":-4}}
+{"House Style":{"1Story":3,"1.5Fin":2,"1.5Unf":1,"2Story":0,"2.5Fin":-1,"2.5Unf":-2,"SFoyer":-3,"SLvl":-4}}
 
 {"Roof Style":{"Flat":3,"Gable":2,"Gambrel":1,"Hip":0,"Mansard":-1,"Shed":-2}}
 
@@ -42,6 +44,8 @@
 {"Bsmt Qual" : {"Ex":2,"Gd":1,"TA":0,"Fa":-1,"Po":-2,"NA":-3}}
 
 {"Bsmt Cond" : {"Ex":2,"Gd":1,"TA":0,"Fa":-1,"Po":-2,"NA":-3}}
+
+{"Bsmt Exposure" : {"Ex":2,"Gd":1,"TA":0,"Fa":-1,"Po":-2}}
 
 {"BsmtFin Type 1":{"GLQ":3,"ALQ":2,"BLQ":1,"Rec":0,"LwQ":-1,"Unf":-2,"NA":-3}}
 

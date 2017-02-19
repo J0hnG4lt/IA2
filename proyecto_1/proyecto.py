@@ -143,21 +143,21 @@ def normalizarZ(matriz) :
     return matriz
 
 """
-    Funcion de evaluacion de modelo
-    
-    Objetivo: evalua al modelo usando los cuatro estadisticos sugeridos por
-    Dean De Cock en "Ames, Iowa: Alternative to the Boston Housing Data as an
-    End of Semester Regression Project", pagina septima.
-    
-    @dominio : matriz de numpy con los valores para varias instancias
-    de los features usados como dominio del modelo
-    
-    @rango : arreglo de numpy con los valores que debio haber aproximado
-    el modelo a partir de los valores del dominio
-    
-    @coeficientes : coeficientes del modelo de regresion lineal multiple
-    
-    @return : diccionario con los cuatro estadisticos
+#    Funcion de evaluacion de modelo
+#    
+#    Objetivo: evalua al modelo usando los cuatro estadisticos sugeridos por
+#    Dean De Cock en "Ames, Iowa: Alternative to the Boston Housing Data as an
+#    End of Semester Regression Project", pagina septima.
+#    
+#    @dominio : matriz de numpy con los valores para varias instancias
+#    de los features usados como dominio del modelo
+#    
+#    @rango : arreglo de numpy con los valores que debio haber aproximado
+#    el modelo a partir de los valores del dominio
+#    
+#    @coeficientes : coeficientes del modelo de regresion lineal multiple
+#    
+#    @return : diccionario con los cuatro estadisticos
 """
 def evaluar_modelo(dominio, rango, coeficientes) :
     diferencias = []

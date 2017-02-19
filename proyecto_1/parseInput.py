@@ -19,10 +19,15 @@ with open("data.txt","r") as f:
 			dataDict[keys[counter]].append(word)
 			counter += 1
 
+mark = {}
 
 for key in keys:
+	mark[key] = 0
 	# Prints missing data
-	print(key,sum(1 for i in dataDict[key] if i == ""))
+	missing = sum(1 for i in dataDict[key] if i == "")
+	print(key,missing)
+	if missing > 0:
+		mark[key] = 1
 
 
 ''' Applying custom values from a file '''
@@ -59,6 +64,19 @@ with open("customValues.txt","r") as f:
 			else:
 				print("Couldn't swap " + proccessedLine[0] + " for " + proccessedLine[1])
 				
+
+''' Let's replace missing values '''
+
+for key in keys:
+	if mark[key] == 1:
+		largo = len(dataDict[key])
+		promedio = sum(int(i) for i in dataDict[key] if i != "")/largo
+		for i in range(len(dataDict[key])):
+			if dataDict[key][i] == "":
+				dataDict[key][i] = promedio
+
+
+
 
 import numpy as np
 import csv

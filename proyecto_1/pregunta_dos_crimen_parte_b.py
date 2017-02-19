@@ -20,16 +20,14 @@ if __name__ == '__main__':
     
     dominio = datos_x08[:,0:3]
     rango = datos_x08[:,3]
-    aprendizaje = [0.1,0.3,0.5,0.7,0.9,1]
-    inicial = 0.1
+    aprendizaje = [0.1,0.3,0.5,0.7,0.9,1.0]
     
     
     for i in range(6):
         print("APRENDIZAJE: ", aprendizaje[i])
         coeficientes,iteraciones,errorPorIteracion = regresion_lineal_multiple( dom=dominio, 
                                                                                 rango=rango,
-                                                                                coeficiente_aprendizaje=aprendizaje[i],
-                                                                                valor_inicial=inicial)
+                                                                                coeficiente_aprendizaje=aprendizaje[i])
         errorPorIteracion = np.array(errorPorIteracion)
         mejor_iter = np.where(errorPorIteracion == errorPorIteracion.min())      # Mejor Iteracion
         print("Mejor Iteracion", mejor_iter[0][0])
@@ -37,7 +35,7 @@ if __name__ == '__main__':
         plt.subplot(3,3,i+1)
         plt.plot(range(iteraciones), errorPorIteracion)
         plt.title("Convergencia -Homicidios- (normalizado)")
-        plt.xlabel("Numero de Iteraciones (a={:f})".format(aprendizaje[i]))
+        plt.xlabel("Numero de Iteraciones (a={:.1f})".format(aprendizaje[i]))
         plt.ylabel("Error")
         #plt.text(5,0.73, 'Aprendizaje = {:f}'.format(aprendizaje))
         #plt.text(5,0.7208585, 'Inicial = {:f}'.format(inicial))

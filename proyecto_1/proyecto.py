@@ -74,8 +74,7 @@ def error_n(coeficientes,dom,rango,norma=2):
 def regresion_lineal_multiple(dom,
                               rango,
                               max_iter=1000,
-                              coeficiente_aprendizaje = 0.01,
-                              valor_inicial = 0.1) :
+                              coeficiente_aprendizaje = 0.01) :
     
     # Se agrega una columna de 1.0 para x_0
     if dom.ndim == 1:
@@ -198,101 +197,4 @@ def evaluar_modelo(dominio, rango, coeficientes) :
 
 
 
-
-################################################################################
-#                                Ejecucion
-################################################################################
-
-
-if __name__ == '__main__':
-    
-    # Se graficaran los resultados de la regresion lineal multiple con los datasets
-    # de ejemplo. Notar que se normalizaron y no se quitaron los outliers
-    
-    # Se abre el archivo de prueba limpiado
-    with open("x01_copia.txt", "r") as f : 
-        datos_x01 = np.loadtxt( fname=f, 
-                                dtype=float ,
-                                comments="#" ,
-                                delimiter=",",
-                                usecols=(1,2))
-        f.close()
-    
-    #datos_x01 = datos_x01 / datos_x01.max(axis=0)   # Normalizacion
-    datos_x01 = normalizarZ(datos_x01)
-    
-    
-    dominio = datos_x01[:,0]
-    rango = datos_x01[:,1]
-    
-    aprendizaje = 0.00000000001
-    inicial = 1.0
-    coeficientes,iteraciones,errorPorIteracion = regresion_lineal_multiple( dom=dominio, 
-                                                                            rango=rango,
-                                                                            coeficiente_aprendizaje=aprendizaje,
-                                                                            valor_inicial=inicial)
-
-    errorPorIteracion = np.array(errorPorIteracion)
-    mejor_iter = np.where(errorPorIteracion == errorPorIteracion.min())     # Mejor Iteracion
-    print("Mejor Iteracion: ", mejor_iter[0][0])
-    print(coeficientes[mejor_iter[0][0]], iteraciones)
-
-    def linea(x,coef):
-        return np.array([coef[0] + elem*coef[1] for elem in x])
-    
-    x = np.linspace(-1,8,10000)
-    
-    plt.subplot(1, 3, 1)
-    plt.scatter(dominio, rango)
-    plt.title("Scatterplot (normalizado)")
-    plt.xlabel("Peso Cerebral")
-    plt.ylabel("Peso Corporal")
-    plt.text(0.1,9, 'Aprendizaje = {:f}'.format(aprendizaje))
-    plt.text(0.1,8, 'Inicial = {:f}'.format(inicial))
-    plt.plot(x,linea(x,coeficientes[mejor_iter[0][0]]))
-    
-    plt.subplot(1, 3, 2)
-    plt.plot(range(iteraciones), errorPorIteracion)
-    plt.title("Convergencia -Peso- (normalizado)")
-    plt.xlabel("Numero de Iteraciones")
-    plt.ylabel("Error")
-    plt.text(10,1.131671, 'Aprendizaje = {:f}'.format(aprendizaje))
-    plt.text(10,1.13167, 'Inicial = {:f}'.format(inicial))
-    
-    
-    # Se abre el archivo de prueba limpiado
-    with open("x08_copia.txt", "r") as f:
-        datos_x08 = np.loadtxt( fname=f, 
-                                dtype=float ,
-                                comments="#" ,
-                                delimiter=",",
-                                usecols=(1,2,3,4))
-        f.close()
-    
-    
-    #datos_x08 = datos_x08 / datos_x08.max(axis=0)   # Normalizacion
-    datos_x08 = normalizarZ(datos_x08)
-    
-    dominio2 = datos_x08[:,0:3]
-    rango2 = datos_x08[:,3]
-    aprendizaje2 = 0.0000000001
-    inicial2 = 0.1
-    coeficientes2,iteraciones2,errorPorIteracion2 = regresion_lineal_multiple( dom=dominio2, 
-                                                                            rango=rango2,
-                                                                            coeficiente_aprendizaje=aprendizaje2,
-                                                                            valor_inicial=inicial2)
-    errorPorIteracion2 = np.array(errorPorIteracion2)
-    mejor_iter2 = np.where(errorPorIteracion2 == errorPorIteracion2.min())      # Mejor Iteracion
-    print("Mejor Iteracion 2", mejor_iter2[0][0])
-    print(coeficientes2[mejor_iter2[0][0]], iteraciones2)
-    
-    plt.subplot(1, 3, 3)
-    plt.plot(range(iteraciones2), errorPorIteracion2)
-    plt.title("Convergencia -Homicidios- (normalizado)")
-    plt.xlabel("Numero de Iteraciones")
-    plt.ylabel("Error")
-    plt.text(5,0.720859, 'Aprendizaje = {:f}'.format(aprendizaje2))
-    plt.text(5,0.7208585, 'Inicial = {:f}'.format(inicial2))
-    
-    plt.show()
 

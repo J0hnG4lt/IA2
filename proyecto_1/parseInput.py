@@ -5,15 +5,31 @@ keys = []
 
 with open("data.txt","r") as f:
 	lines = f.readlines()
-	print(len(lines)-1)
+
+	keyCounter = 0
+	saleCondition = 0
+	grLiveArea = 0
 	for i in lines[0].split("\t"):
 		# Shaving off newlines
 		i = i.replace("\n","").replace("\r","")
 		keys  += [i.lower()]
 		dataDict[i.lower()] = []
+		if i.lower() == "sale condition":
+			saleCondition = keyCounter
+		if i.lower() == "gr liv area":
+			grLiveArea = keyCounter
+		keyCounter += 1
+
 	for line in lines[1:]:
 		counter = 0
-		for word in line.split("\t"):
+		splitLine = line.split("\t")
+		if splitLine[saleCondition].lower() != "normal":
+			print(splitLine[saleCondition].lower())
+			continue
+		if float(splitLine[grLiveArea]) > 1500:
+			print(float(splitLine[grLiveArea]))
+			continue 
+		for word in splitLine:
 			# Shaving off newlines
 			word = word.replace("\n","").replace("\r","")
 			dataDict[keys[counter]].append(word)

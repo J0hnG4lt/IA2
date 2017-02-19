@@ -58,3 +58,25 @@ with open("customValues.txt","r") as f:
 				print("Couldn't Turn " + proccessedLine + " into numbers")
 			else:
 				print("Couldn't swap " + proccessedLine[0] + " for " + proccessedLine[1])
+				
+
+import numpy as np
+import csv
+
+
+features = dataDict.keys()
+row = []
+data = []
+
+archivoSalida = open("data.csv",'wb')
+wr = csv.writer(archivoSalida, delimiter=",",lineterminator='\n')
+wr.writerow(features)
+
+for i in range(len(dataDict["foundation"])):
+    row = []
+    for feature in features :
+        row.append(dataDict[feature][i])
+    wr.writerow(row)
+
+archivoSalida.close()
+

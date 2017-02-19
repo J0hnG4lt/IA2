@@ -92,7 +92,7 @@ GrnHill	4
 IDOTRR	3
 Landmrk	2
 MeadowV	1
-Mitchell	0
+Mitchel	0
 NAmes	-1
 NoRidge	-2
 NPkVill	-3
@@ -173,12 +173,12 @@ PreCast	-2
 Stone	-3
 Stucco	-4
 VinylSd	-5
-WdShng	-6
+Wd Sdng	-6
 WdShing	-7
 #VALUE	Exterior 2nd
 AsbShng	9
 AsphShn	8
-BrkCmn	7
+Brk Cmn	7
 BrkFace	6
 CBlock	5
 CmentBd	4
@@ -191,8 +191,8 @@ PreCast	-2
 Stone	-3
 Stucco	-4
 VinylSd	-5
-WdShng	-6
-WdShing	-7
+Wd Sdng	-6
+Wd Shng	-7
 #VALUE	Mas Vnr Type
 BrkCmn	2
 BrkFace	1
@@ -209,7 +209,7 @@ Po	-2
 Ex	2
 Gd	1
 TA	0
-FA	-1
+Fa	-1
 Po	-2
 #VALUE	Foundation
 BrkTil	3
@@ -222,22 +222,22 @@ Wood	-2
 Ex	2
 Gd	1
 TA	0
-FA	-1
+Fa	-1
 Po	-2
 NA	-3
 #VALUE	Bsmt Cond
 Ex	2
 Gd	1
 TA	0
-FA	-1
+Fa	-1
 Po	-2
 NA	-3
 #VALUE	Bsmt Exposure
-Ex	2
-Gd	1
-TA	0
-FA	-1
-Po	-2
+Gd	2
+Av	1
+Mn	0
+No	-1
+NA	-2
 #VALUE	BsmtFin Type 1
 GLQ	3
 ALQ	2
@@ -265,7 +265,7 @@ Wall	3
 Ex	2
 Gd	1
 TA	0
-FA	-1
+Fa	-1
 Po	-2
 #VALUE	Central Air
 Y	1
@@ -280,7 +280,7 @@ Mix	-2
 Ex	2
 Gd	1
 TA	0
-FA	-1
+Fa	-1
 Po	-2
 #VALUE	Functional
 Typ	3
@@ -295,7 +295,7 @@ Sal	-4
 Ex	2
 Gd	1
 TA	0
-FA	-1
+Fa	-1
 Po	-2
 NA	-3
 #VALUE	Garage Type
@@ -315,14 +315,14 @@ NA	-2
 Ex	2
 Gd	1
 TA	0
-FA	-1
+Fa	-1
 Po	-2
 NA	-3
 #VALUE	Garage Cond
 Ex	2
 Gd	1
 TA	0
-FA	-1
+Fa	-1
 Po	-2
 NA	-3
 #VALUE	Paved Drive
@@ -333,7 +333,7 @@ N	-1
 Ex	2
 Gd	1
 TA	0
-FA	-1
+Fa	-1
 Po	-2
 NA	-3
 #VALUE	Fence
@@ -350,7 +350,7 @@ Shed	-1
 TenC	-2
 NA	-3
 #VALUE	Sale Type
-'WD '	5
+WD 	5
 CWD	4
 VWD	3
 New	2

@@ -53,3 +53,8 @@ with open("customValues.txt","r") as f:
 					if dataDict[word][i] == word:
 						dataDict[word][i] = value
 				print("Turned all " + word + " to " + str(value))
+		except:
+			if turnToNumbers:
+				print("Couldn't Turn " + proccessedLine + " into numbers")
+			else:
+				print("Couldn't swap " + proccessedLine[0] + " for " + proccessedLine[1])

@@ -9,8 +9,8 @@ with open("data.txt","r") as f:
 	for i in lines[0].split("\t"):
 		# Shaving off newlines
 		i = i.replace("\n","").replace("\r","")
-		keys  += [i]
-		dataDict[i] = []
+		keys  += [i.lower()]
+		dataDict[i.lower()] = []
 	for line in lines[1:]:
 		counter = 0
 		for word in line.split("\t"):
@@ -50,8 +50,8 @@ with open("customValues.txt","r") as f:
 			else:
 				value = float(proccessedLine[1])
 				for i in range(len(dataDict[key])):
-					if dataDict[word][i] == word:
-						dataDict[word][i] = value
+					if dataDict[key][i] == word:
+						dataDict[key][i] = value
 				print("Turned all " + word + " to " + str(value))
 		except:
 			if turnToNumbers:

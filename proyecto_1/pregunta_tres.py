@@ -41,13 +41,11 @@ if __name__ == '__main__':
     rango = entrenamiento[:,19]
     
     
-    aprendizaje = 0.00000001
-    valor_inicial = 0.001
+    aprendizaje = 0.001
     
     coeficientes,iteraciones,errorPorIteracion = regresion_lineal_multiple( dom=dominio, 
                                                                             rango=rango,
-                                                                            coeficiente_aprendizaje=aprendizaje,
-                                                                            valor_inicial = valor_inicial)
+                                                                            coeficiente_aprendizaje=aprendizaje)
     
     
     errorPorIteracion = np.array(errorPorIteracion)
@@ -61,8 +59,7 @@ if __name__ == '__main__':
     plt.title("Convergencia Ventas")
     plt.xlabel("Numero de Iteraciones")
     plt.ylabel("Error")
-    plt.text(60,0.95, 'Aprendizaje = {0:.8f}'.format(aprendizaje))
-    plt.text(60,0.9, 'Inicial = {0:.3f}'.format(valor_inicial))
+    plt.text(60,0.95, 'Aprendizaje = {0:.3f}'.format(aprendizaje))
     plt.show()
     
     
@@ -72,8 +69,7 @@ if __name__ == '__main__':
     coeficientes_p,iteraciones_p,errorPorIteracion_p = regresion_lineal_multiple( dom=dominio_p, 
                                                                             rango=rango_p,
                                                                             max_iter = 1,
-                                                                            coeficiente_aprendizaje=aprendizaje,
-                                                                            valor_inicial = valor_inicial)
+                                                                            coeficiente_aprendizaje=aprendizaje)
                                                                             
     
     print(coeficientes_p)                                                                        

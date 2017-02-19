@@ -26,12 +26,10 @@ if __name__ == '__main__':
     dominio = datos_x01[:,0]
     rango = datos_x01[:,1]
     
-    aprendizaje = 0.000001
-    inicial = 1.0
+    aprendizaje = 0.01
     coeficientes,iteraciones,errorPorIteracion = regresion_lineal_multiple( dom=dominio, 
                                                                             rango=rango,
-                                                                            coeficiente_aprendizaje=aprendizaje,
-                                                                            valor_inicial=inicial)
+                                                                            coeficiente_aprendizaje=aprendizaje)
 
     errorPorIteracion = np.array(errorPorIteracion)
     mejor_iter = np.where(errorPorIteracion == errorPorIteracion.min())     # Mejor Iteracion
@@ -47,7 +45,6 @@ if __name__ == '__main__':
     plt.title("Scatterplot (normalizado)")
     plt.xlabel("Peso Cerebral")
     plt.ylabel("Peso Corporal")
-    plt.text(0.1,9, 'Aprendizaje = {:f}'.format(aprendizaje))
-    plt.text(0.1,8, 'Inicial = {0:.1f}'.format(inicial))
+    plt.text(0.1,7, 'Aprendizaje = {:.2f}'.format(aprendizaje))
     plt.plot(x,linea(x,coeficientes[mejor_iter[0][0]]))
     plt.show()

@@ -86,7 +86,7 @@ def regresion_lineal_multiple(dom,
     numero_atributos = dom.shape[1]
     
     # Se crea el vector de coeficientes usando el valor inicial dado
-    coeficientes = np.array([uniform(-0.5,0.5) for i in range(numero_atributos)]) # Se generan los valores iniciales para los pesos
+    coeficientes = np.array([uniform(-0.3,0.3) for i in range(numero_atributos)]) # Se generan los valores iniciales para los pesos
     
     # Se genera el vector de coeficientes(pesos) de forma aleatoria, usando
     # números entre 0 y 1 de una distribucion uniforme
@@ -128,7 +128,7 @@ def regresion_lineal_multiple(dom,
             derivada = np.dot(error,dom[:,j])
             coeficientes[j] = coef_anteriores[j] - constante * derivada
 
-        coef_anteriores = np.copy(coeficientes)
+        
 
         # Calculamos el error de la iteracion
         errorIter = error_n(coeficientes,dom,rango)    
@@ -138,6 +138,7 @@ def regresion_lineal_multiple(dom,
         errorPorIteracion.insert(iteraciones,errorIter)
         iteraciones += 1
         
+        coef_anteriores = np.copy(coeficientes)
     
     return (coeficientes_por_iteracion,iteraciones,errorPorIteracion)
 

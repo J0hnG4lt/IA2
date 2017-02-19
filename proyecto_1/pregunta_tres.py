@@ -20,25 +20,11 @@ if __name__ == '__main__':
                                 skiprows=1)
         f.close()
         
-       
+        
     datos = normalizarZ(datos)
-
-    nro_datos = len(datos[:,1])
     
-    # El número de datos del entrenamiento es el 80% de los datos totales
-    nro_datos_entrenamiento = int(round(0.8*nro_datos))
-    
-    # El número datos para pruebas es el 20% de los datos totales
-    nro_datos_prueba = nro_datos - nro_datos_entrenamiento
-    
-    # Se permutan los datos de forma aleatoria
-    datos = np.random.permutation(datos)
-    
-    prueba = datos[0:nro_datos_prueba,:]
-    entrenamiento = datos[nro_datos_prueba:nro_datos,:]
-    
-    dominio = entrenamiento[:,0:19]
-    rango = entrenamiento[:,19]
+    dominio = datos[:,0:19]
+    rango = datos[:,19]
     
     
     aprendizaje = 0.001
@@ -47,21 +33,17 @@ if __name__ == '__main__':
                                                                             rango=rango,
                                                                             coeficiente_aprendizaje=aprendizaje)
     
-    
     errorPorIteracion = np.array(errorPorIteracion)
     mejor_iter = np.where(errorPorIteracion == errorPorIteracion.min())     # Mejor Iteracion
-    print(mejor_iter)
     evaluacion = evaluar_modelo(dominio, rango, coeficientes[mejor_iter[0][0]])
     print(evaluacion)
     
-    plt.figure(1)
     plt.plot(range(iteraciones), errorPorIteracion)
     plt.title("Convergencia Ventas")
     plt.xlabel("Numero de Iteraciones")
     plt.ylabel("Error")
     plt.text(60,0.95, 'Aprendizaje = {0:.3f}'.format(aprendizaje))
-    plt.show()
-    
+    plt.show()    
     
     dominio_p = prueba[:,0:19]
     rango_p = prueba[:,19]
@@ -84,4 +66,4 @@ if __name__ == '__main__':
     #plt.text(60,0.9, 'Inicial = {0:.3f}'.format(valor_inicial))
     #plt.show()
     
-                                                                            
+                                                                        

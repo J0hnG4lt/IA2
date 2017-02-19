@@ -74,16 +74,24 @@ wr  = csv.writer(archivoSalida, delimiter=",",lineterminator='\n')
 features = list(features)
 
 for i in range(len(features)):
-	if features[i] == "saleprice":
-		features[i] = features[len(features) - 1]
-		features[len(features) - 1] = "saleprice"
-		break
+    if features[i] == "saleprice":
+        features[i] = features[len(features) - 1]
+        features[len(features) - 1] = "saleprice"
+        break
 
-wr.writerow(features)
+features_seleccionados = ["overall qual", "overall cond", "year built", 
+                          "year remod/add", "exter qual", "foundation", 
+                          "bsmt qual", "bsmt exposure", "bsmtfin type 1", 
+                          "bsmtfin sf 1", "total bsmt sf", "heating qc", 
+                          "central air", "1st flr sf", "gr liv area", 
+                          "garage yr blt", "garage finish", "garage cars", 
+                          "garage area", "saleprice"]
+
+wr.writerow(features_seleccionados)
 
 for i in range(len(dataDict["foundation"])):
     row = []
-    for feature in features:
+    for feature in features_seleccionados:
         row.append(dataDict[feature][i])
     wr.writerow(row)
 

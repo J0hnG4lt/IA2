@@ -3,7 +3,42 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
+from random import uniform
 
+
+    
+"""
+#    Evaluar Funcion objetivo
+#    
+#    objetivo : solo hace producto punto de las dos entradas
+#    
+#    @coeficientes :  coeficientes de la hipotesis
+#    @instancia : valores del dominio
+"""
+def h(coeficientes, instancia) : 
+    return np.dot(coeficientes, instancia) 
+
+
+"""
+#    Funcion de Costo
+#    
+#    Objetivo :  calcula el error de la funcion hipotesis al tratar de 
+#                aproximar los datos de entrenamiento usando la norma
+#                dada como input
+#    
+#    @coeficientes : coeficientes de la funcion hipotesis
+#    @dom : matriz cuyas columnas representan los valores de su feature
+#    @rango : valores que deberia tener la funcion objetivo para una fila
+#             de dom
+#    @norma : norma a usar con el vector de error
+#    
+"""
+def error_n(coeficientes,dom,rango,norma=2):
+    errorAcum = 0
+    for i,instancia in enumerate(dom) :
+        errorAcum += (h(coeficientes, instancia) - rango[i])**norma
+    errorAcum = errorAcum/float(len(rango))
+    return errorAcum
 
 """
 #    
@@ -38,8 +73,8 @@ import matplotlib.pyplot as plt
 """
 def regresion_lineal_multiple(dom,
                               rango,
-                              max_iter=100,
-                              coeficiente_aprendizaje = 0.000000001,
+                              max_iter=1000,
+                              coeficiente_aprendizaje = 0.01,
                               valor_inicial = 0.1) :
     
     # Se agrega una columna de 1.0 para x_0
@@ -52,69 +87,56 @@ def regresion_lineal_multiple(dom,
     numero_atributos = dom.shape[1]
     
     # Se crea el vector de coeficientes usando el valor inicial dado
-    coeficientes = np.array([valor_inicial for i in range(numero_atributos)]) # Se generan los valores iniciales para los pesos
+    coeficientes = np.array([uniform(-0.5,0.5) for i in range(numero_atributos)]) # Se generan los valores iniciales para los pesos
     
     # Se genera el vector de coeficientes(pesos) de forma aleatoria, usando
     # números entre 0 y 1 de una distribucion uniforme
     # coeficientes = np.random.random(numero_atributos)
      
     inverso_num_atributos = (1.0/numero_atributos)
-    
-    """
-    #    Evaluar Funcion objetivo
-    #    
-    #    objetivo : solo hace producto punto de las dos entradas
-    #    
-    #    @coeficientes :  coeficientes de la hipotesis
-    #    @instancia : valores del dominio
-    """
-    def h(coeficientes, instancia) : 
-        return np.dot(coeficientes, instancia) 
-    
-    
-    """
-    #    Funcion de Costo
-    #    
-    #    Objetivo :  calcula el error de la funcion hipotesis al tratar de 
-    #                aproximar los datos de entrenamiento usando la norma
-    #                dada como input
-    #    
-    #    @coeficientes : coeficientes de la funcion hipotesis
-    #    @dom : matriz cuyas columnas representan los valores de su feature
-    #    @rango : valores que deberia tener la funcion objetivo para una fila
-    #             de dom
-    #    @norma : norma a usar con el vector de error
-    #    
-    """
-    def error_n(coeficientes,dom,rango,norma=2):
-        errorAcum = 0
-        for i,instancia in enumerate(dom) :
-            errorAcum += (h(coeficientes, instancia) - rango[i])**norma
-        errorAcum = errorAcum/float(len(rango))
-        return errorAcum
+
     
     coef_anteriores = np.copy(coeficientes)     # Vector de coeficientes 
                                                 # antes de la iteracion actual
     coeficientes_por_iteracion = []
+
+    # Declaramos una constante que es el aprendizaje / el numero de atributos
     constante = (coeficiente_aprendizaje * inverso_num_atributos)
+
     iteraciones = 0
     errorPorIteracion = []
-    while (iteraciones < max_iter) :
+
+    # Cuando se disminuya el error por menos de esto detenemos
+    epsilon = 10**-6
+    errorAnt = 1000000
+    errorIter = 0
+
+    while (iteraciones < max_iter and abs(errorAnt - errorIter) > epsilon) :
+
+        errorAnt = errorIter
+        errorIter = 0
+
+        if (iteraciones % 100) == 0:
+            print("Iteraciones = " + str(iteraciones))
+        error = []
         for i in range(numero_instancias) :
-            
             # Se obtiene el vector de error
-            error = h(coef_anteriores,dom[i,:]) - rango
-            
-            # Se actualiza cada coeficiente con el vector de error
-            for j in range(numero_atributos) : 
-                derivada = np.dot(error,dom[:,j])
-                coeficientes[j] = coef_anteriores[j] - constante * derivada
-            
-            coef_anteriores = np.copy(coeficientes)
-            
+
+            error.append(h(coef_anteriores,dom[i]) - rango[i])
+
+        # Se actualiza cada coeficiente con el vector de error
+        for j in range(numero_atributos): 
+            derivada = np.dot(error,dom[:,j])
+            coeficientes[j] = coef_anteriores[j] - constante * derivada
+
+        coef_anteriores = np.copy(coeficientes)
+
+        # Calculamos el error de la iteracion
+        errorIter = error_n(coeficientes,dom,rango)    
+
         # Seran utiles al graficar
         coeficientes_por_iteracion.insert(iteraciones, coef_anteriores)
-        errorPorIteracion.insert(iteraciones,error_n(coeficientes,dom,rango))
+        errorPorIteracion.insert(iteraciones,errorIter)
         iteraciones += 1
         
     

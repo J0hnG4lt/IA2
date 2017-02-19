@@ -142,6 +142,39 @@ def normalizarZ(matriz) :
     
     return matriz
 
+"""
+    Funcion de evaluacion de modelo
+    
+    Objetivo: evalua al modelo usando los cuatro estadisticos sugeridos por
+    Dean De Cock en "Ames, Iowa: Alternative to the Boston Housing Data as an
+    End of Semester Regression Project", pagina septima.
+    
+    @dominio : matriz de numpy con los valores para varias instancias
+    de los features usados como dominio del modelo
+    
+    @rango : arreglo de numpy con los valores que debio haber aproximado
+    el modelo a partir de los valores del dominio
+    
+    @coeficientes : coeficientes del modelo de regresion lineal multiple
+    
+    @return : diccionario con los cuatro estadisticos
+"""
+def evaluar_modelo(dominio, rango, coeficientes) :
+    diferencias = []
+    for index,instancia in enumerate(dominio) :
+        diferencias.append(np.dot(np.insert(instancia, 0,1), coeficientes) - rango[index])
+    cantidad_elementos = float(len(diferencias))
+    bias = sum(diferencias)/cantidad_elementos
+    max_deviation = max(diferencias)
+    mean_absolute_deviation = sum(map(abs,diferencias))/cantidad_elementos
+    mean_square_error = sum(map((lambda x : x**2),diferencias))/cantidad_elementos
+    
+    return {"bias":bias, 
+            "max_deviation":max_deviation, 
+            "mean_absolute_deviation":mean_absolute_deviation, 
+            "mean_square_error": mean_square_error}
+
+
 
 ################################################################################
 #                                Ejecucion

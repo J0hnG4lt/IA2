@@ -3,7 +3,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-from proyecto import normalizarZ, regresion_lineal_multiple
+from proyecto import normalizarZ, regresion_lineal_multiple, evaluar_modelo
 
 if __name__ == '__main__':
     
@@ -35,6 +35,10 @@ if __name__ == '__main__':
                                                                             coeficiente_aprendizaje=aprendizaje,
                                                                             valor_inicial = valor_inicial)
     
+    errorPorIteracion = np.array(errorPorIteracion)
+    mejor_iter = np.where(errorPorIteracion == errorPorIteracion.min())     # Mejor Iteracion
+    evaluacion = evaluar_modelo(dominio, rango, coeficientes[mejor_iter[0][0]])
+    print(evaluacion)
     
     plt.plot(range(iteraciones), errorPorIteracion)
     plt.title("Convergencia Ventas")

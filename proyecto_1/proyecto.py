@@ -52,11 +52,11 @@ def regresion_lineal_multiple(dom,
     numero_atributos = dom.shape[1]
     
     # Se crea el vector de coeficientes usando el valor inicial dado
-    # coeficientes = np.array([valor_inicial for i in range(numero_atributos)]) # Se generan los valores iniciales para los pesos
+    coeficientes = np.array([valor_inicial for i in range(numero_atributos)]) # Se generan los valores iniciales para los pesos
     
     # Se genera el vector de coeficientes(pesos) de forma aleatoria, usando
     # números entre 0 y 1 de una distribucion uniforme
-    coeficientes = np.random.random(numero_atributos)
+    # coeficientes = np.random.random(numero_atributos)
      
     inverso_num_atributos = (1.0/numero_atributos)
     
@@ -124,7 +124,7 @@ def regresion_lineal_multiple(dom,
 #    Funcion de Normalizacion 
 #    
 #    Objetivo: calcula la desviacion estandar y la media por columna
-#    y los usa para normalizar todos las instancias en ese feature usando la
+#    y los usa para normalizar todos las instancias e   n ese feature usando la
 #    siguiente formula (vector_feature_i - promedio_feature_i) / desviacion_feature_i
 #    
 #    @matriz : matriz de numpy donde cada columna representa un feature y cada

@@ -105,7 +105,7 @@ features = dataDict.keys()
 row = []
 data = []
 
-archivoSalida = open("data.csv",'w')
+archivoSalida = open("dataActividad3.csv",'w')
 wr  = csv.writer(archivoSalida, delimiter=",",lineterminator='\n')
 
 features = list(features)

@@ -1,4 +1,4 @@
-
+''' Parsing the input '''
 
 dataDict = {}
 keys = []
@@ -25,3 +25,36 @@ for key in keys:
 	print(key,sum(1 for i in dataDict[key] if i == ""))
 
 
+''' Applying custom values from a file '''
+
+
+with open("customValues.txt","r") as f:
+	lines = f.readlines()
+	turnToNumbers = False
+	for line in lines:
+		proccessedLine = line.replace("\r","").replace("\n","").split("\t")
+		word = proccessedLine[0]
+		if word == "#NUMERIC":
+			turnToNumbers = True
+			continue
+		elif word == "#VALUE":
+			key = proccessedLine[1].lower()
+			turnToNumbers = False
+			continue
+		try:
+			if turnToNumbers:
+				for i in range(len(dataDict[word])):
+					if dataDict[word][i] != "":
+						dataDict[word][i] = float(dataDict[word][i])
+				print("Turned all " + word + " to numbers")
+			else:
+				value = float(proccessedLine[1])
+				for i in range(len(dataDict[key])):
+					if dataDict[word][i] == word:
+						dataDict[word][i] = value
+				print("Turned all " + word + " to " + str(value))
+		except:
+			if turnToNumbers:
+				print("Couldn't Turn " + proccessedLine + " into numbers")
+			else:
+				print("Couldn't swap " + proccessedLine[0] + " for " + proccessedLine[1])

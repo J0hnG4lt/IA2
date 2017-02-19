@@ -38,5 +38,5 @@ if __name__ == '__main__':
     plt.xlabel("Numero de Iteraciones")
     plt.ylabel("Error")
     plt.text(10,1.131671, 'Aprendizaje = {:f}'.format(aprendizaje))
-    plt.text(10,1.12, 'Inicial = {:f}'.format(inicial))
+    plt.text(10,1.12, 'Inicial = {0:.1f}'.format(inicial))
     plt.show()

@@ -48,6 +48,6 @@ if __name__ == '__main__':
     plt.xlabel("Peso Cerebral")
     plt.ylabel("Peso Corporal")
     plt.text(0.1,9, 'Aprendizaje = {:f}'.format(aprendizaje))
-    plt.text(0.1,8, 'Inicial = {:f}'.format(inicial))
+    plt.text(0.1,8, 'Inicial = {0:.1f}'.format(inicial))
     plt.plot(x,linea(x,coeficientes[mejor_iter[0][0]]))
     plt.show()

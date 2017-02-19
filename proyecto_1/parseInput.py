@@ -14,6 +14,8 @@ with open("data.txt","r") as f:
 		i = i.replace("\n","").replace("\r","")
 		keys  += [i.lower()]
 		dataDict[i.lower()] = []
+		
+		#Indice de las palabras para los filtros
 		if i.lower() == "sale condition":
 			saleCondition = keyCounter
 		if i.lower() == "gr liv area":
@@ -23,12 +25,13 @@ with open("data.txt","r") as f:
 	for line in lines[1:]:
 		counter = 0
 		splitLine = line.split("\t")
+
+		# Filtros
 		if splitLine[saleCondition].lower() != "normal":
-			print(splitLine[saleCondition].lower())
 			continue
 		if float(splitLine[grLiveArea]) > 1500:
-			print(float(splitLine[grLiveArea]))
 			continue 
+		
 		for word in splitLine:
 			# Shaving off newlines
 			word = word.replace("\n","").replace("\r","")

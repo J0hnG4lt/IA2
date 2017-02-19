@@ -128,7 +128,7 @@ def regresion_lineal_multiple(dom,
             derivada = np.dot(error,dom[:,j])
             coeficientes[j] = coef_anteriores[j] - constante * derivada
 
-        coef_anteriores = np.copy(coeficientes)
+        
 
         # Calculamos el error de la iteracion
         errorIter = error_n(coeficientes,dom,rango)    
@@ -138,6 +138,7 @@ def regresion_lineal_multiple(dom,
         errorPorIteracion.insert(iteraciones,errorIter)
         iteraciones += 1
         
+        coef_anteriores = np.copy(coeficientes)
     
     return (coeficientes_por_iteracion,iteraciones,errorPorIteracion)
 

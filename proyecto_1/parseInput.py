@@ -68,13 +68,22 @@ features = dataDict.keys()
 row = []
 data = []
 
-archivoSalida = open("data.csv",'wb')
-wr = csv.writer(archivoSalida, delimiter=",",lineterminator='\n')
+archivoSalida = open("data.csv",'w')
+wr  = csv.writer(archivoSalida, delimiter=",",lineterminator='\n')
+
+features = list(features)
+
+for i in range(len(features)):
+	if features[i] == "saleprice":
+		features[i] = features[len(features) - 1]
+		features[len(features) - 1] = "saleprice"
+		break
+
 wr.writerow(features)
 
 for i in range(len(dataDict["foundation"])):
     row = []
-    for feature in features :
+    for feature in features:
         row.append(dataDict[feature][i])
     wr.writerow(row)
 

@@ -47,27 +47,28 @@ if __name__ == '__main__':
     
     aprendizaje = 0.001
     
-    coeficientes,iteraciones,errorPorIteracion ,coefPrueba, errorPorIteracionPrueba= regresion_lineal_multiple( dom=dominio, 
+    coeficientes,iteraciones,errorPorIteracion, errorPorIteracionPrueba= regresion_lineal_multiple( dom=dominio, 
                                                                             rango=rango,
                                                                             coeficiente_aprendizaje=aprendizaje,
                                                                             dom_p = dominio_p,
                                                                             rang_p = rango_p)
     
-    errorPorIteracion = np.array(errorPorIteracion)
-    mejor_iter = np.where(errorPorIteracionPrueba == errorPorIteracionPrueba.min())     # Mejor Iteracion
+    error = np.array(errorPorIteracionPrueba)
+    mejor_iter = np.where(error == error.min())     # Mejor Iteracion
     evaluacion = evaluar_modelo(dominio, rango, coeficientes[mejor_iter[0][0]])
     print(evaluacion)
+
     
-    plt.plot(range(iteraciones), errorPorIteracion)
+    plt.plot(range(iteraciones), errorPorIteracion,'r',label="Error de entrenamiento")
+    plt.plot(range(iteraciones), errorPorIteracionPrueba,'g',label="Error de prueba")
+    #plt.legend(handles=[graf_entrenamiento, graf_prueba])
     plt.title("Convergencia Ventas")
     plt.xlabel("Numero de Iteraciones")
     plt.ylabel("Error")
     plt.text(60,0.95, 'Aprendizaje = {0:.3f}'.format(aprendizaje))
     plt.show()    
     
-                                                                            
-    #evaluacion_p = evaluar_modelo(dominio_p, rango_p, coeficientes[mejor_iter[0][0]])
-    print("Evaluacion con el conjunto de prueba: ", evaluacion_p)
+
     #plt.figure(2)
     #plt.plot(rango_p,range(20)'*g')
     #plt.plot(coeficientes,'x')

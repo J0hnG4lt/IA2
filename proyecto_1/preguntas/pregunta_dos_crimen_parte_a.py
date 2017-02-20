@@ -3,7 +3,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-from proyecto import normalizarZ, regresion_lineal_multiple
+from .proyecto import normalizarZ, regresion_lineal_multiple
 
 if __name__ == '__main__':
     

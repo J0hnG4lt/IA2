@@ -57,6 +57,12 @@ def error_n(coeficientes,dom,rango,norma=2):
 #             'dom'
 #             
 #             rango = [instancias de valor objetivo]
+#
+#    @dom : análogo a 'dom', pero para el subconjunto de datos de prueba. 
+#           Tiene valor None por defecto
+#           
+#    @rango : análogo a 'rang_p', pero para el subconjunto de datos de prueba. 
+#             Tiene valor None por defecto
 #             
 #    @max_iter : maximo numero de instancias a usar para el entrenamiento
 #    @coeficiente_aprendizaje : que tanto cambia el aprendizaje si encuentra un error
@@ -74,36 +80,39 @@ def error_n(coeficientes,dom,rango,norma=2):
 def regresion_lineal_multiple(dom,
                               rango,
                               max_iter=1000,
-                              coeficiente_aprendizaje = 0.01) :
+                              coeficiente_aprendizaje = 0.01, 
+                              dom_p = None, 
+                              rang_p = None) :
     
     # Se agrega una columna de 1.0 para x_0
     if dom.ndim == 1:
         dom = np.array([[1.0,instancia] for instancia in dom])
+        dom_p = np.array([[1.0,instancia] for instancia in dom_p])
     else :
         dom = np.insert(dom, 0, values=1.0, axis=1)
+        dom_p = np.insert(dom_p, 0, values=1.0, axis=1)
     
     numero_instancias = len(rango)
     numero_atributos = dom.shape[1]
     
-    # Se crea el vector de coeficientes usando el valor inicial dado
+  
     coeficientes = np.array([uniform(-0.3,0.3) for i in range(numero_atributos)]) # Se generan los valores iniciales para los pesos
-    
-    # Se genera el vector de coeficientes(pesos) de forma aleatoria, usando
-    # números entre 0 y 1 de una distribucion uniforme
-    # coeficientes = np.random.random(numero_atributos)
-     
+         
     inverso_num_atributos = (1.0/numero_atributos)
 
     
     coef_anteriores = np.copy(coeficientes)     # Vector de coeficientes 
                                                 # antes de la iteracion actual
+                                                
     coeficientes_por_iteracion = []
+    coeficientes_por_iteracion_p = []  #coeficientes que se obtienen en la validación             
 
     # Declaramos una constante que es el aprendizaje / el numero de atributos
     constante = (coeficiente_aprendizaje * inverso_num_atributos)
 
     iteraciones = 0
-    errorPorIteracion = []
+    errorPorIteracion = [] # Almacena el error de entrenamiento de cada iteración
+    errorPorIteracion_p = [] #Almacena el error de prueba de cada iteración
 
     # Cuando se disminuya el error por menos de esto detenemos
     epsilon = 10**-6
@@ -139,8 +148,20 @@ def regresion_lineal_multiple(dom,
         iteraciones += 1
         
         coef_anteriores = np.copy(coeficientes)
-    
-    return (coeficientes_por_iteracion,iteraciones,errorPorIteracion)
+        
+        
+        # VALIDAMOS
+        # Si se pasaron datos para la validación
+        if dom_p != None:
+            salidas_p = np.zeros(len(rang_p))
+                    
+            # Calculamos el error de la validación para la iteración
+           
+            errorIter_p = error_n(coeficientes,dom_p,rang_p) 
+            
+            errorPorIteracion_p.insert(iteraciones,errorIter_p)
+        
+    return (coeficientes_por_iteracion,iteraciones,errorPorIteracion,errorPorIteracion_p)
 
 """
 #    Funcion de Normalizacion 

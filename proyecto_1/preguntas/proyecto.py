@@ -126,8 +126,8 @@ def regresion_lineal_multiple(dom,
         errorAnt = errorIter
         errorIter = 0
 
-        if (iteraciones % 100) == 0:
-            print("Iteraciones = " + str(iteraciones))
+#        if (iteraciones % 100) == 0:
+#            print("Iteraciones = " + str(iteraciones))
         error = []
         for i in range(numero_instancias) :
             # Se obtiene el vector de error

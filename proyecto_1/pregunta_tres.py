@@ -59,7 +59,6 @@ if __name__ == '__main__':
     mejor_iter = np.where(error == error.min())     # Mejor Iteracion
     evaluacion = evaluar_modelo(dominio, rango, coeficientes[mejor_iter[0][0]])
     print(evaluacion)
-
     # Grafica de error de entrenamiento y de validación por iteración    
     plt.plot(range(iteraciones), errorPorIteracion,'r-',label="Error de entrenamiento")
     plt.plot(range(iteraciones), errorPorIteracionPrueba,'g-',label="Error de prueba")
@@ -71,7 +70,23 @@ if __name__ == '__main__':
     plt.show()    
     
 
+    '''
+    Comparacion Visual
+    '''
 
-
+    resultados = []
+    for index,instancia in enumerate(dominio_p) :
+        resultados.append(np.dot(np.insert(instancia, 0,1), coeficientes[mejor_iter[0][0]]))
     
-                                                                        
+    plt.plot(0,0,"ro",label="Resultado Actual")
+    plt.plot(0,0,"bx",label="Resultado Obtenido")
+
+    for c,i in enumerate(rango_p):
+        plt.plot(c,i,"ro")
+
+    for c,i in enumerate(resultados):
+        plt.plot(c,i,"bx")
+    plt.xlabel("Numero de Instancia")
+    plt.ylabel("Valor (Normalizado) de instancia")
+    plt.legend()
+    plt.show()

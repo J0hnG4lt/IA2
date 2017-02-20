@@ -54,7 +54,7 @@ if __name__ == '__main__':
                                                                             rang_p = rango_p)
     
     errorPorIteracion = np.array(errorPorIteracion)
-    mejor_iter = np.where(errorPorIteracion == errorPorIteracion.min())     # Mejor Iteracion
+    mejor_iter = np.where(errorPorIteracionPrueba == errorPorIteracionPrueba.min())     # Mejor Iteracion
     evaluacion = evaluar_modelo(dominio, rango, coeficientes[mejor_iter[0][0]])
     print(evaluacion)
     

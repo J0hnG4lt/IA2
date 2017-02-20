@@ -58,22 +58,21 @@ def error_n(coeficientes,dom,rango,norma=2):
 #             
 #             rango = [instancias de valor objetivo]
 #
-#    @dom : análogo a 'dom', pero para el subconjunto de datos de prueba. 
+#    @dom_p : análogo a 'dom', pero para el subconjunto de datos de prueba. 
 #           Tiene valor None por defecto
 #           
-#    @rango : análogo a 'rang_p', pero para el subconjunto de datos de prueba. 
+#    @rang_p : análogo a 'rang_p', pero para el subconjunto de datos de prueba. 
 #             Tiene valor None por defecto
 #             
 #    @max_iter : maximo numero de instancias a usar para el entrenamiento
 #    @coeficiente_aprendizaje : que tanto cambia el aprendizaje si encuentra un error
-#    @valor_inicial :  valor inicial del vector de coeficientes de la funcion hipotesis
 #    
 #    @return (coeficientes_por_iteracion,iteraciones,errorPorIteracion)
 #        
 #        @coeficientes_por_iteracion : coeficientes de la funcion objetivo por cada
 #                                      instancia. Los mejores son aquellos para los
 #                                      que el errorPorIteracion es el mínimo.
-#        @iteraciones : iteracion por cada instancia
+#        @iteraciones : numero de iteraciones
 #        @errorPorIteracion : error por cada instancia
 #        
 """

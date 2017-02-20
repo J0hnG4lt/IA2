@@ -74,7 +74,9 @@ def error_n(coeficientes,dom,rango,norma=2):
 def regresion_lineal_multiple(dom,
                               rango,
                               max_iter=1000,
-                              coeficiente_aprendizaje = 0.01) :
+                              coeficiente_aprendizaje = 0.01, 
+                              dom_p = None, 
+                              rang_p = None) :
     
     # Se agrega una columna de 1.0 para x_0
     if dom.ndim == 1:
@@ -97,13 +99,16 @@ def regresion_lineal_multiple(dom,
     
     coef_anteriores = np.copy(coeficientes)     # Vector de coeficientes 
                                                 # antes de la iteracion actual
+                                                
     coeficientes_por_iteracion = []
+    coeficientes_por_iteracion_p = []  #coeficientes que se obtienen en la validación             
 
     # Declaramos una constante que es el aprendizaje / el numero de atributos
     constante = (coeficiente_aprendizaje * inverso_num_atributos)
 
     iteraciones = 0
-    errorPorIteracion = []
+    errorPorIteracion = [] # Almacena el error de entrenamiento de cada iteración
+    errorPorIteracion_p = [] #Almacena el error de prueba de cada iteración
 
     # Cuando se disminuya el error por menos de esto detenemos
     epsilon = 10**-6
@@ -139,8 +144,23 @@ def regresion_lineal_multiple(dom,
         iteraciones += 1
         
         coef_anteriores = np.copy(coeficientes)
+        
+        
+        # VALIDAMOS
+        # Si se pasaron datos para la validación
+        if dom_p != None:
+            # Obtenemos la salida para los datos de prueba
+            for i in range(len(rang_p)) :    
+                coeficientes_p = h(coef_anteriores, np.concatenate((np.array([1]),dom_p[i])))
+            
+            # Almacenamos la salida para la validacion     
+            coeficientes_por_iteracion_p.insert(iteraciones, coeficientes_p)
+            
+            # Calculamos el error de la validación para la iteración
+            errorIter_p = error_n(coeficientes_p,dom_p,rang_p)   
+            errorPorIteracion_p.insert(iteraciones,errorIter_p)
     
-    return (coeficientes_por_iteracion,iteraciones,errorPorIteracion)
+    return (coeficientes_por_iteracion,iteraciones,errorPorIteracion,coeficientes_por_iteracion_p,errorPorIteracion_p)
 
 """
 #    Funcion de Normalizacion 

@@ -41,8 +41,10 @@ if __name__ == '__main__':
     entrenamiento = datos[nro_datos_prueba:nro_datos,:]
     
     dominio = entrenamiento[:,0:19]
+    print(len(dominio))
     rango = entrenamiento[:,19]    
     dominio_p = prueba[:,0:19]
+    print(len(dominio_p))
     rango_p = prueba[:,19]
     
     aprendizaje = 0.001
@@ -59,12 +61,13 @@ if __name__ == '__main__':
     print(evaluacion)
 
     # Grafica de error de entrenamiento y de validación por iteración    
-    plt.plot(range(iteraciones), errorPorIteracion,'r',label="Error de entrenamiento")
-    plt.plot(range(iteraciones), errorPorIteracionPrueba,'g',label="Error de prueba")
+    plt.plot(range(iteraciones), errorPorIteracion,'r-',label="Error de entrenamiento")
+    plt.plot(range(iteraciones), errorPorIteracionPrueba,'g-',label="Error de prueba")
     plt.title("Convergencia Ventas")
     plt.xlabel("Numero de Iteraciones")
     plt.ylabel("Error")
     plt.text(60,0.95, 'Aprendizaje = {0:.3f}'.format(aprendizaje))
+    plt.legend()
     plt.show()    
     
 

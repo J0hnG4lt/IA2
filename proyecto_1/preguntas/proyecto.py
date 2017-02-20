@@ -162,8 +162,10 @@ def regresion_lineal_multiple(dom,
             errorIter_p = error_n(coeficientes,dom_p,rang_p) 
             
             errorPorIteracion_p.insert(iteraciones,errorIter_p)
-        
-    return (coeficientes_por_iteracion,iteraciones,errorPorIteracion,errorPorIteracion_p)
+    if dom_p is not None:
+        return (coeficientes_por_iteracion,iteraciones,errorPorIteracion,errorPorIteracion_p)
+    else:
+        return (coeficientes_por_iteracion,iteraciones,errorPorIteracion)
 
 """
 #    Funcion de Normalizacion 

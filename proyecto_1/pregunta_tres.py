@@ -58,10 +58,9 @@ if __name__ == '__main__':
     evaluacion = evaluar_modelo(dominio, rango, coeficientes[mejor_iter[0][0]])
     print(evaluacion)
 
-    
+    # Grafica de error de entrenamiento y de validación por iteración    
     plt.plot(range(iteraciones), errorPorIteracion,'r',label="Error de entrenamiento")
     plt.plot(range(iteraciones), errorPorIteracionPrueba,'g',label="Error de prueba")
-    #plt.legend(handles=[graf_entrenamiento, graf_prueba])
     plt.title("Convergencia Ventas")
     plt.xlabel("Numero de Iteraciones")
     plt.ylabel("Error")
@@ -69,13 +68,7 @@ if __name__ == '__main__':
     plt.show()    
     
 
-    #plt.figure(2)
-    #plt.plot(rango_p,range(20)'*g')
-    #plt.plot(coeficientes,'x')
-    #plt.plot(coeficientes_p,'xr')
-    #plt.title("")
-    #plt.text(60,0.95, 'Aprendizaje = {0:.8f}'.format(aprendizaje))
-    #plt.text(60,0.9, 'Inicial = {0:.3f}'.format(valor_inicial))
-    #plt.show()
+
+
     
                                                                         

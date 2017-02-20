@@ -57,6 +57,12 @@ def error_n(coeficientes,dom,rango,norma=2):
 #             'dom'
 #             
 #             rango = [instancias de valor objetivo]
+#
+#    @dom : análogo a 'dom', pero para el subconjunto de datos de prueba. 
+#           Tiene valor None por defecto
+#           
+#    @rango : análogo a 'rang_p', pero para el subconjunto de datos de prueba. 
+#             Tiene valor None por defecto
 #             
 #    @max_iter : maximo numero de instancias a usar para el entrenamiento
 #    @coeficiente_aprendizaje : que tanto cambia el aprendizaje si encuentra un error
@@ -89,13 +95,9 @@ def regresion_lineal_multiple(dom,
     numero_instancias = len(rango)
     numero_atributos = dom.shape[1]
     
-    # Se crea el vector de coeficientes usando el valor inicial dado
+  
     coeficientes = np.array([uniform(-0.3,0.3) for i in range(numero_atributos)]) # Se generan los valores iniciales para los pesos
-    
-    # Se genera el vector de coeficientes(pesos) de forma aleatoria, usando
-    # números entre 0 y 1 de una distribucion uniforme
-    # coeficientes = np.random.random(numero_atributos)
-     
+         
     inverso_num_atributos = (1.0/numero_atributos)
 
     
@@ -152,17 +154,11 @@ def regresion_lineal_multiple(dom,
         # Si se pasaron datos para la validación
         if dom_p != None:
             salidas_p = np.zeros(len(rang_p))
-            #print("coef",coeficientes)
-            # Obtenemos la salida para los datos de prueba
-            #for i in range(len(rang_p)) :    
-            #    salidas_p[i]=(h(coeficientes, np.concatenate((np.array([1]),dom_p[i]))))
-            
-            
-            
+                    
             # Calculamos el error de la validación para la iteración
-            #errorIter_p = error_n(coeficientes,np.concatenate((np.array([1]),dom_p[i]),rang_p)  
+           
             errorIter_p = error_n(coeficientes,dom_p,rang_p) 
-            #print(errorIter_p)
+            
             errorPorIteracion_p.insert(iteraciones,errorIter_p)
         
     return (coeficientes_por_iteracion,iteraciones,errorPorIteracion,errorPorIteracion_p)

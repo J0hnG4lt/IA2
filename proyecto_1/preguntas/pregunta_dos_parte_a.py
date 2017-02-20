@@ -8,7 +8,7 @@ from proyecto import normalizarZ, regresion_lineal_multiple
 if __name__ == '__main__':
     
     # Se abre el archivo de prueba limpiado
-    with open("x01_copia.txt", "r") as f : 
+    with open("../datasets/x01_copia.txt", "r") as f : 
         datos_x01 = np.loadtxt( fname=f, 
                                 dtype=float ,
                                 comments="#" ,

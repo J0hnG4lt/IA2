@@ -3,12 +3,12 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-from .proyecto import normalizarZ, regresion_lineal_multiple
+from proyecto import normalizarZ, regresion_lineal_multiple
 
 if __name__ == '__main__':
     
     # Se abre el archivo de prueba limpiado
-    with open("x08_copia.txt", "r") as f : 
+    with open("../datasets/x08_copia.txt", "r") as f : 
         datos_x08 = np.loadtxt( fname=f, 
                                 dtype=float ,
                                 comments="#" ,
@@ -21,7 +21,7 @@ if __name__ == '__main__':
     dominio = datos_x08[:,0:3]
     rango = datos_x08[:,3]
     aprendizaje = 0.1
-    coeficientes,iteraciones,errorPorIteracion = regresion_lineal_multiple( dom=dominio, 
+    coeficientes,iteraciones,errorPorIteracion, = regresion_lineal_multiple( dom=dominio, 
                                                                             rango=rango,
                                                                             coeficiente_aprendizaje=aprendizaje)
     errorPorIteracion = np.array(errorPorIteracion)

@@ -41,10 +41,8 @@ if __name__ == '__main__':
     entrenamiento = datos[nro_datos_prueba:nro_datos,:]
     
     dominio = entrenamiento[:,0:19]
-    print(len(dominio))
     rango = entrenamiento[:,19]    
     dominio_p = prueba[:,0:19]
-    print(len(dominio_p))
     rango_p = prueba[:,19]
     
     aprendizaje = 0.001

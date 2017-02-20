@@ -7,7 +7,8 @@ from proyecto import normalizarZ, regresion_lineal_multiple, evaluar_modelo
 
 if __name__ == '__main__':
     
-    nombre_dataset = "dataActividad3.csv"
+    nombre_dataset = "data.csv"
+
     #usecols = (i for j in (range(0,80),range(81,82)) for i in j)
     usecols = range(0,20)
     # Se abre el archivo de prueba limpiado

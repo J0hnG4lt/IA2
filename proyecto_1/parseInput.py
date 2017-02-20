@@ -3,7 +3,7 @@
 dataDict = {}
 keys = []
 
-with open("data.txt","r") as f:
+with open("datasets/data.txt","r") as f:
 	lines = f.readlines()
 
 	keyCounter = 0
@@ -105,7 +105,7 @@ features = dataDict.keys()
 row = []
 data = []
 
-archivoSalida = open("dataActividad3.csv",'w')
+archivoSalida = open("datasets/dataActividad3.csv",'w')
 wr  = csv.writer(archivoSalida, delimiter=",",lineterminator='\n')
 
 features = list(features)

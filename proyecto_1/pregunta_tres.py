@@ -7,18 +7,18 @@ from proyecto import normalizarZ, regresion_lineal_multiple, evaluar_modelo, h
 
 if __name__ == '__main__':
     
-    nombre_dataset = "AmesHousing_sin_missing_values_filtrados_segun_paper_80_cortado.csv"
+    nombre_dataset = "data.csv"
+
     #usecols = (i for j in (range(0,80),range(81,82)) for i in j)
     usecols = range(0,20)
     # Se abre el archivo de prueba limpiado
     with open(nombre_dataset, "r") as f:
         datos = np.loadtxt( fname=f, 
-                                dtype=float ,
+                                dtype= float,
                                 comments="#" ,
                                 delimiter=",",
                                 usecols=usecols,
                                 skiprows=1)
-        f.close()
         
         
     datos = normalizarZ(datos)

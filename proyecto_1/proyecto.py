@@ -87,10 +87,12 @@ def regresion_lineal_multiple(dom,
     # Se agrega una columna de 1.0 para x_0
     if dom.ndim == 1:
         dom = np.array([[1.0,instancia] for instancia in dom])
-        dom_p = np.array([[1.0,instancia] for instancia in dom_p])
+        if dom_p is not None:
+            dom_p = np.array([[1.0,instancia] for instancia in dom_p])
     else :
         dom = np.insert(dom, 0, values=1.0, axis=1)
-        dom_p = np.insert(dom_p, 0, values=1.0, axis=1)
+        if dom_p is not None:
+            dom_p = np.insert(dom_p, 0, values=1.0, axis=1)
     
     numero_instancias = len(rango)
     numero_atributos = dom.shape[1]
@@ -152,7 +154,7 @@ def regresion_lineal_multiple(dom,
         
         # VALIDAMOS
         # Si se pasaron datos para la validación
-        if dom_p != None:
+        if dom_p is not None:
             salidas_p = np.zeros(len(rang_p))
                     
             # Calculamos el error de la validación para la iteración

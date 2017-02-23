@@ -1,37 +1,131 @@
 {
-    "leslierodrigues": [
-        "C++",
-        "C",
-        "Python",
-        "Shell",
-        "Makefile"
-    ],
     "Imme2": [
-        "C++",
-        "Yacc",
-        "C",
-        "JavaScript",
-        "HTML",
-        "Ruby",
-        "Python",
-        "Lex",
         "CSS",
+        "Yacc",
+        "Lex",
+        "C++",
+        "C",
+        "Python",
+        "Makefile",
+        "JavaScript",
+        "Ruby",
+        "HTML"
+    ],
+    "dougtc1": [
+        "TeX",
+        "CSS",
+        "C++",
+        "Python",
+        "Java",
+        "Makefile",
+        "Shell"
+    ],
+    "leslierodrigues": [
+        "C",
+        "C++",
+        "Shell",
+        "Python",
         "Makefile"
     ],
     "J0hnG4lt": [
-        "Yacc",
-        "C",
-        "JavaScript",
-        "R",
-        "Assembly",
-        "Prolog",
-        "HTML",
-        "Ruby",
-        "Python",
-        "Logos",
-        "Haskell",
         "TeX",
         "CSS",
-        "Makefile"
+        "Yacc",
+        "C",
+        "Haskell",
+        "Python",
+        "Makefile",
+        "Logos",
+        "R",
+        "JavaScript",
+        "Assembly",
+        "Prolog",
+        "Ruby",
+        "HTML"
+    ],
+    "CinthyaRamos": [],
+    "egprc": [
+        "Python"
+    ],
+    "josema19": [
+        "HTML",
+        "Python"
+    ],
+    "prmm95": [
+        "TeX",
+        "CSS",
+        "C",
+        "Haskell",
+        "Python",
+        "Makefile",
+        "Assembly",
+        "JavaScript",
+        "Ruby",
+        "Prolog",
+        "HTML",
+        "CoffeeScript",
+        "Shell"
+    ],
+    "alfredojf": [
+        "Matlab",
+        "CSS",
+        "Haskell",
+        "Python",
+        "JavaScript",
+        "Jupyter Notebook",
+        "M",
+        "HTML",
+        "Shell"
+    ],
+    "leotms": [
+        "GLSL",
+        "GDScript",
+        "C++",
+        "C",
+        "C#",
+        "Haskell",
+        "Python",
+        "Makefile",
+        "Prolog",
+        "Ruby",
+        "Objective-C",
+        "Shell"
+    ],
+    "patriv": [
+        "HTML",
+        "Python"
+    ],
+    "fernandobperezm": [
+        "CSS",
+        "PLpgSQL",
+        "C++",
+        "C",
+        "C#",
+        "Python",
+        "Java",
+        "Makefile",
+        "JavaScript",
+        "Groff",
+        "HTML",
+        "Objective-C",
+        "Shell"
+    ],
+    "aldrix": [
+        "CSS",
+        "GDScript",
+        "GLSL",
+        "C++",
+        "C",
+        "Python",
+        "JavaScript",
+        "Ruby",
+        "HTML"
+    ],
+    "edansi94": [
+        "C#",
+        "Haskell",
+        "ASP",
+        "GLSL",
+        "C++"
     ]
 }

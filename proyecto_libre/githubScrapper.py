@@ -16,6 +16,8 @@ import requests
 #   y su token de acceso generado en la configuración. Usar esto le permitirá
 #   contar con un rate limit más generoso para hacer requests.
 #
+#   Hay que guardar la lista de usuarios en un archivo llamado "usuariosGithub.txt".
+#   Dicho archivo debe tener un usuario por línea.
 """
 
 
@@ -42,11 +44,24 @@ def findUserLanguages(user):
     for repo in jsonReposResponse :
         jsonLangsResponse = getLanguage(user, repo["name"])
         languages[user] += list(jsonLangsResponse.keys())
+    # Comentar si se quiere repetir lenguajes
+    languages[user] = list(set(languages[user]))
     return languages
 
 
-languages.update(findUserLanguages("J0hnG4lt"))
-languages.update(findUserLanguages("leslierodrigues"))
-languages.update(findUserLanguages("Imme2"))
+with open("usuariosGithub.txt", "r") as usersFile :
+    # Si se encontrase un rate limit no se debe permitir que se pierda
+    # el trabajo hecho
+    try :
+        for user in usersFile :
+            print(user.strip("\n\r"))
+            languages.update(findUserLanguages(user.strip("\n\r")))
+    except requests.exceptions.HTTPError as err:
+        print(err)
+    finally :
+        usersFile.close()
 
+with open("languagesUsersGithub.json","w") as langsFile :
+    json.dump(languages, langsFile, indent=4)
+    langsFile.close()
 print(languages)

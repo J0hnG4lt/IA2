@@ -3,7 +3,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-
+from math import sqrt
 
 """
 #    
@@ -138,8 +138,29 @@ if __name__ == '__main__':
                                 usecols=(1,2))
         f.close()
     
-    datos_x01 = datos_x01 / datos_x01.max(axis=0)   # Normalizacion
+
+
+
+    # Normalizacion
+
+    largo = len(datos_x01)
+    # Sacamos la Media de cada columna.
+    media_x01 = [sum(dato[j] for dato in datos_x01)/largo for j in range(2)]
+
+    # Sacamos la Varianza de cada columna.
+    varianza_x01 = [sum((dato[j] - media_x01[j])**2 for dato in datos_x01)/largo for j in range(2)]
+
+    # Ahora la desviacion estandar.
+    estandard_dev_x01 = [sqrt(varianza) for varianza in varianza_x01]
+
+
+
+    for i in range(largo):
+        for j in range(len(datos_x01[i])):
+            datos_x01[i][j] = (datos_x01[i][j] - media_x01[j])**2/varianza_x01[j]
+#    datos_x01 = datos_x01 / datos_x01.max(axis=0)   # Normalizacion
     
+    print(datos_x01)
     dominio = datos_x01[:,0]
     rango = datos_x01[:,1]
     

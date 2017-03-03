@@ -84,7 +84,7 @@ def MLP(nroCapas = 1,
 			for capa in range(nroCapas):
 				for neurona in range(nroCapas-1):
 					# Si es la capa de salida se calcula el error
-					if (capa == nroNeuronasPorCapa[capa]-1):
+					if (capa == 0):
 						entrada[capa][neurona] = np.dot(mlp[capa][neurona],estimulo)+\
 												 bias[capa][neurona]
 						salida[capa][neurona] = funcionPorCapa[capa](entrada[capa][neurona])
@@ -93,6 +93,9 @@ def MLP(nroCapas = 1,
 						entrada[capa][neurona] = np.dot(mlp[capa][neurona],estimulo)+\
 												 bias[capa][neurona]
 						salida[capa][neurona] = funcionPorCapa[capa](entrada[capa][neurona])
+					if (capa == nroCapas-1):
+						error += (respuesta - salida[capa][neurona])**2 
+
 			# Back Propagation
 			for i in range(nroCapas):
 				capa = nroCapas - (i+1)

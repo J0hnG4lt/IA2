@@ -81,7 +81,7 @@ def MLP(nroCapas = 1,
 		for estimulo,respuesta in zip(dataEntrenamiento[:-1],dataEntrenamiento[-1:]):
 			# Forward propagation
 			for capa in range(nroCapas):
-				for neurona in range(nroNeuronasPorCapa[capa]):
+				for neurona in range(nroCapas-1):
 					# Si es la capa de salida se calcula el error
 					if (capa == nroNeuronasPorCapa[capa]-1):
 						entrada[capa][neurona] = np.dot(mlp[capa][neurona],estimulo)+\

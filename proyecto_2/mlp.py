@@ -78,7 +78,7 @@ def MLP(nroCapas = 1,
 		errorAnt = error
 		error = 0
 
-		for estimulo,respuesta in zip(nroAtributos[:-1],data[-1:]):
+		for estimulo,respuesta in zip(dataEntrenamiento[:-1],dataEntrenamiento[-1:]):
 			# Forward propagation
 			for capa in range(nroCapas):
 				for neurona in range(nroNeuronasPorCapa[capa]):
@@ -86,6 +86,7 @@ def MLP(nroCapas = 1,
 						entrada[capa][neurona] = np.dot(mlp[capa][neurona],estimulo)+\
 												 bias[capa][neurona])
 						salida[capa][neurona] = funcionPorCapa[capa](entrada[capa][neurona])
+						error += (respuesta - salida[capa][neurona])**2 
 					else:
 						entrada[capa][neurona] = np.dot(mlp[capa][neurona],estimulo)+\
 												 bias[capa][neurona])
@@ -95,4 +96,18 @@ def MLP(nroCapas = 1,
 				capa = nroCapas - (i+1)
 				for neurona in range(nroNeuronasPorCapa[capa]):
 					if (capa == nroCapas-1):
-						gradiente]capa][neurona] = salida[capa][neurona] 
+						gradiente[capa][neurona] =  derivadaFuncionPorCapa[capa](entrada[capa][neurona])*\
+														(respuesta - salida[capa][neurona])
+					else:
+						sumaGradientes = sum(gradiente[capa+1][i]*mlp[capa+1][i][neurona]\
+											 for i in range(nroNeuronasPorCapa[capa+1])) 
+						gradiente[capa][neurona] =  derivadaFuncionPorCapa[capa](entrada[capa][neurona])*\
+														sumaGradientes
+			# Actualizacion Pesos
+			for capa in range(nroCapas):
+				for neurona in range(nroNeuronasPorCapa[capa]):
+					for peso in range(len(mlp[capa][neurona])):
+						# Esto esta bien??
+						mlp[capa][neurona][peso] += aprendizaje*gradiente[capa][neurona]
+
+		error = error/totalDatosEntrenamiento

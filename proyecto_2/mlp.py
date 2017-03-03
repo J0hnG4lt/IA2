@@ -106,8 +106,7 @@ def MLP(nroCapas = 1,
 			# Actualizacion Pesos
 			for capa in range(nroCapas):
 				for neurona in range(nroNeuronasPorCapa[capa]):
-					for peso in range(len(mlp[capa][neurona])):
-						# Esto esta bien??
-						mlp[capa][neurona][peso] += aprendizaje*gradiente[capa][neurona]
+					for peso in range(len(mlp[capa][neurona])):						
+						mlp[capa][neurona][peso] += aprendizaje*gradiente[capa][neurona]*salida[capa][neurona]
 
 		error = error/totalDatosEntrenamiento

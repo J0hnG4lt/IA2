@@ -11,7 +11,7 @@ def MLP(nroCapas = 1,
 		porcentajeValidacion = None,
 		maxIter = 1000,
 		aprendizaje = 0.01):
-
+	
 	flag = False	
 	if (data is None):
 		print("Se necesita data de entrenamiento")
@@ -57,12 +57,12 @@ def MLP(nroCapas = 1,
 
 
 	for i in range(nroCapas):
-		print("Capa " + (i+1) + " con " + nroNeuronasPorCapa[i] + " neuronas")
+		print("Capa " + str(i+1) + " con " + str(nroNeuronasPorCapa[i]) + " neuronas")
 		if (i == 0):
 			mlp += [[[uniform(-0.3,0.3) for entrada in range(nroAtributos)]\
 					for neurona in range(nroNeuronasPorCapa[i])]]
 		else:
-			mlp += [[[uniform(-0.3,0.3) for entrada in range(nroAtributos[i-1])]\
+			mlp += [[[uniform(-0.3,0.3) for entrada in range(nroAtributos)]\
 					for neurona in range(nroNeuronasPorCapa[i])]]
 
 

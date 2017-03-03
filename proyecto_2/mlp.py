@@ -82,7 +82,8 @@ def MLP(nroCapas = 1,
 			# Forward propagation
 			for capa in range(nroCapas):
 				for neurona in range(nroNeuronasPorCapa[capa]):
-					if (capa == 0):
+					# Si es la capa de salida se calcula el error
+					if (capa == nroNeuronasPorCapa[capa]-1):
 						entrada[capa][neurona] = np.dot(mlp[capa][neurona],estimulo)+\
 												 bias[capa][neurona])
 						salida[capa][neurona] = funcionPorCapa[capa](entrada[capa][neurona])
@@ -108,5 +109,16 @@ def MLP(nroCapas = 1,
 				for neurona in range(nroNeuronasPorCapa[capa]):
 					for peso in range(len(mlp[capa][neurona])):						
 						mlp[capa][neurona][peso] += aprendizaje*gradiente[capa][neurona]*salida[capa][neurona]
+			ceros = 0
+			unos = 0
+			for capa in range(nroCapas):
+	    		for neurona in range(nroNeuronasPorCapa[capa]):
+					if salida[capa][neurona] > 0.5:
+					    unos +=1
+					else:
+					    ceros += 1    						
+			print(iteraciones," 0's:",ceros, "1's",unos)
 
 		error = error/totalDatosEntrenamiento
+		
+		

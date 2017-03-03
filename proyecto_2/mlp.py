@@ -69,11 +69,12 @@ def MLP(nroCapas = 1,
 
 
 	iteraciones = 0
-	error = 1000
+	error = 0
 	errorAnt = 0
 	eps = 10**-5
-
+	
 	while (iteraciones < maxIter and abs(error - errorAnt) < eps):
+		
 		iteraciones += 1
 		errorAnt = error
 		error = 0

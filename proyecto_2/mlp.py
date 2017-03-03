@@ -51,8 +51,10 @@ def MLP(nroCapas = 1,
 	print("Creando perceptron con " + str(nroCapas) + " capas.")
 
 	salidaNeuronas = [ [0 for i in range(nroNeuronasPorCapa[j])] for j in range(nroCapas)]
+	entradaNeuronas = [ [0 for i in range(nroNeuronasPorCapa[j])] for j in range(nroCapas)]
 	bias = [ [uniform(-0.3,0.3) for i in range(nroNeuronasPorCapa[j])] for j in range(nroCapas)]
 	gradiente = [ [0 for i in range(nroNeuronasPorCapa[j])] for j in range(nroCapas)]
+
 
 	for i in range(nroCapas):
 		print("Capa " + (i+1) + " con " + nroNeuronasPorCapa[i] + " neuronas")
@@ -81,13 +83,13 @@ def MLP(nroCapas = 1,
 			for capa in range(nroCapas):
 				for neurona in range(nroNeuronasPorCapa[capa]):
 					if (capa == 0):
-						salida[capa][neurona] = funcionPorCapa[capa](\
-												np.dot(mlp[capa][neurona],estimulo)+\
-												bias[capa][neurona])
+						entrada[capa][neurona] = np.dot(mlp[capa][neurona],estimulo)+\
+												 bias[capa][neurona])
+						salida[capa][neurona] = funcionPorCapa[capa](entrada[capa][neurona])
 					else:
-						salida[capa][neurona] = funcionPorCapa[capa](\
-												np.dot(mlp[capa][neurona],salida[capa-1])+\
-												bias[capa][neurona])
+						entrada[capa][neurona] = np.dot(mlp[capa][neurona],estimulo)+\
+												 bias[capa][neurona])
+						salida[capa][neurona] = funcionPorCapa[capa](entrada[capa][neurona])
 			# Back Propagation
 			for i in range(nroCapas):
 				capa = nroCapas - (i+1)

@@ -111,3 +111,5 @@ def MLP(nroCapas = 1,
 						mlp[capa][neurona][peso] += aprendizaje*gradiente[capa][neurona]
 
 		error = error/totalDatosEntrenamiento
+
+	

@@ -77,10 +77,19 @@ def MLP(nroCapas = 1,
 		error = 0
 
 		for estimulo,respuesta in zip(nroAtributos[:-1],data[-1:]):
+			# Forward propagation
 			for capa in range(nroCapas):
 				for neurona in range(nroNeuronasPorCapa[capa]):
 					if (capa == 0):
-						salida[capa][neurona] = np.dot(mlp[capa][neurona],estimulo) + bias[capa][neurona]
+						salida[capa][neurona] = funcionPorCapa[capa](\
+												np.dot(mlp[capa][neurona],estimulo)+\
+												bias[capa][neurona])
 					else:
-						salida[capa][neurona] = np.dot(mlp[capa][neurona],salida[capa-1]) + bias[capa][neurona]
+						salida[capa][neurona] = funcionPorCapa[capa](\
+												np.dot(mlp[capa][neurona],salida[capa-1])+\
+												bias[capa][neurona])
+			# Back Propagation
+			for i in range(nroCapas):
+				capa = nroCapas - (i+1)
+				for neurona in range(nroNeuronasPorCapa[capa]):
 					

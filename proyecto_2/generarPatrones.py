@@ -3,7 +3,9 @@ import matplotlib.pyplot as plt
 from math import sqrt
 
 def dentroDeCircunferencia((Xcoord, Ycoord)) : 
-    temp = sqrt(100.0 - (10.0-Xcoord)**2)
+    if abs(Xcoord - 10.0) >  6.0:
+        return False
+    temp = sqrt(36.0 - (10.0-Xcoord)**2)
     if Ycoord >= 10.0 :
         return Ycoord < (10.0 + temp)
     else :

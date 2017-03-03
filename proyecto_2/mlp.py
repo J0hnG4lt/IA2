@@ -92,4 +92,5 @@ def MLP(nroCapas = 1,
 			for i in range(nroCapas):
 				capa = nroCapas - (i+1)
 				for neurona in range(nroNeuronasPorCapa[capa]):
-					
+					if (capa == nroCapas-1):
+						gradiente]capa][neurona] = salida[capa][neurona] 

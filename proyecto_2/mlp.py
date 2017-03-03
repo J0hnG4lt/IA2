@@ -38,13 +38,13 @@ def MLP(nroCapas = 1,
 	nroAtributos = len(data[0]) - 1
 	
 	totalDatos = len(data)
-    totalDatosValidacion = len(data)*porcentajeValidacion//100
-    totalDatosEntrenamiento = totalDatos - totalDatosValidacion
+	totalDatosValidacion = len(data)*porcentajeValidacion//100
+	totalDatosEntrenamiento = totalDatos - totalDatosValidacion
 
-    data = np.random.permutation(data)
+	data = np.random.permutation(data)
 
-    dataEntrenamiento = data[0:totalDatosEntrenamiento]
-    dataValidacion = data[totalDatosEntrenamiento:]
+	dataEntrenamiento = data[0:totalDatosEntrenamiento]
+	dataValidacion = data[totalDatosEntrenamiento:]
 
 	mlp = []
 
@@ -85,12 +85,12 @@ def MLP(nroCapas = 1,
 					# Si es la capa de salida se calcula el error
 					if (capa == nroNeuronasPorCapa[capa]-1):
 						entrada[capa][neurona] = np.dot(mlp[capa][neurona],estimulo)+\
-												 bias[capa][neurona])
+												 bias[capa][neurona]
 						salida[capa][neurona] = funcionPorCapa[capa](entrada[capa][neurona])
 						error += (respuesta - salida[capa][neurona])**2 
 					else:
 						entrada[capa][neurona] = np.dot(mlp[capa][neurona],estimulo)+\
-												 bias[capa][neurona])
+												 bias[capa][neurona]
 						salida[capa][neurona] = funcionPorCapa[capa](entrada[capa][neurona])
 			# Back Propagation
 			for i in range(nroCapas):
@@ -107,16 +107,17 @@ def MLP(nroCapas = 1,
 			# Actualizacion Pesos
 			for capa in range(nroCapas):
 				for neurona in range(nroNeuronasPorCapa[capa]):
+					bias[capa][neurona] += aprendizaje * (respuesta - salida[capa][neurona])
 					for peso in range(len(mlp[capa][neurona])):						
 						mlp[capa][neurona][peso] += aprendizaje*gradiente[capa][neurona]*salida[capa][neurona]
 			ceros = 0
 			unos = 0
 			for capa in range(nroCapas):
-	    		for neurona in range(nroNeuronasPorCapa[capa]):
+				for neurona in range(nroNeuronasPorCapa[capa]):
 					if salida[capa][neurona] > 0.5:
-					    unos +=1
+						unos +=1
 					else:
-					    ceros += 1    						
+						ceros += 1    						
 			print(iteraciones," 0's:",ceros, "1's",unos)
 
 		error = error/totalDatosEntrenamiento

@@ -3,7 +3,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-from math import sqrt
+from math import sqrt,cos,sin
 from mlp import *
 
 # Taken from mpl2
@@ -30,7 +30,18 @@ def dentroDeCircunferencia(*coords) :
     else :
         return Ycoord >= (10.0 - temp)
 
-def generarPatrones(numeroDentro=200,numeroFuera=300) :
+def generarPatrones(numeroPuntos = 2000) :
+    
+    puntosX = np.random.uniform(0, 20, numeroPuntos)
+    puntosY = np.random.uniform(0, 20, numeroPuntos)
+    
+    puntos = zip(puntosX, puntosY)
+    areas = map(lambda coords: dentroDeCircunferencia(coords[0], coords[1]), puntos)
+    return zip(puntosX,
+               puntosY,
+               areas)
+
+def generarPatronesMismasAreas(numeroDentro=200,numeroFuera=300) :
     nFuera = 0
     nDentro = 0
     puntos = []
@@ -59,35 +70,35 @@ def normalizar(data):
     return data
 
 
-with open("datosP2EM2017/datos_P2_EM2017_N500.txt","r") as file :
+with open("datosP2EM2017/datos_P2_EM2017_N2000.txt","r") as file :
     lines = file.readlines()
     patrones = []
     for l in lines:
         patrones.append(tuple(l.strip("\n\r").split(" ")))
     file.close()
 
-patrones_array = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones])
+#patrones_array = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones])
+#patrones_array = normalizar(patrones_array)
+
+
+patrones_entrenamiento = generarPatrones(numeroPuntos = 2000)
+patrones_array = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones_entrenamiento])
 patrones_array = normalizar(patrones_array)
 
-numeroFuera = len([x for x in patrones_array if not x[2]])
-numeroDentro = len([x for x in patrones_array if x[2]])
+unos =sum(1 for i in patrones_array if i[2] == 1)
+ceros = sum(1 for i in patrones_array if i[2] == 0)
 
-patrones_validacion = generarPatrones(numeroFuera = numeroFuera, numeroDentro = numeroDentro)
+patrones_validacion = generarPatronesMismasAreas(numeroFuera = ceros, numeroDentro = unos)
 puntos_generados = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones_validacion])
 puntos_generados = normalizar(puntos_generados)
 
-#patrones_array = 
-unos =sum(1 for i in patrones_array if i[2] == 1)
-ceros = sum(1 for i in patrones_array if i[2] == 0)
-print(unos,ceros)
 
-
-resultadosValidacion = MLP(nroCapas = 3,
+resultadosValidacion = MLP(nroCapas = 4,
                     data=patrones_array,
                     datasetValidacion=puntos_generados,
-                    funcionPorCapa=[logistica, lambda x: x**2, logistica],
-                    derivadaFuncionPorCapa=[derivada_logistica, lambda x : 2*x ,derivada_logistica],
-                    nroNeuronasPorCapa = [1,7,1],
+                    funcionPorCapa=[lambda x : x, tanh , lambda x : x**2, logistica],
+                    derivadaFuncionPorCapa=[lambda x : 1, derivada_tanh, lambda x : 2*x ,derivada_logistica],
+                    nroNeuronasPorCapa = [1,3,3,1],
                     maxIter = 1000,
                     aprendizaje = 0.1)
 

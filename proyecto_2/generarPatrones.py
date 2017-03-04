@@ -52,27 +52,44 @@ with open("datosP2EM2017/datos_P2_EM2017_N500.txt","r") as file :
 
 patrones_array = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones])
 
+patrones_validacion = generarPatrones(numeroPuntos = 500)
+
+puntos_generados = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones_validacion])
+
 resultadosValidacion = MLP(nroCapas = 2,
                     data=patrones_array,
-                    funcionPorCapa=[logistica, tanh],
-                    derivadaFuncionPorCapa=[derivada_logistica,derivada_tanh],
-                    nroNeuronasPorCapa = [2,2],
+                    datasetValidacion=puntos_generados,
+                    funcionPorCapa=[tanh, logistica],
+                    derivadaFuncionPorCapa=[derivada_tanh,derivada_logistica],
+                    nroNeuronasPorCapa = [2,1],
                     maxIter = 1000,
-                    aprendizaje = 0.001)
+                    aprendizaje = 0.1)
 
 fuera = []
 dentro = []
+fueraT = []
+dentroT = []
 for instancia in resultadosValidacion :
     print("RESPUESTA: ", instancia["respuestaSalida"])
-    if instancia["respuestaSalida"][0] < 0.5 :
+    if instancia["respuestaSalida"] > 0.5 :
         dentro.append(instancia["punto"])
     else :
         fuera.append(instancia["punto"])
     
+    if instancia["respuestaCorrecta"] > 0.5 :
+        dentroT.append(instancia["punto"])
+    else :
+        fueraT.append(instancia["punto"])
 
-#plt.figure(0)
+plt.figure(0)
 plt.scatter([x[0] for x in dentro], [x[1] for x in dentro], color="blue")
 plt.scatter([x[0] for x in fuera], [x[1] for x in fuera], color="red")
+plt.gca().set_aspect('equal', adjustable='box')
+plt.show()
+
+plt.figure(1)
+plt.scatter([x[0] for x in dentroT], [x[1] for x in dentroT], color="blue")
+plt.scatter([x[0] for x in fueraT], [x[1] for x in fueraT], color="red")
 plt.gca().set_aspect('equal', adjustable='box')
 plt.show()
 

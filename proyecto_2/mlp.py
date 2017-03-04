@@ -8,6 +8,7 @@ def MLP(nroCapas = 1,
 		derivadaFuncionPorCapa = None,
 		nroNeuronasPorCapa = [1],
 		data = None,
+		datasetValidacion = None,
 		porcentajeValidacion = 20,
 		maxIter = 1000,
 		aprendizaje = 0.1):
@@ -36,14 +37,21 @@ def MLP(nroCapas = 1,
 	nroAtributos = len(data[0]) - 1
 
 	totalDatos = len(data)
-	totalDatosValidacion = len(data)*porcentajeValidacion//100
-	totalDatosEntrenamiento = totalDatos - totalDatosValidacion
+	#totalDatosValidacion = len(data)*porcentajeValidacion//100
+	#totalDatosEntrenamiento = totalDatos - totalDatosValidacion
 
 	data = np.random.permutation(data)
 
-	dataEntrenamiento = data[0:totalDatosEntrenamiento]
-	dataValidacion = data[totalDatosEntrenamiento:]
-
+	#dataEntrenamiento = data[0:totalDatosEntrenamiento]
+	#dataValidacion = data[totalDatosEntrenamiento:]
+	totalDatosEntrenamiento = totalDatos
+	totalDatosValidacion = len(datasetValidacion)
+	dataEntrenamiento = data
+	dataValidacion = datasetValidacion
+	
+	if totalDatosValidacion != totalDatosEntrenamiento :
+		print("El número de datos de entrenamiento debe ser igual al de validacion")
+		return 0
 
 	mlp = []
 

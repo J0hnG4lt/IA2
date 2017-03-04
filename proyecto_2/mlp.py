@@ -44,6 +44,7 @@ def MLP(nroCapas = 1,
 	dataEntrenamiento = data[0:totalDatosEntrenamiento]
 	dataValidacion = data[totalDatosEntrenamiento:]
 
+
 	mlp = []
 
 	print("Creando perceptron con " + str(nroCapas) + " capas.")
@@ -113,7 +114,10 @@ def MLP(nroCapas = 1,
 				for neurona in range(nroNeuronasPorCapa[capa]):
 					bias[capa][neurona] += aprendizaje * gradiente[capa][neurona]
 					for peso in range(len(mlp[capa][neurona])):	
-						mlp[capa][neurona][peso] += aprendizaje*gradiente[capa][neurona]*salidaNeuronas[capa-1][peso]
+						if capa == 0:
+							mlp[capa][neurona][peso] += aprendizaje*gradiente[capa][neurona]*estimulo[peso]
+						else:
+							mlp[capa][neurona][peso] += aprendizaje*gradiente[capa][neurona]*salidaNeuronas[capa-1][peso]
 			
 
 			for capa in range(nroCapas):
@@ -124,7 +128,7 @@ def MLP(nroCapas = 1,
 						ceros += 1    						
 		#print(iteraciones," 0's:",ceros, "1's",unos)
 		#print(error,errorAnt)
-	
+		error = error/totalDatosEntrenamiento
 	
 	resultados = []
 	for indexEstimulo in range(totalDatosValidacion):

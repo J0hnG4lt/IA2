@@ -30,16 +30,23 @@ def dentroDeCircunferencia(*coords) :
     else :
         return Ycoord >= (10.0 - temp)
 
-def generarPatrones(numeroPuntos = 2000) :
-    
-    puntosX = np.random.uniform(0, 20, numeroPuntos)
-    puntosY = np.random.uniform(0, 20, numeroPuntos)
-    
-    puntos = zip(puntosX, puntosY)
-    areas = map(lambda coords: dentroDeCircunferencia(coords[0], coords[1]), puntos)
-    return zip(puntosX,
-               puntosY,
-               areas)
+def generarPatrones(numeroDentro=200,numeroFuera=300) :
+    nFuera = 0
+    nDentro = 0
+    puntos = []
+    while((nFuera < numeroFuera) or (nDentro < numeroDentro) ) :
+        
+        puntoX = np.random.uniform(0, 20)
+        puntoY = np.random.uniform(0, 20)
+        estaAdentro = dentroDeCircunferencia(puntoX,puntoY)
+        instancia = (puntoX,puntoY,estaAdentro)
+        if  estaAdentro and (nDentro < numeroDentro):
+            puntos.append(instancia)
+            nDentro += 1
+        if  (not estaAdentro) and (nFuera < numeroFuera):
+            puntos.append(instancia)
+            nFuera += 1
+    return puntos
     
 
 def normalizar(data):
@@ -62,8 +69,10 @@ with open("datosP2EM2017/datos_P2_EM2017_N500.txt","r") as file :
 patrones_array = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones])
 patrones_array = normalizar(patrones_array)
 
+numeroFuera = len([x for x in patrones_array if not x[2]])
+numeroDentro = len([x for x in patrones_array if x[2]])
 
-patrones_validacion = generarPatrones(numeroPuntos = 500)
+patrones_validacion = generarPatrones(numeroFuera = numeroFuera, numeroDentro = numeroDentro)
 puntos_generados = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones_validacion])
 puntos_generados = normalizar(puntos_generados)
 

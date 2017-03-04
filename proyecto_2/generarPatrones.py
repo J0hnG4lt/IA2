@@ -41,10 +41,13 @@ patrones = generarPatrones(numeroPuntos = 2000)
 patrones = generarPatrones(numeroPuntos = 2000)
 
 patrones_array = np.array([[x,y,float(z)] for (x,y,z) in patrones])
-MLP(nroCapas = 1,
+
+MLP(nroCapas = 2,
     data=patrones_array,
-    funcionPorCapa=[logistica],
-    derivadaFuncionPorCapa=[derivada_logistica])
+    funcionPorCapa=[logistica,logistica],
+    derivadaFuncionPorCapa=[derivada_logistica,derivada_logistica],
+    nroNeuronasPorCapa = [10,10])
+    
 #plt.scatter([x[0] for x in patrones if x[2]], [x[1] for x in patrones if x[2]], color="blue")
 #plt.scatter([x[0] for x in patrones if not x[2]], [x[1] for x in patrones if not x[2]], color="red")
 #plt.gca().set_aspect('equal', adjustable='box')

@@ -56,19 +56,30 @@ resultadosValidacion = MLP(nroCapas = 2,
                     data=patrones_array,
                     funcionPorCapa=[logistica, tanh],
                     derivadaFuncionPorCapa=[derivada_logistica,derivada_tanh],
-                    nroNeuronasPorCapa = [2,3],
-                    maxIter = 10000,
-                    aprendizaje = 0.1)
+                    nroNeuronasPorCapa = [2,2],
+                    maxIter = 1000,
+                    aprendizaje = 0.001)
 
 fuera = []
 dentro = []
 for instancia in resultadosValidacion :
+    print("RESPUESTA: ", instancia["respuestaSalida"])
     if instancia["respuestaSalida"][0] < 0.5 :
         dentro.append(instancia["punto"])
     else :
         fuera.append(instancia["punto"])
     
-#plt.scatter([x[0] for x in patrones if x[2]], [x[1] for x in patrones if x[2]], color="blue")
-#plt.scatter([x[0] for x in patrones if not x[2]], [x[1] for x in patrones if not x[2]], color="red")
-#plt.gca().set_aspect('equal', adjustable='box')
-#plt.show()
+
+#plt.figure(0)
+plt.scatter([x[0] for x in dentro], [x[1] for x in dentro], color="blue")
+plt.scatter([x[0] for x in fuera], [x[1] for x in fuera], color="red")
+plt.gca().set_aspect('equal', adjustable='box')
+plt.show()
+
+"""
+plt.figure(1)
+plt.scatter([x[0] for x in patrones_array if x[2]], [x[1] for x in patrones_array if x[2]], color="blue")
+plt.scatter([x[0] for x in patrones_array if not x[2]], [x[1] for x in patrones_array if not x[2]], color="red")
+plt.gca().set_aspect('equal', adjustable='box')
+plt.show()
+"""

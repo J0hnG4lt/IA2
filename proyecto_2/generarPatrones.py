@@ -10,7 +10,7 @@ from mlp import *
 def logistica(x):
     return 1/(1 + np.exp(-x))
 
-def derivada_logistica(y):
+def derivada_logistica(x):
     return np.exp(-x)/((1+np.exp(-x))**2)
 
 

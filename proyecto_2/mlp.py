@@ -111,9 +111,9 @@ def MLP(nroCapas = 1,
 			# Actualizacion Pesos
 			for capa in range(nroCapas):
 				for neurona in range(nroNeuronasPorCapa[capa]):
-					bias[capa][neurona] += aprendizaje * (respuesta - salidaNeuronas[capa][neurona])
-					for peso in range(len(mlp[capa][neurona])):						
-						mlp[capa][neurona][peso] += aprendizaje*gradiente[capa][neurona]*salidaNeuronas[capa][neurona]
+					bias[capa][neurona] += aprendizaje * gradiente[capa][neurona]
+					for peso in range(len(mlp[capa][neurona])):	
+						mlp[capa][neurona][peso] += aprendizaje*gradiente[capa][neurona]*salidaNeuronas[capa-1][peso]
 			
 
 			for capa in range(nroCapas):

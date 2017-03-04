@@ -10,7 +10,7 @@ def MLP(nroCapas = 1,
 		data = None,
 		porcentajeValidacion = 20,
 		maxIter = 1000,
-		aprendizaje = 0.01):
+		aprendizaje = 0.1):
 	
 	flag = False	
 	if (data is None):
@@ -68,16 +68,16 @@ def MLP(nroCapas = 1,
 
 	iteraciones = 0
 	error = 0
-	errorAnt = 0
+	errorAnt = 10**20
 	eps = 10**-5
-	
-	while (iteraciones < maxIter and abs(error - errorAnt) < eps):
-		
+	while (iteraciones < maxIter and abs(error - errorAnt) > eps):
 		iteraciones += 1
+		print(iteraciones,error)
 		errorAnt = error
 		error = 0
 		ceros = 0
 		unos = 0
+
 		for indexEstimulo in range(totalDatosEntrenamiento):
 			# Forward propagation
 			estimulo = dataEntrenamiento[indexEstimulo][:-1]
@@ -89,7 +89,6 @@ def MLP(nroCapas = 1,
 						entradaNeuronas[capa][neurona] = np.dot(estimulo,mlp[capa][neurona])+\
 												 bias[capa][neurona]
 						salidaNeuronas[capa][neurona] = funcionPorCapa[capa](entradaNeuronas[capa][neurona])
-						error += (respuesta - salidaNeuronas[capa][neurona])**2 
 					else:
 						entradaNeuronas[capa][neurona] = np.dot(salidaNeuronas[capa-1],mlp[capa][neurona])+\
 												 bias[capa][neurona]
@@ -124,7 +123,8 @@ def MLP(nroCapas = 1,
 					else:
 						ceros += 1    						
 		print(iteraciones," 0's:",ceros, "1's",unos)
+		print(error,errorAnt)
 
-		error = error/totalDatosEntrenamiento
-		
+	
+
 		

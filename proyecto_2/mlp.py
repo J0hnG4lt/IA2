@@ -8,7 +8,7 @@ def MLP(nroCapas = 1,
 		derivadaFuncionPorCapa = None,
 		nroNeuronasPorCapa = [1],
 		data = None,
-		porcentajeValidacion = None,
+		porcentajeValidacion = 20,
 		maxIter = 1000,
 		aprendizaje = 0.01):
 	
@@ -27,8 +27,6 @@ def MLP(nroCapas = 1,
 	if (len(derivadaFuncionPorCapa) != nroCapas):
 		flag = True
 		print("El largo de las derivadas de funciones por capa debe ser igual al numero de capas")
-	if (porcentajeValidacion is None):
-		porcentajeValidacion = 20
 
 	if (flag):
 		print("Hubo errores, se retornara 0")
@@ -59,10 +57,10 @@ def MLP(nroCapas = 1,
 	for i in range(nroCapas):
 		print("Capa " + str(i+1) + " con " + str(nroNeuronasPorCapa[i]) + " neuronas")
 		if (i == 0):
-			mlp += [[[uniform(-0.3,0.3) for entrada in range(nroAtributos)]\
+			mlp += [[[uniform(-0.3,0.3) for i in range(nroAtributos)]\
 					for neurona in range(nroNeuronasPorCapa[i])]]
 		else:
-			mlp += [[[uniform(-0.3,0.3) for entrada in range(nroAtributos)]\
+			mlp += [[[uniform(-0.3,0.3) for i in range(nroNeuronasPorCapa[i-1])]\
 					for neurona in range(nroNeuronasPorCapa[i])]]
 
 
@@ -85,40 +83,40 @@ def MLP(nroCapas = 1,
 				for neurona in range(nroCapas-1):
 					# Si es la capa de salida se calcula el error
 					if (capa == 0):
-						entrada[capa][neurona] = np.dot(mlp[capa][neurona],estimulo)+\
+						entradaNeuronas[capa][neurona] = np.dot(mlp[capa][neurona],estimulo)+\
 												 bias[capa][neurona]
-						salida[capa][neurona] = funcionPorCapa[capa](entrada[capa][neurona])
-						error += (respuesta - salida[capa][neurona])**2 
+						salidaNeuronas[capa][neurona] = funcionPorCapa[capa](entradaNeuronas[capa][neurona])
+						error += (respuesta - salidaNeuronas[capa][neurona])**2 
 					else:
-						entrada[capa][neurona] = np.dot(mlp[capa][neurona],estimulo)+\
+						entradaNeuronas[capa][neurona] = np.dot(mlp[capa][neurona],estimulo)+\
 												 bias[capa][neurona]
-						salida[capa][neurona] = funcionPorCapa[capa](entrada[capa][neurona])
+						salidaNeuronas[capa][neurona] = funcionPorCapa[capa](entradaNeuronas[capa][neurona])
 					if (capa == nroCapas-1):
-						error += (respuesta - salida[capa][neurona])**2 
+						error += (respuesta - salidaNeuronas[capa][neurona])**2 
 
 			# Back Propagation
 			for i in range(nroCapas):
 				capa = nroCapas - (i+1)
 				for neurona in range(nroNeuronasPorCapa[capa]):
 					if (capa == nroCapas-1):
-						gradiente[capa][neurona] =  derivadaFuncionPorCapa[capa](entrada[capa][neurona])*\
-														(respuesta - salida[capa][neurona])
+						gradiente[capa][neurona] =  derivadaFuncionPorCapa[capa](entradaNeuronas[capa][neurona])*\
+														(respuesta - salidaNeuronas[capa][neurona])
 					else:
 						sumaGradientes = sum(gradiente[capa+1][i]*mlp[capa+1][i][neurona]\
 											 for i in range(nroNeuronasPorCapa[capa+1])) 
-						gradiente[capa][neurona] =  derivadaFuncionPorCapa[capa](entrada[capa][neurona])*\
+						gradiente[capa][neurona] =  derivadaFuncionPorCapa[capa](entradaNeuronas[capa][neurona])*\
 														sumaGradientes
 			# Actualizacion Pesos
 			for capa in range(nroCapas):
 				for neurona in range(nroNeuronasPorCapa[capa]):
-					bias[capa][neurona] += aprendizaje * (respuesta - salida[capa][neurona])
+					bias[capa][neurona] += aprendizaje * (respuesta - salidaNeuronas[capa][neurona])
 					for peso in range(len(mlp[capa][neurona])):						
-						mlp[capa][neurona][peso] += aprendizaje*gradiente[capa][neurona]*salida[capa][neurona]
+						mlp[capa][neurona][peso] += aprendizaje*gradiente[capa][neurona]*salidaNeuronas[capa][neurona]
 			ceros = 0
 			unos = 0
 			for capa in range(nroCapas):
 				for neurona in range(nroNeuronasPorCapa[capa]):
-					if salida[capa][neurona] > 0.5:
+					if salidaNeuronas[capa][neurona] > 0.5:
 						unos +=1
 					else:
 						ceros += 1    						

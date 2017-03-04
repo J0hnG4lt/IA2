@@ -2,6 +2,7 @@
 
 from random import uniform
 import numpy as np
+import matplotlib.pyplot as plt
 
 def MLP(nroCapas = 1,
 		funcionPorCapa = None,
@@ -73,7 +74,8 @@ def MLP(nroCapas = 1,
 	eps = 10**-5
 	while (iteraciones < maxIter and abs(error - errorAnt) > eps):
 		iteraciones += 1
-		print(iteraciones,error)
+		if iteraciones % 100 == 0:
+			print(iteraciones,error)
 		errorAnt = error
 		error = 0
 		ceros = 0
@@ -140,7 +142,6 @@ def MLP(nroCapas = 1,
 		resultadoValidacion["respuestaCorrecta"] = respuesta
 		for capa in range(nroCapas):
 			for neurona in range(nroNeuronasPorCapa[capa]):
-				# Si es la capa de salida se calcula el error
 				if (capa == 0):
 					entradaNeuronas[capa][neurona] = np.dot(estimulo,mlp[capa][neurona])+\
 											 bias[capa][neurona]
@@ -154,6 +155,8 @@ def MLP(nroCapas = 1,
 					resultadoValidacion["respuestaSalida"] = salidaNeuronas[capa][neurona]
 					resultadoValidacion["error"] = error
 		resultados.append(resultadoValidacion)
+
+
 	return resultados
 
 	

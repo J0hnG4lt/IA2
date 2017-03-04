@@ -56,17 +56,17 @@ def MLP(nroCapas = 1,
 
 	salidaNeuronas = [ [0 for i in range(nroNeuronasPorCapa[j])] for j in range(nroCapas)]
 	entradaNeuronas = [ [0 for i in range(nroNeuronasPorCapa[j])] for j in range(nroCapas)]
-	bias = [ [uniform(-1,1) for i in range(nroNeuronasPorCapa[j])] for j in range(nroCapas)]
 	gradiente = [ [0 for i in range(nroNeuronasPorCapa[j])] for j in range(nroCapas)]
 
 
+	bias = [ [uniform(0,1) for i in range(nroNeuronasPorCapa[j])] for j in range(nroCapas)]
 	for i in range(nroCapas):
 		print("Capa " + str(i+1) + " con " + str(nroNeuronasPorCapa[i]) + " neuronas")
 		if (i == 0):
-			mlp += [[[uniform(-1,1) for i in range(nroAtributos)]\
+			mlp += [[[uniform(0,1) for i in range(nroAtributos)]\
 					for neurona in range(nroNeuronasPorCapa[i])]]
 		else:
-			mlp += [[[uniform(-1,1) for i in range(nroNeuronasPorCapa[i-1])]\
+			mlp += [[[uniform(0,1) for i in range(nroNeuronasPorCapa[i-1])]\
 					for neurona in range(nroNeuronasPorCapa[i])]]
 
 
@@ -78,7 +78,7 @@ def MLP(nroCapas = 1,
 	eps = 10**-5
 	while (iteraciones < maxIter and abs(error - errorAnt) > eps):
 		iteraciones += 1
-		if iteraciones % 100 == 0:
+		if iteraciones % 25 == 0:
 			print(iteraciones,error)
 		errorAnt = error
 		error = 0

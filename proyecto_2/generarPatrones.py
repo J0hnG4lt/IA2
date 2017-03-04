@@ -3,7 +3,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-from math import sqrt
+from math import sqrt,cos,sin
 from mlp import *
 
 # Taken from mpl2
@@ -52,16 +52,19 @@ def normalizar(data):
     return data
 
 
-with open("datosP2EM2017/datos_P2_EM2017_N500.txt","r") as file :
+with open("datosP2EM2017/datos_P2_EM2017_N2000.txt","r") as file :
     lines = file.readlines()
     patrones = []
     for l in lines:
         patrones.append(tuple(l.strip("\n\r").split(" ")))
     file.close()
 
-patrones_array = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones])
-patrones_array = normalizar(patrones_array)
+#patrones_array = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones])
+#patrones_array = normalizar(patrones_array)
 
+patrones_entrenamiento = generarPatrones(numeroPuntos = 2000)
+patrones_array = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones_entrenamiento])
+patrones_array = normalizar(patrones_array)
 
 patrones_validacion = generarPatrones(numeroPuntos = 500)
 puntos_generados = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones_validacion])
@@ -73,12 +76,12 @@ ceros = sum(1 for i in patrones_array if i[2] == 0)
 print(unos,ceros)
 
 
-resultadosValidacion = MLP(nroCapas = 3,
+resultadosValidacion = MLP(nroCapas = 4,
                     data=patrones_array,
                     datasetValidacion=puntos_generados,
-                    funcionPorCapa=[logistica, lambda x: x**2, logistica],
-                    derivadaFuncionPorCapa=[derivada_logistica, lambda x : 2*x ,derivada_logistica],
-                    nroNeuronasPorCapa = [1,7,1],
+                    funcionPorCapa=[lambda x : x, tanh , lambda x : x**2, logistica],
+                    derivadaFuncionPorCapa=[lambda x : 1, derivada_tanh, lambda x : 2*x ,derivada_logistica],
+                    nroNeuronasPorCapa = [1,3,3,1],
                     maxIter = 1000,
                     aprendizaje = 0.1)
 

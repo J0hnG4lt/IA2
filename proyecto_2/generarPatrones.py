@@ -46,7 +46,8 @@ MLP(nroCapas = 2,
     data=patrones_array,
     funcionPorCapa=[logistica,logistica],
     derivadaFuncionPorCapa=[derivada_logistica,derivada_logistica],
-    nroNeuronasPorCapa = [10,10])
+    nroNeuronasPorCapa = [2,2],
+    maxIter = 5000)
     
 #plt.scatter([x[0] for x in patrones if x[2]], [x[1] for x in patrones if x[2]], color="blue")
 #plt.scatter([x[0] for x in patrones if not x[2]], [x[1] for x in patrones if not x[2]], color="red")

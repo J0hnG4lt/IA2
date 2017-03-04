@@ -122,8 +122,35 @@ def MLP(nroCapas = 1,
 						unos +=1
 					else:
 						ceros += 1    						
-		print(iteraciones," 0's:",ceros, "1's",unos)
-		print(error,errorAnt)
+		#print(iteraciones," 0's:",ceros, "1's",unos)
+		#print(error,errorAnt)
+	
+	
+	resultados = []
+	for indexEstimulo in range(totalDatosValidacion):
+		# Forward propagation
+		estimulo = dataValidacion[indexEstimulo][:-1]
+		respuesta = dataValidacion[indexEstimulo][-1:]
+		resultadoValidacion = dict()
+		resultadoValidacion["punto"] = estimulo
+		resultadoValidacion["respuestaCorrecta"] = respuesta
+		for capa in range(nroCapas):
+			for neurona in range(nroCapas-1):
+				# Si es la capa de salida se calcula el error
+				if (capa == 0):
+					entradaNeuronas[capa][neurona] = np.dot(estimulo,mlp[capa][neurona])+\
+											 bias[capa][neurona]
+					salidaNeuronas[capa][neurona] = funcionPorCapa[capa](entradaNeuronas[capa][neurona])
+				else:
+					entradaNeuronas[capa][neurona] = np.dot(salidaNeuronas[capa-1],mlp[capa][neurona])+\
+											 bias[capa][neurona]
+					salidaNeuronas[capa][neurona] = funcionPorCapa[capa](entradaNeuronas[capa][neurona])
+				if (capa == nroCapas-1):
+					error += (respuesta - salidaNeuronas[capa][neurona])**2 
+					resultadoValidacion["respuestaSalida"] = salidaNeuronas[capa][neurona]
+					resultadoValidacion["error"] = error
+		resultados.append(resultadoValidacion)
+	return resultados
 
 	
 

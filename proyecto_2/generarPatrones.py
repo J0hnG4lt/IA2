@@ -52,7 +52,7 @@ def normalizar(data):
     return data
 
 
-with open("datosP2EM2017/datos_P2_EM2017_N2000.txt","r") as file :
+with open("datosP2EM2017/datos_P2_EM2017_N500.txt","r") as file :
     lines = file.readlines()
     patrones = []
     for l in lines:
@@ -63,22 +63,29 @@ patrones_array = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones]
 patrones_array = normalizar(patrones_array)
 
 
-#patrones_array = 
+patrones_validacion = generarPatrones(numeroPuntos = 500)
+puntos_generados = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones_validacion])
+puntos_generados = normalizar(puntos_generados)
 
+#patrones_array = 
 unos =sum(1 for i in patrones_array if i[2] == 1)
 ceros = sum(1 for i in patrones_array if i[2] == 0)
 print(unos,ceros)
 
+
 resultadosValidacion = MLP(nroCapas = 3,
                     data=patrones_array,
-                    funcionPorCapa=[lambda x: x, lambda x: x**2, logistica],
-                    derivadaFuncionPorCapa=[lambda x : 1, lambda x : 2*x ,derivada_logistica],
-                    nroNeuronasPorCapa = [1,2,1],
+                    datasetValidacion=puntos_generados,
+                    funcionPorCapa=[logistica, lambda x: x**2, logistica],
+                    derivadaFuncionPorCapa=[derivada_logistica, lambda x : 2*x ,derivada_logistica],
+                    nroNeuronasPorCapa = [1,7,1],
                     maxIter = 1000,
                     aprendizaje = 0.1)
 
 fuera = []
 dentro = []
+fueraT = []
+dentroT = []
 for instancia in resultadosValidacion :
     print("RESPUESTA: ", 1 if instancia["respuestaSalida"] > 0.5 else 0, instancia["respuestaCorrecta"])
     if instancia["respuestaSalida"] < 0.5:
@@ -86,11 +93,8 @@ for instancia in resultadosValidacion :
         dentro.append(aux)
     else:
         aux = [instancia["punto"], 1 == instancia["respuestaCorrecta"]]
-        fuera.append(aux)
-    
+        fuera.append(aux)    
 
-#plt.figure(0)
-print(dentro[0])
 plt.scatter([x[0][0] for x in dentro if x[1] == 0],
              [x[0][1] for x in dentro if x[1] == 0], color="blue", marker = "x")
 plt.scatter([x[0][0] for x in fuera if x[1] == 0 ], 
@@ -101,13 +105,6 @@ plt.scatter([x[0][0] for x in fuera if x[1] == 1],
             [x[0][1] for x in fuera if x[1] == 1], color="red" , marker = "o")
 ax = plt.gca()
 ax.set_aspect('equal', adjustable='box')
-ax.add_artist(plt.Circle((10,10),6,color= "red", fill = False))
+ax.add_artist(plt.Circle((0,0),1,color= "red", fill = False))
 plt.show()
 
-"""
-plt.figure(1)
-plt.scatter([x[0] for x in patrones_array if x[2]], [x[1] for x in patrones_array if x[2]], color="blue")
-plt.scatter([x[0] for x in patrones_array if not x[2]], [x[1] for x in patrones_array if not x[2]], color="red")
-plt.gca().set_aspect('equal', adjustable='box')
-plt.show()
-"""

@@ -13,6 +13,11 @@ def logistica(x):
 def derivada_logistica(x):
     return np.exp(-x)/((1+np.exp(-x))**2)
 
+def tanh(x):
+    return np.tanh(x)
+
+def derivada_tanh(x):
+    return 1.0 - np.tanh(x)**2
 
 def dentroDeCircunferencia(*coords) :
     Xcoord = coords[0]
@@ -37,19 +42,44 @@ def generarPatrones(numeroPuntos = 2000) :
                areas)
     
 
-patrones = generarPatrones(numeroPuntos = 2000)
-patrones = generarPatrones(numeroPuntos = 2000)
 
-patrones_array = np.array([[x,y,float(z)] for (x,y,z) in patrones])
+with open("datosP2EM2017/datos_P2_EM2017_N500.txt","r") as file :
+    lines = file.readlines()
+    patrones = []
+    for l in lines:
+        patrones.append(tuple(l.strip("\n\r").split(" ")))
+    file.close()
 
-MLP(nroCapas = 2,
-    data=patrones_array,
-    funcionPorCapa=[logistica,logistica],
-    derivadaFuncionPorCapa=[derivada_logistica,derivada_logistica],
-    nroNeuronasPorCapa = [2,2],
-    maxIter = 5000)
+patrones_array = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones])
+
+resultadosValidacion = MLP(nroCapas = 2,
+                    data=patrones_array,
+                    funcionPorCapa=[logistica, tanh],
+                    derivadaFuncionPorCapa=[derivada_logistica,derivada_tanh],
+                    nroNeuronasPorCapa = [2,2],
+                    maxIter = 1000,
+                    aprendizaje = 0.001)
+
+fuera = []
+dentro = []
+for instancia in resultadosValidacion :
+    print("RESPUESTA: ", instancia["respuestaSalida"])
+    if instancia["respuestaSalida"][0] < 0.5 :
+        dentro.append(instancia["punto"])
+    else :
+        fuera.append(instancia["punto"])
     
-#plt.scatter([x[0] for x in patrones if x[2]], [x[1] for x in patrones if x[2]], color="blue")
-#plt.scatter([x[0] for x in patrones if not x[2]], [x[1] for x in patrones if not x[2]], color="red")
-#plt.gca().set_aspect('equal', adjustable='box')
-#plt.show()
+
+#plt.figure(0)
+plt.scatter([x[0] for x in dentro], [x[1] for x in dentro], color="blue")
+plt.scatter([x[0] for x in fuera], [x[1] for x in fuera], color="red")
+plt.gca().set_aspect('equal', adjustable='box')
+plt.show()
+
+"""
+plt.figure(1)
+plt.scatter([x[0] for x in patrones_array if x[2]], [x[1] for x in patrones_array if x[2]], color="blue")
+plt.scatter([x[0] for x in patrones_array if not x[2]], [x[1] for x in patrones_array if not x[2]], color="red")
+plt.gca().set_aspect('equal', adjustable='box')
+plt.show()
+"""

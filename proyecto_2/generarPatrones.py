@@ -99,8 +99,8 @@ puntos_generados = normalizar(puntos_generados)
 resultadosValidacion = MLP(nroCapas = 4,
                     data=patrones_array,
                     datasetValidacion=puntos_generados,
-                    funcionPorCapa=[lambda x: x , logistica  , lambda x : x**2 , softplus],
-                    derivadaFuncionPorCapa=[lambda x: 1 , derivada_logistica , lambda x : 2*x ,logistica],
+                    funcionPorCapa=[lambda x: x**2 , logistica  , lambda x : x , logistica],
+                    derivadaFuncionPorCapa=[lambda x: 2*x , derivada_logistica , lambda x : 1 ,derivada_logistica],
                     nroNeuronasPorCapa = [1,2,5,1],
                     maxIter = 1000,
                     aprendizaje = 0.1)
@@ -131,10 +131,10 @@ ax = plt.gca()
 ax.set_aspect('equal', adjustable='box')
 ax.add_artist(plt.Circle((0,0),1,color= "red", fill = False))
 plt.legend((x1, x2, x3, x4),
-           ('Es Externo, clasificado Interno', 
-            'Es Interno, clasificado Externo',
-            'Es Interno, Clasificado Interno', 
-            'Es Externo, Clasificado Externo'),
+           ('Externo (Mal Clasificado)', 
+            'Interno (Mal Clasificado)',
+            'Externo (Bien Clasificado)', 
+            'Interno (Bien Clasificado)'),
            scatterpoints=1,
            loc='lower left',
            ncol=2,

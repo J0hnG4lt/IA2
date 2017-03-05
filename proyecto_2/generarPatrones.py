@@ -94,9 +94,6 @@ if __name__ == '__main__':
             patrones.append(tuple(l.strip("\n\r").split(" ")))
         file.close()
 
-    #patrones_entrenamiento = generarPatrones(numeroPuntos = 2000)
-    #patrones_array = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones_entrenamiento])
-    #patrones_array = normalizar(patrones_array)
 
     # Generacion de patrones.
     patrones_array = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones])
@@ -112,15 +109,13 @@ if __name__ == '__main__':
                         datasetValidacion=puntos_generados,
                         funcionPorCapa=[ logistica, logistica],
                         derivadaFuncionPorCapa=[derivada_logistica,derivada_logistica],
-                        nroNeuronasPorCapa = [10,1],
+                        nroNeuronasPorCapa = [3,1],
                         maxIter = 1000,
                         aprendizaje = 0.1,
                         momentum = 0.5)
 
     fuera = []
     dentro = []
-    fueraT = []
-    dentroT = []
     errorDePrueba = 0
     cantCasos = 0
 

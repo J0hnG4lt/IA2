@@ -55,15 +55,11 @@ for flor in resultadosValidacion :
     elif respuestaRed == 3 :
         setosa.append(3 == flor["respuestaCorrecta"])
 
-print("Setosa", setosa)
-print("versicolor", versicolor)
-print("virginica", virginica)
+
 
 print("Cantidad de Instancias (Entrenamiento): ", totalDatosEntrenamiento)
 print("Error de Prueba: ", errorDePrueba/cantCasos)
 
-#print("Falsos Positivos: ", sum(1 for x in setosa if not x))
-#print("Falsos Negativos: ", sum(1 for x in no_setosa if not x))
 
 y1 = plt.plot(range(len(errorPorIteracion)),errorPorIteracion)
 plt.title("Curva de Convergencia -Flores-")

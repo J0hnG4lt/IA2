@@ -41,8 +41,6 @@ resultadosValidacion,errorPorIteracion = MLP(nroCapas = 2,
                     aprendizaje = 0.1)
 
 setosa = []
-versicolor = []
-virginica = []
 no_setosa = []
 errorDePrueba = 0
 cantCasos = 0
@@ -56,8 +54,6 @@ for flor in resultadosValidacion :
     else :
         no_setosa.append(flor["respuestaCorrecta"] == 0)
 
-print("Setosa", setosa)
-print("No Setosa", no_setosa)
 
 print("Cantidad de Instancias (Entrenamiento): ", totalDatosEntrenamiento)
 print("Error de Prueba: ", errorDePrueba/cantCasos)

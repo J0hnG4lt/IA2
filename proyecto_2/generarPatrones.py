@@ -3,7 +3,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-from math import sqrt,cos,sin
+from math import sqrt,log
 from mlp import *
 
 # Taken from mpl2
@@ -11,10 +11,13 @@ def logistica(x):
     return 1/(1 + np.exp(-x))
 
 def derivada_logistica(x):
-    return np.exp(-x)/((1+np.exp(-x))**2)
+    return logistica(x)* (1-logistica(x))
 
 def tanh(x):
     return np.tanh(x)
+
+def softplus(x):
+    return log(1 + np.exp(x))
 
 def derivada_tanh(x):
     return 1.0 - np.tanh(x)**2
@@ -79,9 +82,9 @@ print(unos,ceros)
 resultadosValidacion = MLP(nroCapas = 4,
                     data=patrones_array,
                     datasetValidacion=puntos_generados,
-                    funcionPorCapa=[lambda x : x, tanh , lambda x : x**2, logistica],
-                    derivadaFuncionPorCapa=[lambda x : 1, derivada_tanh, lambda x : 2*x ,derivada_logistica],
-                    nroNeuronasPorCapa = [1,3,3,1],
+                    funcionPorCapa=[lambda x: x , logistica  , lambda x : x**2 , softplus],
+                    derivadaFuncionPorCapa=[lambda x: 1 , derivada_logistica , lambda x : 2*x ,logistica],
+                    nroNeuronasPorCapa = [1,2,5,1],
                     maxIter = 1000,
                     aprendizaje = 0.1)
 
@@ -90,7 +93,6 @@ dentro = []
 fueraT = []
 dentroT = []
 for instancia in resultadosValidacion :
-    print("RESPUESTA: ", 1 if instancia["respuestaSalida"] > 0.5 else 0, instancia["respuestaCorrecta"])
     if instancia["respuestaSalida"] < 0.5:
         aux = [instancia["punto"], 0 == instancia["respuestaCorrecta"]]
         dentro.append(aux)

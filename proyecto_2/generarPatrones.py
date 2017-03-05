@@ -76,34 +76,42 @@ def normalizar(data):
 
 if __name__ == '__main__':
     
-    with open("datosP2EM2017/datos_P2_EM2017_N2000.txt","r") as file :
+    with open("datosP2EM2017/datos_P2_EM2017_N500.txt","r") as file :
         lines = file.readlines()
         patrones = []
         for l in lines:
             patrones.append(tuple(l.strip("\n\r").split(" ")))
         file.close()
 
-    #patrones_array = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones])
-    #patrones_array = normalizar(patrones_array)
-
-
-    patrones_entrenamiento = generarPatrones(numeroPuntos = 2000)
-    patrones_array = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones_entrenamiento])
+    patrones_array = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones])
     patrones_array = normalizar(patrones_array)
+
+
+    #patrones_entrenamiento = generarPatrones(numeroPuntos = 2000)
+    #patrones_array = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones_entrenamiento])
+    #patrones_array = normalizar(patrones_array)
 
     unos =sum(1 for i in patrones_array if i[2] == 1)
     ceros = sum(1 for i in patrones_array if i[2] == 0)
 
-    patrones_validacion = generarPatronesMismasAreas(numeroFuera = ceros, numeroDentro = unos)
+    patrones_validacion = generarPatronesMismasAreas(numeroFuera = 250, numeroDentro = 250)
     puntos_generados = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones_validacion])
     puntos_generados = normalizar(puntos_generados)
 
 
+<<<<<<< HEAD
     resultadosValidacion = MLP(nroCapas = 2,
                         data=patrones_array,
                         datasetValidacion=puntos_generados,
                         funcionPorCapa=[logistica , logistica],
                         derivadaFuncionPorCapa=[derivada_logistica ,derivada_logistica],
+=======
+    resultadosValidacion,errorPorIteracion = MLP(nroCapas = 2,
+                        data=patrones_array,
+                        datasetValidacion=puntos_generados,
+                        funcionPorCapa=[ logistica, logistica],
+                        derivadaFuncionPorCapa=[derivada_logistica,derivada_logistica],
+>>>>>>> 98ffcdbd0524eb8053553cb42abc949419b5a1e0
                         nroNeuronasPorCapa = [10,1],
                         maxIter = 1000,
                         aprendizaje = 0.1,
@@ -113,7 +121,9 @@ if __name__ == '__main__':
     dentro = []
     fueraT = []
     dentroT = []
+    errorDePrueba = 0
     for instancia in resultadosValidacion :
+        errorDePrueba += sum(instancia["error"])
         if instancia["respuestaSalida"][0] < 0.5:
             esCorrecta = instancia["respuestaCorrecta"] == 0
             aux = [instancia["punto"], esCorrecta]
@@ -122,7 +132,11 @@ if __name__ == '__main__':
             esCorrecta = instancia["respuestaCorrecta"] == 1
             aux = [instancia["punto"], esCorrecta]
             fuera.append(aux)    
-
+    
+    print("Error de Prueba: ", errorDePrueba)
+    print("Falsos Positivos: ", sum(1 for x in dentro if x[1] == 0))
+    print("Falsos Negativos: ", sum(1 for x in fuera if x[1] == 1))
+    plt.figure(0)
     x1 = plt.scatter([x[0][0] for x in dentro if x[1] == 0],
                  [x[0][1] for x in dentro if x[1] == 0], color="blue", marker = "x")
     x2 = plt.scatter([x[0][0] for x in fuera if x[1] == 0 ], 
@@ -143,5 +157,13 @@ if __name__ == '__main__':
                loc='lower left',
                ncol=2,
                fontsize=8)
+    plt.show()
+    
+    plt.figure(1)
+    y1 = plt.plot(range(len(errorPorIteracion)),errorPorIteracion)
+    plt.title("Curva de Convergencia -Circle-")
+    plt.xlabel("Numero de Iteraciones")
+    plt.ylabel("Error")
+    plt.show()
     plt.show()
 

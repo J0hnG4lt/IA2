@@ -26,12 +26,12 @@ totalDatosValidacion = tamanoTotal - totalDatosEntrenamiento
 datasetEntrenamiento = flores[0:totalDatosEntrenamiento]
 datasetValidacion = flores[totalDatosEntrenamiento:]
 
-resultadosValidacion = MLP(nroCapas = 1,
+resultadosValidacion = MLP(nroCapas = 2,
                     data=np.array(datasetEntrenamiento ),
                     datasetValidacion=np.array(datasetValidacion),
-                    funcionPorCapa=[logistica],
-                    derivadaFuncionPorCapa=[derivada_logistica],
-                    nroNeuronasPorCapa = [2],
+                    funcionPorCapa=[logistica,logistica],
+                    derivadaFuncionPorCapa=[derivada_logistica ,derivada_logistica],
+                    nroNeuronasPorCapa = [2,1],
                     maxIter = 1000,
                     aprendizaje = 0.1)
 
@@ -40,7 +40,7 @@ versicolor = []
 virginica = []
 no_setosa = []
 for flor in resultadosValidacion :
-    if flor["respuestaSalida"] > 0.5 :
+    if flor["respuestaSalida"][0] > 0.5 :
         setosa.append(flor["respuestaCorrecta"] == 1)
     else :
         no_setosa.append(flor["respuestaCorrecta"] == 0)

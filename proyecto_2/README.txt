@@ -2,7 +2,7 @@ Red Multicapa Feedforward con Backpropagation
 
 
 Integrantes:
-    Erick Silva         11-10906
+    Erick Silva         11-10969
     Leslie Rodrigues    10-10613
     Georvic Tur         12-11402
 

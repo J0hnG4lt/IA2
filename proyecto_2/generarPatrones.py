@@ -6,12 +6,14 @@ import matplotlib.pyplot as plt
 from math import sqrt,log
 from mlp import *
 
+alfa = 1
+
 # Taken from mpl2
 def logistica(x):
-    return 1/(1 + np.exp(-x))
+    return 1/(1 + np.exp(-alfa*x))
 
 def derivada_logistica(x):
-    return logistica(x)* (1-logistica(x))
+    return alfa* logistica(x)* (1-logistica(x))
 
 def tanh(x):
     return np.tanh(x)

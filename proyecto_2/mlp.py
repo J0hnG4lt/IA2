@@ -12,7 +12,8 @@ def MLP(nroCapas = 1,
 		datasetValidacion = None,
 		porcentajeValidacion = 20,
 		maxIter = 1000,
-		aprendizaje = 0.1):
+		aprendizaje = 0.1,
+		momentum = 0):
 	
 	flag = False	
 	if (data is None):
@@ -51,7 +52,8 @@ def MLP(nroCapas = 1,
 	dataValidacion = datasetValidacion
 	
 	mlp = []
-
+	# For momentum will save the previous updates on all weights
+	previousUpdate = []
 	print("Creando perceptron con " + str(nroCapas) + " capas.")
 
 	salidaNeuronas = [ [0 for i in range(nroNeuronasPorCapa[j])] for j in range(nroCapas)]
@@ -59,14 +61,22 @@ def MLP(nroCapas = 1,
 	gradiente = [ [0 for i in range(nroNeuronasPorCapa[j])] for j in range(nroCapas)]
 
 
-	bias = [ [uniform(0,1) for i in range(nroNeuronasPorCapa[j])] for j in range(nroCapas)]
+	bias = [ [uniform(-1,1) for i in range(nroNeuronasPorCapa[j])] for j in range(nroCapas)]
+	# For momentum will save the previous updates on all bias
+	previousBiasUpdate = [ [0 for i in range(nroNeuronasPorCapa[j])] for j in range(nroCapas)]
+
+
 	for i in range(nroCapas):
 		print("Capa " + str(i+1) + " con " + str(nroNeuronasPorCapa[i]) + " neuronas")
 		if (i == 0):
-			mlp += [[[uniform(0,1) for i in range(nroAtributos)]\
+			mlp += [[[uniform(-1,1) for i in range(nroAtributos)]\
+					for neurona in range(nroNeuronasPorCapa[i])]]
+			previousUpdate += [[[0 for i in range(nroAtributos)]\
 					for neurona in range(nroNeuronasPorCapa[i])]]
 		else:
-			mlp += [[[uniform(0,1) for i in range(nroNeuronasPorCapa[i-1])]\
+			mlp += [[[uniform(-1,1) for i in range(nroNeuronasPorCapa[i-1])]\
+					for neurona in range(nroNeuronasPorCapa[i])]]
+			previousUpdate += [[[0 for i in range(nroNeuronasPorCapa[i-1])]\
 					for neurona in range(nroNeuronasPorCapa[i])]]
 
 
@@ -120,13 +130,22 @@ def MLP(nroCapas = 1,
 			# Actualizacion Pesos
 			for capa in range(nroCapas):
 				for neurona in range(nroNeuronasPorCapa[capa]):
-					bias[capa][neurona] += aprendizaje * gradiente[capa][neurona]
+					bias[capa][neurona] += aprendizaje * gradiente[capa][neurona] +\
+											momentum*previousBiasUpdate[capa][neurona]
+					previousBiasUpdate[capa][neurona] = aprendizaje * gradiente[capa][neurona] +\
+														momentum*previousBiasUpdate[capa][neurona]
 					for peso in range(len(mlp[capa][neurona])):	
 						if capa == 0:
-							mlp[capa][neurona][peso] += aprendizaje*gradiente[capa][neurona]*estimulo[peso]
+							mlp[capa][neurona][peso] += aprendizaje*gradiente[capa][neurona]*estimulo[peso] + \
+														momentum*previousUpdate[capa][neurona][peso]
+							previousUpdate[capa][neurona][peso] = aprendizaje*gradiente[capa][neurona]*estimulo[peso] + \
+																	momentum*previousUpdate[capa][neurona][peso]
 						else:
-							mlp[capa][neurona][peso] += aprendizaje*gradiente[capa][neurona]*salidaNeuronas[capa-1][peso]
-			
+							mlp[capa][neurona][peso] += aprendizaje*gradiente[capa][neurona]*salidaNeuronas[capa-1][peso] +\
+																	momentum*previousUpdate[capa][neurona][peso]
+							previousUpdate[capa][neurona][peso] = aprendizaje*gradiente[capa][neurona]*salidaNeuronas[capa-1][peso] + \
+																	momentum*previousUpdate[capa][neurona][peso]
+
 
 		error = error/totalDatosEntrenamiento
 	

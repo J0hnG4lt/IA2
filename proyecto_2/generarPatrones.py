@@ -72,72 +72,73 @@ def normalizar(data):
             data[j][i] = (data[j][i] - mean)/stddev
     return data
 
+if __name__ == '__main__':
+    
+    with open("datosP2EM2017/datos_P2_EM2017_N2000.txt","r") as file :
+        lines = file.readlines()
+        patrones = []
+        for l in lines:
+            patrones.append(tuple(l.strip("\n\r").split(" ")))
+        file.close()
 
-with open("datosP2EM2017/datos_P2_EM2017_N2000.txt","r") as file :
-    lines = file.readlines()
-    patrones = []
-    for l in lines:
-        patrones.append(tuple(l.strip("\n\r").split(" ")))
-    file.close()
-
-#patrones_array = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones])
-#patrones_array = normalizar(patrones_array)
-
-
-patrones_entrenamiento = generarPatrones(numeroPuntos = 2000)
-patrones_array = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones_entrenamiento])
-patrones_array = normalizar(patrones_array)
-
-unos =sum(1 for i in patrones_array if i[2] == 1)
-ceros = sum(1 for i in patrones_array if i[2] == 0)
-
-patrones_validacion = generarPatronesMismasAreas(numeroFuera = ceros, numeroDentro = unos)
-puntos_generados = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones_validacion])
-puntos_generados = normalizar(puntos_generados)
+    #patrones_array = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones])
+    #patrones_array = normalizar(patrones_array)
 
 
-resultadosValidacion = MLP(nroCapas = 4,
-                    data=patrones_array,
-                    datasetValidacion=puntos_generados,
-                    funcionPorCapa=[lambda x: x**2 , logistica  , lambda x : x , logistica],
-                    derivadaFuncionPorCapa=[lambda x: 2*x , derivada_logistica , lambda x : 1 ,derivada_logistica],
-                    nroNeuronasPorCapa = [1,2,5,1],
-                    maxIter = 1000,
-                    aprendizaje = 0.1)
+    patrones_entrenamiento = generarPatrones(numeroPuntos = 2000)
+    patrones_array = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones_entrenamiento])
+    patrones_array = normalizar(patrones_array)
 
-fuera = []
-dentro = []
-fueraT = []
-dentroT = []
-for instancia in resultadosValidacion :
-    if instancia["respuestaSalida"] < 0.5:
-        esCorrecta = instancia["respuestaCorrecta"] == 0
-        aux = [instancia["punto"], esCorrecta]
-        dentro.append(aux)
-    else:
-        esCorrecta = instancia["respuestaCorrecta"] == 1
-        aux = [instancia["punto"], esCorrecta]
-        fuera.append(aux)    
+    unos =sum(1 for i in patrones_array if i[2] == 1)
+    ceros = sum(1 for i in patrones_array if i[2] == 0)
 
-x1 = plt.scatter([x[0][0] for x in dentro if x[1] == 0],
-             [x[0][1] for x in dentro if x[1] == 0], color="blue", marker = "x")
-x2 = plt.scatter([x[0][0] for x in fuera if x[1] == 0 ], 
-            [x[0][1] for x in fuera if x[1] == 0 ], color="red", marker= "x")
-x3 = plt.scatter([x[0][0] for x in dentro if x[1] == 1 ], 
-            [x[0][1] for x in dentro if x[1] == 1], color="blue" , marker = "o")
-x4 = plt.scatter([x[0][0] for x in fuera if x[1] == 1],
-            [x[0][1] for x in fuera if x[1] == 1], color="red" , marker = "o")
-ax = plt.gca()
-ax.set_aspect('equal', adjustable='box')
-ax.add_artist(plt.Circle((0,0),1,color= "red", fill = False))
-plt.legend((x1, x2, x3, x4),
-           ('Externo (Mal Clasificado)', 
-            'Interno (Mal Clasificado)',
-            'Externo (Bien Clasificado)', 
-            'Interno (Bien Clasificado)'),
-           scatterpoints=1,
-           loc='lower left',
-           ncol=2,
-           fontsize=8)
-plt.show()
+    patrones_validacion = generarPatronesMismasAreas(numeroFuera = ceros, numeroDentro = unos)
+    puntos_generados = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones_validacion])
+    puntos_generados = normalizar(puntos_generados)
+
+
+    resultadosValidacion = MLP(nroCapas = 4,
+                        data=patrones_array,
+                        datasetValidacion=puntos_generados,
+                        funcionPorCapa=[lambda x: x**2 , logistica  , lambda x : x , logistica],
+                        derivadaFuncionPorCapa=[lambda x: 2*x , derivada_logistica , lambda x : 1 ,derivada_logistica],
+                        nroNeuronasPorCapa = [1,2,5,1],
+                        maxIter = 1000,
+                        aprendizaje = 0.1)
+
+    fuera = []
+    dentro = []
+    fueraT = []
+    dentroT = []
+    for instancia in resultadosValidacion :
+        if instancia["respuestaSalida"][0] < 0.5:
+            esCorrecta = instancia["respuestaCorrecta"] == 0
+            aux = [instancia["punto"], esCorrecta]
+            dentro.append(aux)
+        else:
+            esCorrecta = instancia["respuestaCorrecta"] == 1
+            aux = [instancia["punto"], esCorrecta]
+            fuera.append(aux)    
+
+    x1 = plt.scatter([x[0][0] for x in dentro if x[1] == 0],
+                 [x[0][1] for x in dentro if x[1] == 0], color="blue", marker = "x")
+    x2 = plt.scatter([x[0][0] for x in fuera if x[1] == 0 ], 
+                [x[0][1] for x in fuera if x[1] == 0 ], color="red", marker= "x")
+    x3 = plt.scatter([x[0][0] for x in dentro if x[1] == 1 ], 
+                [x[0][1] for x in dentro if x[1] == 1], color="blue" , marker = "o")
+    x4 = plt.scatter([x[0][0] for x in fuera if x[1] == 1],
+                [x[0][1] for x in fuera if x[1] == 1], color="red" , marker = "o")
+    ax = plt.gca()
+    ax.set_aspect('equal', adjustable='box')
+    ax.add_artist(plt.Circle((0,0),1,color= "red", fill = False))
+    plt.legend((x1, x2, x3, x4),
+               ('Externo (Mal Clasificado)', 
+                'Interno (Mal Clasificado)',
+                'Externo (Bien Clasificado)', 
+                'Interno (Bien Clasificado)'),
+               scatterpoints=1,
+               loc='lower left',
+               ncol=2,
+               fontsize=8)
+    plt.show()
 

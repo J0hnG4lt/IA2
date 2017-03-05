@@ -76,8 +76,10 @@ def MLP(nroCapas = 1,
 	error = 0
 	errorAnt = 10**20
 	eps = 10**-5
+	errorPorIteracion = []
 	while (iteraciones < maxIter and abs(error - errorAnt) > eps):
 		iteraciones += 1
+		errorPorIteracion.append(error)
 		if iteraciones % 25 == 0:
 			print(iteraciones,error)
 		errorAnt = error
@@ -156,7 +158,7 @@ def MLP(nroCapas = 1,
 		resultados.append(resultadoValidacion)
 
 
-	return resultados
+	return (resultados,errorPorIteracion)
 
 	
 

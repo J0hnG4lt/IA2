@@ -27,14 +27,14 @@ datasetEntrenamiento = flores[0:totalDatosEntrenamiento]
 datasetValidacion = flores[totalDatosEntrenamiento:]
 
 
-resultadosValidacion,errorPorIteracion = MLPMultiClass(nroCapas = 3,
+resultadosValidacion,errorPorIteracion = MLPMultiClass(nroCapas = 2,
                     data=np.array(datasetEntrenamiento ),
                     datasetValidacion=np.array(datasetValidacion),
-                    funcionPorCapa=[lambda x:x,logistica, logistica],
-                    derivadaFuncionPorCapa=[lambda x:1,derivada_logistica,derivada_logistica],
-                    nroNeuronasPorCapa = [4,15,3],
-                    maxIter = 1000,
-                    aprendizaje = 0.01)
+                    funcionPorCapa=[lambda x:x, logistica],
+                    derivadaFuncionPorCapa=[lambda x:1,derivada_logistica],
+                    nroNeuronasPorCapa = [4,3],
+                    maxIter = 2000,
+                    aprendizaje = 0.1)
 
 setosa = []
 versicolor = []
@@ -47,19 +47,23 @@ cantCasos = 0
 for flor in resultadosValidacion :
     errorDePrueba += sum(flor["error"])
     cantCasos += len(flor["error"])
-    if flor["respuestaSalida"][0] > 0.5 :
-        setosa.append(flor["respuestaCorrecta"] == 1)
-    
-    print(flor["respuestaSalida"])
-    
-"""
+    respuestaRed = flor["respuestaSalida"].index(max(flor["respuestaSalida"])) + 1
+    if respuestaRed == 1 :
+        setosa.append(1 == flor["respuestaCorrecta"])
+    elif respuestaRed == 2 :
+        setosa.append(2 == flor["respuestaCorrecta"])
+    elif respuestaRed == 3 :
+        setosa.append(3 == flor["respuestaCorrecta"])
+
 print("Setosa", setosa)
-print("No Setosa", no_setosa)
+print("versicolor", versicolor)
+print("virginica", virginica)
 
 print("Cantidad de Instancias (Entrenamiento): ", totalDatosEntrenamiento)
 print("Error de Prueba: ", errorDePrueba/cantCasos)
-print("Falsos Positivos: ", sum(1 for x in setosa if not x))
-print("Falsos Negativos: ", sum(1 for x in no_setosa if not x))
+
+#print("Falsos Positivos: ", sum(1 for x in setosa if not x))
+#print("Falsos Negativos: ", sum(1 for x in no_setosa if not x))
 
 y1 = plt.plot(range(len(errorPorIteracion)),errorPorIteracion)
 plt.title("Curva de Convergencia -Flores-")
@@ -68,4 +72,4 @@ plt.ylabel("Error")
 plt.show()
 plt.show()
 
-"""
+

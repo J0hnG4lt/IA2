@@ -109,22 +109,31 @@ dentroT = []
 for instancia in resultadosValidacion :
     print("RESPUESTA: ", 1 if instancia["respuestaSalida"] > 0.5 else 0, instancia["respuestaCorrecta"])
     if instancia["respuestaSalida"] < 0.5:
-        aux = [instancia["punto"], 0 == instancia["respuestaCorrecta"]]
+        aux = [instancia["punto"], instancia["respuestaCorrecta"]]
         dentro.append(aux)
     else:
-        aux = [instancia["punto"], 1 == instancia["respuestaCorrecta"]]
+        aux = [instancia["punto"], instancia["respuestaCorrecta"]]
         fuera.append(aux)    
 
-plt.scatter([x[0][0] for x in dentro if x[1] == 0],
-             [x[0][1] for x in dentro if x[1] == 0], color="blue", marker = "x")
-plt.scatter([x[0][0] for x in fuera if x[1] == 0 ], 
-            [x[0][1] for x in fuera if x[1] == 0 ], color="red", marker= "x")
-plt.scatter([x[0][0] for x in dentro if x[1] == 1 ], 
-            [x[0][1] for x in dentro if x[1] == 1], color="blue" , marker = "o")
-plt.scatter([x[0][0] for x in fuera if x[1] == 1],
+x1 = plt.scatter([x[0][0] for x in dentro if x[1] == 0],
+             [x[0][1] for x in dentro if x[1] == 0], color="red", marker = "x")
+x2 = plt.scatter([x[0][0] for x in fuera if x[1] == 0 ], 
+            [x[0][1] for x in fuera if x[1] == 0 ], color="blue", marker= "o")
+x3 = plt.scatter([x[0][0] for x in dentro if x[1] == 1 ], 
+            [x[0][1] for x in dentro if x[1] == 1], color="blue" , marker = "x")
+x4 = plt.scatter([x[0][0] for x in fuera if x[1] == 1],
             [x[0][1] for x in fuera if x[1] == 1], color="red" , marker = "o")
 ax = plt.gca()
 ax.set_aspect('equal', adjustable='box')
 ax.add_artist(plt.Circle((0,0),1,color= "red", fill = False))
+plt.legend((x1, x2, x3, x4),
+           ('Clasificado mal como interno', 
+            'Clasificado bien como externo',
+            'Clasificado bien como interno', 
+            'Clasificado mal como externo'),
+           scatterpoints=1,
+           loc='lower left',
+           ncol=2,
+           fontsize=8)
 plt.show()
 

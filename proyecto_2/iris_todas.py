@@ -4,7 +4,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from math import sqrt,cos,sin
-from mlp import *
+from mlpMultiClase import *
 from generarPatrones import normalizar, logistica, derivada_logistica, tanh, derivada_tanh
 
 
@@ -26,6 +26,7 @@ totalDatosValidacion = tamanoTotal - totalDatosEntrenamiento
 datasetEntrenamiento = flores[0:totalDatosEntrenamiento]
 datasetValidacion = flores[totalDatosEntrenamiento:]
 
+
 resultadosValidacion,errorPorIteracion = MLP(nroCapas = 3,
                     data=np.array(datasetEntrenamiento ),
                     datasetValidacion=np.array(datasetValidacion),
@@ -39,8 +40,10 @@ setosa = []
 versicolor = []
 virginica = []
 
+
 errorDePrueba = 0
 cantCasos = 0
+
 for flor in resultadosValidacion :
     errorDePrueba += sum(flor["error"])
     cantCasos += len(flor["error"])

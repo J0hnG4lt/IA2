@@ -27,7 +27,7 @@ datasetEntrenamiento = flores[0:totalDatosEntrenamiento]
 datasetValidacion = flores[totalDatosEntrenamiento:]
 
 
-resultadosValidacion,errorPorIteracion = MLP(nroCapas = 3,
+resultadosValidacion,errorPorIteracion = MLPMultiClass(nroCapas = 3,
                     data=np.array(datasetEntrenamiento ),
                     datasetValidacion=np.array(datasetValidacion),
                     funcionPorCapa=[lambda x:x,logistica, logistica],

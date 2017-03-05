@@ -8,6 +8,7 @@ from mlp import *
 from generarPatrones import normalizar, logistica, derivada_logistica, tanh, derivada_tanh
 
 
+# Lectura de datos
 with open("datosP2EM2017/iris_setosa.data","r") as file :
     lines = file.readlines()
     flores = []
@@ -18,14 +19,18 @@ with open("datosP2EM2017/iris_setosa.data","r") as file :
 tamanoTotal = len(flores)
 porcentajesEntrenamiento = [0.5,0.6,0.7,0.8,0.9]
 
+# Se mezclan los datos
 flores = np.random.permutation(flores)
 
+
+# Se particionan los datos
 totalDatosEntrenamiento = int(len(flores)*porcentajesEntrenamiento[4])
 totalDatosValidacion = tamanoTotal - totalDatosEntrenamiento
 
 datasetEntrenamiento = flores[0:totalDatosEntrenamiento]
 datasetValidacion = flores[totalDatosEntrenamiento:]
 
+# Entrenamiento del MLP
 resultadosValidacion,errorPorIteracion = MLP(nroCapas = 2,
                     data=np.array(datasetEntrenamiento ),
                     datasetValidacion=np.array(datasetValidacion),
@@ -41,6 +46,8 @@ virginica = []
 no_setosa = []
 errorDePrueba = 0
 cantCasos = 0
+
+# Verificacion de resultados
 for flor in resultadosValidacion :
     errorDePrueba += sum(flor["error"])
     cantCasos += len(flor["error"])

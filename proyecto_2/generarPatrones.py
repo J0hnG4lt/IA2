@@ -99,14 +99,15 @@ if __name__ == '__main__':
     puntos_generados = normalizar(puntos_generados)
 
 
-    resultadosValidacion = MLP(nroCapas = 4,
+    resultadosValidacion = MLP(nroCapas = 2,
                         data=patrones_array,
                         datasetValidacion=puntos_generados,
-                        funcionPorCapa=[lambda x: x**2 , logistica  , lambda x : x , logistica],
-                        derivadaFuncionPorCapa=[lambda x: 2*x , derivada_logistica , lambda x : 1 ,derivada_logistica],
-                        nroNeuronasPorCapa = [1,2,5,1],
+                        funcionPorCapa=[logistica , logistica],
+                        derivadaFuncionPorCapa=[derivada_logistica ,derivada_logistica],
+                        nroNeuronasPorCapa = [10,1],
                         maxIter = 1000,
-                        aprendizaje = 0.1)
+                        aprendizaje = 0.1,
+                        momentum = 0.5)
 
     fuera = []
     dentro = []

@@ -4,17 +4,31 @@ from random import uniform
 import numpy as np
 import matplotlib.pyplot as plt
 
+''' 
+#   MLP : Perceptrón multicapa
+#
+#	@nroCapas : Numero de capas en el perceptron.
+#   @funcionPorCapa: Funcion de cada capa.
+#   @derivadaFuncionPorCapa: Derivada de las funciones de cada capa.
+#	@nroNeuronasPorCapa: Numero de neuronas de cada capa.
+#	@data: Data de entrenamiento.
+#	@datasetValidacion: Data de validacion.
+#   @maxIter: La cantidad máxima de iteraciones.
+#   @aprendizaje:  tasa de aprendizaje.
+#   @momentum: Constante de momentum.
+'''
+
 def MLP(nroCapas = 1,
 		funcionPorCapa = None,
 		derivadaFuncionPorCapa = None,
 		nroNeuronasPorCapa = [1],
 		data = None,
 		datasetValidacion = None,
-		porcentajeValidacion = 20,
 		maxIter = 1000,
 		aprendizaje = 0.1,
 		momentum = 0):
 	
+	# Chequeo de que todos los datos esten bien
 	flag = False	
 	if (data is None):
 		print("Se necesita data de entrenamiento")
@@ -50,7 +64,7 @@ def MLP(nroCapas = 1,
 	totalDatosValidacion = len(datasetValidacion)
 	dataEntrenamiento = data
 	dataValidacion = datasetValidacion
-	
+	# Se definen las estructuras necesarias.
 	mlp = []
 	# For momentum will save the previous updates on all weights
 	previousUpdate = []
@@ -87,6 +101,8 @@ def MLP(nroCapas = 1,
 	errorAnt = 10**20
 	eps = 10**-5
 	errorPorIteracion = []
+
+	# Ciclo principal de entrenamiento
 	while (iteraciones < maxIter and abs(error - errorAnt) > eps):
 		iteraciones += 1
 		errorPorIteracion.append(error)
@@ -150,6 +166,7 @@ def MLP(nroCapas = 1,
 		error = error/totalDatosEntrenamiento
 	
 	resultados = []
+	# Validacion
 	for indexEstimulo in range(totalDatosValidacion):
 		# Forward propagation
 		estimulo = dataValidacion[indexEstimulo][:-1]

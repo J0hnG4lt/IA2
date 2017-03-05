@@ -156,8 +156,11 @@ def MLP(nroCapas = 1,
 		resultadoValidacion = dict()
 		resultadoValidacion["punto"] = estimulo
 		resultadoValidacion["respuestaCorrecta"] = respuesta
+		resultadoValidacion["respuestaSalida"] = []
+		resultadoValidacion["error"] = []
 		for capa in range(nroCapas):
 			for neurona in range(nroNeuronasPorCapa[capa]):
+				error_neurona = 0
 				if (capa == 0):
 					entradaNeuronas[capa][neurona] = np.dot(mlp[capa][neurona],estimulo)+\
 											 bias[capa][neurona]
@@ -167,9 +170,9 @@ def MLP(nroCapas = 1,
 											 bias[capa][neurona]
 					salidaNeuronas[capa][neurona] = funcionPorCapa[capa](entradaNeuronas[capa][neurona])
 				if (capa == nroCapas-1):
-					error += (respuesta - salidaNeuronas[capa][neurona])**2 
-					resultadoValidacion["respuestaSalida"] = salidaNeuronas[capa][neurona]
-					resultadoValidacion["error"] = error
+					error_neurona += (respuesta - salidaNeuronas[capa][neurona])**2 
+					resultadoValidacion["respuestaSalida"].append(salidaNeuronas[capa][neurona])
+					resultadoValidacion["error"].append(error_neurona)
 		resultados.append(resultadoValidacion)
 
 

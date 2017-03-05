@@ -6,12 +6,14 @@ import matplotlib.pyplot as plt
 from math import sqrt,log
 from mlp import *
 
+alfa = 1
+
 # Taken from mpl2
 def logistica(x):
-    return 1/(1 + np.exp(-x))
+    return 1/(1 + np.exp(-alfa*x))
 
 def derivada_logistica(x):
-    return logistica(x)* (1-logistica(x))
+    return alfa* logistica(x)* (1-logistica(x))
 
 def tanh(x):
     return np.tanh(x)
@@ -90,20 +92,22 @@ patrones_array = normalizar(patrones_array)
 
 unos =sum(1 for i in patrones_array if i[2] == 1)
 ceros = sum(1 for i in patrones_array if i[2] == 0)
+print(unos,ceros)
 
 patrones_validacion = generarPatronesMismasAreas(numeroFuera = ceros, numeroDentro = unos)
 puntos_generados = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones_validacion])
 puntos_generados = normalizar(puntos_generados)
 
 
-resultadosValidacion = MLP(nroCapas = 4,
+resultadosValidacion = MLP(nroCapas = 2,
                     data=patrones_array,
                     datasetValidacion=puntos_generados,
-                    funcionPorCapa=[lambda x: x**2 , logistica  , lambda x : x , logistica],
-                    derivadaFuncionPorCapa=[lambda x: 2*x , derivada_logistica , lambda x : 1 ,derivada_logistica],
-                    nroNeuronasPorCapa = [1,2,5,1],
+                    funcionPorCapa=[logistica  ,  logistica],
+                    derivadaFuncionPorCapa=[derivada_logistica ,derivada_logistica],
+                    nroNeuronasPorCapa = [10,1],
                     maxIter = 1000,
-                    aprendizaje = 0.1)
+                    aprendizaje = 0.1,
+                    momentum = 0.5)
 
 fuera = []
 dentro = []

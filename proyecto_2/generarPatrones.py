@@ -43,6 +43,24 @@ def generarPatrones(numeroPuntos = 2000) :
     return zip(puntosX,
                puntosY,
                areas)
+
+def generarPatronesMismasAreas(numeroDentro=200,numeroFuera=300) :
+    nFuera = 0
+    nDentro = 0
+    puntos = []
+    while((nFuera < numeroFuera) or (nDentro < numeroDentro) ) :
+        
+        puntoX = np.random.uniform(0, 20)
+        puntoY = np.random.uniform(0, 20)
+        estaAdentro = dentroDeCircunferencia(puntoX,puntoY)
+        instancia = (puntoX,puntoY,estaAdentro)
+        if  estaAdentro and (nDentro < numeroDentro):
+            puntos.append(instancia)
+            nDentro += 1
+        if  (not estaAdentro) and (nFuera < numeroFuera):
+            puntos.append(instancia)
+            nFuera += 1
+    return puntos
     
 
 def normalizar(data):
@@ -65,18 +83,17 @@ with open("datosP2EM2017/datos_P2_EM2017_N2000.txt","r") as file :
 #patrones_array = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones])
 #patrones_array = normalizar(patrones_array)
 
+
 patrones_entrenamiento = generarPatrones(numeroPuntos = 2000)
 patrones_array = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones_entrenamiento])
 patrones_array = normalizar(patrones_array)
 
-patrones_validacion = generarPatrones(numeroPuntos = 500)
-puntos_generados = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones_validacion])
-puntos_generados = normalizar(puntos_generados)
-
-#patrones_array = 
 unos =sum(1 for i in patrones_array if i[2] == 1)
 ceros = sum(1 for i in patrones_array if i[2] == 0)
-print(unos,ceros)
+
+patrones_validacion = generarPatronesMismasAreas(numeroFuera = ceros, numeroDentro = unos)
+puntos_generados = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones_validacion])
+puntos_generados = normalizar(puntos_generados)
 
 
 resultadosValidacion = MLP(nroCapas = 4,
@@ -94,22 +111,31 @@ fueraT = []
 dentroT = []
 for instancia in resultadosValidacion :
     if instancia["respuestaSalida"] < 0.5:
-        aux = [instancia["punto"], 0 == instancia["respuestaCorrecta"]]
+        aux = [instancia["punto"], instancia["respuestaCorrecta"]]
         dentro.append(aux)
     else:
-        aux = [instancia["punto"], 1 == instancia["respuestaCorrecta"]]
+        aux = [instancia["punto"], instancia["respuestaCorrecta"]]
         fuera.append(aux)    
 
-plt.scatter([x[0][0] for x in dentro if x[1] == 0],
-             [x[0][1] for x in dentro if x[1] == 0], color="blue", marker = "x")
-plt.scatter([x[0][0] for x in fuera if x[1] == 0 ], 
-            [x[0][1] for x in fuera if x[1] == 0 ], color="red", marker= "x")
-plt.scatter([x[0][0] for x in dentro if x[1] == 1 ], 
-            [x[0][1] for x in dentro if x[1] == 1], color="blue" , marker = "o")
-plt.scatter([x[0][0] for x in fuera if x[1] == 1],
+x1 = plt.scatter([x[0][0] for x in dentro if x[1] == 0],
+             [x[0][1] for x in dentro if x[1] == 0], color="red", marker = "x")
+x2 = plt.scatter([x[0][0] for x in fuera if x[1] == 0 ], 
+            [x[0][1] for x in fuera if x[1] == 0 ], color="blue", marker= "o")
+x3 = plt.scatter([x[0][0] for x in dentro if x[1] == 1 ], 
+            [x[0][1] for x in dentro if x[1] == 1], color="blue" , marker = "x")
+x4 = plt.scatter([x[0][0] for x in fuera if x[1] == 1],
             [x[0][1] for x in fuera if x[1] == 1], color="red" , marker = "o")
 ax = plt.gca()
 ax.set_aspect('equal', adjustable='box')
 ax.add_artist(plt.Circle((0,0),1,color= "red", fill = False))
+plt.legend((x1, x2, x3, x4),
+           ('Clasificado mal como interno', 
+            'Clasificado bien como externo',
+            'Clasificado bien como interno', 
+            'Clasificado mal como externo'),
+           scatterpoints=1,
+           loc='lower left',
+           ncol=2,
+           fontsize=8)
 plt.show()
 

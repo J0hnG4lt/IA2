@@ -111,28 +111,30 @@ fueraT = []
 dentroT = []
 for instancia in resultadosValidacion :
     if instancia["respuestaSalida"] < 0.5:
-        aux = [instancia["punto"], instancia["respuestaCorrecta"]]
+        esCorrecta = instancia["respuestaCorrecta"] == 0
+        aux = [instancia["punto"], esCorrecta]
         dentro.append(aux)
     else:
-        aux = [instancia["punto"], instancia["respuestaCorrecta"]]
+        esCorrecta = instancia["respuestaCorrecta"] == 1
+        aux = [instancia["punto"], esCorrecta]
         fuera.append(aux)    
 
 x1 = plt.scatter([x[0][0] for x in dentro if x[1] == 0],
-             [x[0][1] for x in dentro if x[1] == 0], color="red", marker = "x")
+             [x[0][1] for x in dentro if x[1] == 0], color="blue", marker = "x")
 x2 = plt.scatter([x[0][0] for x in fuera if x[1] == 0 ], 
-            [x[0][1] for x in fuera if x[1] == 0 ], color="blue", marker= "o")
+            [x[0][1] for x in fuera if x[1] == 0 ], color="red", marker= "x")
 x3 = plt.scatter([x[0][0] for x in dentro if x[1] == 1 ], 
-            [x[0][1] for x in dentro if x[1] == 1], color="blue" , marker = "x")
+            [x[0][1] for x in dentro if x[1] == 1], color="blue" , marker = "o")
 x4 = plt.scatter([x[0][0] for x in fuera if x[1] == 1],
             [x[0][1] for x in fuera if x[1] == 1], color="red" , marker = "o")
 ax = plt.gca()
 ax.set_aspect('equal', adjustable='box')
 ax.add_artist(plt.Circle((0,0),1,color= "red", fill = False))
 plt.legend((x1, x2, x3, x4),
-           ('Clasificado mal como interno', 
-            'Clasificado bien como externo',
-            'Clasificado bien como interno', 
-            'Clasificado mal como externo'),
+           ('Es Externo, clasificado Interno', 
+            'Es Interno, clasificado Externo',
+            'Es Interno, Clasificado Interno', 
+            'Es Externo, Clasificado Externo'),
            scatterpoints=1,
            loc='lower left',
            ncol=2,

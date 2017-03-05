@@ -20,13 +20,13 @@ porcentajesEntrenamiento = [0.5,0.6,0.7,0.8,0.9]
 
 flores = np.random.permutation(flores)
 
-totalDatosEntrenamiento = int(len(flores)*porcentajesEntrenamiento[0])
+totalDatosEntrenamiento = int(len(flores)*porcentajesEntrenamiento[4])
 totalDatosValidacion = tamanoTotal - totalDatosEntrenamiento
 
 datasetEntrenamiento = flores[0:totalDatosEntrenamiento]
 datasetValidacion = flores[totalDatosEntrenamiento:]
 
-resultadosValidacion = MLP(nroCapas = 2,
+resultadosValidacion,errorPorIteracion = MLP(nroCapas = 2,
                     data=np.array(datasetEntrenamiento ),
                     datasetValidacion=np.array(datasetValidacion),
                     funcionPorCapa=[logistica,logistica],
@@ -39,7 +39,11 @@ setosa = []
 versicolor = []
 virginica = []
 no_setosa = []
+errorDePrueba = 0
+cantCasos = 0
 for flor in resultadosValidacion :
+    errorDePrueba += sum(flor["error"])
+    cantCasos += len(flor["error"])
     if flor["respuestaSalida"][0] > 0.5 :
         setosa.append(flor["respuestaCorrecta"] == 1)
     else :
@@ -48,4 +52,15 @@ for flor in resultadosValidacion :
 print("Setosa", setosa)
 print("No Setosa", no_setosa)
 
+print("Cantidad de Instancias (Entrenamiento): ", totalDatosEntrenamiento)
+print("Error de Prueba: ", errorDePrueba/cantCasos)
+print("Falsos Positivos: ", sum(1 for x in setosa if not x))
+print("Falsos Negativos: ", sum(1 for x in no_setosa if not x))
+
+y1 = plt.plot(range(len(errorPorIteracion)),errorPorIteracion)
+plt.title("Curva de Convergencia -Flores-")
+plt.xlabel("Numero de Iteraciones")
+plt.ylabel("Error")
+plt.show()
+plt.show()
 

@@ -20,30 +20,49 @@ porcentajesEntrenamiento = [0.5,0.6,0.7,0.8,0.9]
 
 flores = np.random.permutation(flores)
 
-totalDatosEntrenamiento = int(len(flores)*porcentajesEntrenamiento[0])
+totalDatosEntrenamiento = int(len(flores)*porcentajesEntrenamiento[3])
 totalDatosValidacion = tamanoTotal - totalDatosEntrenamiento
 
 datasetEntrenamiento = flores[0:totalDatosEntrenamiento]
 datasetValidacion = flores[totalDatosEntrenamiento:]
 
-resultadosValidacion = MLP(nroCapas = 2,
+resultadosValidacion,errorPorIteracion = MLP(nroCapas = 3,
                     data=np.array(datasetEntrenamiento ),
                     datasetValidacion=np.array(datasetValidacion),
-                    funcionPorCapa=[logistica, logistica],
-                    derivadaFuncionPorCapa=[derivada_logistica,derivada_logistica],
-                    nroNeuronasPorCapa = [3,3],
+                    funcionPorCapa=[lambda x:x,logistica, logistica],
+                    derivadaFuncionPorCapa=[lambda x:1,derivada_logistica,derivada_logistica],
+                    nroNeuronasPorCapa = [4,15,3],
                     maxIter = 1000,
-                    aprendizaje = 0.1)
+                    aprendizaje = 0.01)
 
 setosa = []
 versicolor = []
 virginica = []
-no_setosa = []
-out = []
+
+errorDePrueba = 0
+cantCasos = 0
 for flor in resultadosValidacion :
-    out.append([flor["respuestaCorrecta"],flor["respuestaSalida"],flor["error"]])
+    errorDePrueba += sum(flor["error"])
+    cantCasos += len(flor["error"])
+    if flor["respuestaSalida"][0] > 0.5 :
+        setosa.append(flor["respuestaCorrecta"] == 1)
+    
+    print(flor["respuestaSalida"])
+    
+"""
+print("Setosa", setosa)
+print("No Setosa", no_setosa)
 
-print("Out", out)
-#print("No Setosa", no_setosa)
+print("Cantidad de Instancias (Entrenamiento): ", totalDatosEntrenamiento)
+print("Error de Prueba: ", errorDePrueba/cantCasos)
+print("Falsos Positivos: ", sum(1 for x in setosa if not x))
+print("Falsos Negativos: ", sum(1 for x in no_setosa if not x))
 
+y1 = plt.plot(range(len(errorPorIteracion)),errorPorIteracion)
+plt.title("Curva de Convergencia -Flores-")
+plt.xlabel("Numero de Iteraciones")
+plt.ylabel("Error")
+plt.show()
+plt.show()
 
+"""

@@ -76,7 +76,7 @@ def normalizar(data):
 
 if __name__ == '__main__':
     
-    with open("datosP2EM2017/datos_P2_EM2017_N500.txt","r") as file :
+    with open("datosP2EM2017/datos_P2_EM2017_N2000.txt","r") as file :
         lines = file.readlines()
         patrones = []
         for l in lines:
@@ -94,7 +94,7 @@ if __name__ == '__main__':
     unos =sum(1 for i in patrones_array if i[2] == 1)
     ceros = sum(1 for i in patrones_array if i[2] == 0)
 
-    patrones_validacion = generarPatronesMismasAreas(numeroFuera = 250, numeroDentro = 250)
+    patrones_validacion = generarPatronesMismasAreas(numeroFuera = 1000, numeroDentro = 1000)
     puntos_generados = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones_validacion])
     puntos_generados = normalizar(puntos_generados)
 
@@ -114,8 +114,10 @@ if __name__ == '__main__':
     fueraT = []
     dentroT = []
     errorDePrueba = 0
+    cantCasos = 0
     for instancia in resultadosValidacion :
         errorDePrueba += sum(instancia["error"])
+        cantCasos += len(instancia["error"])
         if instancia["respuestaSalida"][0] < 0.5:
             esCorrecta = instancia["respuestaCorrecta"] == 0
             aux = [instancia["punto"], esCorrecta]
@@ -124,10 +126,10 @@ if __name__ == '__main__':
             esCorrecta = instancia["respuestaCorrecta"] == 1
             aux = [instancia["punto"], esCorrecta]
             fuera.append(aux)    
-    
-    print("Error de Prueba: ", errorDePrueba)
+    print("Cantidad de Instancias: ", len(patrones_validacion))
+    print("Error de Prueba: ", errorDePrueba/cantCasos)
     print("Falsos Positivos: ", sum(1 for x in dentro if x[1] == 0))
-    print("Falsos Negativos: ", sum(1 for x in fuera if x[1] == 1))
+    print("Falsos Negativos: ", sum(1 for x in fuera if x[1] == 0))
     plt.figure(0)
     x1 = plt.scatter([x[0][0] for x in dentro if x[1] == 0],
                  [x[0][1] for x in dentro if x[1] == 0], color="blue", marker = "x")

@@ -4,7 +4,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from math import sqrt,cos,sin
-from mlp import *
+from mlpMultiClase import *
 from generarPatrones import normalizar, logistica, derivada_logistica, tanh, derivada_tanh
 
 
@@ -26,7 +26,7 @@ totalDatosValidacion = tamanoTotal - totalDatosEntrenamiento
 datasetEntrenamiento = flores[0:totalDatosEntrenamiento]
 datasetValidacion = flores[totalDatosEntrenamiento:]
 
-resultadosValidacion = MLP(nroCapas = 2,
+resultadosValidacion = MLPMultiClass(nroCapas = 2,
                     data=np.array(datasetEntrenamiento ),
                     datasetValidacion=np.array(datasetValidacion),
                     funcionPorCapa=[logistica, logistica],
@@ -40,6 +40,7 @@ versicolor = []
 virginica = []
 no_setosa = []
 out = []
+print(resultadosValidacion)
 for flor in resultadosValidacion :
     out.append([flor["respuestaCorrecta"],flor["respuestaSalida"],flor["error"]])
 

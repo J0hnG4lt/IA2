@@ -146,7 +146,7 @@ def MLP(nroCapas = 1,
 																	momentum*previousUpdate[capa][neurona][peso]
 
 
-		#error = error/totalDatosEntrenamiento
+		error = error/totalDatosEntrenamiento
 	
 	resultados = []
 	for indexEstimulo in range(totalDatosValidacion):

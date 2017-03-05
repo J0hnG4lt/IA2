@@ -6,14 +6,16 @@ import matplotlib.pyplot as plt
 from math import sqrt,log
 from mlp import *
 
-alfa = 1
 
-# Taken from mpl2
+
+# Diferentes funciones de activacion y sus
+#  derivadas para utilizar en el perceptron
+
 def logistica(x):
-    return 1/(1 + np.exp(-alfa*x))
+    return 1/(1 + np.exp(-x))
 
 def derivada_logistica(x):
-    return alfa* logistica(x)* (1-logistica(x))
+    return logistica(x)* (1-logistica(x))
 
 def tanh(x):
     return np.tanh(x)
@@ -24,6 +26,8 @@ def softplus(x):
 def derivada_tanh(x):
     return 1.0 - np.tanh(x)**2
 
+
+# Funcion que nos dice si dos coordenadas estan dentro de la circumferencia
 def dentroDeCircunferencia(*coords) :
     Xcoord = coords[0]
     Ycoord = coords[1]
@@ -35,6 +39,7 @@ def dentroDeCircunferencia(*coords) :
     else :
         return Ycoord >= (10.0 - temp)
 
+# Funcion que genera patrones de forma uniforme.
 def generarPatrones(numeroPuntos = 2000) :
     
     puntosX = np.random.uniform(0, 20, numeroPuntos)
@@ -46,6 +51,8 @@ def generarPatrones(numeroPuntos = 2000) :
                puntosY,
                areas)
 
+# Funcion que genera patrones, genera un numero especifico de patrones
+#  para ambas clases.
 def generarPatronesMismasAreas(numeroDentro=200,numeroFuera=300) :
     nFuera = 0
     nDentro = 0
@@ -65,6 +72,8 @@ def generarPatronesMismasAreas(numeroDentro=200,numeroFuera=300) :
     return puntos
     
 
+# Funcion que normaliza la data, asume que el ultimo es la
+#  clase y por lo tanto no lo normaliza
 def normalizar(data):
     # the last one is assumed to be the result
     for i in range(len(data[0]) - 1):
@@ -74,6 +83,8 @@ def normalizar(data):
             data[j][i] = (data[j][i] - mean)/stddev
     return data
 
+
+# Cuerpo principal.
 if __name__ == '__main__':
     
     with open("datosP2EM2017/datos_P2_EM2017_N2000.txt","r") as file :
@@ -83,22 +94,19 @@ if __name__ == '__main__':
             patrones.append(tuple(l.strip("\n\r").split(" ")))
         file.close()
 
-    patrones_array = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones])
-    patrones_array = normalizar(patrones_array)
-
-
     #patrones_entrenamiento = generarPatrones(numeroPuntos = 2000)
     #patrones_array = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones_entrenamiento])
     #patrones_array = normalizar(patrones_array)
 
-    unos =sum(1 for i in patrones_array if i[2] == 1)
-    ceros = sum(1 for i in patrones_array if i[2] == 0)
+    # Generacion de patrones.
+    patrones_array = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones])
+    patrones_array = normalizar(patrones_array)
 
     patrones_validacion = generarPatronesMismasAreas(numeroFuera = 1000, numeroDentro = 1000)
     puntos_generados = np.array([[float(x),float(y),float(z)] for (x,y,z) in patrones_validacion])
     puntos_generados = normalizar(puntos_generados)
 
-
+    # Se entrena el MLP y se obtienen los resultados.
     resultadosValidacion,errorPorIteracion = MLP(nroCapas = 2,
                         data=patrones_array,
                         datasetValidacion=puntos_generados,
@@ -115,6 +123,8 @@ if __name__ == '__main__':
     dentroT = []
     errorDePrueba = 0
     cantCasos = 0
+
+    # Se verifica la calidad de los resultados de validacion.
     for instancia in resultadosValidacion :
         errorDePrueba += sum(instancia["error"])
         cantCasos += len(instancia["error"])
@@ -126,11 +136,15 @@ if __name__ == '__main__':
             esCorrecta = instancia["respuestaCorrecta"] == 1
             aux = [instancia["punto"], esCorrecta]
             fuera.append(aux)    
+
     print("Cantidad de Instancias: ", len(patrones_validacion))
     print("Error de Prueba: ", errorDePrueba/cantCasos)
     print("Falsos Positivos: ", sum(1 for x in dentro if x[1] == 0))
     print("Falsos Negativos: ", sum(1 for x in fuera if x[1] == 0))
+
+    # Graficos
     plt.figure(0)
+    # Grafico de puntos de validacion.
     x1 = plt.scatter([x[0][0] for x in dentro if x[1] == 0],
                  [x[0][1] for x in dentro if x[1] == 0], color="blue", marker = "x")
     x2 = plt.scatter([x[0][0] for x in fuera if x[1] == 0 ], 
@@ -152,8 +166,9 @@ if __name__ == '__main__':
                ncol=2,
                fontsize=8)
     plt.show()
-    
+
     plt.figure(1)
+    # Grafico de curva de convergencia de error.
     y1 = plt.plot(range(len(errorPorIteracion)),errorPorIteracion)
     plt.title("Curva de Convergencia -Circle-")
     plt.xlabel("Numero de Iteraciones")

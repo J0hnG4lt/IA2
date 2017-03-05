@@ -54,33 +54,35 @@ def MLP(nroCapas = 1,
 	nroAtributos = len(data[0]) - 1
 
 	totalDatos = len(data)
-	#totalDatosValidacion = len(data)*porcentajeValidacion//100
-	#totalDatosEntrenamiento = totalDatos - totalDatosValidacion
 
+	# mezclamos la data
 	data = np.random.permutation(data)
 
-	#dataEntrenamiento = data[0:totalDatosEntrenamiento]
-	#dataValidacion = data[totalDatosEntrenamiento:]
 	totalDatosEntrenamiento = totalDatos
 	totalDatosValidacion = len(datasetValidacion)
 	dataEntrenamiento = data
 	dataValidacion = datasetValidacion
+
 	# Se definen las estructuras necesarias.
 	mlp = []
-	# For momentum will save the previous updates on all weights
+
+	# Para el momentum, guarda el update anterior.
 	previousUpdate = []
 	print("Creando perceptron con " + str(nroCapas) + " capas.")
 
+	# Salida, entrada y gradiente de las neuronas para facilitar backpropagation
 	salidaNeuronas = [ [0 for i in range(nroNeuronasPorCapa[j])] for j in range(nroCapas)]
 	entradaNeuronas = [ [0 for i in range(nroNeuronasPorCapa[j])] for j in range(nroCapas)]
 	gradiente = [ [0 for i in range(nroNeuronasPorCapa[j])] for j in range(nroCapas)]
 
 
+	# Bias de cada neurona
 	bias = [ [uniform(-1,1) for i in range(nroNeuronasPorCapa[j])] for j in range(nroCapas)]
-	# For momentum will save the previous updates on all bias
+
+	# Para el momentum, guarda el update del bias anterior
 	previousBiasUpdate = [ [0 for i in range(nroNeuronasPorCapa[j])] for j in range(nroCapas)]
 
-
+	# Llenamos el perceptron y el array de momentum
 	for i in range(nroCapas):
 		print("Capa " + str(i+1) + " con " + str(nroNeuronasPorCapa[i]) + " neuronas")
 		if (i == 0):
@@ -96,19 +98,21 @@ def MLP(nroCapas = 1,
 
 
 
-
+	# Inicializamos los valores.
 	iteraciones = 0
 	error = 0
 	errorAnt = 10**20
 	eps = 10**-5
 	errorPorIteracion = []
 
+	print("Entrenando... Puede tardar unos momentos")
 	# Ciclo principal de entrenamiento
 	while (iteraciones < maxIter and abs(error - errorAnt) > eps):
 		iteraciones += 1
-		errorPorIteracion.append(error)
-		if iteraciones % 25 == 0:
-			print(iteraciones,error)
+		
+		if iteraciones % 50 == 0:
+			print("Iteracion: ",iteraciones," error Actual: ",error)
+		
 		errorAnt = error
 		error = 0
 		ceros = 0
@@ -147,6 +151,7 @@ def MLP(nroCapas = 1,
 			# Actualizacion Pesos
 			for capa in range(nroCapas):
 				for neurona in range(nroNeuronasPorCapa[capa]):
+					# Se actualiza cada peso con el gradiente*su entrada + el momentum.
 					bias[capa][neurona] += aprendizaje * gradiente[capa][neurona] +\
 											momentum*previousBiasUpdate[capa][neurona]
 					previousBiasUpdate[capa][neurona] = aprendizaje * gradiente[capa][neurona] +\
@@ -163,8 +168,12 @@ def MLP(nroCapas = 1,
 							previousUpdate[capa][neurona][peso] = aprendizaje*gradiente[capa][neurona]*salidaNeuronas[capa-1][peso] + \
 																	momentum*previousUpdate[capa][neurona][peso]
 
-
+		# Dividimos el error entre los datos de entrenamiento para 
+		# tener el error medio.
 		error = error/totalDatosEntrenamiento
+		# Guardamos el error por iteracion		
+		errorPorIteracion.append(error)
+
 	
 	resultados = []
 	# Validacion

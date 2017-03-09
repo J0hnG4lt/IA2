@@ -1,788 +1,3020 @@
 {
-    "acsalcedo": [
-        "HTML",
-        "C++",
-        "C",
-        "Web Ontology Language",
-        "Python",
-        "Java",
-        "Makefile",
-        "JavaScript",
-        "Ruby",
-        "Shell",
-        "CSS",
-        "R",
-        "XSLT"
-    ],
-    "robertoromero8892": [
-        "HTML",
-        "PHP",
-        "Python",
-        "JavaScript",
-        "Ruby",
-        "ApacheConf",
-        "CSS"
-    ],
-    "MaryLu28": [
-        "HTML",
-        "C++",
-        "C",
-        "Logos",
-        "Python",
-        "TypeScript",
-        "JavaScript",
-        "Yacc",
-        "CSS",
-        "Haskell"
-    ],
-    "oggs22": [
-        "HTML",
-        "Elixir",
-        "CoffeeScript",
-        "JavaScript",
-        "Ruby",
-        "CSS"
-    ],
-    "susaroma": [
-        "Python"
-    ],
-    "Erick1508": [
-        "HTML",
-        "C",
-        "Java",
-        "Python",
-        "JavaScript",
-        "Ruby",
-        "Perl",
-        "TeX",
-        "CSS",
-        "Haskell",
-        "IDL"
-    ],
-    "HaderKa": [],
-    "ReiVerdugo": [
-        "C",
-        "Python",
-        "Swift",
-        "Makefile",
-        "Ruby",
-        "Shell",
-        "Objective-C"
-    ],
-    "vethencourt": [
-        "Prolog",
-        "Haskell",
-        "Ruby"
-    ],
-    "cristinabet": [
-        "Python"
-    ],
-    "josepas": [
-        "HTML",
-        "C++",
-        "C",
-        "Nix",
-        "Java",
-        "Python",
-        "Logos",
-        "Component Pascal",
-        "Makefile",
-        "Assembly",
-        "JavaScript",
-        "Ruby",
-        "Prolog",
-        "TeX",
-        "Shell",
-        "Yacc",
-        "Lex",
-        "Haskell",
-        "CSS"
-    ],
-    "Huber737": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-    ],
-    "HetRod": [
-        "Java"
-    ],
-    "pavinod": [
-        "Groff",
-        "C",
-        "PHP",
-        "Processing",
-        "Makefile",
-        "JavaScript",
-        "Shell",
-        "CoffeeScript",
-        "Assembly",
-        "Ruby",
-        "Go",
-        "QMake",
-        "Arduino",
-        "Perl",
-        "HTML",
-        "C++",
-        "Python",
-        "Java",
-        "C#",
-        "ASP",
-        "Batchfile",
-        "CSS"
-    ],
-    "FrancescoDiFebbo": [
-        "Alloy",
-        "TeX",
-        "Java"
-    ],
-    "WhosTheMark": [
-        "Mako",
-        "HTML",
-        "C++",
-        "C",
-        "Python",
-        "Java",
-        "TypeScript",
-        "JavaScript",
-        "Ruby",
-        "Shell",
-        "CSS",
-        "Haskell",
-        "IDL"
-    ],
-    "alkholy": [],
-    "mgomezch": [
-        "PHP",
-        "C",
-        "Nginx",
-        "Makefile",
-        "JavaScript",
-        "TeX",
-        "Shell",
-        "VimL",
-        "Jupyter Notebook",
-        "CoffeeScript",
-        "Ruby",
-        "Objective-C",
-        "Mathematica",
-        "Haskell",
-        "FreeMarker",
-        "PowerShell",
-        "HTML",
-        "C++",
-        "Nix",
-        "Python",
-        "Java",
-        "Batchfile",
-        "CSS"
-    ],
-    "aldrix": [
-        "GDScript",
-        "HTML",
-        "C++",
-        "C",
-        "Python",
-        "JavaScript",
-        "Ruby",
-        "CSS",
-        "GLSL"
-    ],
-    "dayanar23": [
-        "HTML",
-        "Bison",
-        "C++",
-        "C",
-        "Python",
-        "Java",
-        "Makefile",
-        "JavaScript",
-        "Ruby",
-        "Prolog",
-        "TeX",
-        "Shell",
-        "Objective-C",
-        "Haskell"
-    ],
-    "dvd6412": [
-        "C",
-        "Python"
-    ],
-    "Iranid": [
-        "Python"
-    ],
-    "egprc": [
-        "Python"
-    ],
-    "MichalPaszkiewicz": [
-        "HTML",
-        "TypeScript",
-        "C#",
-        "JavaScript",
-        "ASP",
-        "Batchfile",
-        "CSS"
-    ],
-    "vanessaperez": [],
-    "alejandra21": [
-        "HTML",
-        "C",
-        "Python",
-        "Makefile",
-        "Assembly",
-        "JavaScript",
-        "Ruby",
-        "Prolog",
-        "TeX",
-        "Shell",
-        "CSS",
-        "Haskell"
-    ],
-    "robin-lee": [
-        "HTML",
-        "C++",
-        "Python",
-        "Java",
-        "JavaScript",
-        "Shell",
-        "CSS"
-    ],
-    "oskcolorado": [
-        "HTML",
-        "CSS",
-        "C",
-        "JavaScript",
-        "Python"
-    ],
-    "patriv": [
-        "HTML",
-        "Python"
-    ],
-    "danielasocas": [
-        "HTML",
-        "Bison",
-        "PHP",
-        "Python",
-        "JavaScript",
-        "Ruby",
-        "Prolog",
-        "Pascal",
-        "CSS"
-    ],
-    "analistamarcio": [
-        "HTML",
-        "PHP",
-        "CoffeeScript",
-        "TypeScript",
-        "JavaScript",
-        "Ruby",
-        "Shell",
-        "CSS"
-    ],
-    "javierlopm": [
-        "Groff",
-        "HTML",
-        "C++",
-        "C",
-        "Logos",
-        "Python",
-        "CoffeeScript",
-        "Java",
-        "Assembly",
-        "JavaScript",
-        "Makefile",
-        "Ruby",
-        "Perl",
-        "TeX",
-        "Shell",
-        "Yacc",
-        "CSS",
-        "Stata",
-        "Haskell"
-    ],
-    "shamuel21": [
-        "Python"
-    ],
-    "alfredojf": [
-        "Jupyter Notebook",
-        "HTML",
-        "Matlab",
-        "Python",
-        "JavaScript",
-        "Shell",
-        "M",
-        "CSS",
-        "Haskell"
-    ],
-    "maridelvalle15": [
-        "HTML",
-        "C++",
-        "C",
-        "PHP",
-        "Python",
-        "Makefile",
-        "JavaScript",
-        "Ruby",
-        "Prolog",
-        "CSS",
-        "Haskell",
-        "GLSL"
-    ],
-    "hazel0703": [
-        "HTML",
-        "PHP",
-        "C",
-        "Python",
-        "Makefile",
-        "JavaScript",
-        "CSS"
-    ],
-    "MeggSan": [
-        "HTML",
-        "C++",
-        "C",
-        "CoffeeScript",
-        "Python",
-        "Makefile",
-        "JavaScript",
-        "Ruby",
-        "Shell",
-        "CSS"
-    ],
-    "GabrielGit": [
-        "Python"
-    ],
-    "sahidr": [
-        "HTML",
-        "Haskell",
-        "Python"
-    ],
-    "edanfersi94": [
-        "Mako",
-        "HTML",
-        "Python",
-        "C#",
-        "JavaScript",
-        "CSS"
-    ],
-    "dvdantunes": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "PHP",
-        "Shell"
-    ],
-    "gabrielformica": [
-        "C++",
-        "C",
-        "Python",
-        "Matlab",
-        "Makefile",
-        "Shell",
-        "Haskell"
-    ],
-    "atarazona89": [
-        "Objective-C++",
-        "HTML",
-        "C",
-        "PHP",
-        "Java",
-        "Python",
-        "C#",
-        "CoffeeScript",
-        "JavaScript",
-        "XML",
-        "TeX",
-        "Shell",
-        "Batchfile",
-        "Objective-C",
-        "CSS",
-        "Haskell",
-        "GLSL"
-    ],
-    "prmm95": [
-        "HTML",
-        "C",
-        "CoffeeScript",
-        "Python",
-        "Makefile",
-        "JavaScript",
-        "Assembly",
-        "Ruby",
-        "Prolog",
-        "TeX",
-        "Shell",
-        "CSS",
-        "Haskell"
-    ],
-    "andrenav93": [
-        "HTML",
-        "C++",
-        "C",
-        "Python",
-        "Java",
-        "Makefile",
-        "JavaScript",
-        "Ruby",
-        "Prolog",
-        "CSS",
-        "Haskell",
-        "GLSL"
-    ],
-    "ManuelGomesG": [
-        "C++",
-        "C",
-        "Python",
-        "Makefile",
-        "Prolog",
-        "TeX",
-        "Shell",
-        "Haskell"
-    ],
-    "Saar1312": [
-        "Mako",
-        "HTML",
-        "C++",
-        "PHP",
-        "C",
-        "Python",
-        "Assembly",
-        "JavaScript",
-        "Makefile",
-        "Ruby",
-        "Prolog",
-        "CMake",
-        "TeX",
-        "Shell",
-        "CSS",
-        "Haskell",
-        "R"
-    ],
-    "AminArria": [
-        "Groff",
-        "HTML",
-        "C",
-        "Python",
-        "CoffeeScript",
-        "Makefile",
-        "JavaScript",
-        "Ruby",
-        "Shell",
-        "VimL",
-        "CSS"
-    ],
-    "AriannaAmayaC": [],
-    "edansi94": [
-        "ASP",
-        "C#",
-        "C++",
-        "Haskell",
-        "GLSL"
-    ],
-    "IsaacValiente": [
-        "Python"
-    ],
-    "dev-yohan": [
-        "HTML",
-        "Elixir",
-        "PHP",
-        "CoffeeScript",
-        "Java",
-        "Python",
-        "Erlang",
-        "JavaScript",
-        "Ruby",
-        "Shell",
-        "Batchfile",
-        "CSS",
-        "Scala"
-    ],
-    "J0hnG4lt": [
-        "HTML",
-        "Logos",
-        "C",
-        "Python",
-        "Makefile",
-        "JavaScript",
-        "Assembly",
-        "Ruby",
-        "Prolog",
-        "TeX",
-        "Yacc",
-        "R",
-        "Haskell",
-        "CSS"
-    ],
-    "nmanan": [
-        "Bison",
-        "Logos",
-        "Haskell"
-    ],
-    "josema19": [
-        "HTML",
-        "Python"
-    ],
-    "pexison": [
-        "HTML",
-        "C++",
-        "C",
-        "Arduino",
-        "Python",
-        "Processing",
-        "Java",
-        "Swift",
-        "Makefile",
-        "JavaScript",
-        "Ruby",
-        "Prolog",
-        "CMake",
-        "PLpgSQL",
-        "TeX",
-        "Shell",
-        "Objective-C",
-        "Yacc",
-        "CSS",
-        "Haskell"
-    ],
-    "nabiljesus": [
-        "Groff",
-        "HTML",
-        "ColdFusion",
-        "C",
-        "PHP",
-        "Python",
-        "C++",
-        "C#",
-        "Logos",
-        "Makefile",
-        "JavaScript",
-        "Ruby",
-        "Prolog",
-        "TeX",
-        "Shell",
-        "Objective-C",
-        "CSS",
-        "Haskell",
-        "R",
-        "GLSL"
-    ],
-    "carlosnoria": [
-        "Python"
-    ],
-    "davidaam": [
-        "Groff",
-        "HTML",
-        "C",
-        "Java",
-        "Matlab",
-        "Python",
-        "Makefile",
-        "JavaScript",
-        "Ruby",
-        "Prolog",
-        "TeX",
-        "Shell",
-        "Objective-C",
-        "CSS",
-        "Haskell"
-    ],
-    "ZurdoRod": [
-        "Haskell",
-        "Python"
-    ],
-    "VaneRivas": [
-        "C++",
-        "PHP",
-        "C",
-        "Python",
-        "JavaScript",
-        "CSS"
-    ],
-    "SergioTeranZ": [
-        "HTML",
-        "PHP",
-        "Python",
-        "TypeScript",
-        "JavaScript",
-        "CSS"
-    ],
-    "Stahet": [
-        "Ruby",
-        "Prolog",
-        "Haskell",
-        "Python"
-    ],
-    "maniatic0": [
-        "C#",
-        "GLSL",
-        "Python"
-    ],
-    "LarryJho": [],
-    "manuggz": [
-        "Groff",
-        "HTML",
-        "Objective-C++",
-        "C++",
-        "C",
-        "Logos",
-        "Python",
-        "Java",
-        "Swift",
-        "Makefile",
-        "JavaScript",
-        "Ruby",
-        "ApacheConf",
-        "XML",
-        "CMake",
-        "TeX",
-        "Shell",
-        "Objective-C",
-        "CSS",
-        "XSLT"
-    ],
-    "flovera1": [
-        "Julia",
-        "HTML",
-        "M4",
-        "C++",
-        "C",
-        "Python",
-        "Java",
-        "Common Lisp",
-        "C#",
-        "Makefile",
-        "Assembly",
-        "JavaScript",
-        "ASP",
-        "Prolog",
-        "Shell",
-        "Batchfile",
-        "Objective-C",
-        "CSS",
-        "Roff",
-        "Emacs Lisp"
-    ],
-    "andreacent": [
-        "HTML",
-        "C++",
-        "C",
-        "Java",
-        "Python",
-        "C#",
-        "Makefile",
-        "JavaScript",
-        "CMake",
-        "Shell",
-        "Objective-C",
-        "CSS",
-        "GLSL"
-    ],
-    "dougtc1": [
-        "C++",
-        "Java",
-        "Python",
-        "Makefile",
-        "TeX",
-        "Shell",
-        "CSS"
-    ],
-    "Neojdpm": [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "PHP",
-        "Python"
-    ],
-    "sednanref": [
-        "Groff",
-        "HTML",
-        "C++",
-        "C",
-        "Java",
-        "Python",
-        "TypeScript",
-        "Makefile",
-        "JavaScript",
-        "TeX",
-        "Shell",
-        "VimL",
-        "Yacc",
-        "CSS",
-        "R",
-        "Lex"
-    ],
-    "fernandobperezm": [
-        "Groff",
-        "HTML",
-        "C++",
-        "C",
-        "Java",
-        "Python",
-        "C#",
-        "Makefile",
-        "JavaScript",
-        "PLpgSQL",
-        "Shell",
-        "Objective-C",
-        "CSS"
-    ],
-    "BelluschiMarco": [],
-    "yersonrr": [
-        "HTML",
-        "C++",
-        "C",
-        "Logos",
-        "Python",
-        "Makefile",
-        "JavaScript",
-        "Shell",
-        "CSS"
-    ],
-    "plantijn": [
-        "Groff",
-        "HTML",
-        "Python",
-        "JavaScript",
-        "Shell",
-        "CSS"
-    ],
-    "glimonta": [
-        "C",
-        "Makefile",
-        "JavaScript",
-        "TeX",
-        "Shell",
-        "VimL",
-        "Lex",
-        "CoffeeScript",
-        "Assembly",
-        "Ruby",
-        "Prolog",
-        "Standard ML",
-        "Objective-C",
-        "Yacc",
-        "Haskell",
-        "Arduino",
-        "Isabelle",
-        "C++",
-        "Python",
-        "Java",
-        "C#",
-        "Component Pascal",
-        "ASP",
-        "CSS"
-    ],
-    "leotms": [
-        "GDScript",
-        "C++",
-        "C",
-        "Python",
-        "C#",
-        "Makefile",
-        "Ruby",
-        "Prolog",
-        "Shell",
-        "Objective-C",
-        "Haskell",
-        "GLSL"
-    ]
+    "Stahet": {
+        "Traductores-Proyecto": {
+            "Python": 136630
+        },
+        "Proyecto-Lenguajes-Prolog": {
+            "Prolog": 6761
+        },
+        "CI5651-PRPP": {},
+        "Proyecto-Ruby-Lenguajes-I": {
+            "Ruby": 9800
+        },
+        "Proyecto-Lenguajes-Haskell": {
+            "Haskell": 28937
+        },
+        "Problemario": {
+            "Python": 3940
+        }
+    },
+    "Iranid": {
+        "ci-3825-proy2-calculo-espacio-pipes": {},
+        "cursoDjango": {},
+        "tarea2": {
+            "Python": 14580
+        }
+    },
+    "acsalcedo": {
+        "opale-hdoc": {
+            "XSLT": 25262
+        },
+        "artificial-neural-network": {
+            "Python": 21882
+        },
+        "sentiment-classification": {
+            "R": 12719,
+            "Python": 3005,
+            "Shell": 120
+        },
+        "fullstack-nanodegree-vm": {
+            "Ruby": 448,
+            "Python": 12674,
+            "Shell": 741
+        },
+        "p2p": {
+            "Shell": 37,
+            "Java": 29484
+        },
+        "version-control-system": {
+            "Makefile": 1274,
+            "Java": 44995
+        },
+        "othello": {
+            "Makefile": 288,
+            "C++": 26061
+        },
+        "devlabs-tarea3": {
+            "CSS": 3391,
+            "Python": 4547
+        },
+        "heuristic-search": {
+            "C": 33637,
+            "Makefile": 17892,
+            "C++": 245935
+        },
+        "github-for-developers-7": {},
+        "frontend-nanodegree-resume": {
+            "CSS": 2578,
+            "HTML": 5967,
+            "JavaScript": 270892
+        },
+        "tarea1-git": {
+            "CSS": 2043
+        },
+        "scheduler-simulator": {
+            "Java": 49204
+        },
+        "recipe-ontology-ws": {
+            "Web Ontology Language": 58005,
+            "Python": 5692,
+            "HTML": 1036
+        },
+        "parallel-battle-field": {
+            "C": 6521
+        },
+        "gabil-genetic-algorithms": {
+            "R": 895,
+            "Python": 43977,
+            "Shell": 150
+        },
+        "constraint-programming": {}
+    },
+    "vanessaperez": {
+        "Prueba": {}
+    },
+    "sednanref": {
+        "tesis": {
+            "C": 2444616,
+            "Python": 302496,
+            "Yacc": 46717,
+            "C++": 16500305,
+            "TeX": 312899,
+            "Groff": 756,
+            "R": 6603,
+            "Shell": 3325787,
+            "Makefile": 1869909,
+            "Lex": 4519
+        },
+        "datasharing": {},
+        "datasciencecoursera": {},
+        "sushi_network": {
+            "Python": 1929227,
+            "HTML": 5255,
+            "Shell": 3789
+        },
+        "ng2-book": {
+            "CSS": 29679,
+            "TypeScript": 206487,
+            "HTML": 30153,
+            "Makefile": 302,
+            "VimL": 16814,
+            "Shell": 3061,
+            "JavaScript": 125853
+        },
+        "nodeschool": {
+            "JavaScript": 6060
+        },
+        "course_bootstrap": {
+            "CSS": 4155,
+            "HTML": 60635,
+            "JavaScript": 484
+        },
+        "tarea1-git": {
+            "CSS": 2043
+        },
+        "Algorithm-Design-II": {
+            "R": 38099,
+            "Shell": 2252,
+            "C++": 59269,
+            "TeX": 90814
+        },
+        "Algorithm-Design": {
+            "C++": 6762
+        },
+        "Bases2": {
+            "Java": 29713
+        },
+        "course_ionic": {
+            "CSS": 825268,
+            "HTML": 936524,
+            "JavaScript": 3358980
+        },
+        "angularjs_course": {
+            "CSS": 1777,
+            "HTML": 61354,
+            "JavaScript": 22536
+        },
+        "Bases-de-Datos-III": {},
+        "learning": {
+            "CSS": 105359,
+            "HTML": 751298,
+            "JavaScript": 1808359
+        }
+    },
+    "fernandobperezm": {
+        "polimi-dima-LifeManager": {
+            "Java": 3524
+        },
+        "sc-anarweb": {
+            "CSS": 299418,
+            "Python": 12241287,
+            "HTML": 985133,
+            "JavaScript": 287044,
+            "Shell": 113
+        },
+        "synergy_website": {
+            "CSS": 38709,
+            "Python": 115094,
+            "HTML": 107052,
+            "JavaScript": 51571
+        },
+        "polimi-soft-computing": {},
+        "SistemasOperativosUSB": {
+            "C": 69635,
+            "Shell": 325,
+            "Makefile": 1363
+        },
+        "polimi-artificial-intelligence": {
+            "Objective-C": 299,
+            "C#": 12727,
+            "C++": 5966
+        },
+        "anabelproject": {
+            "Python": 5772
+        },
+        "BasesDeDatosUSB": {
+            "PLpgSQL": 8989
+        },
+        "recsys-course-2016-pub": {
+            "Groff": 175650,
+            "Python": 147439,
+            "Shell": 3364
+        },
+        "polimi-image-analysis-computer-vision": {},
+        "polimi-videogames-design-implementation": {},
+        "git-example": {},
+        "tarea1-git": {
+            "Java": 4932
+        },
+        "Hackathon": {
+            "C#": 3754
+        },
+        "polimi-recommender-systems": {},
+        "Android": {
+            "Java": 10473
+        },
+        "polimi-design-implementation-mobile-applications": {
+            "Java": 8997
+        }
+    },
+    "cristinabet": {
+        "IngSoftwareTarea2": {
+            "Python": 2348
+        }
+    },
+    "dvd6412": {
+        "hello-world": {},
+        "Mytest": {
+            "C": 73
+        },
+        "Tarea2-CI3715": {
+            "Python": 8251
+        }
+    },
+    "flovera1": {
+        "Interesting-algorithms": {
+            "C++": 9149,
+            "Java": 3132
+        },
+        "basicPython": {
+            "Python": 7456
+        },
+        "Break-out-game": {
+            "C": 61923,
+            "Objective-C": 718,
+            "Makefile": 2896
+        },
+        "MiniZinc": {},
+        "HTML5-Games": {
+            "CSS": 262,
+            "HTML": 1487,
+            "JavaScript": 15049
+        },
+        "SearchingWithHeuristics": {
+            "C++": 2893
+        },
+        "Tron-Race-Game": {
+            "C": 15836,
+            "Objective-C": 10775,
+            "Makefile": 2310,
+            "HTML": 53013,
+            "C++": 130307
+        },
+        "Iluminacion-Maya": {},
+        "python-django": {
+            "CSS": 1329,
+            "Python": 38483,
+            "HTML": 22136
+        },
+        "Thesis-Master-AI": {},
+        "machinelearningclassification": {
+            "Python": 6554
+        },
+        "AIWithJava": {
+            "CSS": 11649,
+            "C++": 9999398,
+            "C": 1202156,
+            "Roff": 5189,
+            "Common Lisp": 26097825,
+            "Makefile": 202751,
+            "Shell": 178562,
+            "M4": 1852,
+            "Objective-C": 8255,
+            "HTML": 39961552,
+            "Java": 12081346,
+            "Assembly": 12514,
+            "Batchfile": 9095,
+            "Emacs Lisp": 12582
+        },
+        "Modeling": {},
+        "Scene-renderization-Maya": {},
+        "AI": {
+            "C": 1278717,
+            "Python": 16380293,
+            "HTML": 3211316,
+            "C++": 380083,
+            "Java": 111835,
+            "Prolog": 902,
+            "Makefile": 23623
+        },
+        "traductores-parser-interprete": {
+            "Python": 378873
+        },
+        "webInfoProj": {
+            "CSS": 8803,
+            "HTML": 58590,
+            "JavaScript": 4394
+        },
+        "compilerPython": {
+            "Python": 3948
+        },
+        "BasicsUnity": {
+            "ASP": 118649,
+            "C#": 3033
+        },
+        "MFCC.jl": {
+            "Julia": 26129
+        }
+    },
+    "edanfersi94": {
+        "Cyber-Escape": {
+            "C#": 4572
+        },
+        "O2AppWeb": {},
+        "appAPMsWc": {
+            "CSS": 4221,
+            "Python": 90504,
+            "HTML": 57441,
+            "JavaScript": 30490,
+            "Mako": 412
+        },
+        "-Arena-": {},
+        "O2App": {
+            "CSS": 965980,
+            "HTML": 950,
+            "JavaScript": 8398744
+        },
+        "One-Legend-Pony": {
+            "C#": 15003
+        },
+        "LowresJamGAME": {
+            "C#": 30729
+        },
+        "SoftDev": {
+            "CSS": 4221,
+            "Python": 809309,
+            "HTML": 115625,
+            "JavaScript": 58192,
+            "Mako": 412
+        },
+        "APMwSc": {
+            "CSS": 150,
+            "Python": 150883,
+            "HTML": 27129
+        }
+    },
+    "javierlopm": {
+        "quienLibre": {
+            "Java": 44992
+        },
+        "LansciiInterpreter": {
+            "Ruby": 44978,
+            "Groff": 509
+        },
+        "sistemaPermisosComputacion": {
+            "Shell": 7008,
+            "Python": 165105,
+            "HTML": 290045,
+            "Makefile": 410,
+            "Java": 1984287
+        },
+        "pokelang": {
+            "Stata": 1192,
+            "Yacc": 16839,
+            "Haskell": 145924,
+            "Logos": 7421,
+            "Assembly": 613,
+            "Shell": 93,
+            "Makefile": 1435
+        },
+        "proyectoParalelism": {
+            "C": 13673,
+            "Python": 790,
+            "TeX": 1082
+        },
+        "tweetapps": {
+            "Python": 4736
+        },
+        "proy1Inteligencia": {
+            "C": 576391,
+            "Shell": 1800,
+            "Makefile": 12280,
+            "C++": 270761,
+            "Groff": 10482
+        },
+        "helloWorld": {
+            "Python": 21
+        },
+        "tarea1-git": {
+            "Java": 1674
+        },
+        "javierlopm.github.io": {
+            "CSS": 418,
+            "HTML": 179
+        },
+        "operativosProy1": {
+            "C": 24378,
+            "Shell": 1701,
+            "Makefile": 532
+        },
+        "interfacesProy3": {
+            "CSS": 10556,
+            "HTML": 42344,
+            "JavaScript": 52837
+        },
+        "IngSoftwareTarea3": {
+            "CSS": 2410,
+            "Python": 21656,
+            "HTML": 9662
+        },
+        "proyectoparalelismo": {
+            "C": 3040
+        },
+        "IngSoftwareTarea2": {
+            "Python": 10242
+        },
+        "javierlopm2.github.io": {
+            "CSS": 40186,
+            "HTML": 94764,
+            "JavaScript": 40358
+        },
+        "LempelZivWelch": {
+            "Assembly": 13342
+        },
+        "proyecto1inteligencia2": {
+            "Python": 8136
+        },
+        "muchLogicSat": {
+            "Python": 25185
+        },
+        "othelloVerySmart": {
+            "Makefile": 102,
+            "C++": 25101
+        },
+        "aplicacionRailsGenerica": {
+            "Ruby": 29229,
+            "CSS": 238056,
+            "CoffeeScript": 422,
+            "HTML": 22906,
+            "JavaScript": 800242
+        },
+        "randomPhrase": {
+            "Python": 2868,
+            "Perl": 579
+        }
+    },
+    "Huber737": {
+        "grav-learn": {},
+        "coursera": {
+            "CSS": 1161,
+            "HTML": 1258
+        },
+        "fullstack-course4": {
+            "CSS": 14046,
+            "HTML": 14612,
+            "JavaScript": 34358
+        }
+    },
+    "josepas": {
+        "MasterCheff": {
+            "CSS": 4153,
+            "Python": 314105,
+            "HTML": 60870,
+            "JavaScript": 11402
+        },
+        "algos3": {
+            "Java": 47890
+        },
+        "GL1": {
+            "C": 28939,
+            "Makefile": 1592,
+            "TeX": 7164
+        },
+        "pascal": {
+            "C++": 2004,
+            "Component Pascal": 78628
+        },
+        "Operativos": {
+            "CSS": 25159,
+            "C": 46202,
+            "HTML": 173606,
+            "Makefile": 2232,
+            "TeX": 7164,
+            "JavaScript": 42434
+        },
+        "orga": {
+            "Assembly": 8514
+        },
+        "Redes": {
+            "Logos": 224,
+            "C": 23728,
+            "Makefile": 202
+        },
+        "Lenguajes": {
+            "Ruby": 9922,
+            "Nix": 1704,
+            "HTML": 680,
+            "TeX": 33093,
+            "Haskell": 44693,
+            "Prolog": 3410
+        },
+        "SistemasInformacion": {
+            "CSS": 41053,
+            "Python": 940242,
+            "HTML": 229116,
+            "JavaScript": 211308
+        },
+        "doraExploradora": {
+            "Python": 11216,
+            "Shell": 2251
+        },
+        "AI": {
+            "Makefile": 102,
+            "C++": 20422
+        },
+        "algos2": {
+            "Python": 51685
+        },
+        "Jazmin": {
+            "C": 120121,
+            "Yacc": 42555,
+            "C++": 16546,
+            "Assembly": 1975,
+            "Makefile": 1139,
+            "Lex": 7399
+        }
+    },
+    "nabiljesus": {
+        "99haskellproblems": {
+            "Haskell": 8466
+        },
+        "Traductores": {
+            "Logos": 12154,
+            "Makefile": 444,
+            "Haskell": 90905
+        },
+        "proyectoRedes": {
+            "C": 23836,
+            "Makefile": 255,
+            "C++": 555,
+            "TeX": 32502
+        },
+        "ChacaoGO": {
+            "C": 529883,
+            "Python": 589489,
+            "PHP": 3336,
+            "HTML": 180030,
+            "Makefile": 7461,
+            "CSS": 43456,
+            "ColdFusion": 2253,
+            "Shell": 3036,
+            "JavaScript": 284870
+        },
+        "APItest": {
+            "Python": 5060
+        },
+        "graficasIFinal": {
+            "C": 454,
+            "C++": 13949
+        },
+        "TareaRuby": {
+            "Ruby": 19990
+        },
+        "nabiljesus.github.io": {
+            "CSS": 7415,
+            "HTML": 1165,
+            "JavaScript": 48
+        },
+        "uaiapp": {
+            "CSS": 23034,
+            "Python": 330668,
+            "HTML": 102309,
+            "JavaScript": 34330
+        },
+        "Estadistica": {
+            "R": 34275
+        },
+        "tareahaskell": {
+            "Haskell": 16371
+        },
+        "compushow2016": {
+            "Python": 4053
+        },
+        "RALego": {
+            "GLSL": 787,
+            "Objective-C": 2392,
+            "C#": 270653
+        },
+        "shadersPV": {
+            "C": 10180,
+            "GLSL": 2348,
+            "C++": 157000
+        },
+        "tarea3": {
+            "CSS": 4221,
+            "Python": 49647,
+            "HTML": 57792,
+            "Groff": 18,
+            "Shell": 3672,
+            "JavaScript": 30490
+        },
+        "pruebaremota": {},
+        "TareaProlog": {
+            "Prolog": 50463
+        }
+    },
+    "mgomezch": {
+        "ldc-web": {
+            "C": 2513,
+            "C++": 830,
+            "PHP": 200866,
+            "Haskell": 2614
+        },
+        "Coloquios": {},
+        "django-datatable-view": {
+            "CSS": 17075,
+            "Python": 218329,
+            "HTML": 53204,
+            "JavaScript": 8531
+        },
+        "CRM": {},
+        "mamute": {
+            "Ruby": 2096,
+            "CSS": 75633,
+            "Nginx": 1000,
+            "Java": 819974,
+            "FreeMarker": 6869,
+            "Shell": 9860,
+            "JavaScript": 590119
+        },
+        "local_services": {
+            "Shell": 3590
+        },
+        "--ngara": {
+            "JavaScript": 104147,
+            "PHP": 1151952,
+            "Shell": 2281
+        },
+        "linear": {
+            "Shell": 698,
+            "Haskell": 168138
+        },
+        "hypothesis": {
+            "Python": 650752,
+            "Jupyter Notebook": 160339,
+            "PowerShell": 5987,
+            "Shell": 7626,
+            "Makefile": 5317,
+            "Batchfile": 1842
+        },
+        "CI3725": {
+            "TeX": 8037
+        },
+        "postgresql-simple": {
+            "Haskell": 187909
+        },
+        "redes": {
+            "C++": 49933
+        },
+        "django-fm": {
+            "CSS": 1517,
+            "Python": 13868,
+            "HTML": 5087,
+            "JavaScript": 12178
+        },
+        "logica-constructiva": {
+            "Mathematica": 35946
+        },
+        "graficas": {
+            "C": 3844,
+            "C++": 176784
+        },
+        "resume": {
+            "HTML": 16117,
+            "Makefile": 108,
+            "TeX": 29578
+        },
+        "CI4251": {
+            "Haskell": 119357
+        },
+        "shakespeare": {
+            "CoffeeScript": 51,
+            "Shell": 192,
+            "Haskell": 218737
+        },
+        "Rabano": {},
+        "CI3725-SD2014": {
+            "TeX": 6010,
+            "Nix": 1035,
+            "Shell": 87782,
+            "PHP": 2682,
+            "Haskell": 8768
+        },
+        "skel": {
+            "Ruby": 64,
+            "Shell": 19998,
+            "VimL": 9483
+        },
+        "libro": {
+            "TeX": 9578,
+            "Shell": 121,
+            "Haskell": 21169
+        },
+        "mosaico-lib": {
+            "Nix": 1091,
+            "Haskell": 15528
+        },
+        "mahisoft-km": {},
+        "MOOC-Course-Description": {},
+        "Pekomin": {
+            "Ruby": 1530,
+            "C": 25644,
+            "C++": 341943
+        },
+        "IHaskell": {
+            "CSS": 1500,
+            "Python": 2334,
+            "HTML": 206069,
+            "Haskell": 3605801,
+            "Shell": 6413,
+            "JavaScript": 13879
+        },
+        "CI3825": {
+            "C": 38316,
+            "Objective-C": 2192,
+            "Shell": 9450,
+            "C++": 560
+        },
+        "groundhog": {
+            "Haskell": 406675
+        },
+        "django-tinymce": {
+            "Shell": 530,
+            "Python": 34790,
+            "Makefile": 1130,
+            "JavaScript": 2365,
+            "HTML": 675
+        }
+    },
+    "alkholy": {
+        "Web1": {},
+        "CS": {},
+        "UCSDUnfoldingMaps": {}
+    },
+    "hazel0703": {
+        "Project3Algorithms2": {
+            "Python": 16495
+        },
+        "django-bootstrap-calendar": {
+            "CSS": 10981,
+            "Python": 14664,
+            "HTML": 13644,
+            "JavaScript": 82801
+        },
+        "Project1Algorithms2": {},
+        "SAGE": {
+            "CSS": 116483,
+            "Python": 323873,
+            "HTML": 96244,
+            "JavaScript": 484
+        },
+        "DatabasesI": {},
+        "country-list": {
+            "HTML": 13030030,
+            "PHP": 8362625
+        },
+        "GraficasII": {},
+        "ComputerGraphics1": {},
+        "Tarea3DeveraFerreira": {
+            "Python": 6819
+        },
+        "Project2Algorithms2": {},
+        "Project2CI3825": {
+            "C": 20361,
+            "Makefile": 661
+        }
+    },
+    "edansi94": {
+        "bricksOpenGL": {
+            "C++": 53787
+        },
+        "ShaderRM": {},
+        "VDG": {
+            "ASP": 118649,
+            "GLSL": 3279,
+            "C#": 33631
+        },
+        "asistenteDePruebaLenguajes": {
+            "Haskell": 6174
+        }
+    },
+    "atarazona89": {
+        "LibroPasantia": {
+            "TeX": 53335
+        },
+        "Magic-Chess": {
+            "C": 549,
+            "Objective-C": 404,
+            "Python": 10237,
+            "GLSL": 4477,
+            "Java": 7315,
+            "Objective-C++": 1751,
+            "C#": 71233,
+            "JavaScript": 564
+        },
+        "sisconsiradex": {
+            "CSS": 60672,
+            "Shell": 3300,
+            "JavaScript": 68673,
+            "Java": 658945
+        },
+        "Informe": {
+            "Batchfile": 207,
+            "TeX": 64394
+        },
+        "Mi-Libro": {
+            "TeX": 195151
+        },
+        "SimuRMI": {
+            "Java": 16437
+        },
+        "occupational": {
+            "Shell": 3284,
+            "Java": 248376
+        },
+        "proyectoAngular": {
+            "CoffeeScript": 931,
+            "CSS": 76929,
+            "HTML": 109273,
+            "JavaScript": 2979191
+        },
+        "MenuAumentado": {
+            "CSS": 13087,
+            "XML": 71680,
+            "PHP": 7408,
+            "HTML": 4337965,
+            "Java": 49488,
+            "JavaScript": 61525
+        },
+        "pruebaVTD": {
+            "Java": 6229
+        },
+        "MusicHaskell": {
+            "Haskell": 15835
+        }
+    },
+    "maridelvalle15": {
+        "ProyTraductores": {
+            "Ruby": 80606
+        },
+        "ProyectoProlog": {
+            "Prolog": 6340
+        },
+        "StarWars": {
+            "C++": 51827
+        },
+        "WaveSimulation": {
+            "C++": 7066
+        },
+        "prueba": {
+            "C": 11217
+        },
+        "proyectoHaskell": {
+            "Haskell": 132993
+        },
+        "rauldelvalle_webpage": {
+            "CSS": 628515,
+            "Python": 5686,
+            "PHP": 3368,
+            "HTML": 3428544,
+            "JavaScript": 5706047
+        },
+        "proyectosufro": {
+            "C": 9415,
+            "Makefile": 226
+        },
+        "Tarea3SoftwareI": {
+            "Python": 7358
+        },
+        "test_rest_repo": {
+            "Python": 10646
+        },
+        "oracle_entrega1": {},
+        "fotoshacienda": {},
+        "99Haskell": {
+            "Haskell": 1457
+        },
+        "RedesI-Sockets": {
+            "C": 28056,
+            "Makefile": 380
+        },
+        "Tarea2SoftwareI": {},
+        "Shader2": {
+            "C": 10180,
+            "GLSL": 5404,
+            "C++": 152307
+        },
+        "oracle_triggers": {},
+        "ProyectoRuby": {
+            "Ruby": 5216
+        },
+        "BricksOpenGL": {
+            "C++": 25877
+        }
+    },
+    "gabrielformica": {
+        "enie": {
+            "Python": 9716,
+            "Shell": 68,
+            "C++": 86822
+        },
+        "Rubik-s-cube-solver": {
+            "C++": 49581
+        },
+        "Music-Composition-Generator": {
+            "Haskell": 20165
+        },
+        "neural_network": {
+            "Haskell": 795,
+            "Python": 1035,
+            "Matlab": 6701
+        },
+        "proy1-ci4835": {
+            "C": 24360,
+            "C++": 2288
+        },
+        "proy1-ci3825": {
+            "C": 17659,
+            "C++": 1294
+        },
+        "Instance-Selection": {
+            "Makefile": 323,
+            "C++": 54504,
+            "Haskell": 1654
+        },
+        "programming": {
+            "C++": 23146
+        }
+    },
+    "andrenav93": {
+        "IA2_RegresionLinealMultiple": {
+            "Python": 12942
+        },
+        "Operativos": {
+            "C": 40154,
+            "Makefile": 1638
+        },
+        "SHADERS_2": {
+            "C": 10180,
+            "GLSL": 5431,
+            "C++": 152891
+        },
+        "MARIO_KART": {},
+        "SHADERS": {
+            "C": 10180,
+            "GLSL": 1897,
+            "C++": 157694
+        },
+        "BASES_DATOS": {},
+        "BRICKBREAKER": {
+            "C++": 33253
+        },
+        "Tarea2Software": {
+            "Python": 7905
+        },
+        "IA2_RedesNeuronales": {},
+        "LenguajesProgramacion": {
+            "Ruby": 14699,
+            "CSS": 15507,
+            "HTML": 155985,
+            "Haskell": 18175,
+            "Prolog": 13845,
+            "JavaScript": 17069
+        },
+        "ESTACIONAMIENTO": {
+            "C": 40814,
+            "Makefile": 381
+        },
+        "ALGOS_3": {
+            "Java": 34887
+        },
+        "Logical-CNF": {
+            "C": 1763,
+            "Makefile": 6018,
+            "C++": 193200
+        }
+    },
+    "MeggSan": {
+        "Prueba": {
+            "Python": 13510
+        },
+        "RedesI": {
+            "C": 23861,
+            "Shell": 187,
+            "Makefile": 517
+        },
+        "GraficasII": {},
+        "Tarea3Software": {
+            "CSS": 4221,
+            "Python": 61691,
+            "HTML": 57909,
+            "JavaScript": 30490
+        },
+        "WaveEffect": {
+            "C++": 9866
+        },
+        "PruebaROR": {
+            "Ruby": 18666,
+            "CSS": 868,
+            "CoffeeScript": 211,
+            "HTML": 4968,
+            "JavaScript": 661
+        },
+        "Remoto": {
+            "Python": 15877
+        }
+    },
+    "IsaacValiente": {
+        "Onesoft": {
+            "Python": 6418
+        }
+    },
+    "alfredojf": {
+        "matlab-pattern-recognition": {
+            "M": 28710,
+            "Matlab": 186685
+        },
+        "asistente_de_pruebas": {
+            "Shell": 252,
+            "Haskell": 36057
+        },
+        "naive-bayes-and-boosting": {
+            "Jupyter Notebook": 392691,
+            "Python": 24431,
+            "HTML": 292414
+        },
+        "synergy_website": {
+            "CSS": 38709,
+            "Python": 115094,
+            "HTML": 107052,
+            "JavaScript": 51571
+        }
+    },
+    "sahidr": {
+        "Prueba": {
+            "Python": 67
+        },
+        "sahidr.github.io": {},
+        "oskcolorado.github.io": {
+            "HTML": 1162
+        },
+        "APMwSc": {},
+        "Lab.-Lenguajes-I": {
+            "Haskell": 16402
+        }
+    },
+    "MichalPaszkiewicz": {
+        "3d-game": {
+            "TypeScript": 43164,
+            "HTML": 23751,
+            "JavaScript": 58387,
+            "CSS": 443
+        },
+        "hieroglyph": {
+            "CSS": 2207,
+            "HTML": 1766,
+            "JavaScript": 28864
+        },
+        "inknote": {
+            "TypeScript": 490835,
+            "Batchfile": 301,
+            "HTML": 21995,
+            "JavaScript": 1149138,
+            "CSS": 39365
+        },
+        "charango": {
+            "CSS": 2291,
+            "HTML": 5269,
+            "JavaScript": 9834
+        },
+        "inknote-server": {
+            "JavaScript": 9612
+        },
+        "firefly": {
+            "TypeScript": 120564,
+            "HTML": 6524,
+            "Batchfile": 67
+        },
+        "chordprogressiontool": {
+            "HTML": 7990
+        },
+        "js1k2015": {
+            "HTML": 794,
+            "JavaScript": 1841
+        },
+        "emailr": {
+            "CSS": 4921,
+            "HTML": 14537,
+            "JavaScript": 5714,
+            "Batchfile": 592
+        },
+        "filesplash": {
+            "TypeScript": 16850,
+            "HTML": 3985,
+            "JavaScript": 19632,
+            "CSS": 621
+        },
+        "iranianphrases": {},
+        "gitignore": {},
+        "cqrsjs": {
+            "TypeScript": 80677,
+            "HTML": 471,
+            "JavaScript": 186286,
+            "Batchfile": 94
+        },
+        "astralQuery": {
+            "CSS": 467,
+            "JavaScript": 8268
+        },
+        "footsies": {
+            "CSS": 2298,
+            "JavaScript": 213255
+        },
+        "flickr-integration": {
+            "CSS": 10115,
+            "HTML": 3233,
+            "JavaScript": 4218
+        },
+        "comic": {
+            "CSS": 13624,
+            "HTML": 31363,
+            "JavaScript": 28986
+        },
+        "go": {
+            "TypeScript": 31167,
+            "HTML": 3530,
+            "JavaScript": 455794,
+            "CSS": 11488
+        },
+        "ecosystem": {
+            "TypeScript": 4317,
+            "HTML": 306,
+            "JavaScript": 7491,
+            "CSS": 87
+        },
+        "Cryptosaurus": {
+            "CSS": 15605,
+            "HTML": 6224,
+            "TypeScript": 7065,
+            "ASP": 103,
+            "C#": 42823,
+            "JavaScript": 7483
+        },
+        "game-of-life": {
+            "CSS": 208,
+            "JavaScript": 6854
+        },
+        "clockjs": {
+            "CSS": 1446,
+            "HTML": 9724,
+            "JavaScript": 8726
+        },
+        "dependencyinjectionpractice": {
+            "JavaScript": 1213
+        },
+        "bezier-curve-extractor": {
+            "CSS": 220,
+            "HTML": 1686,
+            "JavaScript": 2551
+        },
+        "depictr": {
+            "TypeScript": 4653,
+            "HTML": 1017,
+            "JavaScript": 5333,
+            "CSS": 1685
+        },
+        "fortress-game": {
+            "CSS": 38,
+            "HTML": 1957,
+            "JavaScript": 7253
+        },
+        "js1k2016": {
+            "HTML": 795
+        },
+        "codekatas": {
+            "JavaScript": 3149
+        },
+        "brailletraining": {
+            "CSS": 2343,
+            "JavaScript": 5760
+        },
+        "CtCodeKata": {
+            "TypeScript": 87257,
+            "HTML": 323,
+            "JavaScript": 218691,
+            "Batchfile": 87
+        }
+    },
+    "ReiVerdugo": {
+        "uikit-fundamentals": {
+            "Swift": 200066
+        },
+        "spotifyApplication": {
+            "Swift": 25958,
+            "Ruby": 175
+        },
+        "parallelism-homework": {
+            "C": 63027,
+            "Python": 1076,
+            "Shell": 1770,
+            "Makefile": 230
+        },
+        "tarea1-git": {
+            "Ruby": 3934
+        },
+        "Airbnb-Test": {
+            "Swift": 61786,
+            "Ruby": 158,
+            "Objective-C": 181
+        },
+        "ProyectoIluminacion": {},
+        "Xcode-Debugging": {
+            "Swift": 22622
+        },
+        "CoolNotes": {
+            "Swift": 19318
+        },
+        "swift-syntax": {
+            "Swift": 132503
+        },
+        "MemeMe": {
+            "Swift": 18095
+        },
+        "InterfacesConElUsuario": {
+            "Swift": 64619,
+            "Objective-C": 273
+        }
+    },
+    "aldrix": {
+        "Proyecto_V_Graficas_I": {
+            "C": 10180,
+            "GLSL": 3496,
+            "C++": 161535
+        },
+        "Proyecto_VI_Graficas_I": {
+            "C": 10180,
+            "GLSL": 5347,
+            "C++": 154476
+        },
+        "Coursera-Html-Css-Javascript": {
+            "CSS": 11430,
+            "HTML": 33299,
+            "JavaScript": 5523
+        },
+        "Coursera-AngularJS": {
+            "CSS": 810,
+            "HTML": 20551,
+            "JavaScript": 30565
+        },
+        "My_first_application_Ruby": {
+            "Ruby": 19056,
+            "CSS": 686,
+            "HTML": 4900,
+            "JavaScript": 661
+        },
+        "Control-de-Acceso": {
+            "Python": 17789
+        },
+        "Proyecto_III_Graficas_I": {
+            "C++": 9971
+        },
+        "Asteroids-Game": {
+            "GDScript": 18719
+        }
+    },
+    "AriannaAmayaC": {},
+    "ZurdoRod": {
+        "Tarea": {},
+        "Taller-2": {
+            "Python": 11076
+        },
+        "t1hk": {
+            "Haskell": 4742
+        }
+    },
+    "egprc": {
+        "Tarea-2-Software": {
+            "Python": 5253
+        },
+        "Software-Tarea-3": {},
+        "Tarea-3-Software": {
+            "Python": 10289
+        },
+        "Tarea-2-Sistemas": {}
+    },
+    "yersonrr": {
+        "Inteligencia-1-Proyecto-1": {
+            "C": 51062,
+            "Makefile": 6263,
+            "C++": 197864
+        },
+        "Estacionamiento": {
+            "Python": 4569
+        },
+        "datasharing": {},
+        "shaders_proyect1": {},
+        "datasciencecoursera": {
+            "HTML": 2065
+        },
+        "ogreGame": {
+            "C++": 82869
+        },
+        "preventrivia": {
+            "CSS": 563164,
+            "Python": 23933,
+            "HTML": 6508,
+            "JavaScript": 3201709,
+            "Shell": 78
+        },
+        "app_redes": {
+            "CSS": 568250,
+            "Python": 23508,
+            "HTML": 16852,
+            "JavaScript": 3358049,
+            "Shell": 80
+        },
+        "ogreSW": {
+            "C": 454,
+            "C++": 39884
+        },
+        "Redes_Proyecto1": {
+            "Logos": 652,
+            "C": 51135,
+            "Makefile": 700
+        },
+        "water_simulation": {
+            "C++": 7760
+        }
+    },
+    "nmanan": {
+        "Prueba": {
+            "Haskell": 320
+        },
+        "setlan": {
+            "Bison": 7698,
+            "Logos": 4093,
+            "Haskell": 37594
+        },
+        "Tarea2": {}
+    },
+    "VaneRivas": {
+        "phaser": {
+            "CSS": 379475,
+            "PHP": 84236,
+            "JavaScript": 15794730
+        },
+        "Hello-world": {
+            "Python": 55
+        },
+        "CI4321-OpenGLTexturas": {
+            "C": 10180,
+            "C++": 89405
+        },
+        "IngDeSoftware": {
+            "Python": 19
+        },
+        "StarFox64-Ogre": {}
+    },
+    "prmm95": {
+        "Operativos_CI3825": {
+            "C": 94919,
+            "Makefile": 1131
+        },
+        "CI4835_ProyectoII": {
+            "C": 28020,
+            "Makefile": 252
+        },
+        "synergy_website": {
+            "CSS": 38709,
+            "Python": 115094,
+            "HTML": 107052,
+            "JavaScript": 51571
+        },
+        "sc-anarweb": {
+            "CSS": 299157,
+            "Python": 12222214,
+            "HTML": 946833,
+            "JavaScript": 287044,
+            "Shell": 113
+        },
+        "ProyectoII": {
+            "Assembly": 5437
+        },
+        "Bases_CI3391": {},
+        "Lenguajes_CI3661": {
+            "Ruby": 21437,
+            "Prolog": 29210,
+            "TeX": 66787,
+            "Haskell": 106042
+        },
+        "ProyectoIII-CI3815": {
+            "Assembly": 5923
+        },
+        "Traductores_CI3725": {
+            "Python": 1296599,
+            "Shell": 232
+        },
+        "Devlab-tarea3": {
+            "Ruby": 24128,
+            "CSS": 3039,
+            "CoffeeScript": 633,
+            "HTML": 20304,
+            "JavaScript": 667
+        },
+        "tarea1-git": {
+            "Python": 4248
+        }
+    },
+    "SergioTeranZ": {
+        "Sistemas2": {
+            "CSS": 384766,
+            "Python": 476691,
+            "PHP": 50,
+            "HTML": 216461,
+            "JavaScript": 287421
+        },
+        "MoneyApp": {
+            "CSS": 568106,
+            "HTML": 1331,
+            "JavaScript": 3343716
+        },
+        "Diseno": {
+            "Java": 14545
+        },
+        "Krato-Prueba": {
+            "TypeScript": 12475,
+            "HTML": 10241,
+            "JavaScript": 3634,
+            "CSS": 3195
+        },
+        "IngSoftware": {},
+        "Krato-Entrenamiento": {
+            "CSS": 1596,
+            "HTML": 8247,
+            "JavaScript": 18824
+        },
+        "EchoApp": {
+            "TypeScript": 4104,
+            "HTML": 4461,
+            "JavaScript": 3634,
+            "CSS": 2860
+        }
+    },
+    "J0hnG4lt": {
+        "lab_lenguajes": {
+            "TeX": 11488
+        },
+        "interprete": {
+            "Logos": 11688,
+            "Makefile": 223,
+            "Yacc": 149152,
+            "Haskell": 21003
+        },
+        "puzzle": {
+            "CSS": 7084,
+            "HTML": 24847,
+            "JavaScript": 46330
+        },
+        "IA2": {
+            "Python": 51232
+        },
+        "Tarea_Prolog": {
+            "Prolog": 12545
+        },
+        "proy_2": {
+            "C": 14690,
+            "Makefile": 65
+        },
+        "primerProyectoCarrera": {
+            "Python": 91443
+        },
+        "TweetFeatureExtractionTools": {
+            "Python": 13557
+        },
+        "ClienteServidor": {
+            "C": 34954,
+            "Makefile": 682
+        },
+        "Tarea_OS": {
+            "C": 8432,
+            "Makefile": 75
+        },
+        "Proy_Org_2": {
+            "Assembly": 33850
+        },
+        "proof_verifier": {
+            "Haskell": 18246
+        },
+        "Proy1": {
+            "C": 122134,
+            "Makefile": 264
+        },
+        "ModeloSimplexR": {
+            "R": 5784
+        },
+        "proyectoInterfaces": {
+            "CSS": 36399,
+            "HTML": 99516,
+            "JavaScript": 469485
+        },
+        "Tarea_Tuits_Sistemas_III": {
+            "Python": 13475
+        },
+        "Proy_3_Org": {
+            "Assembly": 29297
+        },
+        "Tarea_Ruby": {
+            "Ruby": 12606
+        }
+    },
+    "LarryJho": {
+        "Tarea2": {}
+    },
+    "danielasocas": {
+        "wm_porto": {
+            "CSS": 1710,
+            "Python": 8518,
+            "HTML": 7761,
+            "JavaScript": 130
+        },
+        "munkee": {
+            "CSS": 2536,
+            "HTML": 1202
+        },
+        "proyecto1": {
+            "Pascal": 22233
+        },
+        "bt_rss": {
+            "Python": 4661
+        },
+        "munkee2.0": {
+            "CSS": 18128,
+            "JavaScript": 1032,
+            "HTML": 8855,
+            "PHP": 4625
+        },
+        "traductores": {
+            "Ruby": 13537,
+            "Bison": 3374
+        },
+        "lenguajes": {
+            "Prolog": 9755
+        }
+    },
+    "Erick1508": {
+        "TareaProlog": {
+            "IDL": 26860
+        },
+        "Rubyrps": {
+            "Ruby": 8967
+        },
+        "TipCal": {
+            "Java": 14251
+        },
+        "PruebaDeConcepto": {},
+        "AndriodChat": {
+            "Java": 1030
+        },
+        "Redes": {
+            "C": 37214,
+            "Perl": 24201,
+            "JavaScript": 15479,
+            "Java": 72453
+        },
+        "pruebaDjango": {
+            "Python": 11124,
+            "HTML": 3620
+        },
+        "FuncionalAvanzadaTarea2": {
+            "TeX": 902,
+            "Haskell": 33165
+        },
+        "FuncionalAvanzadaTarea1": {
+            "TeX": 2039,
+            "Haskell": 49320
+        },
+        "BaseDeDatosII": {
+            "Java": 58135
+        },
+        "FirstAppAndroid": {
+            "Java": 10098
+        },
+        "passenger_library": {
+            "Ruby": 47385,
+            "CSS": 46704,
+            "HTML": 1057673,
+            "JavaScript": 11007
+        }
+    },
+    "andreacent": {
+        "ShaderOpenGL": {
+            "C": 10180,
+            "GLSL": 5862,
+            "C++": 156929
+        },
+        "JKGame": {
+            "C#": 4380
+        },
+        "BricksOpenGL": {
+            "CMake": 1256,
+            "C++": 46336
+        },
+        "SearchTrees": {
+            "C": 31623,
+            "Makefile": 11524,
+            "C++": 213627,
+            "Shell": 6959
+        },
+        "IonicPrueba": {
+            "CSS": 563206,
+            "Objective-C": 110744,
+            "HTML": 5060,
+            "C++": 211682,
+            "Java": 39600,
+            "C#": 20363,
+            "JavaScript": 3205605,
+            "C": 818
+        },
+        "DollOpenGL": {
+            "CMake": 1256,
+            "C++": 9624
+        },
+        "IsanHome": {
+            "CSS": 22690,
+            "HTML": 82526,
+            "JavaScript": 4301
+        },
+        "CasosDePruebasPytech": {
+            "Python": 6184
+        }
+    },
+    "carlosnoria": {
+        "Tarea3": {
+            "Python": 8760
+        },
+        "Tarea2": {
+            "Python": 4764
+        }
+    },
+    "oggs22": {
+        "paginarespon": {
+            "CSS": 51926,
+            "HTML": 17292,
+            "JavaScript": 30785
+        },
+        "Elixir": {
+            "Elixir": 5249
+        },
+        "DockerRails": {
+            "Ruby": 28594,
+            "CSS": 1272,
+            "CoffeeScript": 633,
+            "HTML": 7193,
+            "JavaScript": 1201
+        }
+    },
+    "Saar1312": {
+        "synergy": {
+            "CSS": 4221,
+            "Python": 14011,
+            "HTML": 40399,
+            "JavaScript": 20148
+        },
+        "RS": {},
+        "Assembly-project": {
+            "Assembly": 27873
+        },
+        "Prolog-Project": {
+            "Prolog": 24492
+        },
+        "Predicting-Bank-Loan-Status": {
+            "R": 31326
+        },
+        "Robotics-Reactive-Robot": {
+            "C": 17111,
+            "Python": 57945,
+            "C++": 26417,
+            "CMake": 119177,
+            "Makefile": 460841,
+            "Shell": 8001
+        },
+        "angular.js": {
+            "CSS": 21163,
+            "Shell": 19296,
+            "JavaScript": 5299549
+        },
+        "interfaz": {
+            "CSS": 46432,
+            "Python": 45730,
+            "HTML": 266247,
+            "JavaScript": 33250,
+            "PHP": 663,
+            "Mako": 412
+        },
+        "siages": {
+            "CSS": 41111,
+            "Python": 337421,
+            "HTML": 116793,
+            "JavaScript": 68660
+        },
+        "Haskell-Project": {
+            "Haskell": 3876
+        },
+        "BOT-Programming-Language": {
+            "Python": 232815,
+            "TeX": 15822
+        },
+        "Objects_classification_computer_vision": {},
+        "test": {},
+        "Vision-based-parking-lot-availability-OpenCV": {
+            "Python": 9120
+        },
+        "OS-Project": {
+            "C": 25480,
+            "Makefile": 172
+        },
+        "Ruby-Project": {
+            "Ruby": 7701
+        }
+    },
+    "pavinod": {
+        "50.001_TravelApp": {
+            "Java": 27092
+        },
+        "hackathon-starter": {
+            "CSS": 165379,
+            "HTML": 49959,
+            "JavaScript": 66522
+        },
+        "ansible-cisco-snmp": {
+            "Python": 55945
+        },
+        "catarse": {
+            "Ruby": 1451591,
+            "CSS": 144734,
+            "CoffeeScript": 11495,
+            "HTML": 316441,
+            "JavaScript": 142751
+        },
+        "HelloCode": {
+            "CSS": 513,
+            "C#": 78642,
+            "HTML": 5127,
+            "JavaScript": 10918,
+            "ASP": 100
+        },
+        "material-design-lite": {
+            "CSS": 255019,
+            "HTML": 175323,
+            "JavaScript": 227102
+        },
+        "Adafruit_NeoPixel": {
+            "C": 2142,
+            "C++": 54002
+        },
+        "fundraiser-app": {
+            "Ruby": 35806,
+            "CSS": 546,
+            "HTML": 2830,
+            "JavaScript": 641
+        },
+        "BLEConnect": {
+            "Java": 57681
+        },
+        "DocumentServer": {
+            "Ruby": 41854,
+            "CSS": 3231891,
+            "Python": 17613,
+            "JavaScript": 23108863,
+            "C#": 652047,
+            "Shell": 321,
+            "HTML": 4413716,
+            "Java": 60673,
+            "ASP": 30927,
+            "Assembly": 25344674,
+            "Batchfile": 123,
+            "PHP": 49689
+        },
+        "i2cdevlib": {
+            "C": 600549,
+            "Processing": 11953,
+            "C++": 1318024,
+            "Arduino": 82567,
+            "Shell": 1389,
+            "Makefile": 19128
+        },
+        "CIS-249-Java-Programming-2": {
+            "Groff": 97,
+            "HTML": 80,
+            "Java": 175035
+        },
+        "ipython": {},
+        "F11Project": {
+            "Makefile": 1493,
+            "Java": 130171
+        },
+        "gitest": {
+            "Python": 688
+        },
+        "DioderCTRL": {
+            "Python": 1255
+        },
+        "etherpad-lite": {
+            "CSS": 50892,
+            "Python": 1394,
+            "HTML": 56145,
+            "Makefile": 632,
+            "Shell": 12392,
+            "JavaScript": 1448713,
+            "Batchfile": 1066
+        },
+        "Adafruit-LED-Backpack-Library": {
+            "C++": 17958
+        },
+        "I2CDEV_MPU6050": {
+            "C": 89526,
+            "Arduino": 22449,
+            "Processing": 9254,
+            "C++": 249755
+        },
+        "LearningPyQt": {
+            "Python": 980265,
+            "HTML": 4343,
+            "Batchfile": 93,
+            "QMake": 186
+        },
+        "azure-content": {},
+        "android-digital-signage": {
+            "Arduino": 5098,
+            "Java": 16163
+        },
+        "b2d": {
+            "Go": 16077,
+            "Perl": 2463,
+            "HTML": 4959,
+            "CSS": 890,
+            "Shell": 132760,
+            "JavaScript": 7015,
+            "Batchfile": 15911
+        },
+        "Adafruit-GFX-Library": {
+            "C": 8356,
+            "C++": 20306
+        },
+        "cheesesquare": {
+            "Java": 25639
+        },
+        "android-topeka": {
+            "Java": 242011
+        },
+        "linkclump": {
+            "CSS": 5014,
+            "HTML": 8223,
+            "JavaScript": 47143,
+            "Shell": 334
+        },
+        "chartist-js": {
+            "CSS": 123877,
+            "HTML": 20939,
+            "JavaScript": 486337
+        },
+        "Android-bidirectional-hello-world": {
+            "Arduino": 2342,
+            "Java": 5449
+        },
+        "dw2016": {
+            "CSS": 66669,
+            "Python": 8576,
+            "HTML": 1138663,
+            "JavaScript": 1000765
+        }
+    },
+    "robin-lee": {
+        "50.001_TravelApp": {
+            "Java": 65960
+        },
+        "ONIZ": {
+            "CSS": 1069,
+            "HTML": 1517,
+            "JavaScript": 24,
+            "Java": 279785
+        },
+        "Maps-i": {
+            "CSS": 2012931,
+            "HTML": 28970,
+            "JavaScript": 2294398
+        },
+        "python-playground": {},
+        "growing-android-applications-guided-by-tests": {
+            "Shell": 369,
+            "Java": 60852
+        },
+        "store": {
+            "CSS": 76350,
+            "Python": 113757,
+            "HTML": 99300,
+            "JavaScript": 204112
+        },
+        "robin-lee.github.io": {
+            "CSS": 39276,
+            "HTML": 437689
+        },
+        "euler-project": {
+            "Python": 1421
+        },
+        "blog": {
+            "CSS": 29838,
+            "HTML": 4352053,
+            "JavaScript": 16075
+        },
+        "android-helpers": {
+            "Java": 110441
+        },
+        "smart-mahjong-tiles": {
+            "C++": 54282
+        },
+        "google-interview-university": {},
+        "the-craftsman-book": {
+            "HTML": 611258
+        },
+        "maplecafe": {
+            "CSS": 671840,
+            "HTML": 7465,
+            "JavaScript": 2720673
+        },
+        "learnyounode": {
+            "CSS": 156,
+            "HTML": 381,
+            "JavaScript": 10716
+        },
+        "redmart-skiing": {
+            "Java": 5886
+        }
+    },
+    "maniatic0": {
+        "Pequeno-Generador": {
+            "C#": 14191
+        },
+        "LOWRESJAMGAME": {
+            "C#": 30416
+        },
+        "DieGruppe1": {
+            "C#": 147751
+        },
+        "Ingenieria": {
+            "Python": 11003
+        },
+        "Tarea3-Ingenieria": {
+            "Python": 17024
+        },
+        "Juego-Jugado": {
+            "GLSL": 367977,
+            "C#": 516035
+        }
+    },
+    "GabrielGit": {
+        "Prueba": {},
+        "ingSoftwareTarea3": {
+            "Python": 15233
+        }
+    },
+    "alejandra21": {
+        "Redes": {
+            "C": 37752,
+            "Makefile": 658
+        },
+        "ProyectoII": {
+            "Assembly": 5437
+        },
+        "proyectoGrado-ugr": {},
+        "prueba": {
+            "Python": 229396
+        },
+        "sc-anarweb": {
+            "CSS": 299418,
+            "Python": 12241291,
+            "HTML": 976311,
+            "JavaScript": 287044,
+            "Shell": 113
+        },
+        "Operativos_CI3825": {
+            "C": 94919,
+            "Makefile": 1131
+        },
+        "synergy_website": {
+            "CSS": 38709,
+            "Python": 115094,
+            "HTML": 107052,
+            "JavaScript": 51571
+        },
+        "Lenguajes_CI3661": {
+            "Ruby": 21437,
+            "Prolog": 29210,
+            "TeX": 66787,
+            "Haskell": 106042
+        },
+        "Scripts2": {
+            "Shell": 6063
+        },
+        "ServcioComunitario": {
+            "CSS": 292045,
+            "Python": 8607403,
+            "HTML": 558902,
+            "JavaScript": 247736
+        },
+        "PruebasServicioComunitario": {
+            "CSS": 292218,
+            "Python": 8612858,
+            "HTML": 568102,
+            "JavaScript": 247736
+        }
+    },
+    "glimonta": {
+        "IngenieriaSoftware": {
+            "Java": 314655
+        },
+        "home": {
+            "Shell": 5594,
+            "VimL": 5180
+        },
+        "thesis": {
+            "C": 7477,
+            "Standard ML": 123275,
+            "TeX": 9741,
+            "Isabelle": 986277,
+            "Shell": 1088,
+            "Makefile": 7697
+        },
+        "OrgaBonita": {
+            "Assembly": 275377,
+            "Component Pascal": 900
+        },
+        "redesII": {
+            "Python": 43133
+        },
+        "Xplode": {
+            "C++": 202167,
+            "Yacc": 38073,
+            "Assembly": 122922,
+            "Shell": 1643,
+            "Makefile": 726,
+            "Lex": 11428
+        },
+        "libro": {
+            "Makefile": 110,
+            "TeX": 393020
+        },
+        "IngenieriaDeSoftware": {
+            "Java": 19513
+        },
+        "operativos": {
+            "C": 190630
+        },
+        "blog": {
+            "Ruby": 23570,
+            "CSS": 2065,
+            "CoffeeScript": 422,
+            "JavaScript": 664
+        },
+        "Lenguajes": {
+            "Ruby": 14210,
+            "Prolog": 142882,
+            "Haskell": 21461
+        },
+        "Aquiles": {
+            "Arduino": 32254
+        },
+        "Contratexto": {
+            "ASP": 9010,
+            "C#": 5113,
+            "CSS": 3689
+        },
+        "Semantics": {
+            "Isabelle": 271972
+        },
+        "Traductores": {
+            "Ruby": 79344
+        },
+        "Redes": {
+            "C": 44874,
+            "Objective-C": 1824
+        },
+        "BasesII": {
+            "Python": 3461
+        }
+    },
+    "dougtc1": {
+        "IA2-GradientDescent": {
+            "Python": 15104
+        },
+        "Operating-Systems": {
+            "C": 144365,
+            "C++": 457,
+            "Makefile": 697
+        },
+        "Traductores": {
+            "Python": 67248,
+            "Shell": 999,
+            "TeX": 18169
+        },
+        "GL1": {},
+        "Spoon-Knife": {
+            "CSS": 256
+        },
+        "othello": {
+            "Makefile": 102,
+            "C++": 25206
+        },
+        "Redes_proyecto2": {
+            "Shell": 548
+        },
+        "Computer-Organization": {
+            "Assembly": 89246
+        },
+        "Neural-Networks": {
+            "Python": 2308
+        },
+        "algorithms2": {
+            "Python": 83040
+        },
+        "backend_app": {
+            "Python": 23508
+        },
+        "Database-Systems": {},
+        "algorithms3": {
+            "Shell": 278,
+            "Makefile": 413,
+            "Java": 58658
+        },
+        "algorithms1": {
+            "Pascal": 34562,
+            "Python": 208226
+        }
+    },
+    "Neojdpm": {
+        "Tarea3": {
+            "Python": 6554
+        },
+        "Tarea2": {},
+        "bootstrap-calendar": {
+            "CSS": 23759,
+            "PHP": 1742,
+            "HTML": 24665,
+            "JavaScript": 139876
+        }
+    },
+    "leotms": {
+        "Taller-Programacion-De-Videojuegos-I": {
+            "GDScript": 2062
+        },
+        "IA-II": {
+            "Makefile": 101,
+            "C++": 35562
+        },
+        "Lenguajes-Proyecto-1": {
+            "Haskell": 24042
+        },
+        "Lenguajes-Proyecto-2": {
+            "Prolog": 7886
+        },
+        "Elementos": {
+            "GLSL": 787,
+            "Objective-C": 2392,
+            "C#": 291265
+        },
+        "Setlan": {
+            "Python": 62169
+        },
+        "Redes-Asignacion-3": {
+            "C": 31705,
+            "Makefile": 393
+        },
+        "IA-I": {
+            "C": 31623,
+            "Makefile": 4752,
+            "C++": 227143
+        },
+        "IA-III": {
+            "C": 1763,
+            "Makefile": 5364,
+            "C++": 199525,
+            "Shell": 400
+        },
+        "Ingenieria-de-Software-Tarea-2": {
+            "Python": 1987
+        },
+        "Taller-Programacion-De-Videojuegos-II": {
+            "GDScript": 5163
+        },
+        "Lenguajes-Proyecto-3": {
+            "Ruby": 7356
+        }
+    },
+    "patriv": {
+        "Tarea3": {
+            "Python": 68691,
+            "HTML": 5882
+        },
+        "PRUEBA": {
+            "Python": 19
+        },
+        "Traductores": {
+            "Python": 210613
+        },
+        "Coursera-HTML-CSS-Javascript": {},
+        "patriv.github.io": {},
+        "Setlan": {
+            "Python": 62169
+        }
+    },
+    "AminArria": {
+        "habitrpg": {
+            "CoffeeScript": 383798,
+            "CSS": 719606,
+            "Python": 237,
+            "HTML": 654615,
+            "Shell": 2649,
+            "JavaScript": 1041720,
+            "Ruby": 689
+        },
+        "pyenv": {
+            "Groff": 135259,
+            "VimL": 35,
+            "Shell": 213755,
+            "Makefile": 861,
+            "C": 1328
+        },
+        "elm-architecture-tutorial": {},
+        "reserva": {
+            "Ruby": 24747,
+            "CSS": 736,
+            "HTML": 5151,
+            "JavaScript": 1201
+        },
+        "notify_post_bot": {
+            "Python": 2392
+        }
+    },
+    "dayanar23": {
+        "racc": {
+            "Ruby": 176771,
+            "Bison": 43492,
+            "Shell": 992,
+            "HTML": 24454,
+            "C": 29511
+        },
+        "react-native-movies-app": {
+            "Objective-C": 5096,
+            "JavaScript": 8073,
+            "Java": 2289
+        },
+        "Traductores": {},
+        "Tarea2": {
+            "Python": 232
+        },
+        "proyecto-prolog": {
+            "Prolog": 9220
+        },
+        "Rcube": {
+            "Java": 30626
+        },
+        "entendiendo-angular": {
+            "TypeScript": 463,
+            "HTML": 99,
+            "JavaScript": 448
+        },
+        "ares": {},
+        "haskellExamples": {
+            "Haskell": 4646
+        },
+        "AI": {
+            "C": 52058,
+            "Python": 165,
+            "Makefile": 16367,
+            "C++": 260573,
+            "Shell": 2430
+        },
+        "Algorithm-Design": {
+            "Makefile": 136,
+            "C++": 18055
+        },
+        "LaTex-Resume": {
+            "TeX": 5202
+        },
+        "IngSoftware_Tarea2": {
+            "Python": 1987
+        },
+        "AI2": {
+            "Python": 18708
+        }
+    },
+    "susaroma": {
+        "ingSoftwareI": {
+            "Python": 9462
+        },
+        "IngSoftTarea3": {
+            "Python": 1452
+        }
+    },
+    "oskcolorado": {
+        "hello-word": {
+            "Python": 40
+        },
+        "Tarea2": {
+            "Python": 17992
+        },
+        "literaturaAleatoria": {
+            "C": 1977,
+            "Python": 16
+        },
+        "oskcolorado.github.io": {
+            "CSS": 315369,
+            "Python": 32324,
+            "HTML": 1376936,
+            "JavaScript": 24348
+        },
+        "proy2": {
+            "Python": 2593
+        },
+        "APMwSc": {}
+    },
+    "analistamarcio": {
+        "photo_tourist_web_app": {
+            "Ruby": 34062,
+            "HTML": 4640
+        },
+        "fullstack-course3-module1": {
+            "Ruby": 59871
+        },
+        "fullstack-course3-module1-zips": {
+            "Ruby": 30238,
+            "CSS": 1717,
+            "HTML": 6931,
+            "JavaScript": 661
+        },
+        "Coursera-AngularJS": {
+            "CSS": 9605,
+            "HTML": 22195,
+            "JavaScript": 425826
+        },
+        "fullstack-course2-module1-fancy_cars": {
+            "Ruby": 25971,
+            "CSS": 1892,
+            "CoffeeScript": 211,
+            "HTML": 6673,
+            "JavaScript": 661
+        },
+        "ui-router": {
+            "TypeScript": 213055,
+            "Shell": 950,
+            "HTML": 30236,
+            "JavaScript": 234262,
+            "CSS": 72503
+        },
+        "LinkedInAuthenticator-JavaScriptAPI": {
+            "HTML": 2077,
+            "JavaScript": 5220
+        },
+        "opentype.js": {
+            "CSS": 3921,
+            "HTML": 31926,
+            "JavaScript": 477148
+        },
+        "Coursera-module2-solution": {},
+        "Coursera-MDL3-solution": {
+            "HTML": 1
+        },
+        "fullstack-course2-module3-blogposts": {
+            "Ruby": 23524,
+            "CSS": 1893,
+            "CoffeeScript": 211,
+            "HTML": 6578,
+            "JavaScript": 661
+        },
+        "fullstack-course1-module1": {
+            "Shell": 8357
+        },
+        "Jcrop": {
+            "CSS": 157348,
+            "PHP": 9500,
+            "HTML": 37318,
+            "JavaScript": 71502,
+            "Shell": 2745
+        },
+        "Coursera-MDL4-solution": {},
+        "Crop_and_Rotate_Images": {
+            "HTML": 53477
+        },
+        "Coursera-test": {},
+        "fullstack-course1-module2": {
+            "Ruby": 40622
+        },
+        "angular-linkedin-profile-app": {
+            "CSS": 154,
+            "HTML": 3355,
+            "JavaScript": 2358
+        },
+        "jotform-api-ruby": {
+            "Ruby": 3333
+        },
+        "cropit": {
+            "HTML": 8799,
+            "JavaScript": 98225
+        },
+        "LinkedIn-API-client": {
+            "PHP": 82816
+        },
+        "AppleTV_passcode": {
+            "CSS": 2462,
+            "HTML": 4326,
+            "JavaScript": 4927
+        },
+        "AngularJS-Learning": {}
+    },
+    "davidaam": {
+        "asistente_logica": {
+            "Haskell": 18367
+        },
+        "tarea1-git": {
+            "Python": 628
+        },
+        "onsite": {
+            "CSS": 2057,
+            "Python": 15362,
+            "HTML": 18341
+        },
+        "alc0001": {},
+        "fman45": {
+            "TeX": 24352,
+            "Matlab": 136145
+        },
+        "python-pdf": {
+            "CSS": 126,
+            "Python": 470,
+            "HTML": 902
+        },
+        "operativos-p2": {
+            "C": 7251,
+            "Makefile": 155,
+            "Shell": 302,
+            "JavaScript": 21246,
+            "Groff": 1062
+        },
+        "cordova-plugin-datepicker": {
+            "Objective-C": 11048,
+            "JavaScript": 21882,
+            "Java": 15113
+        },
+        "operativos-p1": {
+            "C": 8920,
+            "Makefile": 157,
+            "JavaScript": 21391
+        },
+        "ej_prolog": {
+            "Prolog": 10138
+        },
+        "NEO": {
+            "Ruby": 4085
+        }
+    },
+    "HetRod": {
+        "Tarea3": {},
+        "BT": {
+            "Java": 122713
+        },
+        "prueba": {}
+    },
+    "robertoromero8892": {
+        "bootstrap-calendar": {
+            "ApacheConf": 322,
+            "CSS": 6593,
+            "JavaScript": 10896,
+            "HTML": 1290827,
+            "PHP": 1219954
+        },
+        "tarea_pytech_roberto_larry": {
+            "Python": 3372
+        },
+        "tarea3_Pytech_Centeno_Cutillas_Romero": {
+            "Python": 7340
+        },
+        "proyecto-ruby": {
+            "Ruby": 22015
+        },
+        "miniproyecto": {
+            "Python": 5461
+        }
+    },
+    "pexison": {
+        "IngenieriaSoftware": {
+            "PLpgSQL": 63359,
+            "Java": 516810
+        },
+        "gspeech": {
+            "Python": 3786,
+            "CMake": 1203,
+            "Makefile": 42
+        },
+        "alexa-get-example": {},
+        "turtlebot_2dnav": {
+            "CMake": 93
+        },
+        "rosdistro": {
+            "Python": 38645,
+            "Shell": 187
+        },
+        "libro": {
+            "Shell": 1687,
+            "C++": 2620,
+            "Makefile": 109833,
+            "TeX": 131696
+        },
+        "turtlebot_2dnav-release": {
+            "CMake": 5186
+        },
+        "operativos": {
+            "C": 190630,
+            "Makefile": 2232
+        },
+        "APMwSc": {
+            "CSS": 4440,
+            "Python": 1009695,
+            "HTML": 122322,
+            "JavaScript": 63881
+        },
+        "Lenguajes": {
+            "Ruby": 14210,
+            "Prolog": 142882,
+            "Makefile": 32,
+            "Haskell": 21461
+        },
+        "SHLSD": {
+            "Java": 171948
+        },
+        "SToHTM": {
+            "CSS": 457136,
+            "Python": 2565,
+            "HTML": 2343,
+            "JavaScript": 4511,
+            "Shell": 346
+        },
+        "Arduino": {
+            "Arduino": 24876,
+            "Processing": 10370,
+            "C++": 19430
+        },
+        "Traductores": {
+            "Ruby": 81972,
+            "Makefile": 88,
+            "Yacc": 14144
+        },
+        "SIGE": {
+            "CSS": 84212,
+            "JavaScript": 687,
+            "Java": 159497
+        },
+        "Secuvecinos": {
+            "Swift": 63923,
+            "Objective-C": 91071
+        }
+    },
+    "shamuel21": {
+        "Manuel": {
+            "Python": 20
+        },
+        "socialFL": {}
+    },
+    "FrancescoDiFebbo": {
+        "cerridifebbo": {
+            "Java": 235949
+        },
+        "belluschi-cerri-difebbo": {
+            "Alloy": 7055,
+            "Java": 36090,
+            "TeX": 183746
+        }
+    },
+    "dvdantunes": {
+        "tickets": {
+            "CSS": 96596,
+            "Shell": 4442,
+            "PHP": 737889,
+            "JavaScript": 971256,
+            "HTML": 12228
+        },
+        "browser-logos": {},
+        "kanjialive": {}
+    },
+    "manuggz": {
+        "mario_bruh": {
+            "Python": 24875
+        },
+        "criptografia-concurrente-ci-3825-": {
+            "C": 35825,
+            "Makefile": 1182,
+            "JavaScript": 3422,
+            "CSS": 26526
+        },
+        "RedSocial": {},
+        "ReservacionesVagonesRedesIProy1": {
+            "Logos": 576,
+            "C": 24294
+        },
+        "integracion_tarea3": {
+            "Python": 39038
+        },
+        "Material-Animations": {
+            "Java": 45505
+        },
+        "android-range-seek-bar": {
+            "Java": 32627
+        },
+        "murcielago": {
+            "Python": 5012
+        },
+        "Tarea-2-Ing-Software-": {
+            "Python": 19418
+        },
+        "misvoti": {
+            "CSS": 113900,
+            "Python": 55694,
+            "HTML": 216625,
+            "JavaScript": 304892
+        },
+        "SAGEOctAcorde": {},
+        "Tarea-3-Ing-Software-": {
+            "Python": 10425
+        },
+        "madchat": {
+            "CSS": 5727,
+            "Python": 13264,
+            "HTML": 9503,
+            "JavaScript": 3608
+        },
+        "SAGEOctAcorde-1": {
+            "CSS": 117080,
+            "Python": 114049,
+            "XML": 441,
+            "HTML": 144981,
+            "JavaScript": 262942
+        },
+        "android-imagedownloader": {
+            "Java": 23481
+        },
+        "SAGEOctacordeManuel": {
+            "CSS": 116963,
+            "Python": 70642,
+            "JavaScript": 484
+        },
+        "SIGESC": {
+            "CSS": 484317,
+            "Python": 441032,
+            "HTML": 421875,
+            "JavaScript": 111422,
+            "Groff": 37445
+        },
+        "teodiomapasdegoogle": {
+            "Java": 2541
+        },
+        "PerfKitBenchmarker": {
+            "Python": 469109,
+            "Shell": 12681
+        },
+        "block-block": {
+            "CSS": 30987,
+            "Python": 96608,
+            "Makefile": 508,
+            "TeX": 192061,
+            "Shell": 677,
+            "JavaScript": 48464,
+            "XSLT": 645
+        },
+        "bomberman": {
+            "HTML": 113099,
+            "C++": 552206,
+            "CMake": 3625
+        },
+        "MarzulloTarea3": {
+            "Python": 7200
+        },
+        "google-services": {
+            "Ruby": 723,
+            "Objective-C": 79205,
+            "Java": 112460,
+            "Swift": 46246,
+            "Objective-C++": 1683,
+            "Shell": 3507
+        },
+        "Calculadora": {
+            "Java": 4954
+        },
+        "handyplanner": {},
+        "dulces-mascotas": {
+            "ApacheConf": 75,
+            "Python": 6826,
+            "HTML": 3945,
+            "Shell": 63
+        },
+        "ProjectoIRedesI": {
+            "C": 123618,
+            "Makefile": 1698
+        },
+        "RedesProyecto1": {
+            "Logos": 376,
+            "C": 55432,
+            "Makefile": 2074
+        },
+        "TetrisSdl2": {
+            "HTML": 113099,
+            "C++": 431823,
+            "CMake": 3285
+        },
+        "memes-bot": {}
+    },
+    "WhosTheMark": {
+        "emerald": {
+            "Shell": 219,
+            "C++": 27051
+        },
+        "swim-4": {
+            "Java": 192528
+        },
+        "search-engine": {
+            "Shell": 169,
+            "Java": 84291
+        },
+        "graphs-reloaded": {
+            "Java": 66560
+        },
+        "generador-musica": {
+            "Haskell": 20567
+        },
+        "tarea2": {
+            "CSS": 601
+        },
+        "sistema-vigilancia-redundante": {
+            "C": 34945
+        },
+        "APMwSc": {
+            "CSS": 4582,
+            "Python": 1469656,
+            "HTML": 181263,
+            "JavaScript": 109432,
+            "Mako": 412
+        },
+        "retam-database": {
+            "CSS": 126421,
+            "Java": 265115
+        },
+        "checkers": {
+            "IDL": 18769
+        },
+        "CheckURL": {
+            "CSS": 42484,
+            "Python": 4983,
+            "JavaScript": 70318
+        },
+        "fuzzydoDB": {
+            "Ruby": 105592,
+            "TypeScript": 14875,
+            "HTML": 73429,
+            "JavaScript": 30943,
+            "CSS": 13537
+        }
+    },
+    "vethencourt": {
+        "Lenguajes": {
+            "Ruby": 4211,
+            "Prolog": 6726,
+            "Haskell": 2108
+        }
+    },
+    "plantijn": {
+        "Tarea3": {},
+        "ProjectBF": {},
+        "ing-software-prueba": {
+            "Python": 253
+        },
+        "ing-software-tarea-2": {
+            "Python": 25383
+        },
+        "APMwSc": {
+            "CSS": 4221,
+            "Python": 77240,
+            "HTML": 53177,
+            "Groff": 18,
+            "Shell": 7336,
+            "JavaScript": 30490
+        }
+    },
+    "MaryLu28": {
+        "Tarea3IngSoftware": {
+            "Python": 4156
+        },
+        "Tarea3IngSw": {
+            "Python": 7532
+        },
+        "BD_SPE": {},
+        "easyBici": {
+            "CSS": 45122,
+            "HTML": 69103,
+            "JavaScript": 266
+        },
+        "ProyectoTraductores": {
+            "Logos": 35900,
+            "Yacc": 14138,
+            "Haskell": 19191
+        },
+        "OlaOpenGL": {
+            "C": 416,
+            "C++": 8817
+        },
+        "miniproyecto": {
+            "TypeScript": 5864,
+            "HTML": 423,
+            "JavaScript": 1884,
+            "CSS": 436
+        }
+    },
+    "ManuelGomesG": {
+        "Operativos-2017": {
+            "C": 28194,
+            "Makefile": 369
+        },
+        "Scripts": {
+            "Shell": 4696,
+            "TeX": 800
+        },
+        "Operativos": {
+            "C": 32813,
+            "C++": 41,
+            "Shell": 643,
+            "Makefile": 1592
+        },
+        "InformeP2": {},
+        "Operativos2.0": {
+            "C": 10533
+        },
+        "GrupoLinux3": {
+            "Shell": 3287
+        },
+        "Operativos3": {
+            "C": 7843,
+            "Makefile": 748
+        },
+        "Lenguajes": {
+            "Prolog": 9584,
+            "Haskell": 2279
+        },
+        "SisOp": {
+            "C": 16368,
+            "Makefile": 820
+        },
+        "Bases1": {
+            "TeX": 14891
+        },
+        "Traductores": {
+            "Python": 13569,
+            "Shell": 266
+        },
+        "algo3p2": {}
+    },
+    "josema19": {
+        "APMwSc": {
+            "Python": 65754,
+            "HTML": 1195
+        }
+    },
+    "dev-yohan": {
+        "phoenix-blog": {
+            "CSS": 49,
+            "JavaScript": 4486,
+            "Elixir": 29405,
+            "HTML": 4092
+        },
+        "docker-lemp-stack": {
+            "Shell": 2698
+        },
+        "android-my-sunshine": {
+            "Java": 1033
+        },
+        "dev-yohan.github.io": {
+            "CSS": 11626,
+            "HTML": 4780
+        },
+        "football_services": {
+            "Ruby": 51347,
+            "CSS": 686,
+            "HTML": 4896,
+            "JavaScript": 661
+        },
+        "open_soccer": {
+            "Ruby": 45870,
+            "CSS": 134664,
+            "CoffeeScript": 211,
+            "JavaScript": 664
+        },
+        "rails-interview": {
+            "Ruby": 24436,
+            "CSS": 686,
+            "HTML": 5144,
+            "JavaScript": 661
+        },
+        "akka-testing": {
+            "Scala": 5846
+        },
+        "wordpress_v2_api": {
+            "Ruby": 3387
+        },
+        "accounts-reactjs": {
+            "Ruby": 21724,
+            "CSS": 915,
+            "CoffeeScript": 211,
+            "HTML": 4885,
+            "JavaScript": 4087
+        },
+        "lotus-bookshelf": {
+            "Ruby": 10163,
+            "HTML": 109
+        },
+        "drawing-tool": {
+            "PHP": 15563
+        },
+        "gamify": {
+            "Ruby": 104549,
+            "CSS": 614066,
+            "CoffeeScript": 422,
+            "HTML": 92783,
+            "JavaScript": 106866
+        },
+        "coursera-web-development": {
+            "CSS": 18623,
+            "HTML": 19319,
+            "JavaScript": 13455
+        },
+        "triresults": {
+            "Ruby": 147647,
+            "CSS": 686,
+            "HTML": 14199,
+            "JavaScript": 661,
+            "Shell": 399
+        },
+        "football_bets": {
+            "CSS": 270981,
+            "Python": 30246,
+            "JavaScript": 61161
+        },
+        "scrapy-tutorial": {
+            "Python": 8543
+        },
+        "play-crud": {
+            "Scala": 3311,
+            "JavaScript": 284,
+            "HTML": 898
+        },
+        "soccer_gang": {
+            "Ruby": 50618,
+            "CSS": 686,
+            "HTML": 24059,
+            "JavaScript": 667
+        },
+        "rest-triresults": {
+            "Ruby": 90756,
+            "CSS": 686,
+            "HTML": 14199,
+            "JavaScript": 661,
+            "Shell": 399
+        },
+        "device-tester": {
+            "Python": 2737,
+            "Shell": 473
+        },
+        "rest-oauth-server": {
+            "Ruby": 108489,
+            "JavaScript": 75169
+        },
+        "my-first-play": {
+            "CSS": 1073,
+            "Erlang": 41,
+            "Scala": 3881,
+            "JavaScript": 88,
+            "HTML": 1248
+        },
+        "angular-phonecat": {
+            "CSS": 2907,
+            "Batchfile": 362,
+            "Shell": 5093,
+            "JavaScript": 14692,
+            "HTML": 4622
+        },
+        "kafka-vagrant": {
+            "Shell": 529
+        }
+    },
+    "BelluschiMarco": {},
+    "HaderKa": {
+        "curren": {},
+        "currency": {},
+        "currency2.0": {}
+    }
 }

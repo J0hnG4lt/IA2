@@ -42,11 +42,14 @@ def getLanguage(user, repo):
 def findUserLanguages(user):
     languages[user] = []
     jsonReposResponse = getRepos(user)
+    languages[user] = dict()
     for repo in jsonReposResponse :
         jsonLangsResponse = getLanguage(user, repo["name"])
-        languages[user] += list(jsonLangsResponse.keys())
+        languages[user][repo["name"]] = jsonLangsResponse
     # Comentar si se quiere repetir lenguajes
-    languages[user] = list(set(languages[user]))
+    #print(languages)
+    #languages[user] = list(set(languages[user]))
+    #print(languages)
     return languages
 
 
@@ -96,8 +99,8 @@ if __name__ == '__main__':
     
     # Encuentro los usuarios
     
-    print("\nRecolectando Usernames: ")
-    findUsers("J0hnG4lt", 4, "usuariosGithub.txt")
+    #print("\nRecolectando Usernames: ")
+    #findUsers("J0hnG4lt", 4, "usuariosGithub.txt")
     
     # Encuentro los lenguajes
     
@@ -107,7 +110,7 @@ if __name__ == '__main__':
         # el trabajo hecho
         try :
             for user in usersFile :
-                print("Languages: ",user.strip("\n\r"))
+                print("Lenguajes: ",user.strip("\n\r"))
                 languages.update(findUserLanguages(user.strip("\n\r")))
         except requests.exceptions.HTTPError as err:
             print(err)

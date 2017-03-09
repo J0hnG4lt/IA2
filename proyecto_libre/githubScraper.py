@@ -99,8 +99,8 @@ if __name__ == '__main__':
     
     # Encuentro los usuarios
     
-    #print("\nRecolectando Usernames: ")
-    #findUsers("J0hnG4lt", 4, "usuariosGithub.txt")
+    print("\nRecolectando Usernames: ")
+    findUsers("J0hnG4lt", 4, "usuariosGithub.txt")
     
     # Encuentro los lenguajes
     

@@ -1,6 +1,5 @@
 import json
 import itertools
-import pandas as pd
 
 def readLanguages(jsonFilename) :
     with open(jsonFilename,"r") as dataFile :
@@ -51,10 +50,3 @@ def calculateCondProbMatrix(data) :
     return condProbMatrix
 
 
-data = readLanguages("languagesUsersGithub.json")
-condProbMatrix = calculateCondProbMatrix(data)
-print(condProbMatrix)
-
-
-#d = pd.DataFrame.from_dict(condProbMatrix)
-#print(d)

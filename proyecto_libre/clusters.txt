@@ -1,0 +1,69 @@
+,0,1
+0,ASP,0
+1,Alloy,0
+2,ApacheConf,5
+3,Arduino,0
+4,Assembly,0
+5,Batchfile,9
+6,Bison,0
+7,C,0
+8,C#,0
+9,C++,0
+10,CMake,0
+11,CSS,0
+12,CoffeeScript,0
+13,ColdFusion,8
+14,Common Lisp,0
+15,Component Pascal,0
+16,Elixir,0
+17,Emacs Lisp,4
+18,Erlang,0
+19,FreeMarker,0
+20,GDScript,0
+21,GLSL,0
+22,Go,0
+23,Groff,0
+24,HTML,0
+25,Haskell,0
+26,IDL,0
+27,Isabelle,0
+28,Java,0
+29,JavaScript,0
+30,Julia,0
+31,Jupyter Notebook,0
+32,Lex,7
+33,Logos,0
+34,M,0
+35,M4,1
+36,Makefile,0
+37,Mako,6
+38,Mathematica,0
+39,Matlab,0
+40,Nginx,0
+41,Nix,0
+42,Objective-C,0
+43,Objective-C++,0
+44,PHP,0
+45,PLpgSQL,0
+46,Pascal,0
+47,Perl,0
+48,PowerShell,0
+49,Processing,0
+50,Prolog,0
+51,Python,0
+52,QMake,3
+53,R,0
+54,Roff,2
+55,Ruby,0
+56,Scala,0
+57,Shell,0
+58,Standard ML,0
+59,Stata,0
+60,Swift,0
+61,TeX,0
+62,TypeScript,0
+63,VimL,0
+64,Web Ontology Language,0
+65,XML,0
+66,XSLT,0
+67,Yacc,0

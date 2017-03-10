@@ -1,5 +1,6 @@
 import json
 import itertools
+import pandas as pd
 
 def readLanguages(jsonFilename) :
     with open(jsonFilename,"r") as dataFile :
@@ -38,7 +39,9 @@ def calculateCondProbMatrix(data) :
     # Normalize with second language
     for lang in condProbMatrix :
         for lang2 in condProbMatrix[lang] :
-            condProbMatrix[lang][lang2] /= langAllBytes[lang2]
+            if (langAllBytes[lang]+langAllBytes[lang2]) < condProbMatrix[lang][lang2] :
+                print(langAllBytes[lang],langAllBytes[lang2],condProbMatrix[lang][lang2])
+            condProbMatrix[lang][lang2] /= (langAllBytes[lang]+langAllBytes[lang2])
     
     return condProbMatrix
 
@@ -46,3 +49,5 @@ def calculateCondProbMatrix(data) :
 data = readLanguages("languagesUsersGithub.json")
 condProbMatrix = calculateCondProbMatrix(data)
 
+#d = pd.DataFrame.from_dict(condProbMatrix)
+#print(d)

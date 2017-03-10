@@ -21,8 +21,8 @@ def calculateCondProbMatrix(data) :
                 else :
                     langAllBytes[lang] = float(data[userAccount][repo][lang])
             
-            if len(data[userAccount][repo]) < 2 :
-                continue
+    totalBytes = sum(langAllBytes.values())
+    probAllLangs = {lang:(langAllBytes[lang]/totalBytes) for lang in langAllBytes}
     
     condProbMatrix = {lang:{lang2:0.0 \
                         for lang2 in langAllBytes} \
@@ -30,6 +30,10 @@ def calculateCondProbMatrix(data) :
     
     for userAccount in data :
         for repo in data[userAccount] :
+            
+            if len(data[userAccount][repo]) < 2 :
+                continue
+            
             # Total amount of bytes for each pair of languages
             for pair in itertools.combinations(data[userAccount][repo].keys(),2):
                 intersection = float(data[userAccount][repo][pair[0]]) + float(data[userAccount][repo][pair[1]])
@@ -41,7 +45,8 @@ def calculateCondProbMatrix(data) :
             if lang == lang2 :
                 condProbMatrix[lang][lang2] = 1.0
             else :
-                condProbMatrix[lang][lang2] /= (langAllBytes[lang]+langAllBytes[lang2])
+                condProbMatrix[lang][lang2] /= totalBytes
+                condProbMatrix[lang][lang2] /= probAllLangs[lang2]
     
     return condProbMatrix
 

@@ -10,6 +10,7 @@ def readLanguages(jsonFilename) :
 def calculateCondProbMatrix(data) :
     
     langAllBytes = dict()
+    reposPerLang = dict()
     for userAccount in data :
         for repo in data[userAccount] :
             
@@ -17,11 +18,16 @@ def calculateCondProbMatrix(data) :
             for lang in data[userAccount][repo] :
                 if lang in langAllBytes :
                     langAllBytes[lang] += float(data[userAccount][repo][lang])
+                    reposPerLang[lang] += 1
                 else :
                     langAllBytes[lang] = float(data[userAccount][repo][lang])
-            
-    totalBytes = sum(langAllBytes.values())
-    probAllLangs = {lang:(langAllBytes[lang]/totalBytes) for lang in langAllBytes}
+                    reposPerLang[lang] = 1
+                
+    #totalBytes = sum(langAllBytes.values())
+    #probAllLangs = {lang:(langAllBytes[lang]/totalBytes) for lang in langAllBytes}
+    totalRepos = sum(reposPerLang.values())
+    probAllLangsRepos = {lang:(reposPerLang[lang]/totalRepos) for lang in reposPerLang}
+    
     
     condProbMatrix = {lang:{lang2:0.0 \
                         for lang2 in langAllBytes} \
@@ -34,9 +40,11 @@ def calculateCondProbMatrix(data) :
                 continue
             
             # Total amount of bytes for each pair of languages
-            for pair in itertools.combinations(data[userAccount][repo].keys(),2):
-                intersection = float(data[userAccount][repo][pair[0]]) + float(data[userAccount][repo][pair[1]])
-                condProbMatrix[pair[0]][pair[1]] += intersection
+            for pair in itertools.combinations(set(data[userAccount][repo].keys()),2):
+                #intersection = float(data[userAccount][repo][pair[0]]) + float(data[userAccount][repo][pair[1]])
+                #condProbMatrix[pair[0]][pair[1]] += intersection
+                condProbMatrix[pair[0]][pair[1]] += 1
+                condProbMatrix[pair[1]][pair[0]] += 1
             
     # Normalize with second language
     for lang in condProbMatrix :
@@ -44,8 +52,10 @@ def calculateCondProbMatrix(data) :
             if lang == lang2 :
                 condProbMatrix[lang][lang2] = 1.0
             else :
-                condProbMatrix[lang][lang2] /= totalBytes
-                condProbMatrix[lang][lang2] /= probAllLangs[lang2]
+                #condProbMatrix[lang][lang2] /= totalBytes
+                #condProbMatrix[lang][lang2] /= probAllLangs[lang2]
+                condProbMatrix[lang][lang2] /= totalRepos
+                condProbMatrix[lang][lang2] /= probAllLangsRepos[lang2]
     
     return condProbMatrix
 

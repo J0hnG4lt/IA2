@@ -37,14 +37,25 @@ def getLanguage(user, repo):
     responseJson = json.loads(response)
     return responseJson
 
+class RepoException(Exception): pass
 
+class GithubUserException(Exception) : pass
 
 def findUserLanguages(user):
     languages[user] = []
     jsonReposResponse = getRepos(user)
+    if "message" in jsonReposResponse :
+        print(jsonReposResponse["message"])
+        print("Se ha dejado de recolectar repos")
+        raise RepoException
+    
     languages[user] = dict()
     for repo in jsonReposResponse :
         jsonLangsResponse = getLanguage(user, repo["name"])
+        if "message" in jsonLangsResponse :
+            print(jsonLangsResponse["message"])
+            print("Se ha dejado de recolectar lenguajes")
+            raise RepoException
         languages[user][repo["name"]] = jsonLangsResponse
     # Comentar si se quiere repetir lenguajes
     #print(languages)
@@ -78,6 +89,11 @@ def githubUserSpider(user, depth) :
         response = requests.get('https://api.github.com/users/{0}/followers'.format(currentUser), 
                                 auth=HTTPBasicAuth(username, password)).text
         responseJson = json.loads(response)
+        if "message" in responseJson :
+            print(responseJson["message"])
+            print("Se ha dejado de recolectar usuarios")
+            return done
+        
         for follower in responseJson :
             if (users.count(follower["login"]) == 0) \
                 and (done.count(follower["login"]) == 0) \
@@ -100,7 +116,7 @@ if __name__ == '__main__':
     # Encuentro los usuarios
     
     print("\nRecolectando Usernames: ")
-    findUsers("J0hnG4lt", 4, "usuariosGithub.txt")
+    findUsers("donnemartin", 10, "usuariosGithub.txt")
     
     # Encuentro los lenguajes
     
@@ -114,6 +130,8 @@ if __name__ == '__main__':
                 languages.update(findUserLanguages(user.strip("\n\r")))
         except requests.exceptions.HTTPError as err:
             print(err)
+        except RepoException :
+            pass
         finally :
             usersFile.close()
     

@@ -7,6 +7,9 @@ from auth import username, password
 from requests.auth import HTTPBasicAuth
 import requests
 from collections import deque
+from pathlib import Path
+
+
 
 """
 #   USAR python3
@@ -125,18 +128,39 @@ if __name__ == '__main__':
     with open("usuariosGithub.txt", "r") as usersFile :
         # Si se encontrase un rate limit no se debe permitir que se pierda
         # el trabajo hecho
+        lastUserFile = Path("lastUser.txt")
+        lastUser = 0
+        if lastUserFile.is_file():
+            lastUserFile = open("lastUser.txt","r")
+            lastUser = int(lastUserFile.readline())
+            print("Retomando ultima corrida.")
+        i = 0
         try :
             for user in usersFile :
+                if (lastUser != 0) and (i < (lastUser+1)) :
+                    i += 1
+                    continue
+                
                 print("Lenguajes: ",user.strip("\n\r"))
                 languages.update(findUserLanguages(user.strip("\n\r")))
+                i += 1
         except requests.exceptions.HTTPError as err:
             print(err)
         except RepoException :
             pass
         finally :
+            lastUserFile = Path("lastUser.txt")
+            if lastUserFile.is_file():
+                with open("languagesUsersGithub.json","a") as langsFile :
+                    json.dump(languages, langsFile, indent=4)
+                    langsFile.close()
+                    print("Appending found repos for the next attempt.")
+            else :
+                with open("languagesUsersGithub.json","w") as langsFile :
+                    json.dump(languages, langsFile, indent=4)
+                    langsFile.close()
+                    print("Saving found repos")
             usersFile.close()
-    
-    with open("languagesUsersGithub.json","w") as langsFile :
-        json.dump(languages, langsFile, indent=4)
-        langsFile.close()
+            ff = open("lastUser.txt","w")
+            ff.write(str(i))
     

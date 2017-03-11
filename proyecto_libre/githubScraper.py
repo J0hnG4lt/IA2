@@ -115,8 +115,9 @@ if __name__ == '__main__':
     
     # Encuentro los usuarios
     
-    print("\nRecolectando Usernames: ")
-    findUsers("donnemartin", 10, "usuariosGithub.txt")
+    #print("\nRecolectando Usernames: ")
+    #findUsers("donnemartin", 10, "usuariosGithub.txt")
+    print("Ya se tienen 5000 usuarios guardados.")
     
     # Encuentro los lenguajes
     

@@ -21,7 +21,7 @@ dataset = pd.DataFrame.from_dict(dataset,orient="index")
 
 # k-means
 print("Applying cluster analysis algorithm")
-k_means = cluster.KMeans(n_clusters=15)
+k_means = cluster.AgglomerativeClustering(n_clusters=60,affinity="cosine",linkage="average")
 k_means.fit(dataset.as_matrix())
 
 # Cluster names

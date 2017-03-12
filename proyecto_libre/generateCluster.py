@@ -6,10 +6,10 @@ import json
 
 print("Reading JSON file with repo and language info")
 data = readLanguages("languagesUsersGithub.json")
-print("Building Similarity Matrix")
+print("Building Feature Matrix")
 featureMatrix = getFeatureVectors(data)
 
-print("Saving features to instances.txt")
+print("Saving featureMatrix to instances.txt")
 ff = open("instances.txt","w")
 ff.write(json.dumps(featureMatrix,indent=4))
 ff.close()
@@ -21,7 +21,7 @@ dataset = pd.DataFrame.from_dict(dataset,orient="index")
 
 # k-means
 print("Applying cluster analysis algorithm")
-k_means = cluster.KMeans(n_clusters=30)
+k_means = cluster.KMeans(n_clusters=15)
 k_means.fit(dataset.as_matrix())
 
 # Cluster names

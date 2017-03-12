@@ -1,28 +1,27 @@
 import pandas as pd
 from sklearn import cluster
-from similarityMatrix import readLanguages,calculateCondProbMatrix
+from sklearn import preprocessing
+from extractFeatures import readLanguages,getFeatureVectors
+import json
 
 print("Reading JSON file with repo and language info")
 data = readLanguages("languagesUsersGithub.json")
 print("Building Similarity Matrix")
-condProbMatrix = calculateCondProbMatrix(data)
+featureMatrix = getFeatureVectors(data)
 
-for lang1,row in condProbMatrix.items() :
-    for lang2,condProb in row.items() :
-        if condProb > 1.0 :
-            print("Warning: CondProb="+str(condProb)+" btwn "+lang1+" and "+lang2+" bigger than 1.")
+print("Saving features to instances.txt")
+ff = open("instances.txt","w")
+ff.write(json.dumps(featureMatrix,indent=4))
+ff.close()
 
-dataset = pd.DataFrame.from_dict(condProbMatrix)
-
-
-# Similarity to Distance matrix
-dataset = 1.0-dataset
-print("Saving distance matrix to PrecomputedDistanceMatrix.txt")
-dataset.to_csv("PrecomputedDistanceMatrix.txt", sep=',',encoding='utf-8')
+langs = [lang for lang in featureMatrix]
+dataset = preprocessing.normalize(pd.DataFrame.from_dict(featureMatrix,orient="index"),axis=0)
+dataset = {lang:dataset[i] for i,lang in enumerate(langs)}
+dataset = pd.DataFrame.from_dict(dataset,orient="index")
 
 # k-means
 print("Applying cluster analysis algorithm")
-k_means = cluster.KMeans(n_clusters=10,precompute_distances=False)
+k_means = cluster.KMeans(n_clusters=30)
 k_means.fit(dataset.as_matrix())
 
 # Cluster names

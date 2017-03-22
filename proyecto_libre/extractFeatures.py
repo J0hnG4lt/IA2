@@ -24,12 +24,13 @@ def getFeatureVectors(data) :
     for userAccount in data :
         for repo in data[userAccount] :
             for pair in itertools.combinations_with_replacement(set(data[userAccount][repo].keys()),2):
-                featureMatrix_[pair[0]][pair[1]].append(data[userAccount][repo][pair[1]])
-                featureMatrix_[pair[1]][pair[0]].append(data[userAccount][repo][pair[0]])
+                featureMatrix_[pair[0]][pair[1]].append(1.0) #data[userAccount][repo][pair[1]])
+                featureMatrix_[pair[1]][pair[0]].append(1.0) #data[userAccount][repo][pair[0]])
     
-    featureMatrix = {lang:{lang2:mean(featureMatrix_[lang][lang2]) \
+    featureMatrix = {lang:{lang2:sum(featureMatrix_[lang][lang2]) \
                         for lang2 in langs} \
                             for lang in langs}
+    
     
     return featureMatrix
 

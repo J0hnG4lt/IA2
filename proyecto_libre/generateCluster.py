@@ -9,6 +9,14 @@ data = readLanguages("languagesUsersGithub.json")
 print("Building Feature Matrix")
 featureMatrix = getFeatureVectors(data)
 
+print("Saving featureMatrix to featureVectors.csv for Weka")
+ofile = open("featureVectors.csv","w")
+ofile.write(",".join(["lang_column"]+langs))
+for lang in langs:
+    ofile.write("\n")
+    ofile.write(",".join([lang]+list(map(str,featureMatrix[lang].values()))))
+ofile.close()
+
 print("Saving featureMatrix to instances.txt")
 ff = open("instances.txt","w")
 ff.write(json.dumps(featureMatrix,indent=4))

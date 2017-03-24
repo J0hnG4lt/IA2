@@ -35,3 +35,25 @@ def getFeatureVectors(data) :
     return featureMatrix
 
 
+def getFeatureVectors_perRepo(data) :
+    
+    langs = []
+    numberOfRepos = 0
+    for userAccount in data :
+        for repo in data[userAccount] :
+            numberOfRepos += 1
+            for lang in data[userAccount][repo] :
+                if lang not in langs :
+                    langs.append(lang)
+    
+    featureMatrix_ = {i:{lang:0.0 \
+                        for lang in langs} \
+                            for i in range(numberOfRepos)}
+    
+    for userAccount in data :
+        for i,repo in enumerate(data[userAccount]) :
+            for lang in data[userAccount][repo] :
+                featureMatrix_[i][lang] = data[userAccount][repo][lang] #data[userAccount][repo][pair[0]])
+    
+    
+    return featureMatrix_

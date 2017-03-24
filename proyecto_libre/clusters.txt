@@ -1,200 +1,200 @@
 ,0,1
-0,Perl,2
-1,Scilab,30
-2,CLIPS,3
-3,GDB,1
-4,HCL,2
-5,HLSL,2
-6,ApacheConf,31
-7,XSLT,59
+0,Fancy,2
+1,Tcl,30
+2,XML,55
+3,NewLisp,1
+4,SourcePawn,2
+5,ANTLR,2
+6,OpenEdge ABL,31
+7,Scilab,59
 8,Puppet,58
-9,COBOL,41
-10,UrWeb,55
-11,LLVM,3
-12,Clojure,2
-13,Nix,2
-14,Terra,28
-15,Batchfile,2
-16,Gettext Catalog,39
-17,Assembly,20
-18,Cuda,27
-19,CoffeeScript,54
-20,Alloy,2
-21,Python,2
-22,OpenEdge ABL,2
-23,Hy,5
-24,Brainfuck,8
-25,PureBasic,2
-26,XC,47
-27,Rebol,43
-28,Standard ML,20
-29,Vue,44
-30,MoonScript,2
-31,Arduino,2
-32,Eiffel,2
-33,NetLogo,24
-34,Shell,51
-35,R,30
-36,AppleScript,35
-37,Coq,2
-38,Erlang,42
-39,Smalltalk,2
-40,Component Pascal,28
-41,Eagle,28
-42,Kotlin,2
-43,QMake,28
-44,QML,2
-45,Pure Data,14
-46,Harbour,2
-47,PostScript,2
-48,Racket,42
-49,Java,4
-50,C++,2
-51,Matlab,9
-52,GAP,53
-53,Parrot,42
-54,Emacs Lisp,2
-55,nesC,0
-56,TeX,2
-57,Scala,45
-58,PLSQL,2
-59,ASP,42
-60,Lean,36
-61,ColdFusion,28
-62,Go,28
-63,TypeScript,2
-64,Fancy,3
-65,Graphviz (DOT),11
-66,JavaScript,33
-67,GCC Machine Description,32
-68,AspectJ,2
-69,Game Maker Language,2
-70,Swift,2
-71,Cycript,18
-72,ABAP,2
-73,RenderScript,2
-74,Mathematica,11
-75,Processing,2
-76,Thrift,2
-77,Haskell,42
-78,GLSL,46
-79,SourcePawn,2
-80,M,49
-81,E,11
-82,Gnuplot,2
-83,Lua,2
-84,XQuery,48
-85,Jupyter Notebook,2
-86,HTML,2
-87,Max,2
-88,PureScript,52
-89,KiCad,9
-90,Forth,2
-91,Agda,5
-92,Nu,2
-93,MAXScript,2
-94,UnrealScript,30
-95,Cirru,2
-96,Stata,2
-97,F#,5
-98,XS,2
-99,Groovy,2
-100,VHDL,28
-101,Objective-C,28
-102,Verilog,2
-103,Xtend,57
-104,Visual Basic,2
-105,Elm,42
-106,Clean,2
-107,AGS Script,2
-108,Stan,37
-109,Smarty,5
-110,Perl6,0
-111,Julia,3
-112,Clarion,5
-113,PicoLisp,17
-114,AutoHotkey,40
-115,Protocol Buffer,42
-116,ActionScript,6
-117,Awk,29
-118,Module Management System,2
-119,PLpgSQL,22
-120,Ragel in Ruby Host,2
-121,Bro,2
-122,Groff,11
-123,Common Lisp,4
-124,Brightscript,2
-125,VimL,2
-126,Io,10
-127,EmberScript,10
-128,IDL,1
-129,NewLisp,22
-130,Jasmin,2
-131,Dart,2
-132,FLUX,42
-133,Prolog,28
-134,Haxe,3
-135,Yacc,42
-136,Mask,2
-137,Ada,4
-138,Liquid,22
-139,Myghty,2
-140,POV-Ray SDL,27
-141,Slash,23
-142,Hack,8
-143,Vala,26
-144,Vim script,2
-145,Befunge,24
-146,Rust,2
-147,OpenSCAD,38
-148,Handlebars,28
-149,JSONiq,34
-150,Makefile,15
-151,CMake,18
-152,Smali,25
-153,Elixir,2
-154,Mako,2
-155,Rouge,50
-156,SQLPL,10
-157,Self,6
-158,Bison,2
-159,Ruby,2
-160,XML,1
-161,Nginx,2
-162,PigLatin,2
-163,M4,42
-164,LiveScript,28
-165,PowerShell,21
-166,Logos,42
-167,C#,14
-168,Nemerle,56
-169,Fortran,38
-170,SAS,9
-171,Tcl,30
-172,SaltStack,1
-173,Nim,28
-174,CSS,2
-175,DTrace,42
-176,DIGITAL Command Language,2
-177,Genshi,2
-178,D,28
-179,ANTLR,3
-180,Idris,2
-181,GDScript,1
-182,Mercury,42
-183,SuperCollider,19
-184,FreeMarker,2
-185,Pascal,2
-186,Roff,2
-187,Scheme,16
-188,OCaml,5
-189,NSIS,2
-190,PHP,13
-191,SystemVerilog,50
-192,Objective-C++,7
-193,Crystal,1
-194,Lex,50
-195,C,12
-196,Inno Setup,13
-197,Cucumber,28
-198,LSL,0
+9,Mercury,41
+10,PHP,57
+11,Nix,3
+12,PostScript,2
+13,C#,2
+14,R,28
+15,Slash,2
+16,TeX,39
+17,ApacheConf,2
+18,Liquid,1
+19,GLSL,20
+20,Pure Data,27
+21,Lean,28
+22,Scala,2
+23,GDB,2
+24,HTML,42
+25,Roff,5
+26,Perl,8
+27,C++,2
+28,NSIS,28
+29,Protocol Buffer,2
+30,Hy,42
+31,XSLT,43
+32,Verilog,44
+33,PLSQL,2
+34,Eagle,2
+35,SQLPL,2
+36,PicoLisp,47
+37,Mako,30
+38,Self,35
+39,Fortran,2
+40,PLpgSQL,33
+41,Elixir,42
+42,Cycript,2
+43,Clean,28
+44,Mathematica,2
+45,SaltStack,28
+46,ColdFusion,34
+47,AspectJ,2
+48,Objective-C,2
+49,Emacs Lisp,2
+50,XC,37
+51,PureBasic,4
+52,Rust,2
+53,UnrealScript,9
+54,JavaScript,53
+55,Component Pascal,42
+56,Haskell,2
+57,DIGITAL Command Language,0
+58,Mask,2
+59,Clarion,42
+60,Jasmin,36
+61,Genshi,54
+62,IDL,28
+63,F#,28
+64,LSL,2
+65,Rebol,2
+66,Max,11
+67,ASP,3
+68,PigLatin,29
+69,CSS,11
+70,Gnuplot,2
+71,OCaml,32
+72,EmberScript,28
+73,ABAP,2
+74,Go,14
+75,Eiffel,18
+76,GCC Machine Description,2
+77,SystemVerilog,48
+78,Awk,2
+79,RenderScript,11
+80,Smalltalk,2
+81,Vue,28
+82,Cuda,42
+83,FLUX,45
+84,Pascal,49
+85,Crystal,20
+86,Visual Basic,22
+87,Vala,42
+88,UrWeb,23
+89,HCL,2
+90,Brightscript,2
+91,Python,51
+92,Makefile,52
+93,GDScript,10
+94,Lex,3
+95,VimL,4
+96,Processing,2
+97,Bison,2
+98,XQuery,8
+99,Common Lisp,2
+100,Cucumber,2
+101,Terra,50
+102,Rouge,2
+103,Stata,9
+104,Smali,2
+105,Logos,28
+106,Nginx,40
+107,PureScript,26
+108,Alloy,3
+109,Stan,2
+110,D,2
+111,Groff,56
+112,Nu,17
+113,Racket,5
+114,M,2
+115,Dart,0
+116,Arduino,2
+117,Batchfile,5
+118,Module Management System,46
+119,Scheme,42
+120,COBOL,6
+121,FreeMarker,2
+122,Xtend,2
+123,E,22
+124,TypeScript,2
+125,Smarty,2
+126,Swift,11
+127,XS,4
+128,HLSL,2
+129,Coq,2
+130,CMake,10
+131,Julia,1
+132,Groovy,22
+133,Shell,2
+134,AutoHotkey,2
+135,Gettext Catalog,2
+136,Parrot,2
+137,Handlebars,3
+138,Brainfuck,42
+139,Harbour,2
+140,Clojure,5
+141,KiCad,38
+142,Idris,2
+143,DTrace,27
+144,QMake,28
+145,Hack,28
+146,Vim script,2
+147,AppleScript,2
+148,Game Maker Language,24
+149,MAXScript,24
+150,Befunge,2
+151,GAP,30
+152,Prolog,28
+153,SuperCollider,15
+154,Nim,18
+155,Erlang,25
+156,Assembly,2
+157,Myghty,2
+158,AGS Script,5
+159,Lua,10
+160,Inno Setup,6
+161,Yacc,2
+162,LLVM,2
+163,Nemerle,1
+164,C,30
+165,OpenSCAD,2
+166,CLIPS,42
+167,PowerShell,21
+168,Java,2
+169,Ragel in Ruby Host,42
+170,Io,12
+171,Perl6,50
+172,CoffeeScript,38
+173,ActionScript,9
+174,POV-Ray SDL,19
+175,JSONiq,2
+176,QML,2
+177,Thrift,42
+178,Jupyter Notebook,2
+179,NetLogo,2
+180,Bro,28
+181,Standard ML,3
+182,Ruby,2
+183,Haxe,1
+184,Matlab,42
+185,Graphviz (DOT),2
+186,Kotlin,2
+187,SAS,2
+188,Elm,16
+189,M4,5
+190,Cirru,2
+191,Objective-C++,14
+192,nesC,1
+193,Forth,7
+194,Ada,2
+195,MoonScript,50
+196,VHDL,13
+197,Agda,13
+198,LiveScript,0

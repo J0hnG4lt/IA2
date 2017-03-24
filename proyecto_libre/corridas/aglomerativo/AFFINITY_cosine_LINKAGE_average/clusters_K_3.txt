@@ -1,0 +1,200 @@
+,0,1
+0,Smarty,0
+1,OCaml,0
+2,Swift,0
+3,Batchfile,0
+4,Perl,0
+5,GAP,0
+6,Agda,0
+7,Eagle,0
+8,DIGITAL Command Language,0
+9,Nemerle,0
+10,ActionScript,0
+11,Lean,0
+12,Cycript,0
+13,OpenSCAD,0
+14,FLUX,0
+15,C,0
+16,QMake,0
+17,Clean,0
+18,Python,0
+19,RenderScript,0
+20,Haxe,0
+21,Alloy,0
+22,CoffeeScript,0
+23,Myghty,0
+24,PureScript,0
+25,Shell,0
+26,TeX,0
+27,ApacheConf,0
+28,ABAP,0
+29,R,0
+30,Smali,0
+31,Gettext Catalog,0
+32,Befunge,0
+33,Inno Setup,0
+34,IDL,0
+35,UnrealScript,0
+36,SuperCollider,0
+37,Racket,0
+38,Perl6,0
+39,SystemVerilog,0
+40,Handlebars,0
+41,Elixir,0
+42,Component Pascal,0
+43,C#,0
+44,PLSQL,0
+45,Cuda,0
+46,Elm,0
+47,PHP,0
+48,Tcl,0
+49,Groovy,0
+50,Cucumber,0
+51,Clojure,0
+52,FreeMarker,0
+53,SAS,0
+54,HTML,0
+55,TypeScript,0
+56,Rust,0
+57,Rebol,0
+58,Protocol Buffer,0
+59,Nix,0
+60,Verilog,0
+61,Emacs Lisp,0
+62,Roff,0
+63,Cirru,0
+64,Common Lisp,0
+65,SaltStack,0
+66,CLIPS,0
+67,C++,0
+68,Mako,0
+69,HLSL,0
+70,Idris,0
+71,Self,0
+72,GLSL,0
+73,Vue,0
+74,PostScript,0
+75,Xtend,0
+76,Matlab,0
+77,Julia,0
+78,XML,0
+79,NetLogo,0
+80,POV-Ray SDL,0
+81,Stan,0
+82,VHDL,0
+83,DTrace,2
+84,Graphviz (DOT),0
+85,Ragel in Ruby Host,0
+86,QML,0
+87,Eiffel,0
+88,Visual Basic,0
+89,Hack,0
+90,Io,0
+91,XQuery,0
+92,M,0
+93,Go,0
+94,Kotlin,0
+95,Lua,0
+96,Bro,0
+97,SQLPL,0
+98,GCC Machine Description,0
+99,Thrift,0
+100,LLVM,0
+101,Assembly,0
+102,OpenEdge ABL,0
+103,Awk,0
+104,ANTLR,0
+105,Groff,0
+106,Parrot,0
+107,Genshi,0
+108,Standard ML,0
+109,Module Management System,0
+110,LiveScript,0
+111,MoonScript,0
+112,Stata,0
+113,KiCad,0
+114,Objective-C,0
+115,LSL,0
+116,ColdFusion,1
+117,F#,0
+118,MAXScript,0
+119,XSLT,0
+120,XS,0
+121,Arduino,0
+122,AppleScript,0
+123,NewLisp,0
+124,Haskell,0
+125,Gnuplot,0
+126,CSS,0
+127,Dart,0
+128,Terra,0
+129,Erlang,0
+130,Slash,0
+131,Scilab,0
+132,COBOL,0
+133,Ada,0
+134,Objective-C++,0
+135,Jasmin,0
+136,HCL,0
+137,VimL,0
+138,D,0
+139,Fancy,0
+140,Brainfuck,0
+141,Jupyter Notebook,0
+142,Processing,0
+143,nesC,0
+144,Brightscript,0
+145,Vala,0
+146,GDScript,0
+147,Lex,0
+148,Coq,0
+149,Nim,0
+150,Bison,0
+151,Scala,0
+152,Mask,0
+153,XC,0
+154,AGS Script,0
+155,Vim script,0
+156,Smalltalk,0
+157,ASP,0
+158,Fortran,0
+159,EmberScript,0
+160,Java,0
+161,Scheme,0
+162,CMake,0
+163,NSIS,0
+164,GDB,0
+165,Makefile,0
+166,Mathematica,0
+167,JavaScript,0
+168,UrWeb,0
+169,Pascal,0
+170,Max,0
+171,Mercury,0
+172,Forth,0
+173,PicoLisp,0
+174,SourcePawn,0
+175,PigLatin,0
+176,Puppet,0
+177,Hy,0
+178,PowerShell,0
+179,Logos,0
+180,Nginx,0
+181,PLpgSQL,0
+182,Ruby,0
+183,Nu,0
+184,Pure Data,0
+185,JSONiq,0
+186,Prolog,0
+187,Clarion,0
+188,Rouge,0
+189,Crystal,0
+190,AutoHotkey,0
+191,Liquid,0
+192,AspectJ,0
+193,Harbour,0
+194,E,0
+195,PureBasic,0
+196,M4,0
+197,Game Maker Language,0
+198,Yacc,0

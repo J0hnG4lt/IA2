@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 print("Reading JSON file with repo and language info")
 data = readLanguages("languagesUsersGithub.json")
 print("Building Feature Matrix")
-condMatrix = calculateCondProbMatrix(data,pruneLanguages = True)
+condMatrix = calculateCondProbMatrix(data,pruneLanguages = 40)
 
 #featureMatrix = getFeatureVectors(data)
 

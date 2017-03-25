@@ -7,7 +7,7 @@ def readLanguages(jsonFilename) :
         dataFile.close()
     return data
 
-def calculateCondProbMatrix(data,pruneLanguages = False) :
+def calculateCondProbMatrix(data,pruneLanguages = -1) :
     
     langAllUses = dict()
     langUsers = dict()
@@ -34,8 +34,8 @@ def calculateCondProbMatrix(data,pruneLanguages = False) :
 
     print ("Read data from: ",amountOfUsers)
 
-    if pruneLanguages:
-        languages = sorted(langAllUses, key=langAllUses.get,reverse=True)[:10]
+    if pruneLanguages > 0:
+        languages = sorted(langAllUses, key=langAllUses.get,reverse=True)[:pruneLanguages]
         print(languages)
     else:
         languages = [lang for lang in langAllUses]

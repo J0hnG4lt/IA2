@@ -50,7 +50,7 @@ def calculateCondProbMatrix(data) :
         uses = langAllUses[lang] # The uses of this language
         for lang2 in langAllUses:
             # conditional probability of lang given lang2
-            condProbMatrix[lang][lang2] = 0 if usedTogether == 0 \
+            condProbMatrix[lang][lang2] = 0 if uses == 0 \
                                             else (usedTogether[lang][lang2]/uses)
 
 

@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 from extractFeatures import readLanguages,getFeatureVectors
 import json
-from similarityMatrix import calculateCondProbMatrix,calculateCorrelations
+from similarityMatrix import calculateCondProbMatrix,getUsageData
 
 from scipy.cluster.hierarchy import dendrogram, linkage
 import matplotlib.pyplot as plt
@@ -26,9 +26,10 @@ if __name__ == '__main__':
 
     data = readLanguages("languagesUsersGithub.json")
 
-    correlations = calculateCondProbMatrix(data,pruneLanguages=30)
+    correlations = getUsageData(data,pruneLanguages=30)
 
     dataset = pd.DataFrame.from_dict(correlations,orient="index")
+
 
     pearson_corr = dataset.corr()
     plot_correlation(

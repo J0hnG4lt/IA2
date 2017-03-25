@@ -4,10 +4,13 @@ from sklearn import preprocessing
 from extractFeatures import readLanguages,getFeatureVectors
 import json
 
+
+
 print("Reading JSON file with repo and language info")
 data = readLanguages("languagesUsersGithub.json")
 print("Building Feature Matrix")
 featureMatrix = getFeatureVectors(data)
+
 
 print("Saving featureMatrix to featureVectors.csv for Weka")
 ofile = open("featureVectors.csv","w")
@@ -27,9 +30,11 @@ dataset = preprocessing.normalize(pd.DataFrame.from_dict(featureMatrix,orient="i
 dataset = {lang:dataset[i] for i,lang in enumerate(langs)}
 dataset = pd.DataFrame.from_dict(dataset,orient="index")
 
+
 # k-means
 print("Applying cluster analysis algorithm")
-k_means = cluster.AgglomerativeClustering(n_clusters=60,affinity="cosine",linkage="average")
+#k_means = cluster.AgglomerativeClustering(n_clusters=10,affinity="euclidean",linkage="ward")
+k_means = cluster.DBSCAN(eps=0.5,min_samples=3)
 k_means.fit(dataset.as_matrix())
 
 # Cluster names
@@ -38,5 +43,5 @@ labels = k_means.labels_
 # as dataframes
 print("Saving clusters to clusters.txt")
 results = pd.DataFrame([dataset.index,labels]).T
-results.to_csv("clusters.txt", sep=',',encoding='utf-8')
+results.to_csv("corridas/DBSCAN/eps5minsamples3.txt", sep=',',encoding='utf-8')
 

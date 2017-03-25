@@ -9,42 +9,50 @@ def readLanguages(jsonFilename) :
 
 def calculateCondProbMatrix(data) :
     
-    langAllBytes = dict()
-    for userAccount in data :
+    langAllUses = dict()
+    langUsers = dict()
+    amountOfUsers = len(data)
+    for userAccount in data:
         for repo in data[userAccount] :
-            
-            # Total amount of bytes per language
-            for lang in data[userAccount][repo] :
-                if lang in langAllBytes :
-                    langAllBytes[lang] += float(data[userAccount][repo][lang])
+            # we check each language that was used.
+            for lang in data[userAccount][repo]:
+                if lang in langAllUses:
+                    langAllUses[lang] += 1
                 else :
-                    langAllBytes[lang] = float(data[userAccount][repo][lang])
+                    langAllUses[lang] = 1
+                langUsers[userAccount][lang] = 1
+
+
             
-    totalBytes = sum(langAllBytes.values())
-    probAllLangs = {lang:(langAllBytes[lang]/totalBytes) for lang in langAllBytes}
+    totalBytes = sum(langAllUses.values())
+    probAllLangs = {lang:(langAllUses[lang]/amountOfUsers) for lang in langAllUses}
     
+    usedTogether = {lang:lang2:0 \
+                        for lang2 in langAllUses} \
+                            for lang in langAllUses}
+
+
+    # Abnormally long if and for chain 
+    #  to check amount of times two languages
+    #  are used together by an user. 
+    for user in langUsers:
+        for lang in langAllUses:
+            if lang in langUsers[user]:
+                for lang2 in langAllUses:
+                    if lang2 in langUsers[user]:
+                        usedTogether[lang][lang2] += 1 
+
     condProbMatrix = {lang:{lang2:0.0 \
-                        for lang2 in langAllBytes} \
-                            for lang in langAllBytes}
+                        for lang2 in langAllUses} \
+                            for lang in langAllUses}
     
-    for userAccount in data :
-        for repo in data[userAccount] :
-            
-            if len(data[userAccount][repo]) < 2 :
-                continue
-            
-            # Total amount of bytes for each pair of languages
-            for pair in itertools.combinations(data[userAccount][repo].keys(),2):
-                intersection = float(data[userAccount][repo][pair[0]]) + float(data[userAccount][repo][pair[1]])
-                condProbMatrix[pair[0]][pair[1]] += intersection
-            
-    # Normalize with second language
-    for lang in condProbMatrix :
-        for lang2 in condProbMatrix[lang] :
-            if lang == lang2 :
-                condProbMatrix[lang][lang2] = 1.0
-            else :
-                condProbMatrix[lang][lang2] /= totalBytes
-                condProbMatrix[lang][lang2] /= probAllLangs[lang2]
-    
+    for lang in langAllUses:
+        uses = langAllUses[lang] # The uses of this language
+        for lang2 in langAllUses:
+            # conditional probability of lang given lang2
+            condProbMatrix[lang][lang2] = 0 if uses == 0 \
+                                            else (usedTogether[lang][lang2]/uses)
+
+
+
     return condProbMatrix

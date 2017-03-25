@@ -50577,4 +50577,6146 @@
         },
         "ComPerformance": {}
     }
+}{
+    "gulayyener": {
+        "arachni": {
+            "Smarty": 3587,
+            "JavaScript": 757530,
+            "Ruby": 3336294,
+            "CSS": 5329,
+            "HTML": 77286
+        },
+        "fbht": {},
+        "figlet": {},
+        "fuckshitup": {},
+        "CMSmap": {
+            "Python": 99652
+        },
+        "decompile-dump": {},
+        "drozer": {},
+        "fbid": {},
+        "CookieCatcher": {
+            "JavaScript": 1623,
+            "PHP": 13784,
+            "CSS": 2152
+        },
+        "g0tr00t": {},
+        "DAws": {
+            "Shell": 440,
+            "PHP": 139154,
+            "Python": 1764
+        },
+        "brakeman": {
+            "CoffeeScript": 1337,
+            "JavaScript": 10653,
+            "Ruby": 1065411,
+            "CSS": 9884,
+            "HTML": 80428
+        },
+        "knock": {},
+        "Introspy-iOS": {},
+        "cybersec-glasgow": {},
+        "Bing-Scan": {
+            "Perl": 11933
+        },
+        "dos_ssh": {},
+        "data.d": {},
+        "0d1n": {
+            "Makefile": 240,
+            "C": 48846,
+            "JavaScript": 1792187,
+            "PHP": 101419,
+            "CSS": 46434,
+            "HTML": 35548
+        },
+        "bettercap": {
+            "Ruby": 215013
+        },
+        "Googler-URL-Spider": {
+            "Makefile": 255,
+            "C": 6503
+        },
+        "Linux_Exploit_Suggester": {
+            "Perl": 19422
+        },
+        "exploit-database-bin-sploits": {
+            "ColdFusion": 2413,
+            "Python": 7458459,
+            "C": 26778,
+            "Shell": 525,
+            "PostScript": 598965,
+            "Perl": 33756,
+            "ActionScript": 16151,
+            "HTML": 174,
+            "XSLT": 755,
+            "Ruby": 3976,
+            "JavaScript": 1357,
+            "Lua": 6383
+        },
+        "exploit-database": {},
+        "hack.chat": {
+            "JavaScript": 381988,
+            "HTML": 1096,
+            "Makefile": 330,
+            "CSS": 34876
+        },
+        "heartbleed-masstest": {},
+        "facebook-ios-sdk": {},
+        "facebook-php-sdk": {},
+        "Bolts-iOS": {},
+        "b374k": {
+            "JavaScript": 51678,
+            "PHP": 139089,
+            "CSS": 165577
+        }
+    },
+    "mucbuc": {
+        "inject-json": {
+            "JavaScript": 4918
+        },
+        "autist": {
+            "C": 265,
+            "C++": 5945,
+            "Python": 940
+        },
+        "cstar-template-gyp": {
+            "Python": 867,
+            "C++": 79
+        },
+        "cstar-template-qmake": {
+            "C++": 79,
+            "QMake": 36
+        },
+        "gui": {
+            "JavaScript": 33230
+        },
+        "http-client": {
+            "Python": 516,
+            "Objective-C++": 256,
+            "JavaScript": 7955,
+            "C++": 13863,
+            "Objective-C": 810
+        },
+        "FLTK": {
+            "Makefile": 65115,
+            "CMake": 73427,
+            "C": 4899969,
+            "Shell": 70089,
+            "Batchfile": 370,
+            "Objective-C++": 205076,
+            "Objective-C": 26000,
+            "Groff": 392331,
+            "C++": 4719862,
+            "HTML": 13498
+        },
+        "expector": {
+            "JavaScript": 4343
+        },
+        "bin": {
+            "JavaScript": 1426
+        },
+        "flow-troll": {
+            "JavaScript": 7074
+        },
+        "glfw": {
+            "CMake": 18252,
+            "Objective-C": 81174,
+            "M": 10322,
+            "Mathematica": 12709,
+            "C": 791089
+        },
+        "crimp": {
+            "JavaScript": 15150,
+            "C++": 7310,
+            "Python": 2079
+        },
+        "cd-agent": {
+            "JavaScript": 2813
+        },
+        "auto-logic": {
+            "JavaScript": 6086
+        },
+        "filebase": {
+            "JavaScript": 8959,
+            "Python": 82
+        },
+        "command-line": {
+            "JavaScript": 5782
+        },
+        "gui-example": {
+            "JavaScript": 8961
+        },
+        "cstar-template-cmake": {
+            "CMake": 72,
+            "C++": 79
+        },
+        "elapsed": {
+            "C++": 8165
+        },
+        "fluke": {
+            "C++": 14014
+        },
+        "context": {
+            "C++": 98615
+        },
+        "ctor": {
+            "C++": 19519
+        },
+        "asserter": {
+            "JavaScript": 1136,
+            "C++": 6895
+        },
+        "cstar": {
+            "QMake": 72,
+            "CMake": 139,
+            "JavaScript": 5254,
+            "Python": 1774,
+            "C++": 316
+        },
+        "events": {
+            "JavaScript": 8244
+        },
+        "blurb": {
+            "JavaScript": 22058,
+            "CSS": 148
+        },
+        "gyp-import": {
+            "JavaScript": 7193
+        },
+        "dynamo": {
+            "C++": 14657
+        },
+        "flukeJS": {
+            "JavaScript": 5479
+        },
+        "drop": {
+            "C++": 6756
+        }
+    },
+    "limingyang2012": {
+        "lxchuan12.github.io": {
+            "HTML": 11238
+        },
+        "tetris": {
+            "JavaScript": 35544,
+            "HTML": 2739,
+            "CSS": 7821
+        },
+        "learn-canvas": {
+            "JavaScript": 9811,
+            "HTML": 3919
+        },
+        "cv": {
+            "JavaScript": 13437,
+            "HTML": 7877,
+            "CSS": 14190
+        },
+        "task-stage2-final-submission": {
+            "JavaScript": 48807,
+            "CSS": 1256,
+            "HTML": 38172
+        },
+        "2048": {
+            "JavaScript": 6005,
+            "HTML": 1156,
+            "CSS": 2132
+        },
+        "learn-js": {
+            "JavaScript": 28052,
+            "CSS": 13136,
+            "HTML": 101809
+        },
+        "waterfall": {
+            "JavaScript": 8730,
+            "CSS": 790,
+            "HTML": 828
+        },
+        "notebook": {
+            "PowerShell": 468,
+            "JavaScript": 213934,
+            "CSS": 563,
+            "HTML": 704
+        },
+        "liutil": {
+            "JavaScript": 8632
+        },
+        "inverter": {
+            "JavaScript": 4264,
+            "CSS": 470,
+            "HTML": 695
+        },
+        "leetcode-javascript": {
+            "JavaScript": 2489
+        },
+        "jekyllthemes": {
+            "HTML": 5842,
+            "CSS": 187589
+        },
+        "limingyang2012.github.io": {
+            "HTML": 10795,
+            "JavaScript": 3962,
+            "CSS": 36302
+        },
+        "nodelesson": {
+            "PowerShell": 468,
+            "JavaScript": 232735,
+            "HTML": 13800
+        },
+        "baidu_ife_task": {
+            "JavaScript": 119946,
+            "HTML": 11981,
+            "CSS": 153381
+        },
+        "ife": {
+            "JavaScript": 58300,
+            "CSS": 13346,
+            "HTML": 22015
+        },
+        "toolbar": {
+            "JavaScript": 6759,
+            "HTML": 5979,
+            "CSS": 16375
+        },
+        "node_demo": {
+            "PowerShell": 468,
+            "JavaScript": 215089,
+            "HTML": 3830
+        },
+        "zepto.swipe": {
+            "JavaScript": 11688,
+            "HTML": 1269,
+            "CSS": 1295
+        },
+        "baidu_ife": {
+            "CSS": 22353,
+            "JavaScript": 16241,
+            "HTML": 39769
+        },
+        "learngit": {
+            "Python": 7
+        },
+        "mobileTech": {}
+    },
+    "alphaKAI": {
+        "dlangui": {
+            "Shell": 1135,
+            "XSLT": 57300,
+            "D": 4561551,
+            "Batchfile": 494
+        },
+        "Alumixitter": {
+            "Ruby": 13406
+        },
+        "dlocaltunnel": {
+            "D": 3360
+        },
+        "dchat": {
+            "D": 7769
+        },
+        "dilo": {
+            "D": 38486
+        },
+        "druntime": {
+            "Assembly": 16480,
+            "DTrace": 90,
+            "Makefile": 87848,
+            "D": 6564075,
+            "C": 13535
+        },
+        "dmd": {
+            "DTrace": 81874,
+            "Makefile": 73691,
+            "C": 3966348,
+            "Shell": 26710,
+            "Assembly": 6500,
+            "Objective-C": 21274,
+            "C++": 497760,
+            "D": 7557892,
+            "HTML": 189868
+        },
+        "cliper-server": {
+            "Shell": 37,
+            "D": 10334
+        },
+        "algebraic": {
+            "D": 6257
+        },
+        "ChickenClisp_py": {
+            "Python": 27120
+        },
+        "ChickenClisp_ts": {
+            "TypeScript": 39561
+        },
+        "brainfuck": {
+            "D": 18464
+        },
+        "baremetal-d-hello-serial": {},
+        "doco": {
+            "D": 7862
+        },
+        "ChickenClisp": {
+            "D": 120438
+        },
+        "base64": {
+            "C": 15935
+        },
+        "build_my_arch": {
+            "Shell": 10731,
+            "Ruby": 2892,
+            "VimL": 3370,
+            "Lua": 18373
+        },
+        "baremetal-d-hello-vga": {},
+        "battle_dome_generator": {
+            "Ruby": 5853
+        },
+        "ChickenClisp_rb": {
+            "Ruby": 21155
+        },
+        "alphakai.github.io": {
+            "JavaScript": 76499,
+            "CSS": 154997
+        },
+        "dlang.org": {
+            "ApacheConf": 1426,
+            "Makefile": 46922,
+            "Shell": 499,
+            "JavaScript": 29776,
+            "HTML": 756,
+            "PHP": 716,
+            "D": 19905,
+            "CSS": 54461
+        },
+        "accessTokenGetter": {
+            "D": 505
+        },
+        "dotfiles": {
+            "Shell": 117857,
+            "Vim script": 11027,
+            "Ruby": 2552,
+            "D": 3629
+        },
+        "cliper-client": {
+            "D": 2896
+        },
+        "chat": {},
+        "dmusic": {
+            "D": 4120
+        },
+        "delight": {
+            "Shell": 219,
+            "D": 11366
+        },
+        "apicaller": {
+            "D": 1555
+        },
+        "armos": {
+            "D": 289338
+        }
+    },
+    "hsnaydd": {
+        "validetta": {
+            "JavaScript": 34293,
+            "CSS": 2525
+        },
+        "credit-card-example": {
+            "JavaScript": 4667,
+            "CSS": 1881,
+            "HTML": 4048
+        },
+        "siema": {
+            "JavaScript": 10572
+        },
+        "moveTo": {
+            "JavaScript": 9957
+        }
+    },
+    "joaopedronardari": {
+        "OpenCV-AndroidSamples": {
+            "C++": 9367,
+            "Java": 886450
+        },
+        "free-programming-books": {},
+        "QA-EACHUSP": {
+            "Java": 10319
+        },
+        "laravel5fundamentals": {
+            "JavaScript": 503,
+            "ApacheConf": 412,
+            "PHP": 71267,
+            "CSS": 72
+        },
+        "COO-EACHUSP": {
+            "Java": 34426
+        },
+        "retrofit": {
+            "Shell": 1949,
+            "HTML": 15294,
+            "Protocol Buffer": 147,
+            "CSS": 3692,
+            "Java": 341975
+        },
+        "machine-learning-for-software-engineers": {},
+        "projetoSolucoesWeb": {
+            "Rust": 6,
+            "Java": 47279,
+            "HTML": 101376
+        },
+        "Sample-Geolocation-Cordova": {
+            "C#": 1116,
+            "Java": 741127,
+            "Objective-C": 17435,
+            "Shell": 11293,
+            "JavaScript": 58189,
+            "C++": 5534,
+            "D": 4908,
+            "CSS": 3719
+        },
+        "IOS-CPF-Mask": {
+            "Objective-C": 837
+        },
+        "2048": {
+            "C#": 67995
+        },
+        "calabashStudy": {
+            "Shell": 5871,
+            "Cucumber": 783,
+            "HTML": 604,
+            "Ruby": 29535,
+            "Java": 2066
+        },
+        "android-best-practices": {
+            "Java": 17266
+        },
+        "IP-EACHUSP": {
+            "Java": 19559
+        },
+        "dotnet": {},
+        "LocationStrategySampleProject": {
+            "Java": 4960
+        },
+        "holidayapi.com": {
+            "Nginx": 995,
+            "PHP": 15554,
+            "JavaScript": 740,
+            "CSS": 706
+        },
+        "AndroidHeartBeatFixer": {
+            "Java": 1707
+        },
+        "joaopedronardari.github.com": {
+            "JavaScript": 42756,
+            "Ruby": 715,
+            "PHP": 1092,
+            "CSS": 17974,
+            "HTML": 22461
+        },
+        "PopularMovies": {
+            "Java": 6274
+        },
+        "multithread-webserver": {
+            "HTML": 223,
+            "Java": 11970
+        },
+        "AndroidCalendarExample": {
+            "Java": 7277
+        },
+        "AED2-EACHUSP": {
+            "C++": 13085
+        },
+        "IAA-EACHUSP": {
+            "Java": 21883
+        },
+        "awesome-android": {},
+        "MyAppPortifolio": {
+            "Java": 2090
+        },
+        "AED1-EACHUSP": {
+            "C": 5996
+        },
+        "public-apis": {},
+        "HelloOpenCVSample": {
+            "Java": 835559
+        },
+        "HelloNDKSample": {
+            "Java": 1240,
+            "C": 1386
+        }
+    },
+    "chfw": {
+        "flask-restless": {
+            "Shell": 6504,
+            "TeX": 3106,
+            "Python": 332027
+        },
+        "dojo": {
+            "Python": 137353
+        },
+        "python-zeep": {
+            "Python": 768943,
+            "Makefile": 542
+        },
+        "angular-example-bdd": {
+            "JavaScript": 5264,
+            "CoffeeScript": 417,
+            "CSS": 1634
+        },
+        "libxlpy": {
+            "Python": 32824,
+            "C": 94034
+        },
+        "sample": {
+            "Python": 682
+        },
+        "dot-emacs-4-python": {
+            "Emacs Lisp": 1590
+        },
+        "jquery-handsontable": {
+            "JavaScript": 3142695,
+            "PHP": 6827,
+            "CSS": 116819
+        },
+        "grunt-ngdocs-example": {
+            "JavaScript": 4215
+        },
+        "silent-yeoman": {
+            "JavaScript": 10384
+        },
+        "pc2shape": {
+            "Shell": 223,
+            "Python": 38862
+        },
+        "questionnairedata": {},
+        "messytables": {
+            "Python": 114181,
+            "Makefile": 125,
+            "HTML": 120537
+        },
+        "backbone.flask-restless": {
+            "JavaScript": 6298,
+            "CoffeeScript": 4106
+        },
+        "ezodf": {
+            "Shell": 108,
+            "Python": 355892
+        },
+        "datamaps-china-examples": {
+            "JavaScript": 15023,
+            "HTML": 1327
+        },
+        "bash-cli-utils": {
+            "Shell": 829
+        },
+        "ng-flask-restless-client": {
+            "Shell": 26,
+            "JavaScript": 66,
+            "CoffeeScript": 6821
+        },
+        "grunt-plantuml": {
+            "JavaScript": 4794
+        },
+        "odfpy": {
+            "XSLT": 31981,
+            "Python": 916934,
+            "Makefile": 9416,
+            "Web Ontology Language": 8434,
+            "Shell": 192,
+            "Groff": 87314
+        },
+        "moban": {
+            "Shell": 183,
+            "Python": 33639,
+            "Makefile": 31,
+            "Batchfile": 185
+        },
+        "whoosha": {
+            "Python": 754
+        },
+        "kaggle-talkingdata-visualization": {
+            "JavaScript": 50440,
+            "HTML": 4631,
+            "Python": 2310,
+            "CSS": 11409
+        },
+        "pypyjs-release": {
+            "JavaScript": 67699,
+            "HTML": 5529,
+            "Python": 25133266,
+            "D": 2081,
+            "CSS": 12748
+        },
+        "eulfedora": {
+            "Python": 424764
+        },
+        "djangorestframework-tutorial": {
+            "Python": 19985
+        },
+        "datamaps": {
+            "JavaScript": 1172901,
+            "CSS": 66343
+        },
+        "private-bower": {
+            "CSS": 28
+        },
+        "QGIS": {},
+        "bodleian.recipe.fedorainstance": {
+            "Shell": 191,
+            "Python": 16267,
+            "Makefile": 30
+        }
+    },
+    "lumixraku": {
+        "BrowserTest": {
+            "JavaScript": 473322,
+            "CSS": 9205,
+            "HTML": 87187
+        },
+        "git-aliases": {},
+        "gulp_demo": {
+            "JavaScript": 1091740,
+            "HTML": 126099,
+            "CSS": 168051
+        },
+        "gowiththeflow.js": {
+            "JavaScript": 4801,
+            "Makefile": 441,
+            "HTML": 1002
+        },
+        "cv": {
+            "CSS": 7277,
+            "JavaScript": 3918,
+            "HTML": 22880
+        },
+        "accessible-html5-video-player": {
+            "JavaScript": 26454,
+            "HTML": 3216,
+            "CSS": 8313
+        },
+        "jacman": {
+            "JavaScript": 15530,
+            "CSS": 43724
+        },
+        "fis-parser-template": {
+            "JavaScript": 10464,
+            "HTML": 900
+        },
+        "custom-title": {
+            "CoffeeScript": 2895
+        },
+        "2048": {
+            "JavaScript": 298386,
+            "HTML": 1883,
+            "CSS": 4553
+        },
+        "es6_demo": {
+            "JavaScript": 30368,
+            "HTML": 3610
+        },
+        "fis3-base": {
+            "JavaScript": 134032,
+            "CSS": 1203,
+            "HTML": 3729
+        },
+        "css3test": {
+            "JavaScript": 47937,
+            "HTML": 2285,
+            "CSS": 5439
+        },
+        "ant-design": {
+            "TypeScript": 176932,
+            "JavaScript": 60313,
+            "HTML": 2129,
+            "CSS": 259227
+        },
+        "eviltransform": {
+            "Haskell": 5238,
+            "C#": 7431,
+            "C": 6195,
+            "Python": 6307,
+            "Swift": 4955,
+            "Java": 7342,
+            "Go": 5356,
+            "JavaScript": 7582,
+            "PHP": 8053
+        },
+        "ele": {
+            "CSS": 34533,
+            "JavaScript": 13829,
+            "HTML": 62421
+        },
+        "examples": {
+            "JavaScript": 35461,
+            "Makefile": 131,
+            "HTML": 3583
+        },
+        "html5test": {
+            "JavaScript": 1025049,
+            "ApacheConf": 3412,
+            "PHP": 48951,
+            "CSS": 64609,
+            "HTML": 138536
+        },
+        "flappyBird": {
+            "JavaScript": 19991,
+            "HTML": 1989,
+            "CSS": 4620
+        },
+        "demo_playground": {
+            "Shell": 367,
+            "ApacheConf": 1742,
+            "CoffeeScript": 6225,
+            "Python": 23648,
+            "Go": 8973,
+            "JavaScript": 2927111,
+            "HTML": 1215721,
+            "PHP": 283865,
+            "CSS": 496434
+        },
+        "extract-text-webpack-plugin": {
+            "JavaScript": 24408,
+            "HTML": 350,
+            "CSS": 971
+        },
+        "eleme": {
+            "JavaScript": 28180,
+            "HTML": 1520,
+            "CSS": 13743
+        },
+        "cnblog_styles": {
+            "JavaScript": 754,
+            "CSS": 27689
+        },
+        "ace": {
+            "Mask": 597,
+            "Elm": 487,
+            "Perl": 678,
+            "Tcl": 899,
+            "Visual Basic": 938,
+            "C#": 151,
+            "HTML": 1279249,
+            "TeX": 1345,
+            "Ruby": 531,
+            "Common Lisp": 632,
+            "Dart": 489,
+            "FreeMarker": 1017,
+            "Scala": 1541,
+            "Lua": 981,
+            "Liquid": 1883,
+            "Protocol Buffer": 274,
+            "Io": 140,
+            "Python": 478,
+            "Makefile": 5681,
+            "Julia": 210,
+            "AutoHotkey": 720,
+            "Cucumber": 699,
+            "PHP": 351,
+            "Forth": 979,
+            "Rust": 495,
+            "Elixir": 692,
+            "Haxe": 447,
+            "OCaml": 539,
+            "OpenSCAD": 333,
+            "D": 324,
+            "ActionScript": 1133,
+            "Haskell": 512,
+            "ABAP": 1037,
+            "COBOL": 4,
+            "NSIS": 486,
+            "Swift": 476,
+            "Java": 1550,
+            "Go": 641,
+            "Ada": 99,
+            "LSL": 2080,
+            "R": 2445,
+            "LiveScript": 5747,
+            "Nix": 2212,
+            "GLSL": 512,
+            "Objective-C": 2672,
+            "TypeScript": 1672,
+            "PowerShell": 418,
+            "JavaScript": 12659223,
+            "C++": 808,
+            "Vala": 485,
+            "CSS": 133533,
+            "Eiffel": 375,
+            "Cirru": 520,
+            "ColdFusion": 86,
+            "Scheme": 559,
+            "VHDL": 830,
+            "Groovy": 1080,
+            "Shell": 3282,
+            "Fortran": 713,
+            "Assembly": 506,
+            "Clojure": 794,
+            "JSONiq": 4,
+            "Matlab": 203,
+            "Verilog": 274,
+            "Erlang": 487,
+            "Pascal": 1412,
+            "Lean": 213,
+            "Batchfile": 260,
+            "XQuery": 114,
+            "CoffeeScript": 403
+        },
+        "fis3-demo": {
+            "Makefile": 1161,
+            "Smarty": 627,
+            "JavaScript": 488475,
+            "PHP": 31304,
+            "CSS": 61431,
+            "HTML": 17637
+        },
+        "Acid3": {
+            "Groff": 674,
+            "HTML": 182654
+        },
+        "fis-parser-es6-babel": {
+            "JavaScript": 334
+        },
+        "hexo-theme-next": {
+            "JavaScript": 37994,
+            "CSS": 49441
+        },
+        "atom": {},
+        "anti-baidu": {
+            "JavaScript": 8210,
+            "HTML": 222
+        }
+    },
+    "six519": {
+        "cordova-plugin-sound-meter": {
+            "JavaScript": 208,
+            "Java": 2743
+        },
+        "cordova-plugin-facebook": {
+            "JavaScript": 415,
+            "Java": 4450
+        },
+        "123-Movies-Player": {
+            "Python": 7743
+        },
+        "cordova-plugin-ocr-mobile-vision": {
+            "JavaScript": 1310,
+            "Java": 5041
+        },
+        "cordova-plugin-sms-sender": {
+            "Objective-C": 163,
+            "JavaScript": 7290,
+            "Swift": 1972,
+            "Java": 3061
+        },
+        "fluvidus": {
+            "JavaScript": 59434
+        },
+        "Bshellz-Account-Keeper-Bot": {
+            "Python": 1581
+        },
+        "file-uploader": {
+            "Groovy": 5558,
+            "ColdFusion": 3274,
+            "Python": 14624,
+            "Java": 42001,
+            "Shell": 26,
+            "C#": 3961,
+            "JavaScript": 150001,
+            "PHP": 19978,
+            "Visual Basic": 2838
+        },
+        "GitHub-Unfollower": {
+            "Python": 1921
+        },
+        "package_control_channel": {
+            "Python": 48766
+        },
+        "FlipSeek-Crawler": {
+            "Python": 1386
+        },
+        "intercom_python": {
+            "Python": 6090
+        },
+        "homebrew-tap": {
+            "Ruby": 534
+        },
+        "cordova-plugin-android-badge-counter": {
+            "JavaScript": 1423,
+            "Java": 2445
+        },
+        "MathematicsGame": {
+            "Visual Basic": 19155
+        },
+        "Java-Notepad": {
+            "Java": 4542
+        },
+        "cordova-plugin-btobdspeed": {
+            "JavaScript": 194,
+            "Python": 2088,
+            "Java": 6257
+        },
+        "disclose.ph": {
+            "ApacheConf": 5767,
+            "SourcePawn": 157770,
+            "Shell": 29270,
+            "C++": 129040,
+            "JavaScript": 1021353,
+            "HTML": 697819,
+            "PHP": 12029919,
+            "CSS": 519804
+        },
+        "cordova-plugin-qrcode-mobile-vision": {
+            "JavaScript": 1312,
+            "Java": 4726
+        },
+        "MonoRun": {
+            "Python": 10267
+        },
+        "libreoffice_convert": {
+            "Python": 7804
+        },
+        "jsecm2cue": {
+            "JavaScript": 93,
+            "C++": 9077,
+            "Python": 136
+        },
+        "jsdecodeqr": {
+            "JavaScript": 94,
+            "C++": 1335,
+            "Python": 437
+        },
+        "ferdinandsilva.com": {
+            "Python": 19277,
+            "HTML": 13051
+        },
+        "Kyu_Ar_Kowd_Jenereytor": {
+            "Python": 2965
+        },
+        "cordova-plugin-simple-toast": {
+            "JavaScript": 223,
+            "Java": 1493
+        },
+        "django-simple-gmap": {
+            "Python": 5589,
+            "HTML": 3523
+        },
+        "ffmpeg-PHP": {
+            "PHP": 2289
+        },
+        "ass2srt": {
+            "Ruby": 2726
+        },
+        "cordova-plugin-share-content": {
+            "Objective-C": 163,
+            "JavaScript": 7269,
+            "Swift": 799,
+            "Java": 1897
+        }
+    },
+    "wangfulin": {
+        "Hilo": {
+            "JavaScript": 3963450,
+            "HTML": 28638,
+            "CSS": 4996,
+            "ActionScript": 35247
+        },
+        "anehta": {
+            "JavaScript": 347066,
+            "HTML": 1486,
+            "PHP": 155970,
+            "CSS": 7670
+        },
+        "mosquito": {
+            "Tcl": 1205166,
+            "Python": 46548,
+            "Shell": 197,
+            "Batchfile": 177,
+            "JavaScript": 14690,
+            "HTML": 1577
+        },
+        "beef": {
+            "C": 4967,
+            "PHP": 5877,
+            "Ruby": 1346364,
+            "Java": 23337,
+            "Shell": 14142,
+            "Assembly": 43572,
+            "JavaScript": 2440974,
+            "ActionScript": 31531,
+            "CSS": 156576,
+            "HTML": 88581
+        },
+        "gulp-md5-replace": {
+            "JavaScript": 3087
+        },
+        "icono": {
+            "HTML": 8773,
+            "JavaScript": 1174,
+            "CSS": 167479
+        },
+        "NewbieTraining": {},
+        "huiwuyou": {
+            "JavaScript": 33198,
+            "HTML": 23168,
+            "PHP": 140203,
+            "CSS": 60710
+        },
+        "detector": {
+            "JavaScript": 91754
+        },
+        "ife": {
+            "CSS": 19001,
+            "HTML": 27608
+        },
+        "nodejs-1": {
+            "JavaScript": 863677,
+            "HTML": 77510,
+            "CSS": 89119
+        },
+        "nodePPT": {
+            "Ruby": 737,
+            "JavaScript": 348737,
+            "HTML": 13334,
+            "PHP": 163,
+            "CSS": 239854
+        },
+        "egret-wukong": {
+            "TypeScript": 82319,
+            "JavaScript": 3218234,
+            "HTML": 6067
+        },
+        "ant-design": {
+            "Shell": 136,
+            "JavaScript": 215954,
+            "HTML": 11343,
+            "CSS": 197910
+        },
+        "plugins": {},
+        "CSS": {
+            "CSS": 5645,
+            "JavaScript": 2401,
+            "HTML": 224854
+        },
+        "nodejs": {
+            "JavaScript": 2542
+        },
+        "Alice": {
+            "Batchfile": 7472,
+            "JavaScript": 252989,
+            "HTML": 45126,
+            "CSS": 45804
+        },
+        "Front-end-tutorial": {},
+        "Javascript": {
+            "JavaScript": 1022378,
+            "CSS": 1478,
+            "HTML": 19757
+        },
+        "Github-Resume": {
+            "JavaScript": 1653964,
+            "Nginx": 1113,
+            "CSS": 18898,
+            "HTML": 190780
+        },
+        "emoji": {
+            "JavaScript": 9605
+        },
+        "Blog": {},
+        "javascript-design-pattern": {
+            "JavaScript": 48908
+        },
+        "javascript-snippet": {
+            "JavaScript": 2830
+        },
+        "attackapi": {
+            "ApacheConf": 75,
+            "Python": 16462,
+            "JavaScript": 217779,
+            "HTML": 51131,
+            "PHP": 27817,
+            "CSS": 8804
+        },
+        "angularjs": {
+            "JavaScript": 68,
+            "CSS": 448
+        },
+        "es6": {},
+        "mobileTech": {},
+        "Learning-Javascript-Design-Patterns": {}
+    },
+    "luoxn28": {
+        "nginx": {
+            "Nginx": 2656,
+            "VimL": 37498,
+            "XS": 21267,
+            "Makefile": 4252,
+            "Perl": 6636,
+            "Objective-C": 2834,
+            "C": 4367792,
+            "C++": 18566
+        },
+        "free-programming-books": {},
+        "funftp": {
+            "Makefile": 325,
+            "C": 48152
+        },
+        "cppevent": {
+            "C++": 6723,
+            "Makefile": 82,
+            "C": 735
+        },
+        "WeMybatis": {
+            "Java": 32410
+        },
+        "awesome-cpp": {},
+        "tinyMusic": {
+            "Java": 4519
+        },
+        "tinyhtml": {
+            "C++": 58214,
+            "Makefile": 336
+        },
+        "bookmarks": {},
+        "lantern": {
+            "Protocol Buffer": 2519,
+            "Python": 211166,
+            "Makefile": 33520,
+            "Perl": 35528,
+            "Shell": 45514,
+            "Batchfile": 2591,
+            "Assembly": 102873,
+            "C": 59097,
+            "Groff": 5928,
+            "NSIS": 5575,
+            "HTML": 153872,
+            "Go": 20317701,
+            "Ruby": 3906,
+            "Java": 188958,
+            "Objective-C": 59208,
+            "Groovy": 5687,
+            "JavaScript": 160726,
+            "C++": 12034,
+            "CSS": 378246
+        },
+        "tomjson": {
+            "Java": 30666
+        },
+        "imtalk": {
+            "C++": 9788,
+            "C": 191
+        },
+        "myHttpd": {
+            "Python": 240,
+            "Makefile": 104,
+            "C": 6930
+        },
+        "mybatis-3": {
+            "Shell": 3755,
+            "SQLPL": 4803,
+            "CSS": 1380,
+            "Java": 2659456
+        },
+        "gumbo-parser": {
+            "Python": 51723,
+            "C": 1152897,
+            "Shell": 1206,
+            "Ragel in Ruby Host": 128173,
+            "C++": 134821,
+            "HTML": 9914178
+        },
+        "coderweather": {
+            "Java": 35317
+        },
+        "mybatis-wheel": {
+            "Java": 71304
+        },
+        "ThinkInTechnology": {
+            "C": 2114,
+            "C++": 9891,
+            "Java": 61257
+        },
+        "algorithm_data_structure": {
+            "C++": 115599,
+            "Java": 12441
+        },
+        "free-programming-books-zh_CN": {},
+        "tuiku": {
+            "JavaScript": 1569185,
+            "HTML": 94444,
+            "Java": 74248,
+            "CSS": 240632
+        },
+        "CleanBlog": {
+            "JavaScript": 1605766,
+            "HTML": 107854,
+            "PHP": 1089,
+            "Java": 27690,
+            "CSS": 124491
+        },
+        "hexo-theme-next": {
+            "JavaScript": 355020,
+            "CoffeeScript": 479,
+            "CSS": 64300
+        }
+    },
+    "mindthink": {
+        "book-exercises": {
+            "Haskell": 37750,
+            "Racket": 47350,
+            "Prolog": 1727,
+            "Python": 73619,
+            "Makefile": 11777,
+            "C": 42869,
+            "Shell": 3729,
+            "Clojure": 256642,
+            "Yacc": 1167,
+            "HTML": 17189,
+            "Perl": 97,
+            "Erlang": 9667,
+            "Java": 2425,
+            "Ruby": 7440,
+            "JavaScript": 11303,
+            "C++": 280945,
+            "CSS": 297,
+            "Batchfile": 3721
+        },
+        "awesome-awesomeness": {},
+        "CtCI-6th-Edition-Python": {
+            "Python": 31531
+        },
+        "CppCoreGuidelines": {},
+        "awesome-interviews": {},
+        "ComPerformance": {
+            "JavaScript": 671089,
+            "HTML": 166730,
+            "Python": 300527,
+            "CSS": 513082
+        },
+        "collegeproject": {
+            "JavaScript": 2108,
+            "CSS": 32722
+        },
+        "awesome-python": {
+            "Python": 1825,
+            "Makefile": 213
+        },
+        "chinese-programmer-wrong-pronunciation": {},
+        "BaseFlightPlus": {
+            "Assembly": 12901,
+            "HTML": 69978,
+            "C++": 65245,
+            "Objective-C": 6295,
+            "C": 2638979
+        },
+        "bootstrap": {
+            "PowerShell": 468,
+            "Python": 5734,
+            "Shell": 350,
+            "JavaScript": 329576,
+            "CSS": 375083,
+            "HTML": 143960
+        },
+        "-": {
+            "DTrace": 38813,
+            "HTML": 137830,
+            "Assembly": 29072,
+            "Makefile": 2332,
+            "C": 3183190
+        },
+        "Cplusplus-Concurrency-In-Practice": {
+            "C++": 726,
+            "Makefile": 242
+        },
+        "500lines": {
+            "CoffeeScript": 2362,
+            "Python": 436760,
+            "Makefile": 5301,
+            "Julia": 15806,
+            "Shell": 3787,
+            "Clojure": 31739,
+            "LiveScript": 7417,
+            "Alloy": 22459,
+            "TeX": 583750,
+            "Ruby": 41538,
+            "Java": 23309,
+            "HTML": 100902,
+            "Erlang": 28984,
+            "JavaScript": 822958,
+            "CSS": 5975
+        },
+        "awesome-awesomeness-zh_CN": {}
+    },
+    "ScenicVerve": {
+        "CoreNLP": {
+            "Perl": 11812,
+            "Protocol Buffer": 11469,
+            "Common Lisp": 36144,
+            "Python": 21968,
+            "Makefile": 26809,
+            "Java": 23875649,
+            "Shell": 28656,
+            "Ruby": 3447,
+            "JavaScript": 30912,
+            "HTML": 2613,
+            "CSS": 3137
+        },
+        "SFCrime2014Sum": {},
+        "PythonBooks": {},
+        "r-census-tutorial-2015-05": {
+            "R": 949,
+            "HTML": 7473309
+        },
+        "nba-playerIDs": {
+            "R": 3631
+        },
+        "VulnToolkit": {
+            "R": 60111
+        },
+        "MLBRoster": {
+            "R": 6293,
+            "HTML": 342204
+        },
+        "freelawmachine": {
+            "Shell": 11106
+        },
+        "MLBrunscoring_shiny": {
+            "R": 19981,
+            "HTML": 648226
+        },
+        "baseball_R": {
+            "R": 133848
+        },
+        "openlaw": {},
+        "Legal_Analytics": {
+            "R": 14827
+        },
+        "openstates": {
+            "R": 590,
+            "Python": 2054341,
+            "Makefile": 452,
+            "Shell": 2752,
+            "JavaScript": 52498,
+            "CSS": 46913,
+            "HTML": 19931
+        },
+        "localco.de": {
+            "CSS": 19303,
+            "Python": 85875,
+            "HTML": 57773
+        },
+        "openFEC": {
+            "Jupyter Notebook": 181520,
+            "SQLPL": 106947,
+            "Ruby": 5533,
+            "Python": 235148,
+            "Shell": 8963,
+            "Nginx": 1485,
+            "PLpgSQL": 1897390,
+            "HTML": 2824
+        },
+        "statsmodels": {
+            "AGS Script": 457842,
+            "R": 37431,
+            "Python": 9333124,
+            "Stata": 54989,
+            "Batchfile": 351,
+            "Assembly": 10035,
+            "C": 12088,
+            "Matlab": 2609,
+            "HTML": 148470
+        },
+        "ExData_Plotting1": {
+            "R": 13869
+        }
+    },
+    "MurphyL": {
+        "CaseJava": {
+            "FreeMarker": 1350,
+            "HTML": 127,
+            "Java": 69125
+        },
+        "StepInX": {
+            "HTML": 1052,
+            "JavaScript": 927,
+            "PLSQL": 1055,
+            "Swift": 14596,
+            "Java": 30838
+        },
+        "Pale": {
+            "JavaScript": 33125,
+            "HTML": 16101,
+            "CSS": 24425
+        },
+        "medusa": {
+            "Java": 5283
+        },
+        "Azusa": {
+            "Java": 961
+        },
+        "Collections": {
+            "SQLPL": 472,
+            "GCC Machine Description": 138,
+            "PLSQL": 2428,
+            "Shell": 1341,
+            "Batchfile": 1475,
+            "JavaScript": 61247,
+            "PHP": 8198,
+            "CSS": 7148,
+            "HTML": 5590
+        }
+    },
+    "XGHeaven": {
+        "jetbrains-split-string": {
+            "Java": 1739
+        },
+        "cleanDSStore": {
+            "JavaScript": 1712
+        },
+        "i-hdu-wifi-login": {
+            "Shell": 2209
+        },
+        "interesting-project": {},
+        "cnode-angular-material": {
+            "JavaScript": 29429,
+            "CSS": 1816,
+            "HTML": 15953
+        },
+        "dater": {
+            "JavaScript": 13299,
+            "HTML": 49136
+        },
+        "fks": {
+            "JavaScript": 5200,
+            "HTML": 1172,
+            "Makefile": 29,
+            "CSS": 1201
+        },
+        "es6tutorial": {
+            "JavaScript": 12114,
+            "HTML": 1693,
+            "CSS": 7961
+        },
+        "2015_hdu_program_design": {
+            "Shell": 156,
+            "C++": 7263,
+            "Makefile": 393,
+            "Python": 62
+        },
+        "glyphsearch": {
+            "JavaScript": 9258,
+            "CSS": 7115,
+            "HTML": 7981
+        },
+        "GitTest": {},
+        "cnodejs-ionic": {
+            "Shell": 941,
+            "JavaScript": 59905,
+            "CSS": 3239,
+            "HTML": 21495
+        },
+        "CPP-Matrix": {
+            "C++": 2737
+        },
+        "hexo": {
+            "JavaScript": 550755
+        },
+        "hdu-oauth2-client": {
+            "JavaScript": 5797
+        },
+        "JavaScript-localStorage": {
+            "JavaScript": 3561
+        },
+        "dota2hero": {
+            "JavaScript": 1992472,
+            "HTML": 5476,
+            "CSS": 312100
+        },
+        "jetbrain-configure-of-my-favor": {},
+        "gulp-resrc": {
+            "JavaScript": 267
+        },
+        "CodeVS_front": {},
+        "alinode-docker-test": {
+            "JavaScript": 282
+        },
+        "envisor": {
+            "JavaScript": 5134
+        },
+        "Base64ForWin": {
+            "C++": 2196
+        },
+        "CNodeJS-iOS": {
+            "Ruby": 160,
+            "Swift": 23929
+        },
+        "Get-D2-2014-Ticket": {},
+        "hdu-evaluate-teacher": {
+            "JavaScript": 1626
+        },
+        "config-operator": {
+            "JavaScript": 6237
+        },
+        "2016-red-money": {
+            "HTML": 528
+        },
+        "DEMO-X-frontend": {
+            "JavaScript": 26648,
+            "HTML": 898,
+            "CSS": 2082
+        },
+        "huaming-react": {}
+    },
+    "imraaz-rally-njit-bot": {},
+    "failedxyz": {
+        "FacebookCLI": {
+            "C++": 851,
+            "Objective-C": 611
+        },
+        "enhance": {
+            "Java": 283
+        },
+        "battlesweeper": {
+            "JavaScript": 30341,
+            "HTML": 2737,
+            "CSS": 3650
+        },
+        "fca": {
+            "Python": 1010
+        },
+        "clip": {
+            "JavaScript": 5023,
+            "HTML": 3101
+        },
+        "corky": {
+            "JavaScript": 8455,
+            "HTML": 469,
+            "CSS": 2356
+        },
+        "failedxyz.github.io": {
+            "HTML": 35231,
+            "JavaScript": 8760,
+            "CSS": 38140
+        },
+        "chaldron.github.io": {
+            "JavaScript": 138724,
+            "HTML": 89431,
+            "PHP": 2188,
+            "CSS": 298141
+        },
+        "ctf": {},
+        "cribdrag": {
+            "Python": 6583
+        },
+        "allenbot": {
+            "JavaScript": 5194
+        },
+        "easy-node-authentication": {
+            "JavaScript": 26839,
+            "HTML": 9899
+        },
+        "englishscript": {},
+        "drywall": {},
+        "bancho-api": {
+            "Java": 72126
+        },
+        "facebook": {
+            "JavaScript": 1526
+        },
+        "buddyfinder": {
+            "JavaScript": 7481,
+            "HTML": 8776
+        },
+        "euler": {
+            "C++": 5176
+        },
+        "BitlyShield": {
+            "JavaScript": 856,
+            "HTML": 495
+        },
+        "charvn-core": {
+            "TypeScript": 646
+        },
+        "debrief": {},
+        "ctf-calendar": {
+            "Python": 162
+        },
+        "cryptopals": {
+            "Python": 4709
+        },
+        "docs": {},
+        "donutmafia": {
+            "JavaScript": 11523,
+            "CSS": 1959
+        },
+        "deductive-failures-hsf": {},
+        "drawtest": {},
+        "fuckitpy": {},
+        "ctctf_vulnserver": {
+            "PHP": 2403
+        },
+        "donut-counter": {
+            "JavaScript": 698,
+            "CSS": 11695
+        }
+    },
+    "pierreco": {
+        "mean": {
+            "Perl": 48,
+            "JavaScript": 112556,
+            "CSS": 44449
+        },
+        "auth0-angular": {
+            "JavaScript": 278090,
+            "CSS": 6159
+        },
+        "Slim-api": {
+            "PHP": 194977
+        },
+        "nodejs-starter": {
+            "JavaScript": 24650,
+            "Makefile": 642,
+            "CSS": 903,
+            "HTML": 2448
+        },
+        "MailgunNodeMailer": {
+            "JavaScript": 1896,
+            "HTML": 10076
+        },
+        "GH-js": {},
+        "colissimo-generate-label": {
+            "JavaScript": 4833
+        },
+        "salesforce-panelgrid": {},
+        "ReactNativeYoutube": {
+            "JavaScript": 14022,
+            "Objective-C": 4876
+        },
+        "chatx": {
+            "JavaScript": 41445,
+            "CSS": 2971
+        },
+        "callofdj": {
+            "JavaScript": 41521,
+            "CSS": 5622
+        }
+    },
+    "GIrardN": {
+        "bootme": {
+            "JavaScript": 4040,
+            "PHP": 501,
+            "CSS": 2531,
+            "HTML": 3446
+        },
+        "js": {},
+        "sisi": {
+            "Ruby": 805
+        },
+        "sim": {
+            "JavaScript": 58863,
+            "CSS": 225210
+        },
+        "tripp": {
+            "CoffeeScript": 635,
+            "JavaScript": 2699,
+            "Ruby": 18985,
+            "CSS": 12674
+        },
+        "Ere_V2": {
+            "JavaScript": 161064,
+            "Ruby": 888,
+            "PHP": 202,
+            "CSS": 501285
+        },
+        "iOS-SDK": {
+            "Objective-C": 201815,
+            "Ruby": 992,
+            "CSS": 14973,
+            "HTML": 1239102
+        },
+        "bibli_ruby": {
+            "CoffeeScript": 844,
+            "Ruby": 16157,
+            "JavaScript": 664,
+            "CSS": 11444
+        },
+        "lll": {},
+        "CPU-html5-boilerplate": {
+            "JavaScript": 11157,
+            "HTML": 2913,
+            "CSS": 5569
+        },
+        "YYWebImage": {
+            "Ruby": 857,
+            "Objective-C": 571812
+        },
+        "closest-beacon-demo": {
+            "Swift": 4774
+        },
+        "bpAjax": {
+            "ApacheConf": 39693,
+            "HTML": 5464,
+            "PHP": 501,
+            "JavaScript": 4359,
+            "CSS": 5728
+        },
+        "gill": {
+            "Swift": 3932,
+            "Objective-C": 211964
+        },
+        "neon_S_C_S": {
+            "CoffeeScript": 103,
+            "JavaScript": 33254,
+            "Ruby": 307,
+            "CSS": 136711
+        }
+    },
+    "zyclincoln": {
+        "LearnEmbeddedSystem": {
+            "HTML": 12
+        },
+        "caffe": {
+            "Protocol Buffer": 57711,
+            "Python": 296721,
+            "Makefile": 25263,
+            "M": 71,
+            "Shell": 12189,
+            "CMake": 98770,
+            "Cuda": 203186,
+            "C++": 2841137,
+            "Matlab": 32018
+        },
+        "EmbeddedProject": {
+            "C": 35381
+        },
+        "mini-nnet": {
+            "CMake": 4799,
+            "C++": 10923
+        },
+        "SpringNet": {
+            "CMake": 10827,
+            "C++": 124170
+        },
+        "JTalk": {
+            "Makefile": 3782,
+            "Java": 78875
+        }
+    },
+    "albertux": {
+        "free-programming-books": {},
+        "curriculum": {
+            "Shell": 5122,
+            "Python": 8180,
+            "Makefile": 5616
+        },
+        "docker-supervisord": {
+            "Makefile": 163
+        },
+        "sysctl.conf": {},
+        "puppetdb": {
+            "Shell": 31736,
+            "Clojure": 1478020,
+            "Ruby": 260150,
+            "JavaScript": 6368,
+            "HTML": 8216
+        },
+        "awesome-sysadmin": {},
+        "TODO": {},
+        "puppet-lint": {
+            "Ruby": 214528
+        },
+        "handle-servers": {
+            "Shell": 227,
+            "Python": 734
+        },
+        "ansible-init": {
+            "Python": 2235
+        },
+        "Cassandra-Cluster-Test": {
+            "Shell": 670,
+            "Ruby": 960
+        },
+        "hello-swift": {
+            "Swift": 21,
+            "Makefile": 5373
+        },
+        "List-of-Data-Center-Operating-Systems": {},
+        "gsh-mod": {
+            "Perl": 12622
+        },
+        "kickstart-examples": {},
+        "old-wifi-hack": {
+            "Shell": 2520
+        },
+        "rspec-example": {
+            "Ruby": 479,
+            "Makefile": 135
+        },
+        "reptyr": {
+            "Shell": 238,
+            "Python": 943,
+            "Makefile": 1400,
+            "C": 97386
+        }
+    },
+    "ueg1990": {
+        "customer-info": {
+            "CSS": 2241,
+            "Python": 12284,
+            "HTML": 6935
+        },
+        "free-programming-books": {},
+        "ansible": {
+            "PowerShell": 13511,
+            "Tcl": 2533,
+            "Python": 2314745,
+            "Makefile": 23706,
+            "Shell": 10628,
+            "Batchfile": 109,
+            "JavaScript": 31220,
+            "CSS": 131767,
+            "HTML": 33465
+        },
+        "pluginbase": {
+            "Python": 24035,
+            "Makefile": 211
+        },
+        "shows-alert": {
+            "JavaScript": 2876,
+            "Python": 34798
+        },
+        "py-must-watch": {},
+        "requests": {
+            "Python": 827215,
+            "Makefile": 1084
+        },
+        "eztv_api": {
+            "Python": 6532
+        },
+        "imgur-cli": {
+            "Python": 77521
+        },
+        "chcli": {
+            "Python": 11701
+        },
+        "hackuoft": {},
+        "Rango": {
+            "Python": 29716
+        },
+        "mooc_aggregator_restful_api": {
+            "Python": 17229
+        },
+        "HackerNewsAPI": {
+            "Shell": 359,
+            "Python": 32878
+        },
+        "mimic": {
+            "Python": 7857
+        },
+        "github3.py": {
+            "Jupyter Notebook": 97717,
+            "Python": 686011,
+            "Makefile": 362
+        },
+        "imgurpython": {
+            "Python": 36369
+        },
+        "remote-jobs": {},
+        "falcon": {
+            "Shell": 551,
+            "CSS": 569,
+            "Python": 486667,
+            "HTML": 1531
+        },
+        "fabric": {
+            "Python": 464364
+        },
+        "pypoker": {
+            "Python": 69448
+        },
+        "AwesomePython": {
+            "Python": 222
+        },
+        "footypebble": {
+            "JavaScript": 3614
+        },
+        "db.py": {
+            "Shell": 95,
+            "Python": 76049
+        },
+        "aids": {
+            "Python": 28251
+        },
+        "MOOCczar": {},
+        "flask-restful": {
+            "Python": 184176,
+            "Makefile": 4723
+        },
+        "hackerchat": {
+            "JavaScript": 186199,
+            "CoffeeScript": 10225,
+            "Python": 29979,
+            "CSS": 349865
+        },
+        "fuckit_commit": {
+            "Python": 2564
+        },
+        "quizzur": {
+            "JavaScript": 380,
+            "CSS": 86,
+            "HTML": 18867
+        }
+    },
+    "hassanabidpk": {
+        "Arduino-distance-sensor-library": {
+            "Shell": 8926,
+            "Arduino": 2783,
+            "Python": 70805,
+            "C++": 11346
+        },
+        "agera": {
+            "Java": 424934
+        },
+        "360-video-player-for-android": {
+            "GLSL": 508,
+            "Java": 39502
+        },
+        "Arduino": {
+            "Perl": 7259,
+            "Logos": 54688,
+            "Python": 638775,
+            "Makefile": 244189,
+            "C": 23154188,
+            "Shell": 22353,
+            "Assembly": 247494,
+            "Java": 1454000,
+            "C++": 3200313,
+            "Processing": 6877,
+            "Objective-C": 549187,
+            "HTML": 43675739,
+            "Arduino": 714009,
+            "CSS": 57348
+        },
+        "AndroidMediaDB": {
+            "Java": 245819
+        },
+        "algorithms": {
+            "Shell": 475,
+            "Python": 12626
+        },
+        "android-RecyclerView": {
+            "Java": 38793
+        },
+        "android-nanodegree": {
+            "HTML": 5650,
+            "Java": 1265803
+        },
+        "android-rxjava": {
+            "Java": 65986
+        },
+        "Anydevice": {
+            "Ruby": 72,
+            "Java": 150308,
+            "Objective-C": 316717,
+            "Shell": 3996,
+            "JavaScript": 6085,
+            "HTML": 2119393,
+            "CSS": 11139
+        },
+        "Arduino-1": {
+            "Arduino": 119802,
+            "C": 11749,
+            "C++": 155154,
+            "Processing": 14755
+        },
+        "backbone-forms": {},
+        "AndroidMaterialDesignToolbar": {
+            "Java": 42434
+        },
+        "android-UniversalMusicPlayer": {
+            "Java": 233221
+        },
+        "androidndkworkshop": {},
+        "Anypic": {
+            "Ruby": 1086,
+            "CSS": 152529,
+            "HTML": 14224,
+            "JavaScript": 76894,
+            "Objective-C": 309442
+        },
+        "android-ndk": {
+            "CMake": 9135,
+            "Java": 177142,
+            "C++": 5766949,
+            "GLSL": 15973,
+            "C": 495223
+        },
+        "ArduinoJson": {
+            "Shell": 1755,
+            "Arduino": 5379,
+            "C++": 135091,
+            "CMake": 1021,
+            "C": 251
+        },
+        "android-ffmpeg": {
+            "Shell": 6248
+        },
+        "awesome-python": {
+            "Python": 1825
+        },
+        "android-topeka": {
+            "Java": 281454
+        },
+        "android-XYZTouristAttractions": {
+            "Java": 112606
+        },
+        "arduino-api": {
+            "JavaScript": 2875,
+            "Python": 1132248,
+            "C": 34440,
+            "Arduino": 104020,
+            "Objective-C": 6271,
+            "C++": 457181
+        },
+        "ApiDemos-less": {
+            "Java": 2042317
+        },
+        "android-DisplayingBitmaps": {
+            "Java": 220993
+        },
+        "androidcupcake": {
+            "Java": 21807
+        },
+        "awesome-machine-learning": {
+            "Python": 940
+        },
+        "android_guides": {},
+        "arduino_seminar": {
+            "Arduino": 122816,
+            "C": 11749,
+            "C++": 155154,
+            "Processing": 14755
+        },
+        "android-architecture": {}
+    },
+    "Cookizz": {
+        "classpy": {
+            "Java": 136625
+        },
+        "ResumeSample": {},
+        "android-jobs": {},
+        "android-architecture": {},
+        "cv": {
+            "JavaScript": 5123,
+            "HTML": 1446,
+            "CSS": 2064
+        },
+        "Android-ObservableScrollView": {
+            "JavaScript": 5669,
+            "Java": 283832,
+            "Shell": 713,
+            "CSS": 10487,
+            "HTML": 8171,
+            "CoffeeScript": 1577
+        },
+        "FlowLayout-1": {
+            "Java": 34467
+        },
+        "AlertDialogPro": {
+            "Java": 109945
+        },
+        "bypass": {
+            "C": 124853,
+            "Makefile": 3578,
+            "Objective-C": 57535,
+            "Shell": 1124,
+            "Objective-C++": 17935,
+            "Java": 20823,
+            "C++": 60616
+        },
+        "full-stack-tree": {},
+        "remark": {
+            "JavaScript": 334135,
+            "Makefile": 170,
+            "CSS": 8400,
+            "HTML": 324958
+        },
+        "Android_M_requestPermissions": {
+            "Java": 8742
+        },
+        "Android-BadgeLayout": {
+            "Java": 41809
+        },
+        "InputDialog": {
+            "Java": 24522
+        },
+        "FlowLayout": {
+            "Java": 24346
+        },
+        "Learning-RxJava": {},
+        "Android-Mosil-Sample-Toolbar": {
+            "Java": 6652
+        },
+        "otto-intellij-plugin": {
+            "Java": 88151
+        },
+        "leakcanary": {
+            "Shell": 939,
+            "Java": 190855
+        },
+        "AndResGuard": {
+            "Java": 184844
+        },
+        "NumberProgressBar": {
+            "Java": 18676
+        },
+        "realm-java": {
+            "Groovy": 30966,
+            "Makefile": 94031,
+            "Kotlin": 8048,
+            "Shell": 864,
+            "Java": 2794767,
+            "C++": 331434,
+            "HTML": 2289
+        },
+        "cookizz.github.io": {
+            "HTML": 4296,
+            "CSS": 8500
+        },
+        "AlertDialog-Fast-Styling-for-Android": {},
+        "material-design-icons": {
+            "CSS": 458239,
+            "JavaScript": 1108,
+            "HTML": 1050858
+        },
+        "netty": {
+            "Groovy": 1755,
+            "Protocol Buffer": 1712,
+            "C": 78982,
+            "Shell": 3972,
+            "Java": 11191981,
+            "C++": 8771,
+            "CSS": 49,
+            "HTML": 1466
+        },
+        "AudioTrackMp3Player": {
+            "Java": 2752
+        },
+        "jpush-api-java-client": {
+            "HTML": 199,
+            "Java": 335884
+        },
+        "jna": {
+            "TeX": 323102,
+            "Python": 6613,
+            "Makefile": 14006,
+            "C": 1290191,
+            "Shell": 19879,
+            "Assembly": 544641,
+            "Java": 4797057,
+            "Groff": 240576,
+            "C++": 9042,
+            "HTML": 38760
+        },
+        "resources": {}
+    },
+    "virajbhalala": {
+        "APJavaProjects2012-13": {
+            "Java": 43292
+        },
+        "Calculator": {
+            "Objective-C": 4010
+        },
+        "flip": {
+            "Objective-C": 4066
+        },
+        "Finance": {},
+        "crawler4j": {
+            "Java": 224647
+        },
+        "PalindromeIntegerFinder": {
+            "Java": 1015
+        },
+        "JavaProjects": {
+            "Java": 70659
+        },
+        "GettingAndCleaningData": {
+            "R": 1493
+        },
+        "ExData_Plotting1": {
+            "R": 1989
+        },
+        "complex-recursive-descent-parser-cpp": {
+            "C++": 22610
+        },
+        "NJIT-Schedule-Builder": {
+            "JavaScript": 359283,
+            "HTML": 4154,
+            "PHP": 106972,
+            "CSS": 69629
+        },
+        "objective-c-conventions": {},
+        "facebook-php-sdk": {},
+        "IntroToCSIIProjects": {},
+        "FlappySwift": {},
+        "Most-Active-Stocks": {
+            "JavaScript": 305711,
+            "Python": 2570,
+            "CSS": 37167,
+            "HTML": 1197913
+        },
+        "courseraDataScience": {
+            "R": 6753
+        },
+        "DFA-Emptiness-Checker": {
+            "Java": 7126
+        },
+        "iOS-Swift-Projects": {
+            "Swift": 9210
+        },
+        "EvenOddOrdering": {
+            "Java": 1268
+        },
+        "android-friend-smash": {},
+        "android-quickstart": {},
+        "android-phonegap-cookline": {},
+        "datasharing": {},
+        "FinanceApp": {},
+        "mygithubpage": {},
+        "CeaserCipherDecorder": {
+            "Java": 1883
+        },
+        "CplusplusProjs": {},
+        "datasciencecoursera": {
+            "R": 2417
+        },
+        "FlappySwift-1": {}
+    },
+    "alejandrolechuga": {
+        "socialUABC": {
+            "Smarty": 56285,
+            "JavaScript": 30327,
+            "PHP": 1500130,
+            "CSS": 38588,
+            "HTML": 839159
+        },
+        "socket.io-client": {
+            "JavaScript": 18589
+        },
+        "ng-inspector": {
+            "JavaScript": 62639,
+            "HTML": 6933,
+            "CSS": 7224
+        },
+        "Front-end-Developer-Interview-Questions": {},
+        "js-code-convention": {},
+        "ComputerScience": {
+            "JavaScript": 3035
+        },
+        "babel-angular2-app": {
+            "JavaScript": 10101,
+            "HTML": 369
+        },
+        "challengeJS": {
+            "JavaScript": 1680,
+            "CSS": 556
+        },
+        "CSVParser": {
+            "JavaScript": 1593
+        },
+        "Front-end-Developer-Interview-Questions-Answers": {
+            "GCC Machine Description": 7
+        },
+        "RegExpPlay": {
+            "JavaScript": 212
+        },
+        "ClavesMX.js": {
+            "JavaScript": 17140
+        },
+        "frontend-guidelines": {},
+        "katas": {
+            "JavaScript": 26145
+        },
+        "dash_notes": {},
+        "client-api-blueprint": {
+            "API Blueprint": 952601
+        },
+        "dash.js": {
+            "JavaScript": 2109740,
+            "CSS": 8648,
+            "HTML": 29260
+        },
+        "ngNotes": {},
+        "computer-science-in-javascript": {},
+        "dashboard-seed": {
+            "JavaScript": 733,
+            "HTML": 270
+        },
+        "PomodoroApp": {
+            "JavaScript": 1507321,
+            "CSS": 11,
+            "HTML": 657
+        },
+        "HashRouter": {
+            "JavaScript": 67177,
+            "CSS": 4365
+        },
+        "CrackingCodeInterview": {},
+        "algoJS": {
+            "JavaScript": 9291
+        },
+        "ES6Notes": {},
+        "studiesJS": {
+            "JavaScript": 26295
+        },
+        "Datejs": {
+            "JavaScript": 1654972,
+            "CSS": 9233
+        }
+    }
+}{
+    "qjcg": {
+        "dc-lessons": {},
+        "2015-04-15-DC-SEA-Python": {
+            "R": 12912,
+            "HTML": 2272557,
+            "Makefile": 368,
+            "Shell": 812
+        },
+        "mtlcam": {
+            "Go": 4900
+        },
+        "2016-05-04-dupont": {
+            "Python": 36334,
+            "CSS": 28833,
+            "HTML": 28581
+        },
+        "horeb": {
+            "Go": 5915
+        },
+        "elx": {
+            "Go": 3755
+        },
+        "bro": {
+            "Shell": 162
+        },
+        "2015-05-18-umiami": {
+            "R": 10143,
+            "CSS": 8324,
+            "HTML": 801141,
+            "Python": 3154
+        },
+        "2015-06-22-caltech-python-1": {
+            "Python": 5108,
+            "CSS": 16369,
+            "HTML": 261846,
+            "Makefile": 2203
+        },
+        "go-koans": {
+            "Go": 15043
+        },
+        "form": {
+            "Python": 1249
+        },
+        "dude": {
+            "Go": 2565
+        },
+        "2016-03-28-umiami": {
+            "Python": 40804,
+            "CSS": 29218,
+            "HTML": 31724
+        },
+        "2015-03-30-umiami": {
+            "R": 10143,
+            "CSS": 8115,
+            "HTML": 796395,
+            "Python": 3154
+        },
+        "2015-02-14-ucla": {
+            "Python": 36410,
+            "HTML": 24495
+        },
+        "docker-opensmtpd": {},
+        "cleaver-wood": {
+            "JavaScript": 62,
+            "HTML": 990
+        },
+        "diplomat": {
+            "Go": 5353
+        },
+        "CO2Aldrin": {
+            "Go": 1006,
+            "Rust": 203,
+            "Haskell": 380,
+            "Shell": 2354,
+            "Tcl": 233,
+            "Python": 228,
+            "C": 283,
+            "Makefile": 588,
+            "C++": 322,
+            "Lua": 204,
+            "Awk": 220,
+            "Ruby": 183,
+            "JavaScript": 270,
+            "PHP": 225,
+            "Dart": 254,
+            "Perl": 233
+        },
+        "python-ecology-lesson": {
+            "Jupyter Notebook": 3036625,
+            "HTML": 38185,
+            "Ruby": 237,
+            "JavaScript": 1096,
+            "Python": 55774,
+            "CSS": 14779,
+            "R": 3383,
+            "Makefile": 3290,
+            "Shell": 220
+        },
+        "4d": {
+            "Go": 1616
+        },
+        "2016-06-07-ucincinnati": {
+            "Python": 36334,
+            "CSS": 28833,
+            "HTML": 28735
+        },
+        "gotraining": {
+            "Go": 280936,
+            "JavaScript": 166,
+            "CSS": 110,
+            "HTML": 2432,
+            "Shell": 55
+        },
+        "JavaScript-Koans": {
+            "JavaScript": 83512,
+            "CSS": 4668
+        },
+        "2015-06-22-caltech-git": {
+            "CSS": 16369,
+            "HTML": 147666,
+            "Makefile": 2203
+        },
+        "driving": {
+            "Go": 9253
+        },
+        "dotfiles": {
+            "Go": 128,
+            "Python": 18940,
+            "VimL": 71068,
+            "Shell": 21080,
+            "HTML": 224
+        },
+        "awesome-go": {},
+        "crt-themes": {},
+        "ansible.yaourt": {}
+    },
+    "danielfr3": {
+        "pokedex": {
+            "Swift": 23662,
+            "Ruby": 139
+        },
+        "gigapet-game": {
+            "Swift": 10460
+        },
+        "recipez": {
+            "Swift": 12623
+        },
+        "my-hood": {
+            "Swift": 9773
+        },
+        "starexplorer-coronasdk": {
+            "Lua": 26131
+        },
+        "battlegrounds-swift-game": {
+            "Swift": 6345
+        },
+        "retro-calc": {
+            "Swift": 5637
+        }
+    },
+    "samundrak": {
+        "DBSole": {
+            "JavaScript": 679560,
+            "CSS": 1210,
+            "HTML": 417
+        },
+        "DBSoleServer": {
+            "JavaScript": 8621
+        },
+        "Facebook-Application-Development-Kit": {
+            "HTML": 186772,
+            "Smarty": 2863,
+            "JavaScript": 20550,
+            "PHP": 1945246,
+            "LiveScript": 80,
+            "CSS": 53478,
+            "ApacheConf": 289
+        },
+        "laravel-vue-webpack-eslint-hot-reload-hmr": {
+            "JavaScript": 12409,
+            "PHP": 81835,
+            "Vue": 6187,
+            "HTML": 25020,
+            "ApacheConf": 553
+        },
+        "indicative": {
+            "JavaScript": 55213,
+            "CoffeeScript": 135182
+        },
+        "gulp-cap-helper": {
+            "JavaScript": 4143
+        },
+        "github-preview": {
+            "JavaScript": 2615,
+            "HTML": 2458,
+            "Ruby": 6486
+        },
+        "design-pattern-example-java": {
+            "Java": 13645
+        },
+        "angular-bootstrap-confirm": {
+            "JavaScript": 24140,
+            "HTML": 4596
+        },
+        "laravel-cashier-braintree-subscription": {
+            "JavaScript": 1135,
+            "PHP": 93476,
+            "Vue": 561,
+            "HTML": 25997,
+            "ApacheConf": 553
+        },
+        "coding-test-laravel": {
+            "JavaScript": 7679,
+            "PHP": 92130,
+            "CSS": 72,
+            "Shell": 256,
+            "ApacheConf": 822
+        },
+        "inquirer_config_builder": {
+            "JavaScript": 1683
+        },
+        "docker-node-app": {
+            "JavaScript": 3451,
+            "CSS": 111,
+            "HTML": 298
+        },
+        "angular-bootstrap-calendar": {
+            "JavaScript": 9522,
+            "CSS": 490,
+            "HTML": 810
+        },
+        "JUnit-java-examples": {
+            "Java": 16875
+        },
+        "angular-test": {
+            "JavaScript": 23822,
+            "CSS": 1073,
+            "HTML": 5684
+        },
+        "gitrack": {
+            "JavaScript": 37788,
+            "CSS": 31,
+            "HTML": 10614
+        },
+        "codeceptjs-simple-e2e-example": {
+            "JavaScript": 2428
+        },
+        "cloudboost": {
+            "JavaScript": 852082,
+            "CSS": 6359,
+            "HTML": 69511
+        },
+        "chat-app": {
+            "JavaScript": 7899,
+            "CSS": 415,
+            "HTML": 1900
+        },
+        "angular-node-example": {
+            "JavaScript": 17624,
+            "CSS": 110,
+            "HTML": 3553
+        },
+        "d3.js-practise-codes": {
+            "JavaScript": 1345,
+            "PHP": 187
+        },
+        "cv": {},
+        "expressjs-api-explorer": {
+            "JavaScript": 3492,
+            "CSS": 3788,
+            "HTML": 2439
+        },
+        "JustFast": {
+            "Java": 43754,
+            "XML": 81937,
+            "Shell": 219
+        },
+        "javaWorkingExamples": {
+            "Java": 10561
+        },
+        "braintree-nodejs-payment-example": {
+            "JavaScript": 5107,
+            "CSS": 110,
+            "HTML": 629
+        },
+        "angular-rollup-openweather-api-babel": {
+            "JavaScript": 411749,
+            "CSS": 3441,
+            "HTML": 5370
+        },
+        "braintree_node": {
+            "JavaScript": 60,
+            "CoffeeScript": 525505,
+            "Ruby": 1306,
+            "Shell": 221
+        },
+        "javasnakegame": {
+            "Java": 15219
+        }
+    },
+    "gurlinthewurld": {
+        "awesome": {},
+        "discountCalculator": {
+            "Python": 365
+        },
+        "conference": {
+            "JavaScript": 170004,
+            "Python": 151232,
+            "HTML": 121029
+        },
+        "beesInLove": {},
+        "django-leaflet-geojson": {},
+        "DataScienceSpecialization.github.io": {
+            "CSS": 9970
+        },
+        "cartodb.js": {},
+        "beagleClickerBlueprint": {
+            "JavaScript": 277618,
+            "CSS": 2316,
+            "HTML": 3227
+        },
+        "Apollo-11": {
+            "Assembly": 2085143
+        },
+        "eden.gurlinthewurld": {},
+        "CatalystIT": {
+            "JavaScript": 851,
+            "PHP": 5598
+        },
+        "beagleClicker": {
+            "JavaScript": 265202,
+            "CSS": 1919,
+            "HTML": 1043
+        },
+        "feedReaderTest": {
+            "JavaScript": 108491,
+            "CSS": 1932,
+            "HTML": 2133
+        },
+        "barChart": {
+            "HTML": 1241
+        },
+        "email_notification": {
+            "PHP": 5237
+        },
+        "eden": {},
+        "datasciencecoursera": {},
+        "d3-timeline": {},
+        "collection": {},
+        "clickerBlueprint": {
+            "JavaScript": 265364,
+            "CSS": 1967,
+            "HTML": 1002
+        },
+        "artist-explorer": {
+            "JavaScript": 42207,
+            "Python": 5594,
+            "CSS": 3428,
+            "HTML": 12641
+        },
+        "collection-1": {
+            "Python": 3782,
+            "Shell": 1379
+        },
+        "buildPortfolio": {
+            "CSS": 543,
+            "HTML": 5528
+        },
+        "documentTagger": {
+            "Python": 28713
+        },
+        "d3": {},
+        "emojione": {
+            "Java": 111809,
+            "HTML": 450925,
+            "Objective-C": 54640,
+            "JavaScript": 6826,
+            "PHP": 209036,
+            "CSS": 431043,
+            "Python": 151573,
+            "Perl": 3466
+        },
+        "awesome-cheatsheet": {
+            "Python": 1437,
+            "Makefile": 36
+        },
+        "datasharing": {},
+        "awesome-public-datasets": {},
+        "d3netxer": {}
+    },
+    "edu-bot": {
+        "SpringCodeGenerator": {
+            "Java": 6583
+        },
+        "bot-framework": {},
+        "mypool": {
+            "Java": 2420
+        },
+        "droidcal": {
+            "Java": 25345
+        },
+        "ImageUtils": {
+            "Java": 8399
+        }
+    },
+    "wstam88": {
+        "go-starter-kit": {
+            "Go": 11107,
+            "JavaScript": 9724,
+            "CSS": 559,
+            "HTML": 1481,
+            "Makefile": 1892
+        },
+        "google-map-clustering-example": {
+            "JavaScript": 9205,
+            "CSS": 1698,
+            "HTML": 199
+        },
+        "docker-flow-proxy": {
+            "Go": 230930,
+            "HCL": 4154,
+            "Shell": 3234
+        },
+        "do-meetup-swarm-demo": {},
+        "node-gitlab": {
+            "JavaScript": 83150,
+            "CoffeeScript": 38524,
+            "Makefile": 421
+        },
+        "docker-rabbitmq-cluster": {
+            "Shell": 936
+        },
+        "email-template": {
+            "HTML": 6855
+        },
+        "docker-nginx-lb": {
+            "Nginx": 420,
+            "Shell": 274
+        },
+        "dotify": {
+            "JavaScript": 2531
+        },
+        "node-digitalocean": {
+            "JavaScript": 20151,
+            "Shell": 175
+        },
+        "react-redux-universal-hot-example": {
+            "JavaScript": 97314,
+            "CSS": 15893
+        },
+        "digitalocean-api": {
+            "JavaScript": 24454
+        },
+        "go": {
+            "Go": 33957538,
+            "Fortran": 394,
+            "HTML": 1806598,
+            "Shell": 68442,
+            "C++": 1370,
+            "C": 197306,
+            "Makefile": 748,
+            "Perl": 34799,
+            "Batchfile": 7351,
+            "Assembly": 2264638,
+            "Logos": 1248,
+            "Awk": 450,
+            "JavaScript": 2550,
+            "Protocol Buffer": 1698,
+            "CSS": 8,
+            "Python": 12446
+        },
+        "nginx-badbot-blocker": {},
+        "nodejs-dotaccess": {
+            "JavaScript": 4572
+        },
+        "google-map-react-examples": {
+            "JavaScript": 355752,
+            "CSS": 16102,
+            "Shell": 11771,
+            "HTML": 10953
+        },
+        "docker-workflow": {
+            "JavaScript": 1025,
+            "Nginx": 620
+        },
+        "docker-swarm-digitalocean": {
+            "Makefile": 8579
+        },
+        "node-red-contrib-bcrypt": {
+            "JavaScript": 1784,
+            "HTML": 2164
+        },
+        "google-maps-react": {
+            "JavaScript": 33623,
+            "Shell": 267,
+            "Makefile": 248
+        },
+        "beego_react": {
+            "Go": 8393,
+            "JavaScript": 6823,
+            "Smarty": 1164
+        },
+        "docker-loadbalancer": {
+            "Nginx": 420,
+            "Shell": 274
+        },
+        "golang-web": {
+            "Go": 618925,
+            "JavaScript": 14528,
+            "CSS": 206643,
+            "HTML": 380036
+        },
+        "measure": {
+            "JavaScript": 20911,
+            "HTML": 4049
+        },
+        "node-transip": {
+            "JavaScript": 73128,
+            "Makefile": 100
+        },
+        "docker-mailserver": {
+            "Shell": 38059,
+            "Makefile": 1807
+        },
+        "node-enumerate-properties": {
+            "CoffeeScript": 4127
+        },
+        "dotfiles": {
+            "Vim script": 31968,
+            "Shell": 35839
+        },
+        "country-list": {},
+        "nodered-docker": {
+            "JavaScript": 14148,
+            "CSS": 61760,
+            "HTML": 1904
+        }
+    },
+    "snjv180": {
+        "CS572": {
+            "Java": 218323,
+            "C++": 34751,
+            "C": 10042
+        },
+        "CS439": {
+            "PHP": 24310,
+            "CSS": 1372
+        },
+        "JavaDesignPatterns": {
+            "Java": 115726
+        },
+        "PythonStudy": {
+            "Python": 51231
+        },
+        "CS541": {
+            "C++": 28532
+        },
+        "XSB": {
+            "HTML": 206139,
+            "Emacs Lisp": 145828,
+            "GAP": 182844,
+            "SourcePawn": 2555,
+            "D": 1202,
+            "Makefile": 127945,
+            "Perl6": 4958,
+            "Yacc": 16073,
+            "NSIS": 13140,
+            "Prolog": 164103,
+            "TeX": 428574,
+            "Lex": 3828,
+            "Objective-C": 1517,
+            "Tcl": 102083,
+            "OpenEdge ABL": 3918709,
+            "C++": 486160,
+            "C": 3863645,
+            "Shell": 48651,
+            "PostScript": 17687,
+            "Batchfile": 822,
+            "Inno Setup": 5678,
+            "Groff": 4977,
+            "Perl": 6817
+        },
+        "netimpair": {
+            "Python": 15620
+        }
+    },
+    "EdoLabWorks": {
+        "ASP.NET-MVC-Basic-Remote-Control-App": {
+            "JavaScript": 10714,
+            "C#": 34003,
+            "CSS": 513,
+            "HTML": 5127,
+            "ASP": 110
+        },
+        "IO-ControlModule-Raspberry": {},
+        "WPF-TestManager": {},
+        "ximgs": {
+            "HTML": 4714
+        },
+        "IO-ControlModule": {
+            "C#": 29383
+        },
+        "Node-WebSocket-SPA": {},
+        "Cpp-ControlModule": {
+            "C++": 18469
+        },
+        "NodeJS-Raspberry-WebControl": {
+            "JavaScript": 16220,
+            "CSS": 1095,
+            "HTML": 6751
+        },
+        "Node-WebControl": {
+            "JavaScript": 8652,
+            "HTML": 4547
+        }
+    },
+    "leodutra": {
+        "node_acl": {
+            "JavaScript": 84677
+        },
+        "docker-alpine-oraclejre8": {},
+        "msfonts": {
+            "Shell": 341
+        },
+        "leaf": {
+            "JavaScript": 26729
+        },
+        "frontend-dependencies": {
+            "JavaScript": 3272
+        },
+        "shell-scripts": {
+            "Shell": 3236
+        },
+        "jQuery-File-Upload": {},
+        "js-hqx": {
+            "JavaScript": 452414,
+            "HTML": 415
+        },
+        "jmugen": {
+            "Batchfile": 24147,
+            "Java": 3906657,
+            "Lex": 219830,
+            "HTML": 1429832,
+            "GLSL": 2750,
+            "CSS": 1769,
+            "C": 8866,
+            "Makefile": 10772,
+            "Shell": 947
+        },
+        "docker-minecraft-server": {},
+        "flow-matic": {
+            "JavaScript": 12575,
+            "CSS": 110,
+            "HTML": 274
+        },
+        "jsunzip": {
+            "JavaScript": 19699,
+            "C": 11150
+        },
+        "excanvas": {
+            "JavaScript": 143370
+        },
+        "simple-postmessage": {
+            "JavaScript": 31176
+        },
+        "gnome-shell-extension-stealmyfocus": {
+            "JavaScript": 794
+        },
+        "docker-java": {},
+        "js-xBRZ": {
+            "JavaScript": 3448
+        },
+        "jquery.fileDownload": {
+            "JavaScript": 18468,
+            "C#": 22881,
+            "CSS": 11073,
+            "ASP": 98
+        },
+        "flux": {
+            "JavaScript": 24913
+        },
+        "node-iso-country-currency": {
+            "JavaScript": 8190
+        },
+        "blazing-squirrel": {
+            "JavaScript": 14413,
+            "CSS": 1126,
+            "HTML": 5175,
+            "Shell": 80
+        },
+        "geographic-data-rest": {
+            "JavaScript": 2524640,
+            "CSS": 91835,
+            "HTML": 5043
+        },
+        "fast-js": {
+            "JavaScript": 12350
+        },
+        "intro.js": {
+            "JavaScript": 47656,
+            "CSS": 34860,
+            "HTML": 45127,
+            "Makefile": 58
+        },
+        "mobile-tools": {
+            "JavaScript": 12516
+        },
+        "javascript-astar": {
+            "JavaScript": 94095,
+            "CSS": 20295
+        },
+        "curry-template": {
+            "JavaScript": 2896
+        },
+        "iscroll": {
+            "JavaScript": 101540,
+            "Shell": 245
+        },
+        "JSON-deepstringify": {
+            "JavaScript": 6512
+        },
+        "node": {
+            "HTML": 163390,
+            "Shell": 1658,
+            "POV-Ray SDL": 307541,
+            "R": 5283,
+            "C": 345475,
+            "Makefile": 23369,
+            "C++": 1249031,
+            "Batchfile": 16699,
+            "JavaScript": 3201980,
+            "Groff": 15312,
+            "DTrace": 37428,
+            "Python": 56853
+        }
+    },
+    "lucasbento": {
+        "Animocons": {
+            "JavaScript": 37992,
+            "CSS": 6072,
+            "HTML": 9365
+        },
+        "kajado": {
+            "JavaScript": 410,
+            "CSS": 83187,
+            "HTML": 34642
+        },
+        "ex-navigation": {
+            "JavaScript": 221008
+        },
+        "be-mean-instagram-mongodb-excercises": {},
+        "js-mindmap": {},
+        "create-graphql": {
+            "JavaScript": 33555
+        },
+        "exponent": {
+            "Perl": 5860,
+            "Objective-C++": 266657,
+            "Java": 4368415,
+            "HTML": 128851,
+            "Objective-C": 8731378,
+            "Python": 95109,
+            "IDL": 897,
+            "C": 773796,
+            "Makefile": 8740,
+            "Shell": 6409,
+            "Batchfile": 382,
+            "Assembly": 80716,
+            "Ruby": 42491,
+            "JavaScript": 7806580,
+            "Prolog": 287,
+            "CSS": 5610,
+            "C++": 855457
+        },
+        "BloodDonationDojo": {
+            "JavaScript": 1831
+        },
+        "frontend-stuff": {},
+        "datamodel-visualizer": {
+            "TypeScript": 11205,
+            "JavaScript": 46947,
+            "CSS": 1009,
+            "HTML": 1709
+        },
+        "graphql-correios": {
+            "JavaScript": 7363
+        },
+        "be-mean-instagram-mongodb": {},
+        "androidproject": {
+            "Java": 4181
+        },
+        "all-animation.github.io": {
+            "JavaScript": 15402,
+            "CSS": 271146,
+            "HTML": 87613
+        },
+        "hunt": {
+            "JavaScript": 9954,
+            "HTML": 26048
+        },
+        "fontawesome-markers": {},
+        "guias": {},
+        "graphql-pokemon": {
+            "JavaScript": 9710
+        },
+        "awesome-graphql": {},
+        "be-mean-instagram-mongodb-1": {},
+        "homebrew-cask": {
+            "Shell": 70846,
+            "Ruby": 2134852
+        },
+        "empresas-ti": {},
+        "dotenv-webpack": {
+            "JavaScript": 1525
+        },
+        "eventos": {
+            "JavaScript": 26904,
+            "CSS": 29797,
+            "HTML": 20955
+        },
+        "all-animation": {
+            "JavaScript": 469,
+            "CSS": 158484
+        },
+        "arduino-exemplos": {
+            "Arduino": 6237
+        },
+        "be-mean-instagram": {
+            "JavaScript": 186118,
+            "CSS": 2362,
+            "HTML": 12347,
+            "Shell": 152
+        },
+        "HTML5-Reset": {
+            "JavaScript": 455,
+            "CSS": 5959,
+            "HTML": 4648
+        },
+        "cakephp-bootstrap3-helpers": {},
+        "forum": {}
+    },
+    "LTMenezes": {
+        "Facegraph": {},
+        "ClojureSimpleRestApi": {
+            "Clojure": 2470
+        },
+        "UFRJ-Conectada": {
+            "JavaScript": 3403294,
+            "CSS": 701297,
+            "HTML": 23653
+        },
+        "Particle-Trajectory-Reconstruction-Voronoi": {
+            "C++": 8951,
+            "Python": 1907,
+            "Makefile": 355
+        },
+        "OBI": {
+            "C++": 33500,
+            "C": 6079
+        },
+        "particle-Trajectory-Reconstruction-Delaunay": {
+            "Python": 1970
+        },
+        "LTMenezes.github.io": {
+            "CSS": 139711,
+            "HTML": 5375
+        }
+    },
+    "syui": {
+        "docker-arch": {},
+        "blogger-cl": {
+            "JavaScript": 204,
+            "Shell": 11820
+        },
+        "terminal": {},
+        "hugo-theme-air": {
+            "JavaScript": 7033,
+            "CSS": 41514,
+            "HTML": 42366
+        },
+        "middleman": {
+            "Vim script": 4138,
+            "CSS": 99046,
+            "Shell": 9305,
+            "Ruby": 10468,
+            "HTML": 7275
+        },
+        "arch": {
+            "Shell": 12084
+        },
+        "mal": {},
+        "airsave.vim": {
+            "VimL": 1371
+        },
+        "docker-archlinux-yaourt": {
+            "Shell": 89
+        },
+        "mal-api-open": {},
+        "hugo-theme-arch": {
+            "JavaScript": 21144,
+            "CSS": 47250,
+            "HTML": 34369
+        },
+        "hugo-theme-wave": {
+            "JavaScript": 2753,
+            "CSS": 47161,
+            "HTML": 37471,
+            "Shell": 1197
+        },
+        "syui.github.io": {
+            "JavaScript": 167099,
+            "CSS": 32057,
+            "HTML": 25187684,
+            "Shell": 543,
+            "CoffeeScript": 2773
+        },
+        "dotfiles": {
+            "HTML": 12325,
+            "Lua": 54483,
+            "Python": 3156,
+            "C": 6410,
+            "Makefile": 428,
+            "Scheme": 2828,
+            "Ruby": 1456,
+            "JavaScript": 900,
+            "VimL": 11979,
+            "CSS": 3424,
+            "Shell": 260347,
+            "AppleScript": 2357
+        },
+        "ricomoon": {
+            "JavaScript": 996,
+            "CSS": 4192,
+            "HTML": 4368,
+            "Shell": 2883
+        },
+        "hugoThemes": {},
+        "vocaloid": {},
+        "docker-arch-base": {},
+        "docker-blog": {},
+        "elm-hedley": {
+            "Elm": 91251,
+            "JavaScript": 14351,
+            "CSS": 9228,
+            "HTML": 1940
+        },
+        "powerline.zsh": {
+            "Shell": 36815
+        },
+        "ipinfo": {
+            "Go": 5929
+        },
+        "medium.zsh": {
+            "Shell": 3462
+        }
+    },
+    "natangorin": {
+        "NGLogger": {
+            "Objective-C": 1060
+        },
+        "simple-nodejs-template": {
+            "JavaScript": 219
+        },
+        "JSQMessagesViewController": {
+            "Ruby": 1601,
+            "Objective-C": 445388
+        }
+    },
+    "Ozzie3000": {
+        "sam_html5": {},
+        "xhtml": {
+            "CSS": 1128
+        },
+        "jquery_cb": {
+            "CSS": 2011
+        },
+        "Ozzie3000.github.io": {
+            "JavaScript": 948,
+            "CSS": 11316,
+            "HTML": 97115
+        },
+        "w3s_jquery_mobile": {
+            "CSS": 1467,
+            "HTML": 396472
+        },
+        "html5_demos": {
+            "JavaScript": 4034,
+            "CSS": 15722
+        },
+        "mh_html5": {
+            "CSS": 741
+        },
+        "js_jquery": {
+            "CSS": 2177,
+            "HTML": 160928
+        },
+        "js": {
+            "JavaScript": 312,
+            "CSS": 454
+        },
+        "php_ab": {
+            "PHP": 2080
+        },
+        "python_test": {},
+        "form_validation": {
+            "JavaScript": 3798,
+            "CSS": 780,
+            "HTML": 2427
+        },
+        "js_dg": {
+            "CSS": 2029
+        },
+        "jquery": {
+            "JavaScript": 4243,
+            "CSS": 2324
+        },
+        "w3s_js": {
+            "CSS": 2324,
+            "HTML": 488935
+        },
+        "html4": {},
+        "sam_js": {
+            "JavaScript": 4152
+        },
+        "w3s_jquery": {
+            "CSS": 1467,
+            "HTML": 100123
+        }
+    },
+    "jamesmuldrow": {
+        "gotham": {
+            "JavaScript": 8944,
+            "PHP": 137542,
+            "Vue": 563,
+            "HTML": 123194,
+            "ApacheConf": 553
+        },
+        "N7C0-UserSim": {
+            "AutoIt": 9923
+        },
+        "List-of-coding-ideas": {}
+    },
+    "jozadaquebatista": {
+        "awesome-br.github.io": {
+            "JavaScript": 6652,
+            "HTML": 8795
+        },
+        "free-programming-books": {},
+        "Algorithm-Implementations": {
+            "Swift": 5234,
+            "Haskell": 22744,
+            "GAP": 3044,
+            "PHP": 27598,
+            "D": 1686,
+            "Pascal": 8780,
+            "R": 698,
+            "APL": 1309,
+            "Assembly": 1336,
+            "Matlab": 1936,
+            "Ruby": 28583,
+            "JavaScript": 39054,
+            "Prolog": 6004,
+            "Go": 35658,
+            "Scala": 41380,
+            "Java": 125156,
+            "C#": 80302,
+            "Perl6": 375,
+            "Objective-C": 31651,
+            "Lua": 353290,
+            "Python": 70662,
+            "Haxe": 8280,
+            "C": 39238,
+            "C++": 35773,
+            "Scheme": 5460,
+            "Awk": 2111,
+            "Makefile": 1407,
+            "Shell": 46,
+            "Erlang": 2347,
+            "Perl": 6670
+        },
+        "linux": {
+            "Lex": 43116,
+            "Perl": 789556,
+            "Objective-C": 637179,
+            "SourcePawn": 2711,
+            "Python": 224990,
+            "C": 554986361,
+            "Makefile": 1569991,
+            "C++": 11532779,
+            "Assembly": 10285790,
+            "Awk": 19891,
+            "Yacc": 82466,
+            "GDB": 18113,
+            "Shell": 183720,
+            "UnrealScript": 12824
+        },
+        "docker-alpine": {
+            "JavaScript": 232,
+            "Shell": 13302
+        },
+        "Game-Programming-Adventures": {
+            "C": 4480
+        },
+        "balloon.css": {
+            "CSS": 9934
+        },
+        "1-Page-Javascript-Overview": {
+            "JavaScript": 8281
+        },
+        "FreeCodeCamp": {
+            "JavaScript": 451485,
+            "CSS": 377094,
+            "HTML": 201864
+        },
+        "javascript-in-one-pic": {},
+        "justdelete.me": {
+            "JavaScript": 11782,
+            "CSS": 52248,
+            "HTML": 17551
+        },
+        "buendia": {
+            "Perl": 766,
+            "Java": 227949,
+            "PHP": 1759,
+            "Python": 11413,
+            "CSS": 625,
+            "C": 3471,
+            "Makefile": 4162,
+            "Shell": 151526
+        },
+        "learningJS": {
+            "JavaScript": 3970
+        },
+        "appc-sample-ti500": {
+            "JavaScript": 15276,
+            "Python": 5251
+        },
+        "Assembly-Overview": {
+            "Assembly": 12737
+        },
+        "DQBIX-Game-Engine": {
+            "GLSL": 1313,
+            "C++": 2321313,
+            "QMake": 2892,
+            "C": 49678,
+            "CMake": 1468
+        },
+        "bbplayer": {
+            "JavaScript": 10072,
+            "CSS": 5395,
+            "HTML": 9384
+        },
+        "codecombat": {
+            "Batchfile": 277,
+            "HTML": 522454,
+            "JavaScript": 417017,
+            "Python": 51092,
+            "CSS": 291223,
+            "CoffeeScript": 8845973,
+            "Shell": 3136
+        },
+        "1-Page-PHP-Overview": {
+            "PHP": 3208
+        },
+        "fcrackzip": {
+            "Perl": 2641,
+            "HTML": 9753,
+            "Groff": 8108,
+            "C": 81063,
+            "Makefile": 22238,
+            "Shell": 31260
+        },
+        "github-cheat-sheet": {},
+        "1-Page-C-DataStructures": {
+            "C": 7646
+        },
+        "CSHARP-Overview": {
+            "Smalltalk": 113,
+            "C#": 710
+        },
+        "Cplusplus-overview": {
+            "C++": 22155
+        },
+        "jozadaquebatista.github.io": {
+            "HTML": 4537
+        },
+        "JAVA-Overview": {
+            "Java": 83463
+        },
+        "1-Page-Regex-Overview": {},
+        "ASM": {
+            "Assembly": 7788
+        },
+        "C-source-code-Lab": {
+            "C++": 980,
+            "C": 10250
+        },
+        "linux-0.01": {
+            "Assembly": 32592,
+            "C": 188364,
+            "Makefile": 12526,
+            "C++": 477
+        }
+    },
+    "takwas": {
+        "contact-form": {},
+        "HMS": {
+            "JavaScript": 11688,
+            "Python": 28549,
+            "CSS": 3628,
+            "HTML": 53543
+        },
+        "awesome-flask": {},
+        "Asteroids": {
+            "Java": 18387
+        },
+        "fpastebin": {
+            "Python": 2544
+        },
+        "dgplugproblems": {
+            "Python": 1324
+        },
+        "meekgeek": {
+            "JavaScript": 74601,
+            "CSS": 193617,
+            "HTML": 52446
+        },
+        "botleg": {},
+        "CommunityFund": {
+            "JavaScript": 3356,
+            "Python": 34350,
+            "CSS": 850,
+            "HTML": 24409
+        },
+        "contactform": {
+            "JavaScript": 5697,
+            "Python": 18366,
+            "CSS": 18239,
+            "HTML": 43019,
+            "ApacheConf": 116
+        },
+        "barleyandshekelaudit": {
+            "Batchfile": 93,
+            "Python": 11984,
+            "Mako": 412,
+            "HTML": 18581,
+            "Shell": 8
+        },
+        "pircbotx": {
+            "Java": 750098,
+            "HTML": 5075,
+            "Shell": 1383
+        },
+        "blog-src": {
+            "HTML": 33894,
+            "JavaScript": 35096,
+            "Python": 5962,
+            "CSS": 21353,
+            "Shell": 2201,
+            "Makefile": 4329
+        },
+        "git-kindle": {},
+        "flutterwave-python": {
+            "Python": 62778
+        },
+        "bare": {},
+        "n-gwiki": {},
+        "ibid": {
+            "Shell": 862,
+            "Python": 803910,
+            "Perl": 4104,
+            "HTML": 3121
+        },
+        "python-rtmbot": {
+            "Python": 6309
+        },
+        "log.txt": {
+            "JavaScript": 1483,
+            "Python": 2167,
+            "Shell": 2085
+        },
+        "dummy_ng": {},
+        "pym": {
+            "Python": 9826,
+            "Shell": 255,
+            "Makefile": 422
+        },
+        "flask_learn": {
+            "JavaScript": 18687,
+            "Python": 8452,
+            "HTML": 6728
+        },
+        "gsam": {
+            "Python": 36266,
+            "Mako": 412,
+            "HTML": 2255
+        },
+        "kindle-open-books": {
+            "Python": 5854,
+            "Makefile": 147
+        },
+        "flask_app_template": {
+            "Python": 21176,
+            "HTML": 12146
+        },
+        "niit": {
+            "C#": 74351
+        },
+        "dev": {
+            "Python": 13931,
+            "HTML": 12189,
+            "Shell": 5209
+        },
+        "django-admin-microservice": {
+            "Python": 40433
+        },
+        "py-stellar-base": {
+            "Python": 332471,
+            "Logos": 56606
+        }
+    },
+    "tiggreen": {
+        "hotsto": {
+            "Python": 3723,
+            "Perl": 38
+        },
+        "RITCSCI141FinalReview": {
+            "Python": 5768
+        },
+        "learnxinyminutes-docs": {
+            "HTML": 15
+        },
+        "docs": {},
+        "python-guide": {},
+        "Skeleton": {
+            "CSS": 14340,
+            "HTML": 29178
+        },
+        "get-food-trucks": {
+            "Python": 753,
+            "CSS": 300,
+            "HTML": 2559
+        },
+        "shipitjeez": {},
+        "larabook": {
+            "JavaScript": 415,
+            "PHP": 298644,
+            "CSS": 4992,
+            "HTML": 14132,
+            "ApacheConf": 356
+        },
+        "engineering-notes": {},
+        "kactus": {
+            "JavaScript": 773,
+            "CSS": 13173,
+            "HTML": 6628
+        },
+        "awesome-vue": {},
+        "spark": {
+            "PHP": 238978
+        },
+        "coffigram-api": {
+            "JavaScript": 7273
+        },
+        "left": {
+            "JavaScript": 18,
+            "CSS": 10174,
+            "HTML": 4371
+        },
+        "perl-calendar": {
+            "PHP": 3262,
+            "Perl": 9331,
+            "Shell": 1310
+        },
+        "Credit-Card-Processor": {
+            "Python": 6472
+        },
+        "map_reduce.py": {
+            "Python": 29012,
+            "HTML": 5795
+        },
+        "athena": {
+            "JavaScript": 17821,
+            "PHP": 84933,
+            "CSS": 4003,
+            "ApacheConf": 285
+        },
+        "goodreads-api": {
+            "PHP": 8430
+        },
+        "plugged-api": {
+            "JavaScript": 11541
+        },
+        "docker-curriculum": {
+            "HTML": 126572,
+            "JavaScript": 548,
+            "Python": 198636,
+            "CSS": 17408,
+            "Shell": 8423,
+            "Makefile": 365
+        },
+        "CSCI141-Recitation-Classcode": {
+            "Python": 13886
+        },
+        "misht-community": {
+            "CSS": 14340,
+            "HTML": 29178
+        },
+        "shell": {},
+        "dotfiles": {
+            "AppleScript": 1932,
+            "Shell": 21505,
+            "Ruby": 17958,
+            "CoffeeScript": 789
+        },
+        "landing-page": {
+            "JavaScript": 5850,
+            "CSS": 1457
+        },
+        "django_cache_helper": {
+            "Python": 12022
+        },
+        "lagom": {
+            "CSS": 25222,
+            "HTML": 6672,
+            "Ruby": 3084
+        },
+        "php-the-right-way": {
+            "JavaScript": 1757,
+            "CSS": 146453,
+            "HTML": 28731
+        }
+    },
+    "MingXingTeam": {
+        "angularjs": {
+            "JavaScript": 2405,
+            "HTML": 23341
+        },
+        "fis3-demo": {
+            "JavaScript": 1055,
+            "HTML": 887
+        },
+        "react-starter": {
+            "JavaScript": 41768,
+            "CSS": 444,
+            "HTML": 368
+        },
+        "web-component": {
+            "JavaScript": 529507,
+            "CSS": 5216,
+            "HTML": 9379
+        },
+        "rbac": {
+            "ASP": 287912,
+            "C#": 1256627,
+            "CSS": 59182,
+            "HTML": 1752,
+            "JavaScript": 122094
+        },
+        "everything-i-konw-about-git-github": {
+            "JavaScript": 132187,
+            "CSS": 108737,
+            "HTML": 42120
+        },
+        "front-end-questions": {},
+        "mobile-component": {},
+        "blog-code": {
+            "JavaScript": 38744,
+            "CSS": 94858,
+            "HTML": 250826
+        },
+        "first_chrome_extension": {
+            "JavaScript": 1137
+        },
+        "webpack-react-starter": {
+            "JavaScript": 119453,
+            "CSS": 1133,
+            "HTML": 3870
+        },
+        "you-dont-know-react": {
+            "JavaScript": 7479,
+            "CSS": 1624,
+            "HTML": 16431
+        },
+        "requirejs-test": {
+            "JavaScript": 503130,
+            "HTML": 1610
+        },
+        "jekyll_demo": {},
+        "mobile-seed": {
+            "JavaScript": 46575,
+            "CSS": 26883,
+            "HTML": 1728
+        },
+        "pcweb-seed": {
+            "JavaScript": 1026232,
+            "CSS": 25322,
+            "HTML": 6942
+        },
+        "async-js": {
+            "JavaScript": 23921,
+            "HTML": 593
+        },
+        "design-patterns": {
+            "Java": 3862
+        },
+        "MingXingTeam.github.io": {
+            "JavaScript": 15184,
+            "CSS": 44606,
+            "HTML": 134001
+        },
+        "nej": {
+            "JavaScript": 1869429,
+            "CSS": 16519,
+            "HTML": 260714
+        },
+        "dojo-mobile-test": {
+            "JavaScript": 111374,
+            "CSS": 18518,
+            "HTML": 33352
+        },
+        "how-to-write-module": {
+            "JavaScript": 259982,
+            "PHP": 188,
+            "CSS": 5993,
+            "HTML": 91761,
+            "Makefile": 347
+        },
+        "spring-test": {
+            "Java": 6825
+        },
+        "front-end-engineering": {
+            "CSS": 867
+        },
+        "scalable-js-architecture": {
+            "JavaScript": 8522,
+            "HTML": 858
+        },
+        "image-capture": {
+            "JavaScript": 13622,
+            "Java": 808,
+            "HTML": 2237
+        },
+        "ios-demo": {
+            "Objective-C": 60112
+        },
+        "css": {
+            "JavaScript": 67124,
+            "PHP": 8485,
+            "CSS": 16443,
+            "HTML": 236595
+        },
+        "c": {
+            "C": 17350
+        },
+        "awesome-front-end": {
+            "JavaScript": 299430,
+            "PHP": 14991,
+            "CSS": 73261,
+            "HTML": 210674,
+            "GCC Machine Description": 30
+        }
+    },
+    "jonathascosta": {
+        "StarCraft2Bot": {},
+        "SystemExtensions": {
+            "Batchfile": 524,
+            "C#": 103900,
+            "HTML": 399745
+        },
+        "angularjs-webapi-entityframeworkcodefirst": {
+            "JavaScript": 14758,
+            "C#": 16588,
+            "CSS": 4325,
+            "HTML": 10540,
+            "ASP": 97
+        },
+        "Serialization": {
+            "C#": 49017
+        },
+        "Google.CodeJam": {
+            "C#": 27479
+        },
+        "SimpleBot": {},
+        "ProjectEuler": {
+            "C#": 228434
+        },
+        "NumberCapturing": {
+            "C#": 9198
+        },
+        "HackerRank": {
+            "C#": 9006
+        },
+        "Competition": {
+            "JavaScript": 1891280,
+            "PHP": 343820,
+            "ASP": 11361,
+            "C#": 10551,
+            "ActionScript": 15950
+        },
+        "utFramework": {
+            "JavaScript": 267912,
+            "C#": 99123,
+            "CSS": 13734,
+            "CoffeeScript": 1072,
+            "ASP": 103
+        },
+        "foundation-layouts": {
+            "JavaScript": 4297
+        },
+        "MailSender": {
+            "C#": 24359
+        },
+        "js-architecture": {
+            "JavaScript": 391637
+        }
+    },
+    "ArpitVarshneya": {
+        "arpitvarshneya.github.io": {
+            "JavaScript": 73005,
+            "CSS": 74506,
+            "HTML": 15145
+        },
+        "Event-Reviewer": {
+            "JavaScript": 21273,
+            "CSS": 1371,
+            "HTML": 19428,
+            "Ruby": 52450,
+            "CoffeeScript": 422
+        },
+        "Chat-Application": {
+            "Java": 7800
+        },
+        "Rail-Blog-and-Portfolio-template": {
+            "JavaScript": 1201,
+            "CSS": 912,
+            "HTML": 5889,
+            "Ruby": 26792,
+            "CoffeeScript": 211
+        },
+        "Angular": {
+            "JavaScript": 827,
+            "CSS": 1456,
+            "HTML": 4303
+        }
+    },
+    "kingzou": [],
+    "yl790": {
+        "minesweeperer": {
+            "C++": 35738,
+            "Shell": 327
+        },
+        "CS229": {
+            "Java": 12182,
+            "C": 12343,
+            "Shell": 596
+        },
+        "1st-person-tetris": {
+            "Assembly": 8040,
+            "C": 15397,
+            "Shell": 58
+        },
+        "Mini_Java_to_MIPS_Assembly_using_ANTLR": {
+            "ANTLR": 72814,
+            "Java": 65214,
+            "Shell": 6596
+        },
+        "Labs-for-Distributed-Systems": {
+            "Shell": 4585,
+            "C++": 236188,
+            "Perl": 53017,
+            "C": 18492
+        },
+        "DTN": {
+            "C++": 20307,
+            "C": 22018,
+            "Objective-C": 11067
+        },
+        "MNIST-related-code": {
+            "C++": 90217,
+            "C": 50302
+        },
+        "Yitao-Li-s-minimal-kernel-configuration-file": {},
+        "kddcup": {},
+        "tcss_445_project": {
+            "JavaScript": 535629,
+            "PHP": 3489153,
+            "Shell": 50961
+        },
+        "minesweeper_solver": {
+            "Java": 49193
+        },
+        "compile_construction_course_project_spring_2012": {
+            "C": 38881,
+            "Pascal": 13936,
+            "Shell": 415
+        },
+        "Java3dProjects": {
+            "Java": 55682,
+            "Shell": 475
+        },
+        "algorithms-and-data-structures": {
+            "Java": 13177,
+            "Matlab": 2215,
+            "C++": 113827,
+            "C": 259399,
+            "Makefile": 340,
+            "Shell": 69
+        },
+        "Yitao-Li-s-rc-files": {
+            "VimL": 1242,
+            "Shell": 4868
+        },
+        "FD-Demo": {
+            "C++": 5336
+        },
+        "TSQL-static-RI-tree": {},
+        "source_code_for_course_TCSS_702": {
+            "Shell": 62570,
+            "C++": 772293,
+            "C": 81856,
+            "Objective-C": 63868
+        },
+        "LocaltoDB": {
+            "C#": 34479
+        },
+        "osm_project": {
+            "Shell": 991,
+            "JavaScript": 239674,
+            "C++": 28899,
+            "C#": 18246,
+            "C": 9028,
+            "PHP": 1774
+        }
+    },
+    "Neniah": {
+        "niceblog": {
+            "JavaScript": 661,
+            "CSS": 12796,
+            "HTML": 15527,
+            "Ruby": 39187,
+            "CoffeeScript": 633
+        },
+        "emberjs-notes": {
+            "JavaScript": 2461441,
+            "HTML": 427
+        },
+        "angularjs-docs": {
+            "HTML": 3580278,
+            "Vim script": 16814,
+            "TypeScript": 325854,
+            "JavaScript": 614439,
+            "PHP": 3561,
+            "CSS": 2041398,
+            "Shell": 4591,
+            "Makefile": 5241
+        },
+        "chat": {
+            "Go": 4598,
+            "HTML": 1297
+        },
+        "grunt-basic": {
+            "JavaScript": 666
+        },
+        "MyApp": {
+            "Java": 4887,
+            "Groovy": 847
+        },
+        "every_test": {
+            "JavaScript": 661,
+            "CSS": 686,
+            "HTML": 4887,
+            "Ruby": 34360
+        },
+        "freecodecamp-code": {
+            "JavaScript": 43830,
+            "CSS": 29817,
+            "HTML": 451738,
+            "Makefile": 3018
+        },
+        "angularnotes": {
+            "JavaScript": 10207,
+            "CSS": 686,
+            "HTML": 52064,
+            "Ruby": 20066,
+            "CoffeeScript": 711
+        },
+        "laravelblog": {
+            "PHP": 107845,
+            "CSS": 2805,
+            "ApacheConf": 356
+        },
+        "application": {
+            "JavaScript": 503,
+            "PHP": 83255,
+            "HTML": 25509,
+            "ApacheConf": 553
+        },
+        "juegos": {
+            "PHP": 76056,
+            "CSS": 121220
+        },
+        "accounts-react": {
+            "JavaScript": 754,
+            "CSS": 918,
+            "CoffeeScript": 6227,
+            "Ruby": 23574,
+            "HTML": 4988
+        },
+        "Neniah.github.io": {
+            "CSS": 20436,
+            "HTML": 28428
+        },
+        "jobs_board": {
+            "JavaScript": 693,
+            "CSS": 2038,
+            "HTML": 6774,
+            "Ruby": 32810,
+            "CoffeeScript": 211
+        },
+        "laravel-shop-tut": {
+            "JavaScript": 1135,
+            "PHP": 88958,
+            "Vue": 561,
+            "HTML": 22147,
+            "ApacheConf": 553
+        },
+        "movies": {
+            "JavaScript": 20076,
+            "CSS": 2305,
+            "HTML": 18780,
+            "Ruby": 45634,
+            "CoffeeScript": 422
+        },
+        "mynotes": {
+            "JavaScript": 667,
+            "CSS": 686,
+            "HTML": 4885,
+            "Ruby": 20706
+        },
+        "koans": {
+            "Ruby": 95214
+        },
+        "angular2-reddit-base": {
+            "TypeScript": 1661,
+            "JavaScript": 1203,
+            "CSS": 622,
+            "HTML": 2444
+        },
+        "bookmarker": {
+            "JavaScript": 2640,
+            "CSS": 1411,
+            "HTML": 1564
+        },
+        "forum": {
+            "JavaScript": 503,
+            "PHP": 79673,
+            "CSS": 72,
+            "ApacheConf": 412
+        },
+        "hotelapp": {
+            "JavaScript": 5655,
+            "PHP": 74203,
+            "HTML": 7349,
+            "ApacheConf": 553
+        },
+        "node-notes": {
+            "JavaScript": 4872,
+            "CSS": 34,
+            "HTML": 1857
+        },
+        "jquery-projects": {
+            "JavaScript": 21201,
+            "PHP": 2509,
+            "CSS": 7874,
+            "HTML": 12053
+        },
+        "misc": {
+            "Elixir": 2138
+        },
+        "depot": {
+            "JavaScript": 683,
+            "CSS": 7021,
+            "HTML": 19575,
+            "Ruby": 53995,
+            "CoffeeScript": 1808
+        },
+        "chef": {
+            "JavaScript": 693,
+            "CSS": 951,
+            "HTML": 5332,
+            "Ruby": 24377,
+            "CoffeeScript": 211
+        },
+        "go_basics": {
+            "Go": 9727
+        },
+        "firstrubyapp": {
+            "Ruby": 2214
+        }
+    },
+    "RodrigoLimasss": {
+        "exemplo-interfaces": {
+            "C#": 2479
+        },
+        "scala-protobuf-test": {
+            "Scala": 4724,
+            "Protocol Buffer": 133
+        },
+        "rodrigolimasss.github.io": {
+            "HTML": 574
+        },
+        "TvCorporativa": {
+            "JavaScript": 19444,
+            "C#": 193396,
+            "CSS": 40457,
+            "ASP": 232
+        },
+        "scala-exercises": {
+            "Scala": 1736
+        },
+        "AnormCypher": {
+            "Scala": 81379
+        },
+        "exemplo-classe-abstrata": {
+            "C#": 6839
+        },
+        "scala-neo4j-bolt-test": {
+            "Scala": 4294
+        },
+        "docker-commands": {},
+        "sqljdbc4.jar": {},
+        "scala-project-example": {
+            "Scala": 2480
+        },
+        "go-repository-for-test": {
+            "Go": 705
+        },
+        "scala-repository-for-test": {
+            "Scala": 8334
+        },
+        "angular-webpack-test": {
+            "TypeScript": 10447,
+            "JavaScript": 2585,
+            "CSS": 398,
+            "HTML": 5025
+        },
+        "readme": {},
+        "fsharp-structures-test": {
+            "F#": 2268
+        },
+        "scala-stream-kafka-test": {
+            "Scala": 5276
+        },
+        "scala-coursera-example": {
+            "Scala": 82736
+        },
+        "json-for-test": {},
+        "react-test": {
+            "JavaScript": 5994,
+            "CSS": 55,
+            "HTML": 2233
+        },
+        "scala-orientdb-stream-test": {
+            "Scala": 4303
+        },
+        "csharp-akka-test": {
+            "C#": 4135
+        }
+    },
+    "RagavGopalRao": {
+        "CurrencyRate-Webservices": {},
+        "myapp": {},
+        "angular.js": {
+            "PostScript": 19551,
+            "HTML": 36090,
+            "JavaScript": 5957051,
+            "PHP": 7222,
+            "CSS": 3738,
+            "Shell": 20191
+        },
+        "Insurance-Source-code": {}
+    },
+    "matherthal": {
+        "coursera-getdata-project": {
+            "R": 3048
+        },
+        "ExData_Plotting1": {
+            "R": 4627
+        },
+        "labtempo-ubicomp-projects": {
+            "Java": 737084,
+            "TeX": 1307220,
+            "CSS": 1420,
+            "HTML": 5573174
+        },
+        "scriptsauxiliares": {
+            "Python": 23741
+        },
+        "ProgrammingAssignment2": {
+            "R": 1785
+        },
+        "mtg-project": {
+            "Python": 8083,
+            "Shell": 125
+        },
+        "courses": {
+            "HTML": 4197690,
+            "JavaScript": 2648337,
+            "TeX": 48104,
+            "CSS": 571813,
+            "R": 42512,
+            "Makefile": 3991,
+            "Shell": 478
+        },
+        "revisionsofr": {
+            "HTML": 493470
+        },
+        "pato-scm": {
+            "QMake": 12810,
+            "Groff": 43,
+            "C++": 487009,
+            "Prolog": 1114,
+            "C": 237041,
+            "Makefile": 1366
+        },
+        "fenixsd": {
+            "Python": 47493
+        },
+        "burger-noinf-e": {
+            "Groff": 20316,
+            "C": 2348
+        },
+        "nanicolina-shsim": {
+            "Java": 79252
+        },
+        "RepData_PeerAssessment1": {
+            "HTML": 492903
+        },
+        "difusao": {
+            "C": 5670
+        },
+        "difusaoi": {
+            "C": 7187
+        },
+        "metnum2": {
+            "C": 2373
+        },
+        "datasharing": {},
+        "parabolicai": {
+            "C": 3340
+        },
+        "ynab-tools": {
+            "JavaScript": 28297,
+            "CSS": 1799,
+            "HTML": 6010
+        },
+        "recommender-systems-course": {
+            "R": 2905
+        },
+        "sciads-tv": {
+            "Lua": 5452,
+            "Java": 6633
+        },
+        "squirrelcar": {
+            "Java": 76016
+        }
+    },
+    "dhruva71": {
+        "awesome": {},
+        "awesome-awesomeness": {},
+        "awesome-nodejs": {},
+        "dhruva71.github.io": {
+            "HTML": 12
+        },
+        "awesome-cpp": {},
+        "free-programming-books": {},
+        "gcc": {
+            "HTML": 9699103,
+            "Haskell": 3174,
+            "GAP": 13089,
+            "PHP": 110255,
+            "CLIPS": 5291,
+            "Pascal": 70796,
+            "DIGITAL Command Language": 28465,
+            "Assembly": 2560712,
+            "OCaml": 118890,
+            "Logos": 420187,
+            "C#": 55625,
+            "CSS": 32588,
+            "Go": 15570710,
+            "Ada": 49343700,
+            "Lex": 5027,
+            "Emacs Lisp": 965,
+            "XSLT": 156419,
+            "Objective-C": 950811,
+            "Smarty": 3817,
+            "Python": 258208,
+            "SAS": 1847,
+            "C": 120659880,
+            "C++": 51793855,
+            "Scheme": 459509,
+            "Batchfile": 178,
+            "Forth": 1206,
+            "Groff": 92491,
+            "Shell": 1859748,
+            "Brainfuck": 251,
+            "SourcePawn": 90667,
+            "Pure Data": 99377,
+            "Makefile": 269586,
+            "Standard ML": 9680,
+            "Matlab": 56,
+            "Yacc": 26336,
+            "JavaScript": 6158,
+            "VimL": 6926,
+            "Scilab": 258457,
+            "Objective-C++": 439275,
+            "Java": 45240903,
+            "Module Management System": 1545,
+            "Tcl": 17983,
+            "Perl": 177873,
+            "Fortran": 5845261,
+            "Awk": 117860,
+            "TeX": 636357,
+            "CMake": 7227
+        },
+        "lists": {},
+        "ash": {
+            "C++": 10782,
+            "C": 688,
+            "Makefile": 393
+        },
+        "linux": {
+            "Lex": 42778,
+            "Perl": 600546,
+            "Objective-C": 521540,
+            "SourcePawn": 4687,
+            "Python": 171515,
+            "C": 527750170,
+            "Makefile": 1472773,
+            "C++": 3332170,
+            "Assembly": 10167236,
+            "Awk": 19627,
+            "Yacc": 82284,
+            "Clojure": 625,
+            "Shell": 165434,
+            "UnrealScript": 12797
+        },
+        "antons_opengl_tutorials_book": {
+            "C++": 2333115,
+            "GLSL": 84304,
+            "C": 5366778,
+            "Objective-C": 5684
+        },
+        "LightTable": {
+            "JavaScript": 9861,
+            "CSS": 97410,
+            "Clojure": 529086,
+            "HTML": 1602,
+            "Shell": 8137
+        },
+        "Haloi-Simulator": {
+            "Python": 630
+        },
+        "gtk": {
+            "HTML": 405,
+            "Emacs Lisp": 3850,
+            "Objective-C": 103790,
+            "Ruby": 106,
+            "Python": 52084,
+            "C": 28599326,
+            "Makefile": 20271,
+            "Perl": 9866,
+            "Scheme": 30118,
+            "GLSL": 309,
+            "C++": 50778,
+            "JavaScript": 63912,
+            "Groff": 476,
+            "CSS": 3676875,
+            "Shell": 14722
+        },
+        "Cinnamon": {
+            "HTML": 2179,
+            "C++": 1482,
+            "Objective-C": 1769,
+            "JavaScript": 1927578,
+            "Python": 820546,
+            "CSS": 42425,
+            "C": 1880918,
+            "Shell": 19388
+        },
+        "fibonacci": {
+            "C++": 1177
+        },
+        "embedded": {
+            "Arduino": 1419,
+            "Objective-C": 2438,
+            "C": 44327,
+            "Makefile": 4899,
+            "Shell": 2944
+        },
+        "cpu_temp": {
+            "Python": 3238
+        },
+        "IPS_g01": {
+            "C#": 3981
+        },
+        "myConky": {},
+        "awesome-erlang": {},
+        "DOOM": {
+            "C++": 1286727,
+            "C": 46997,
+            "Makefile": 2386
+        },
+        "DOOM-3-BFG": {
+            "C++": 15749333,
+            "C": 1841357,
+            "Makefile": 4133,
+            "Groff": 4486
+        },
+        "awesome-emacs": {
+            "Emacs Lisp": 1108
+        },
+        "MyGameScripts": {
+            "C#": 3033
+        },
+        "AnyDraw": {
+            "C++": 1368,
+            "Makefile": 176
+        },
+        "cpr": {
+            "C": 165,
+            "C++": 246383,
+            "CMake": 10666,
+            "Shell": 672
+        },
+        "awesome-haskell": {},
+        "awesome-c": {},
+        "awesome-python": {
+            "Python": 1825,
+            "Makefile": 213
+        }
+    },
+    "singharpit94": {
+        "pidgin-mightytext": {
+            "C": 55492
+        },
+        "droidVncServer": {
+            "Java": 37880,
+            "HTML": 21688,
+            "Shell": 833192,
+            "C++": 327969,
+            "SAS": 13756,
+            "C": 15018436,
+            "Makefile": 122124,
+            "CMake": 25504,
+            "eC": 3710,
+            "Smalltalk": 2661,
+            "Assembly": 428141,
+            "Awk": 31768,
+            "XS": 4319,
+            "JavaScript": 222890,
+            "Groff": 275969,
+            "CSS": 12233,
+            "Perl": 916879
+        },
+        "SAS": {
+            "Java": 26178,
+            "PHP": 18279,
+            "HTML": 4619,
+            "JavaScript": 484,
+            "C++": 180592,
+            "CSS": 19785,
+            "Python": 122933,
+            "C": 95116
+        },
+        "Registration": {
+            "Java": 11172
+        },
+        "fantasy-shootball": {
+            "JavaScript": 4879,
+            "PHP": 42332,
+            "CSS": 34632
+        },
+        "Mukti_Noitf": {
+            "Python": 6384
+        },
+        "Mukti-2016-App": {
+            "Java": 90564
+        },
+        "Recommeder": {
+            "Python": 14860,
+            "HTML": 5913
+        },
+        "NITCART": {
+            "JavaScript": 484,
+            "PHP": 141604,
+            "CSS": 173510,
+            "HTML": 7310
+        },
+        "Book-Store": {
+            "Java": 29443
+        },
+        "dproject": {
+            "Python": 6574,
+            "HTML": 284
+        },
+        "Project": {
+            "Java": 36389
+        },
+        "freemex_main": {
+            "Python": 13663,
+            "HTML": 801
+        },
+        "my-codes": {
+            "C++": 37439,
+            "C": 36381,
+            "Python": 3557
+        },
+        "Segmented-Radio-Buttons": {
+            "Java": 8389
+        },
+        "Quine-Mcluskey": {
+            "C++": 22098
+        },
+        "java-workspace": {
+            "JavaScript": 238700,
+            "Java": 113542,
+            "CSS": 5273,
+            "HTML": 190983
+        },
+        "Ecommerce": {
+            "JavaScript": 24671,
+            "PHP": 497907,
+            "CSS": 243117,
+            "HTML": 93483,
+            "ApacheConf": 111
+        },
+        "Food-App": {
+            "Java": 89056
+        },
+        "FB_LOGIN": {
+            "PHP": 53108
+        },
+        "Android-Projects": {
+            "Java": 298058
+        },
+        "Castle": {
+            "Python": 6724
+        },
+        "hackzor": {
+            "Python": 73677,
+            "CSS": 1383,
+            "HTML": 14712
+        },
+        "scikit-learn-book": {},
+        "Rango": {
+            "Python": 13056,
+            "HTML": 2424
+        },
+        "RESTful-API-Todo-list-": {
+            "HTML": 449,
+            "JavaScript": 6345,
+            "Python": 2889728,
+            "CSS": 6111,
+            "C": 5939,
+            "Shell": 3739
+        },
+        "Github-Top-Contributors": {
+            "Java": 19491
+        },
+        "freepl_main": {
+            "JavaScript": 288597,
+            "Python": 24547,
+            "CSS": 398741,
+            "HTML": 23785
+        },
+        "pushbullet": {
+            "C#": 21669
+        },
+        "cprograms": {
+            "C++": 66409,
+            "C": 518638,
+            "HTML": 124558
+        }
+    },
+    "shivamshekhar": {
+        "Chess": {
+            "C#": 156572,
+            "PowerShell": 197736
+        },
+        "Project-Interstellar": {
+            "Batchfile": 6461,
+            "Python": 335637,
+            "Shell": 118,
+            "Makefile": 6766
+        },
+        "shivamshekhar.github.io": {},
+        "Asteroid-Evader": {
+            "Python": 38197
+        },
+        "AsciiPaint": {
+            "C": 27693
+        },
+        "Resistance-Calculator-in-C": {
+            "C": 55589
+        },
+        "resume": {
+            "TeX": 102770
+        },
+        "Neon-Chess": {
+            "C": 113657
+        },
+        "Lunar-Lander": {
+            "Python": 19740
+        },
+        "ASCII-Showdown": {
+            "C": 16918
+        },
+        "LittleFighter": {
+            "Python": 10296
+        },
+        "Annoying-Jarvis": {
+            "Java": 3315
+        },
+        "DIH-project-Head-detector": {},
+        "Hotspot-Creator-CS": {
+            "C#": 49660
+        },
+        "Code42Day-Event": {
+            "Python": 9476
+        },
+        "Pokemon-Showdown": {
+            "JavaScript": 5706606,
+            "CSS": 351,
+            "HTML": 655,
+            "Batchfile": 1055
+        },
+        "Git-Practice": {},
+        "Rotate-A-Pix": {
+            "C#": 389416
+        },
+        "PyGalaxian": {
+            "Python": 41406
+        },
+        "Elementrix": {
+            "C#": 307755,
+            "PowerShell": 197736
+        },
+        "Python-Turtle": {
+            "Python": 1343
+        },
+        "Sorting-Algorithm-Animations": {
+            "Python": 16551
+        },
+        "pygame": {
+            "Python": 10651
+        },
+        "Alphabet-header": {
+            "C": 54239
+        },
+        "Mario-Level-1": {
+            "Python": 178844
+        },
+        "Attendance-Calculator": {
+            "Java": 9626
+        },
+        "Pokemon-Leaf-Green-Battle-Sequence-Pygame": {
+            "Python": 39302
+        },
+        "ASCII-Galaxian": {
+            "C": 65406
+        },
+        "Particle-Filter": {
+            "C++": 31438,
+            "CMake": 5536,
+            "C": 309
+        },
+        "CMinesweeper": {
+            "C": 46693
+        }
+    },
+    "tvvocold": {
+        "awesome": {},
+        "dokuwiki-quickstart": {
+            "PHP": 12555,
+            "Shell": 3129
+        },
+        "biostar-central": {
+            "HTML": 297807,
+            "JavaScript": 196011,
+            "Python": 426898,
+            "CSS": 46340,
+            "Shell": 16113,
+            "ApacheConf": 2507,
+            "PHP": 2199
+        },
+        "django-py3-openshift-quickstart": {},
+        "Cachet": {
+            "JavaScript": 9786,
+            "PHP": 546313,
+            "Nginx": 123,
+            "CSS": 46531,
+            "ApacheConf": 356
+        },
+        "arc-openshift": {
+            "Arc": 278,
+            "Shell": 10769
+        },
+        "fictious": {},
+        "fdzhorg": {},
+        "fdzh.github.io": {
+            "HTML": 227912,
+            "Ruby": 3233,
+            "JavaScript": 23042,
+            "CSS": 20552,
+            "Shell": 742,
+            "ApacheConf": 656
+        },
+        "browser-detector": {
+            "JavaScript": 5925,
+            "CSS": 5834,
+            "HTML": 5538
+        },
+        "devopsweekly": {
+            "CSS": 7230,
+            "Ruby": 5978
+        },
+        "aaronsama.github.io": {
+            "JavaScript": 6026,
+            "TeX": 6353,
+            "CSS": 49497,
+            "HTML": 21431,
+            "Ruby": 6560
+        },
+        "awesome-awesomeness-zh_CN": {},
+        "deblocus": {
+            "Go": 104928
+        },
+        "co-founder": {},
+        "driveassist-alpha": {
+            "C++": 71518,
+            "Shell": 197
+        },
+        "anarki": {
+            "Scheme": 62470,
+            "Perl6": 30727,
+            "XSLT": 2862,
+            "Emacs Lisp": 31352,
+            "Python": 2820,
+            "Arc": 452918,
+            "VimL": 20459,
+            "Perl": 18346,
+            "Shell": 773
+        },
+        "awesome-mac": {},
+        "1dot75cm.github.io": {
+            "JavaScript": 15508,
+            "CSS": 40087,
+            "HTML": 261877
+        },
+        "django": {},
+        "AirGoo": {
+            "JavaScript": 29758
+        },
+        "arguman.org": {
+            "JavaScript": 19989,
+            "Python": 156683,
+            "CSS": 36870,
+            "HTML": 49209
+        },
+        "ceshi": {},
+        "docker-deblocus": {},
+        "Copr": {
+            "Java": 62595,
+            "Mako": 412,
+            "HTML": 67578,
+            "Groff": 20,
+            "JavaScript": 945,
+            "Python": 693408,
+            "DTrace": 65,
+            "CSS": 8471,
+            "Shell": 5805,
+            "Makefile": 16921,
+            "Perl": 1156
+        },
+        "ama": {},
+        "fdzh-sitemap": {},
+        "fanhexie": {},
+        "android_device_motorola_umts_spyder": {},
+        "enableDNS": {}
+    },
+    "viniciusscampos": {
+        "enqueteWeb": {
+            "JavaScript": 19323,
+            "CSS": 6966,
+            "HTML": 145758
+        },
+        "telecom2016": {
+            "JavaScript": 3352640,
+            "Java": 24710,
+            "CSS": 568106,
+            "HTML": 10111
+        },
+        "CG": {
+            "JavaScript": 19859,
+            "HTML": 324
+        },
+        "RedesII-SDN": {
+            "CSS": 62,
+            "HTML": 94542,
+            "Haskell": 247352
+        },
+        "survey": {
+            "Python": 7211
+        },
+        "otimizacao": {
+            "Python": 14736
+        },
+        "ComplexNetworks": {
+            "Python": 587
+        },
+        "CAD": {
+            "Groff": 83686,
+            "C++": 226364,
+            "Gnuplot": 46176,
+            "Shell": 11724,
+            "Makefile": 4302,
+            "C": 1179355
+        }
+    },
+    "esselte974": {
+        "PRIVILEGEWAY974": {}
+    },
+    "nicholasblexrud": {
+        "slackamazonpricealert": {
+            "JavaScript": 1897
+        },
+        "gtm-vimeo-video-tracking": {
+            "JavaScript": 6920
+        },
+        "ga-auditor": {
+            "JavaScript": 23472,
+            "HTML": 5398
+        },
+        "amazon-kinesis-scaling-utils": {
+            "Java": 101207,
+            "CSS": 2016,
+            "Shell": 785,
+            "HTML": 111
+        },
+        "prepare-multiline-json-for-avro": {
+            "JavaScript": 2863
+        },
+        "node-phantom-crawler": {
+            "JavaScript": 4343
+        },
+        "etl-comscore-onecall-api-to-azure-db": {
+            "JavaScript": 16685
+        },
+        "take-screenshots": {
+            "JavaScript": 11399
+        },
+        "js-scrolldepth": {
+            "JavaScript": 3998
+        },
+        "node-webshot": {
+            "JavaScript": 39548
+        },
+        "nightmare": {
+            "JavaScript": 38698,
+            "CSS": 42,
+            "Makefile": 161
+        }
+    },
+    "MingxuanChen": {
+        "androidannotations": {
+            "Java": 2062585
+        },
+        "android-async-http": {
+            "Java": 466268
+        },
+        "android-tech-frontier": {},
+        "android_design_patterns_analysis": {
+            "Java": 11631
+        },
+        "android-app": {
+            "Java": 499553,
+            "CSS": 3984
+        },
+        "Apollo-11": {
+            "Assembly": 2085143
+        },
+        "Android-PullToRefresh": {
+            "Java": 193219,
+            "HTML": 3344
+        },
+        "30min_guides": {},
+        "agera": {
+            "Java": 423270
+        },
+        "awesome-android-ui": {},
+        "awesome-android": {},
+        "ActionBarSherlock": {
+            "JavaScript": 25796,
+            "Java": 1546900,
+            "CSS": 12555,
+            "HTML": 52287,
+            "Shell": 622
+        },
+        "android-open-project": {},
+        "android_guides": {},
+        "android-volley": {
+            "Java": 340044,
+            "Shell": 75,
+            "Makefile": 1048
+        },
+        "Android-Universal-Image-Loader": {
+            "Java": 417027
+        },
+        "android-discuss": {},
+        "android-menudrawer": {
+            "Java": 228052
+        },
+        "android-dev-com": {},
+        "android-libraries-and-resources": {
+            "JavaScript": 119607,
+            "CSS": 7170,
+            "HTML": 4649
+        },
+        "android-training-course-in-chinese": {
+            "JavaScript": 1433,
+            "HTML": 142
+        },
+        "android-dev-cn": {},
+        "AndroidCnblogs": {
+            "Java": 450948,
+            "CSS": 1408,
+            "HTML": 484
+        },
+        "ACDD": {
+            "Java": 841541,
+            "C++": 12737,
+            "Makefile": 1042,
+            "Shell": 139
+        },
+        "android-dev-bookmarks": {},
+        "android": {
+            "Batchfile": 6630,
+            "Java": 1817298,
+            "HTML": 3276,
+            "Python": 9650,
+            "Shell": 1298,
+            "Makefile": 6270
+        },
+        "AlphaGo": {
+            "JavaScript": 126732,
+            "Python": 89051,
+            "CSS": 25934,
+            "HTML": 1208
+        },
+        "android-best-practices": {
+            "Java": 17266
+        },
+        "atom": {
+            "Batchfile": 1752,
+            "HTML": 251,
+            "JavaScript": 356675,
+            "CSS": 42244,
+            "CoffeeScript": 2336314,
+            "Shell": 9269
+        },
+        "angular.js": {
+            "PostScript": 19551,
+            "HTML": 35671,
+            "JavaScript": 5767675,
+            "PHP": 7222,
+            "CSS": 3738,
+            "Shell": 19795
+        }
+    },
+    "tugrulcan": {
+        "SinemaOtomasyon": {
+            "C": 14643
+        },
+        "Face-Detecting-and-Tracking-using-Arduino-and-OpenCV3": {
+            "Arduino": 2577,
+            "Java": 8851
+        },
+        "Otel-Otomasyon-Sistemi": {
+            "C#": 76583,
+            "PowerShell": 186634
+        },
+        "QueueImplementation": {
+            "C#": 10098
+        },
+        "DifferentWeightedGoldFinder": {
+            "Java": 7049
+        },
+        "LinkedListImplementation": {
+            "C#": 22734
+        },
+        "CodeEksi": {
+            "ASP": 97,
+            "PowerShell": 78618,
+            "HTML": 16229,
+            "JavaScript": 47816,
+            "C#": 84454,
+            "CSS": 19019
+        },
+        "ArtificialNeuralNetworks-in-Matlab": {
+            "Matlab": 10479
+        },
+        "JosephusProblem": {
+            "Java": 2499
+        },
+        "StackImplementation": {
+            "C#": 22034
+        },
+        "A-Star-Path-Finding---Game-Implementation": {
+            "C#": 17213
+        },
+        "docker-elk-filebeat": {},
+        "UniversitePersonelOtomasyonu": {
+            "C#": 164227,
+            "PowerShell": 47993
+        }
+    },
+    "zorroblue": {
+        "Android-Gestures": {
+            "Java": 1916
+        },
+        "BAS": {
+            "Java": 111872,
+            "TeX": 69087
+        },
+        "driver_status": {
+            "JavaScript": 712,
+            "Python": 12098,
+            "HTML": 2282
+        },
+        "ChartTest": {
+            "Java": 3204
+        },
+        "Algorithm-Implementations": {
+            "Swift": 5234,
+            "Haskell": 22744,
+            "GAP": 3044,
+            "PHP": 32549,
+            "D": 1686,
+            "Pascal": 8780,
+            "R": 698,
+            "APL": 1309,
+            "Assembly": 1336,
+            "Matlab": 1936,
+            "Ruby": 28583,
+            "Python": 70662,
+            "JavaScript": 39054,
+            "Prolog": 6004,
+            "Go": 35658,
+            "Scala": 41380,
+            "Java": 125156,
+            "C#": 80302,
+            "Perl6": 375,
+            "Objective-C": 31651,
+            "Lua": 353290,
+            "C++": 35773,
+            "Haxe": 8280,
+            "C": 39238,
+            "Shell": 46,
+            "Scheme": 5460,
+            "Awk": 2111,
+            "Makefile": 1407,
+            "Erlang": 2347,
+            "Perl": 6670
+        },
+        "Coordinatum": {
+            "Python": 1630
+        },
+        "Algo_Ds_Notes": {
+            "Go": 3032,
+            "Java": 71413,
+            "PHP": 4612,
+            "Ruby": 3232,
+            "Python": 40495,
+            "JavaScript": 3497,
+            "C++": 97952,
+            "C#": 23512,
+            "C": 14556,
+            "CoffeeScript": 13580
+        },
+        "android_guides": {},
+        "gesture_recog": {
+            "C++": 1117,
+            "CMake": 162
+        },
+        "CG-Accumulator": {
+            "Python": 58241,
+            "HTML": 19280
+        },
+        "computer-science": {},
+        "apps-for-android": {
+            "Java": 966133,
+            "C++": 11671,
+            "Makefile": 257,
+            "HTML": 1428
+        },
+        "DSA": {
+            "Java": 7561,
+            "C++": 48706,
+            "Python": 34725,
+            "C": 2181
+        },
+        "DA_A_DS": {
+            "Java": 9264,
+            "Python": 1730,
+            "C": 74474,
+            "C++": 5183
+        },
+        "dive-into-machine-learning": {},
+        "firstrepo": {
+            "Java": 687,
+            "C": 2252,
+            "C++": 176
+        },
+        "21": {
+            "Java": 31361
+        },
+        "2048-android": {
+            "Java": 6505
+        },
+        "BTP-Allocation": {
+            "Python": 3940
+        },
+        "data-analytics": {},
+        "coala": {
+            "Batchfile": 1842,
+            "Python": 873925,
+            "Shell": 3223,
+            "C": 19
+        },
+        "Fact-Checker": {
+            "Python": 912
+        },
+        "gh-scrapper": {
+            "Python": 1831
+        },
+        "Algo_Practice": {
+            "C++": 96,
+            "C": 898
+        },
+        "blackjack": {
+            "Python": 2197
+        },
+        "data-analytics-2016": {
+            "R": 12196
+        },
+        "cdcinfo": {
+            "Python": 3571
+        },
+        "android-best-practices": {
+            "Java": 17266
+        },
+        "algo.h": {
+            "C++": 4684,
+            "Makefile": 20
+        },
+        "awesome-tensorflow": {}
+    },
+    "SanjithKanagavel": {
+        "ConnectingTheDots-iOS": {
+            "C": 394,
+            "Metal": 1410,
+            "Objective-C": 13377
+        },
+        "GitHub-App-iOS": {
+            "C": 211,
+            "Shell": 8511,
+            "Ruby": 315,
+            "Objective-C": 337009
+        },
+        "Apps-iOS": {
+            "Shell": 25821,
+            "Ruby": 882,
+            "Objective-C": 280120
+        },
+        "AdobeIllustrator-Works": {},
+        "awesome-ios-animation": {},
+        "BrainDotsColors-iOS": {
+            "Swift": 38860,
+            "Objective-C": 107300
+        },
+        "Patterns": {
+            "Shell": 8861,
+            "Ruby": 256,
+            "Objective-C": 78574
+        },
+        "TaskTracker-FBMessengerBot": {
+            "JavaScript": 8188
+        },
+        "gitstats": {
+            "JavaScript": 9553,
+            "Python": 48321,
+            "CSS": 1645,
+            "Makefile": 1071
+        },
+        "WriterIdentificationSystem-MATLAB": {
+            "HTML": 172914,
+            "Objective-C": 20029,
+            "C++": 15646,
+            "C": 1535323,
+            "Matlab": 504931,
+            "Shell": 1893,
+            "Makefile": 74842,
+            "Python": 83564,
+            "Groff": 12088,
+            "CSS": 35562,
+            "TeX": 7492,
+            "Clean": 7372
+        },
+        "arrows": {
+            "C#": 10683
+        },
+        "hermes": {
+            "Java": 1120882,
+            "Lex": 6499
+        },
+        "ShortNotes-iOS": {
+            "C": 170,
+            "Shell": 8511,
+            "Ruby": 290,
+            "Objective-C": 261997
+        },
+        "myo.js": {
+            "JavaScript": 12315,
+            "CSS": 379,
+            "HTML": 999
+        },
+        "SafePocket-Android": {
+            "Java": 1884813
+        },
+        "VehicleTracker-Arduino": {
+            "Arduino": 10996
+        },
+        "Apps-ReactNavite": {
+            "JavaScript": 4030,
+            "Python": 1645,
+            "Java": 1240,
+            "Objective-C": 4590
+        },
+        "sanjithkanagavel.github.io": {
+            "JavaScript": 3619,
+            "CSS": 4056,
+            "HTML": 133916
+        },
+        "Asperite-OSX-Executables": {
+            "JavaScript": 1002,
+            "CSS": 211,
+            "Shell": 8534,
+            "HTML": 811
+        },
+        "MachineLearning-Python": {
+            "Python": 3199
+        },
+        "imgeditor-nodejs": {}
+    },
+    "rafasashi": {
+        "bootstrap-social": {
+            "JavaScript": 808,
+            "CSS": 8191
+        },
+        "bootstrap-tabcollapse": {
+            "HTML": 3759
+        },
+        "AdminLTE": {
+            "JavaScript": 2871005,
+            "PHP": 1684,
+            "CSS": 589483,
+            "HTML": 3149834
+        },
+        "bootstrap-select": {
+            "JavaScript": 28644,
+            "CSS": 585,
+            "PowerShell": 1016,
+            "HTML": 10265
+        },
+        "bootstrap-popover-picker": {
+            "JavaScript": 35366,
+            "CSS": 11106,
+            "HTML": 13148
+        },
+        "bootstrap-table": {
+            "JavaScript": 4931
+        },
+        "Better-Schema-Designer": {
+            "JavaScript": 820224,
+            "CSS": 6214,
+            "Ruby": 10328,
+            "XSLT": 87266,
+            "HTML": 7497
+        },
+        "2048": {
+            "JavaScript": 23465,
+            "CSS": 32006,
+            "HTML": 3988,
+            "Ruby": 300
+        },
+        "bootbox": {
+            "JavaScript": 46771,
+            "CoffeeScript": 69697,
+            "Shell": 362
+        },
+        "awesome-public-datasets": {},
+        "atom": {
+            "Batchfile": 1850,
+            "HTML": 234,
+            "Ruby": 46,
+            "TypeScript": 69,
+            "JavaScript": 269792,
+            "CSS": 44421,
+            "CoffeeScript": 2247118,
+            "Shell": 8797
+        },
+        "bootstrap-switch": {
+            "JavaScript": 4638,
+            "CSS": 3767,
+            "HTML": 85450,
+            "CoffeeScript": 28970
+        },
+        "bootstrap-tokenfield": {
+            "JavaScript": 137966,
+            "CSS": 88016,
+            "HTML": 33890
+        },
+        "bootstrap-remote-data": {
+            "JavaScript": 4115,
+            "CSS": 845,
+            "HTML": 5350,
+            "Shell": 186
+        },
+        "bootstrap-nav-wizard": {},
+        "bootstrap-markdown": {
+            "JavaScript": 15567
+        },
+        "animate.css": {
+            "JavaScript": 2509,
+            "CSS": 23005
+        },
+        "bootstrap-responsive-tabs": {
+            "JavaScript": 13676,
+            "CSS": 6117,
+            "HTML": 2832
+        },
+        "Advanced-Bootstrap-Website-Builder": {
+            "JavaScript": 275769,
+            "CSS": 6309,
+            "HTML": 16197
+        },
+        "adarkroom": {},
+        "bootstrap-calendar": {
+            "JavaScript": 144483,
+            "PHP": 1742,
+            "CSS": 23759,
+            "HTML": 24665
+        },
+        "bootstrap-social-buttons": {
+            "CSS": 54966
+        },
+        "bootstrap-tagsinput": {
+            "JavaScript": 28437,
+            "HTML": 1775
+        },
+        "bootply": {},
+        "bootstrap": {
+            "JavaScript": 246409,
+            "Python": 5734,
+            "CSS": 260512,
+            "Shell": 350,
+            "Ruby": 1183
+        },
+        "autocomplete": {
+            "JavaScript": 34218,
+            "CSS": 2598,
+            "HTML": 8892
+        },
+        "ApiGen": {
+            "PHP": 673720,
+            "Shell": 938,
+            "HTML": 14
+        },
+        "alpaca": {
+            "ApacheConf": 741,
+            "HTML": 161934,
+            "Ruby": 14149,
+            "JavaScript": 2063481,
+            "PHP": 125524,
+            "CSS": 33981,
+            "Shell": 1606,
+            "Cucumber": 9363
+        },
+        "angular.js": {
+            "JavaScript": 5166959,
+            "CSS": 21137,
+            "Shell": 19296
+        },
+        "bootstrap-toggle": {
+            "JavaScript": 1997,
+            "CSS": 1605
+        }
+    },
+    "ankitshah009": {
+        "awesome": {},
+        "awesome-awesomeness": {},
+        "awesome-interviews": {},
+        "baseconvert-ui": {
+            "JavaScript": 21985,
+            "PHP": 940,
+            "CSS": 55204,
+            "HTML": 7506,
+            "ApacheConf": 92
+        },
+        "awesome-deep-learning-papers": {},
+        "DeepLearningTutorials": {
+            "Python": 228530,
+            "Shell": 2872
+        },
+        "awesomplete": {
+            "JavaScript": 7128,
+            "CSS": 5974,
+            "HTML": 14868
+        },
+        "Delay_Insensitive_Carry_Lookahead_Adder": {
+            "Shell": 484755,
+            "Perl": 74
+        },
+        "coursera": {
+            "Python": 84290,
+            "HTML": 1710229,
+            "Shell": 459
+        },
+        "APP-Tool": {
+            "Python": 52343,
+            "Awk": 24927
+        },
+        "ESC-50": {},
+        "DIGITS": {
+            "JavaScript": 103357,
+            "Python": 428253,
+            "CSS": 710,
+            "HTML": 158784,
+            "Shell": 1319
+        },
+        "deep-learning-scene-recognition": {
+            "Mercury": 199,
+            "M": 3064,
+            "Matlab": 394959,
+            "Objective-C": 1396,
+            "Python": 49307,
+            "C": 389452,
+            "Makefile": 7475,
+            "Shell": 356
+        },
+        "cocotb": {
+            "SystemVerilog": 18405,
+            "Verilog": 8186,
+            "Python": 284341,
+            "VHDL": 15764,
+            "C": 133013,
+            "Makefile": 44349,
+            "C++": 115425
+        },
+        "facenet": {
+            "Python": 139367
+        },
+        "Double_base_Number_system_parallel_adder": {
+            "Verilog": 271799,
+            "C": 992497,
+            "Shell": 287
+        },
+        "edX-6.00.1x-Introduction-to-Computer-Science-and-Programming": {
+            "Python": 44049
+        },
+        "awesome-machine-learning": {
+            "Python": 940
+        },
+        "convnets-keras": {
+            "Python": 17281
+        },
+        "Digital-Signal-Compression-Project": {},
+        "data-science-blogs": {
+            "Python": 1717
+        },
+        "Data-Analysis-and-Machine-Learning-Projects": {
+            "Python": 30725,
+            "Jupyter Notebook": 2890127
+        },
+        "caffe": {
+            "Matlab": 20561,
+            "Python": 262875,
+            "Shell": 15771,
+            "Protocol Buffer": 42057,
+            "Cuda": 126379,
+            "HTML": 4981,
+            "C++": 2406095,
+            "Makefile": 22256,
+            "CMake": 91672
+        },
+        "DeepSpeech": {
+            "HTML": 10143,
+            "Matlab": 653,
+            "Shell": 2982,
+            "Python": 179773,
+            "C": 106139,
+            "Makefile": 6226,
+            "C++": 26532
+        },
+        "Bash-code-written-by-me": {
+            "Shell": 1725
+        },
+        "django-poll-app": {
+            "Python": 15606,
+            "HTML": 947
+        },
+        "awesome-public-datasets": {},
+        "DataScienceResources": {},
+        "comparing-audio-files-python": {
+            "Python": 757
+        },
+        "awesome-python": {
+            "Python": 1825
+        }
+    },
+    "occupytheweb": {
+        "ReferenceDB": {
+            "Visual Basic": 77809
+        },
+        "nw-sample-apps": {
+            "JavaScript": 570352,
+            "Erlang": 1712,
+            "CSS": 27307,
+            "HTML": 349314,
+            "CoffeeScript": 2231
+        },
+        "LabWare": {
+            "Batchfile": 6556,
+            "HTML": 5639,
+            "Visual Basic": 494811,
+            "JavaScript": 1344,
+            "PHP": 5140,
+            "CSS": 16619
+        },
+        "php-markdown": {
+            "PHP": 94635
+        },
+        "edd-bakery": {
+            "JavaScript": 33779,
+            "PHP": 80719,
+            "CSS": 24767,
+            "HTML": 10650,
+            "Batchfile": 1266
+        },
+        "nw.js": {
+            "Objective-C++": 158683,
+            "HTML": 209692,
+            "Objective-C": 37615,
+            "C++": 1638584,
+            "CoffeeScript": 302,
+            "Shell": 114,
+            "C": 5936,
+            "Batchfile": 178,
+            "TypeScript": 644,
+            "JavaScript": 574820,
+            "CSS": 7140,
+            "Python": 63470
+        },
+        "tasa-store-pos": {},
+        "sl4a": {
+            "HTML": 13582337,
+            "Emacs Lisp": 540569,
+            "SourcePawn": 55672,
+            "PLSQL": 22886,
+            "Makefile": 1023951,
+            "DIGITAL Command Language": 353192,
+            "Assembly": 924642,
+            "Pascal": 981,
+            "Yacc": 46683,
+            "JavaScript": 30596,
+            "Shell": 1593861,
+            "Prolog": 42399,
+            "CSS": 15090,
+            "TeX": 917,
+            "Perl6": 3370967,
+            "Tcl": 1123,
+            "Java": 6049693,
+            "VimL": 9547,
+            "DTrace": 220,
+            "XSLT": 27094,
+            "Objective-C": 31045,
+            "Lua": 178734,
+            "OpenEdge ABL": 251958,
+            "Python": 25665094,
+            "Visual Basic": 481,
+            "C": 38787824,
+            "Ruby": 46166,
+            "C++": 1062919,
+            "eC": 3398,
+            "Batchfile": 36791,
+            "Inno Setup": 18796,
+            "XS": 1181786,
+            "Groff": 68538,
+            "R": 15225,
+            "Perl": 26261333
+        },
+        "web-centric_comp": {},
+        "chromeless": {
+            "JavaScript": 677671,
+            "Python": 509200,
+            "Batchfile": 61,
+            "Java": 183644,
+            "HTML": 37068
+        },
+        "pianoputer": {
+            "Python": 4370
+        },
+        "UI-main": {
+            "Visual Basic": 41448
+        },
+        "TrackMau": {
+            "JavaScript": 760,
+            "CSS": 7958,
+            "HTML": 1893,
+            "ApacheConf": 39693
+        },
+        "vim-peekaboo": {
+            "VimL": 10581
+        },
+        "asciimo": {
+            "JavaScript": 16499,
+            "HTML": 8486,
+            "Perl": 3915
+        },
+        "protein-databases-map": {},
+        "weeman": {
+            "Python": 18033
+        }
+    },
+    "rajcybage": {
+        "acts_as_favourites": {
+            "Ruby": 15114
+        },
+        "chat": {
+            "Ruby": 1821
+        },
+        "BrightstarDB": {},
+        "ebay_ruby": {
+            "Ruby": 5277
+        },
+        "algorithms": {
+            "C": 34469,
+            "Ruby": 101798
+        },
+        "bbc_api": {
+            "Ruby": 4444
+        },
+        "active_admin": {},
+        "actioncable": {
+            "CoffeeScript": 9110,
+            "Ruby": 66747
+        },
+        "dneslov": {
+            "JavaScript": 664,
+            "CSS": 683,
+            "HTML": 4837,
+            "Ruby": 24735
+        },
+        "dj-practice": {
+            "Python": 6309
+        },
+        "Depot": {
+            "JavaScript": 485,
+            "Ruby": 68048
+        },
+        "express_new": {
+            "JavaScript": 1200
+        },
+        "adop-sensu": {
+            "Shell": 1376,
+            "Ruby": 31345
+        },
+        "aws-sdk-for-ruby": {},
+        "devise-encryptable": {},
+        "dml": {
+            "Ruby": 41004
+        },
+        "ar_search": {
+            "Shell": 115,
+            "Ruby": 9152
+        },
+        "depot_shopping_cart": {
+            "JavaScript": 693,
+            "CSS": 3139,
+            "HTML": 11315,
+            "Ruby": 36820,
+            "CoffeeScript": 844
+        },
+        "datasources": {
+            "JavaScript": 772,
+            "CSS": 1730,
+            "HTML": 7535,
+            "Ruby": 25156
+        },
+        "csv-importer": {
+            "Shell": 115,
+            "Ruby": 36157
+        },
+        "docrails": {
+            "JavaScript": 7910,
+            "CoffeeScript": 633,
+            "Ruby": 8031786
+        },
+        "couchdb-guide": {},
+        "bitcoin.org": {
+            "Gnuplot": 404,
+            "HTML": 170541,
+            "Ruby": 61575,
+            "JavaScript": 29997,
+            "CSS": 77214,
+            "Shell": 21367,
+            "Makefile": 10332
+        },
+        ".dotfiles": {
+            "Shell": 1149
+        },
+        "active_type": {
+            "Groff": 450,
+            "Ruby": 95769
+        },
+        "embar_practice": {
+            "JavaScript": 1734433,
+            "CSS": 319
+        },
+        "docker": {
+            "Go": 4689486,
+            "PowerShell": 5978,
+            "VimL": 1332,
+            "Shell": 341907,
+            "Makefile": 7257,
+            "C": 3811
+        },
+        "date_format": {},
+        "angular.js": {
+            "PostScript": 19551,
+            "JavaScript": 5522444,
+            "CSS": 3738,
+            "HTML": 35440,
+            "Shell": 20063
+        },
+        "commontator": {
+            "JavaScript": 641,
+            "CSS": 3703,
+            "HTML": 21165,
+            "Ruby": 103048
+        }
+    },
+    "leoalmig": {
+        "battery": {
+            "Shell": 538
+        },
+        "materiais-aceleradora": {},
+        "brave-clojure": {
+            "Clojure": 2384
+        },
+        "nes": {
+            "Go": 115879
+        },
+        "sneskit": {
+            "Assembly": 98505,
+            "C++": 6860,
+            "Makefile": 11826
+        },
+        "fonts": {
+            "PowerShell": 153,
+            "Shell": 698
+        },
+        "dotfiles": {
+            "Vim script": 21473,
+            "Shell": 4010
+        },
+        "reveal-tw-boilerplate": {
+            "JavaScript": 158652,
+            "CSS": 121925,
+            "HTML": 28049,
+            "Ruby": 2843
+        },
+        "leoalmig.github.io": {
+            "HTML": 247
+        }
+    },
+    "Ashishkapil": {
+        "MDU": {
+            "Java": 74568,
+            "HTML": 360042
+        },
+        "HackerEarthWidget": {
+            "Java": 16491
+        },
+        "RecyclerViewCardView": {
+            "Java": 9555
+        },
+        "meracut": {
+            "Java": 32846
+        }
+    },
+    "hfall": {
+        "angular-leaflet-directive": {
+            "JavaScript": 576891
+        },
+        "alpha-blog": {
+            "JavaScript": 693,
+            "CSS": 3954,
+            "HTML": 21100,
+            "Ruby": 33373,
+            "CoffeeScript": 211
+        },
+        "ruby-todo-list": {
+            "Ruby": 3061
+        },
+        "bs3-sublime-plugin": {},
+        "afterglow-theme": {
+            "JavaScript": 149711
+        },
+        "devise": {
+            "HTML": 14221,
+            "Ruby": 537323
+        },
+        "Magnific-Popup": {
+            "JavaScript": 210587,
+            "CSS": 41318,
+            "HTML": 48628
+        },
+        "angular-bootstrap-lightbox": {
+            "JavaScript": 25243,
+            "CSS": 2382,
+            "HTML": 1774
+        },
+        "jquery-bootpag": {
+            "JavaScript": 6242,
+            "HTML": 7561,
+            "Shell": 254,
+            "Batchfile": 254
+        },
+        "hfall-cv": {
+            "CSS": 2962,
+            "HTML": 32788
+        },
+        "gulp-spreadsheet2json": {
+            "JavaScript": 4690
+        },
+        "bash-it": {
+            "Shell": 496255
+        },
+        "FreeCodeCamp": {
+            "JavaScript": 379642,
+            "CSS": 351754,
+            "HTML": 153131
+        },
+        "livereload-js": {
+            "HTML": 3083,
+            "Ruby": 1289,
+            "JavaScript": 39441,
+            "PHP": 145,
+            "CSS": 111175,
+            "CoffeeScript": 35874,
+            "Shell": 105
+        },
+        "learning-funds": {},
+        "RestApiTutorial.com": {
+            "HTML": 174264,
+            "ApacheConf": 435
+        },
+        "livesocial": {
+            "JavaScript": 3538,
+            "CSS": 1827,
+            "HTML": 8353
+        },
+        "capture-photoapp": {
+            "JavaScript": 2257,
+            "CSS": 5193,
+            "HTML": 25522,
+            "Ruby": 51808,
+            "CoffeeScript": 526
+        },
+        "finance-tracker": {
+            "JavaScript": 2161,
+            "CSS": 2465,
+            "HTML": 26233,
+            "Ruby": 47621,
+            "CoffeeScript": 526
+        },
+        "github-for-developers-7": {},
+        "animate.css": {
+            "JavaScript": 2432,
+            "CSS": 23005
+        },
+        "coolmark": {
+            "JavaScript": 3323,
+            "CSS": 3912,
+            "HTML": 7055
+        },
+        "php-store-hours": {
+            "PHP": 5815
+        },
+        "es6features": {},
+        "placeholdem": {
+            "JavaScript": 5383,
+            "CSS": 28868,
+            "HTML": 3356
+        },
+        "hatchet": {
+            "JavaScript": 2899,
+            "CSS": 5445,
+            "HTML": 4342
+        },
+        "Parallax-on-the-Web-DevTips-": {
+            "JavaScript": 1499,
+            "CSS": 38375,
+            "HTML": 11314
+        },
+        "oh-my-zsh": {
+            "Perl": 3816,
+            "Ruby": 1327,
+            "Groff": 4567,
+            "Python": 2648,
+            "Makefile": 59,
+            "Shell": 550995
+        },
+        "react-bootstrap": {
+            "JavaScript": 4062,
+            "HTML": 366
+        },
+        "bootstrap-sass": {
+            "JavaScript": 1934,
+            "CSS": 31664,
+            "HTML": 3162,
+            "Ruby": 63696,
+            "Shell": 298
+        }
+    }
 }

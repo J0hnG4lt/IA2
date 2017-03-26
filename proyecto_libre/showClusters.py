@@ -2,7 +2,6 @@ def showClusters():
     clusterFile = open("clusters.txt","r")
     clusters = clusterFile.readlines()
 
-
     clusterN = 0
     for line in clusters[1:] :
         lang_and_cluster = line.strip("\n\r").split(",")
@@ -13,7 +12,11 @@ def showClusters():
     for line in clusters[1:] :
         lang_and_cluster = line.strip("\n\r").split(",")
         lang_by_cluster[int(lang_and_cluster[2])].append(lang_and_cluster[1])
+<<<<<<< HEAD
         
+=======
+    
+>>>>>>> 0602a8a1ecf4d2bded52ad79354ce29538bbf2ae
     for lang in lang_by_cluster:
         print(lang, ", ".join(lang_by_cluster[lang]))
         

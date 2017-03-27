@@ -11,12 +11,14 @@ def readLanguages(jsonFilename) :
 def getFeatureVectors(data) :
     
     langs = []
+    numberRepos = 0
     for userAccount in data :
         for repo in data[userAccount] :
+            numberRepos += 1
             for lang in data[userAccount][repo] :
                 if lang not in langs :
                     langs.append(lang)
-    
+    print("There are {} repositories".format(numberRepos))
     featureMatrix_ = {lang:{lang2:[0.0] \
                         for lang2 in langs} \
                             for lang in langs}
@@ -57,3 +59,18 @@ def getFeatureVectors_perRepo(data) :
     
     
     return featureMatrix_
+
+
+def frecuenciaLenguajes(data) :
+    langs = {}
+    numberOfRepos = 0
+    for userAccount in data :
+        for repo in data[userAccount] :
+            numberOfRepos += 1
+            for lang in data[userAccount][repo] :
+                if lang in langs :
+                    langs[lang] += 1
+                else :
+                    langs[lang] = 1
+    
+    return [langs,numberOfRepos]

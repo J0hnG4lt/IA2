@@ -1,0 +1,200 @@
+lang_column,frecuencia
+NSIS,14
+SourcePawn,7
+Io,6
+KiCad,1
+LLVM,3
+TypeScript,60
+Max,1
+Brainfuck,4
+Cirru,4
+Cycript,1
+Standard ML,5
+Stan,1
+Ruby,628
+FreeMarker,14
+Forth,7
+Batchfile,217
+Scala,111
+Common Lisp,26
+Rouge,1
+Eiffel,4
+Myghty,1
+Ada,5
+C,590
+Fortran,15
+Julia,17
+Processing,11
+AGS Script,3
+PLSQL,14
+Go,139
+ASP,28
+Coq,1
+PostScript,16
+SystemVerilog,1
+D,12
+XQuery,7
+Lex,12
+Scheme,21
+Gnuplot,11
+Perl6,16
+Elixir,15
+AutoHotkey,5
+Puppet,7
+XSLT,49
+Erlang,23
+Handlebars,9
+Nim,1
+Lua,50
+CSS,1623
+HTML,1655
+UnrealScript,3
+Clean,2
+OCaml,20
+SAS,6
+C#,157
+CMake,78
+HLSL,1
+Visual Basic,29
+Swift,116
+Befunge,1
+Idris,1
+Component Pascal,1
+Fancy,1
+Vala,5
+TeX,197
+Smarty,36
+Alloy,2
+QML,2
+Yacc,19
+Protocol Buffer,41
+OpenSCAD,4
+GLSL,25
+Module Management System,3
+Roff,5
+Objective-C++,40
+Groff,72
+FLUX,1
+UrWeb,1
+PicoLisp,1
+MoonScript,1
+Brightscript,1
+Java,755
+F#,10
+Agda,1
+Jasmin,1
+Rebol,13
+PureBasic,1
+JavaScript,2118
+Eagle,3
+PHP,372
+Ragel in Ruby Host,5
+Awk,19
+GCC Machine Description,6
+Graphviz (DOT),1
+LiveScript,12
+GDScript,1
+Smali,4
+HCL,1
+Objective-C,377
+Hack,3
+C++,592
+Groovy,42
+COBOL,5
+ActionScript,20
+Mako,10
+Hy,4
+ApacheConf,92
+Game Maker Language,2
+Crystal,3
+M,19
+ANTLR,4
+Logos,6
+Clojure,54
+LSL,4
+PigLatin,6
+GDB,5
+E,1
+OpenEdge ABL,5
+CoffeeScript,187
+Thrift,10
+Mathematica,7
+Nix,6
+Assembly,96
+XC,1
+Kotlin,6
+Tcl,15
+Bro,2
+RenderScript,1
+Arduino,14
+Verilog,7
+Lean,3
+NewLisp,2
+Emacs Lisp,54
+AppleScript,4
+Terra,2
+PLpgSQL,10
+Pure Data,1
+Shell,1252
+Elm,4
+Cuda,30
+Matlab,49
+VHDL,4
+Mask,5
+MAXScript,1
+DTrace,6
+POV-Ray SDL,2
+ABAP,5
+Perl,183
+Python,1457
+Makefile,625
+XS,3
+JSONiq,4
+Slash,2
+Stata,11
+Rust,31
+Prolog,32
+Liquid,5
+Parrot,1
+Xtend,1
+nesC,1
+Mercury,2
+PowerShell,54
+CLIPS,1
+Gettext Catalog,1
+PureScript,1
+Cucumber,24
+NetLogo,1
+Nemerle,1
+Inno Setup,10
+Harbour,1
+Scilab,6
+SuperCollider,2
+SaltStack,2
+Haskell,61
+ColdFusion,6
+M4,23
+Haxe,9
+XML,3
+QMake,8
+Jupyter Notebook,149
+EmberScript,1
+Vue,8
+Dart,10
+IDL,9
+Pascal,18
+DIGITAL Command Language,6
+R,682
+GAP,14
+SQLPL,6
+Nginx,19
+Clarion,3
+Genshi,1
+Racket,7
+Nu,1
+Bison,4
+Vim script,9
+VimL,57
+Smalltalk,12
+AspectJ,1
+Self,1

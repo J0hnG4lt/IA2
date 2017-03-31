@@ -8,6 +8,9 @@ from requests.auth import HTTPBasicAuth
 import requests
 from collections import deque
 from pathlib import Path
+import sys
+import getopt
+import signal
 
 
 
@@ -114,53 +117,86 @@ def findUsers(rootUserName, depth, userListFileName) :
         userList.close()
 
 
+def manejador_de_signals(signal, frame):
+        print('\nCtrl+C has been pressed!')
+        print("New users cannot be appended in this case")
+        sys.exit(0)
+
+
 if __name__ == '__main__':
     
-    # Encuentro los usuarios
+    signal.signal(signal.SIGINT, manejador_de_signals)
     
-    #print("\nRecolectando Usernames: ")
-    #findUsers("donnemartin", 10, "usuariosGithub.txt")
-    print("Ya se tienen 5000 usuarios guardados.")
+    if len(sys.argv) != 3 :
+        print("Usage: ")
+        print('githubScaper.py [ repos | users ]')
+        sys.exit(2)
+    elif sys.argv[1] == "repos" :
+        getUsers = False
+    elif sys.argv[1] == "users":
+        getUsers = True
+    else :
+        print("Uso correcto: ")
+        print('githubScaper.py [ repos | users ] usuario')
+        sys.exit(2)
     
-    # Encuentro los lenguajes
-    
-    print("\nRecolectando Lenguajes: ")
-    with open("usuariosGithub.txt", "r") as usersFile :
-        # Si se encontrase un rate limit no se debe permitir que se pierda
-        # el trabajo hecho
-        lastUserFile = Path("lastUser.txt")
-        lastUser = 0
-        if lastUserFile.is_file():
-            lastUserFile = open("lastUser.txt","r")
-            lastUser = int(lastUserFile.readline())
-            print("Retomando ultima corrida.")
-        i = 0
-        try :
-            for user in usersFile :
-                if (lastUser != 0) and (i < (lastUser+1)) :
-                    i += 1
-                    continue
-                
-                print("Lenguajes: ",user.strip("\n\r"))
-                languages.update(findUserLanguages(user.strip("\n\r")))
-                i += 1
-        except requests.exceptions.HTTPError as err:
-            print(err)
-        except RepoException :
-            pass
-        finally :
+    if getUsers :
+        
+        # Encuentro los usuarios
+        usuarioI = sys.argv[2]
+        
+        response = requests.get('https://api.github.com/users/{0}'.format(usuarioI), 
+                                auth=HTTPBasicAuth(username, password)).text
+        responseJson = json.loads(response)
+        if "message" in responseJson :
+            print(responseJson["message"])
+            print("Usuario introducido no existe en GitHub")
+            sys.exit(2)
+        
+        print("\nRecolectando Usernames: ")
+        findUsers(usuarioI, 10, "usuariosGithub.txt")
+        print("Ya se tienen suficientes usuarios guardados.")
+        
+    else :
+        # Encuentro los lenguajes de los usuarios
+        
+        print("\nRecolectando Lenguajes: ")
+        with open("usuariosGithub.txt", "r") as usersFile :
+            # Si se encontrase un rate limit no se debe permitir que se pierda
+            # el trabajo hecho
             lastUserFile = Path("lastUser.txt")
+            lastUser = 0
             if lastUserFile.is_file():
-                with open("languagesUsersGithub.json","a") as langsFile :
-                    json.dump(languages, langsFile, indent=4)
-                    langsFile.close()
-                    print("Appending found repos for the next attempt.")
-            else :
-                with open("languagesUsersGithub.json","w") as langsFile :
-                    json.dump(languages, langsFile, indent=4)
-                    langsFile.close()
-                    print("Saving found repos")
-            usersFile.close()
-            ff = open("lastUser.txt","w")
-            ff.write(str(i))
+                lastUserFile = open("lastUser.txt","r")
+                lastUser = int(lastUserFile.readline())
+                print("Retomando ultima corrida.")
+            i = 0
+            try :
+                for user in usersFile :
+                    if (lastUser != 0) and (i < (lastUser+1)) :
+                        i += 1
+                        continue
+                    
+                    print("Lenguajes: ",user.strip("\n\r"))
+                    languages.update(findUserLanguages(user.strip("\n\r")))
+                    i += 1
+            except requests.exceptions.HTTPError as err:
+                print(err)
+            except RepoException :
+                pass
+            finally :
+                lastUserFile = Path("lastUser.txt")
+                if lastUserFile.is_file():
+                    with open("languagesUsersGithub.json","a") as langsFile :
+                        json.dump(languages, langsFile, indent=4)
+                        langsFile.close()
+                        print("Appending found repos for the next attempt.")
+                else :
+                    with open("languagesUsersGithub.json","w") as langsFile :
+                        json.dump(languages, langsFile, indent=4)
+                        langsFile.close()
+                        print("Saving found repos")
+                usersFile.close()
+                ff = open("lastUser.txt","w")
+                ff.write(str(i))
     

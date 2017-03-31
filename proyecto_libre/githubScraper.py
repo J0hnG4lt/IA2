@@ -128,17 +128,21 @@ if __name__ == '__main__':
     
     signal.signal(signal.SIGINT, manejador_de_signals)
     
-    if len(sys.argv) != 3 :
+    if (len(sys.argv) < 2) or (len(sys.argv) > 3) :
         print("Usage: ")
-        print('githubScaper.py [ repos | users ] usuario')
+        print('githubScaper.py [ repos | users <usuario>]')
         sys.exit(2)
     elif sys.argv[1] == "repos" :
         getUsers = False
     elif sys.argv[1] == "users":
+        if (len(sys.argv) != 3) :
+            print("Usage: ")
+            print('githubScaper.py [ repos | users <usuario>]')
+            sys.exit(2)
         getUsers = True
     else :
         print("Uso correcto: ")
-        print('githubScaper.py [ repos | users ] usuario')
+        print('githubScaper.py [ repos | users <usuario>]')
         sys.exit(2)
     
     if getUsers :

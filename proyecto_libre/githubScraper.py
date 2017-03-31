@@ -30,6 +30,7 @@ import signal
 
 languages = dict()
 
+
 def getRepos(user):
     response = requests.get('https://api.github.com/users/{0}/repos'.format(user), 
                             auth=HTTPBasicAuth(username, password)).text
@@ -129,7 +130,7 @@ if __name__ == '__main__':
     
     if len(sys.argv) != 3 :
         print("Usage: ")
-        print('githubScaper.py [ repos | users ]')
+        print('githubScaper.py [ repos | users ] usuario')
         sys.exit(2)
     elif sys.argv[1] == "repos" :
         getUsers = False

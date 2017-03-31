@@ -54,8 +54,16 @@ instancias indican la cantidad de bytes de cada lengueje
 en ellos.
 
 Si se ejecuta perUserGenerateDendogram.py, se genera un 
-dendrograma a partir de una matriz de similitud calculada
-por nosotros y un algoritmo de agrupamiento jerárquico.
+dendrograma a partir un algoritmo de agrupamiento 
+jerárquico y la matriz de similitud obtenida a partir 
+de las probabilidades condicionales de los lenguajes (esta
+es modificada).
+
+Si se ejecutra perUserGenerateClusters.py, se generan y 
+muestran un conjunto de clusters obtenidos con DBSCAN 
+y la matriz de similitud obtenida a partir de las 
+probabilidades condicionales de los lenguajes (esta
+es modificada).
 
 Si se ejecuta perUserLanguageCorrelations.py, se genera 
 una matriz de correlaciones entre los lenguajes. En este 

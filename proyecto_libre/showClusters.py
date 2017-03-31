@@ -1,5 +1,5 @@
-def showClusters():
-    clusterFile = open("clusters.txt","r")
+def showClusters(filename = ""):
+    clusterFile = open(filename,"r")
     clusters = clusterFile.readlines()
 
     clusterN = 0

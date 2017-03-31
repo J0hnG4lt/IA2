@@ -11,6 +11,7 @@ from pathlib import Path
 import sys
 import getopt
 import signal
+import os.path
 
 
 
@@ -32,6 +33,9 @@ languages = dict()
 
 
 def getRepos(user):
+    """
+    Obtiene los repositorios del usuario @user
+    """
     response = requests.get('https://api.github.com/users/{0}/repos'.format(user), 
                             auth=HTTPBasicAuth(username, password)).text
     responseJson = json.loads(response)
@@ -39,16 +43,24 @@ def getRepos(user):
 
 
 def getLanguage(user, repo):
+    """
+    Obtiene los lenguajes del repositorio @repo del usuario @user
+    """
     response = requests.get('https://api.github.com/repos/{0}/{1}/languages'.format(user,repo), 
                             auth=HTTPBasicAuth(username, password)).text
     responseJson = json.loads(response)
     return responseJson
 
+# Excepciones personalizadas
 class RepoException(Exception): pass
-
 class GithubUserException(Exception) : pass
 
+
 def findUserLanguages(user):
+    """
+    Encuentra los lenguajes usados por @user en su
+    cuenta de GitHub
+    """
     languages[user] = []
     jsonReposResponse = getRepos(user)
     if "message" in jsonReposResponse :
@@ -73,6 +85,11 @@ def findUserLanguages(user):
 
 
 def githubUserSpider(user, depth) :
+    """
+    Va encontrando los usuarios que forman el grafo de followers desde
+    el usuario @user en GitHub siguiendo un BFS hasta llegar a la 
+    profundidad @depth
+    """
     users = deque()
     users.append(user)
     newLevel = deque()
@@ -112,6 +129,10 @@ def githubUserSpider(user, depth) :
     return done
 
 def findUsers(rootUserName, depth, userListFileName) :
+    """
+    Encuentra los usuarios con un spider a partir de
+    @rootUserName con profundidad @depth y los guarda en @userListFileName
+    """
     usersCrawled = githubUserSpider(rootUserName, depth)
     with open(userListFileName, "w") as userList:
         userList.writelines(map(lambda x : x+"\n",usersCrawled))
@@ -164,6 +185,11 @@ if __name__ == '__main__':
         
     else :
         # Encuentro los lenguajes de los usuarios
+        
+        if not os.path.isfile("usuariosGithub.txt") :
+            print("There are no users to get repos from")
+            print("Execute first: \npython3 githubScraper.py users <user>")
+            sys.exit(2)
         
         print("\nRecolectando Lenguajes: ")
         with open("usuariosGithub.txt", "r") as usersFile :

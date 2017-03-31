@@ -29,11 +29,11 @@ dataset = pd.DataFrame.from_dict(dataset,orient="index")
 
 # k-means
 print("Applying cluster analysis algorithm")
-k_means = cluster.AgglomerativeClustering(n_clusters=20,affinity="cosine",linkage="average")
-k_means.fit(dataset.as_matrix())
+model = cluster.AgglomerativeClustering(n_clusters=20,affinity="cosine",linkage="average")
+model.fit(dataset.as_matrix())
 
 # Cluster names
-labels = k_means.labels_
+labels = model.labels_
 
 # as dataframes
 print("Saving clusters to clusters.txt")

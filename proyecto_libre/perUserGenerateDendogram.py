@@ -15,8 +15,6 @@ if __name__ == '__main__':
 	data = readLanguages("DATASET_FINAL/languagesUsersGithub.json")
 
 	nroLenguajes = int(input("Number of languages to use: "))
-	nroClusters = int(input("Number of clusters to use: "))
-
 
 	print("Building Feature Matrix")
 	condMatrix = calculateCondProbMatrix(data,pruneLanguages = nroLenguajes)
@@ -25,18 +23,12 @@ if __name__ == '__main__':
 
 	# clustering
 	print("Applying cluster analysis algorithm")
-	modelo = cluster.AgglomerativeClustering(n_clusters=nroClusters,affinity="precomputed",linkage="average")
-	#k_means = cluster.DBSCAN(eps=0.5,min_samples=3)
-	modelo.fit(dataset.as_matrix())
-
-	# Cluster names
-	labels = modelo.labels_
-
-	# as dataframes 
-	print("Saving clusters to clustersConditionalProbability.txt")
-	results = pd.DataFrame([dataset.index,labels]).T
-	results.to_csv("clustersConditionalProbability.txt", sep=',',encoding='utf-8')
-
-	print("Showing clusters")
-	showClusters("clustersConditionalProbability.txt")
-
+	#Dendograma
+	dendogramData = linkage(dataset.as_matrix())
+	language = [lang for lang in condMatrix]
+	dendrogram(dendogramData,
+			labels=language,
+			leaf_rotation = 90,
+			leaf_font_size=10)
+	print ("Dendograma guardado en corridas/ProbabilidadCondicional/dendograma_" + str(nroLenguajes))
+	plt.savefig("corridas/ProbabilidadCondicional/dendograma_" + str(nroLenguajes))

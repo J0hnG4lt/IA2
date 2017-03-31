@@ -1,0 +1,266 @@
+,modelo,label
+0,Agda,0
+1,Roff,-1
+2,Processing,-1
+3,JSONiq,1
+4,Pure Data,-1
+5,Elixir,-1
+6,Stan,-1
+7,Turing,0
+8,Objective-C++,-1
+9,Cool,0
+10,Max,-1
+11,Ruby,2
+12,Nim,-1
+13,DTrace,-1
+14,Nemerle,3
+15,Clarion,-1
+16,Io,1
+17,VHDL,1
+18,CartoCSS,-1
+19,Vim script,-1
+20,Tcl,-1
+21,SystemVerilog,-1
+22,Gherkin,-1
+23,IGOR Pro,4
+24,CMake,-1
+25,PostScript,-1
+26,Prolog,-1
+27,Nginx,-1
+28,AspectJ,-1
+29,Jasmin,-1
+30,Harbour,-1
+31,UnrealScript,-1
+32,Puppet,-1
+33,Rouge,-1
+34,J,0
+35,IDL,-1
+36,CoffeeScript,-1
+37,PureBasic,-1
+38,NetLogo,-1
+39,Hack,-1
+40,Apex,-1
+41,Oz,0
+42,Golo,0
+43,Perl6,-1
+44,QMake,-1
+45,ooc,0
+46,Visual Basic,-1
+47,UrWeb,5
+48,Frege,-1
+49,PLpgSQL,-1
+50,Protocol Buffer,-1
+51,Standard ML,-1
+52,Erlang,-1
+53,XProc,0
+54,E,-1
+55,SQLPL,-1
+56,HTML,2
+57,Julia,-1
+58,VCL,-1
+59,Perl,-1
+60,1C Enterprise,-1
+61,Fortran,-1
+62,Java,2
+63,PHP,2
+64,ActionScript,-1
+65,Pike,0
+66,BitBake,-1
+67,Emacs Lisp,-1
+68,Gnuplot,-1
+69,Shell,2
+70,Inno Setup,-1
+71,ASP,-1
+72,Diff,-1
+73,Nix,1
+74,Vala,1
+75,AppleScript,-1
+76,Volt,-1
+77,Modula-2,0
+78,GDB,-1
+79,SAS,6
+80,Inform 7,-1
+81,Common Lisp,-1
+82,XSLT,-1
+83,Scala,-1
+84,Handlebars,-1
+85,SourcePawn,-1
+86,TypeScript,-1
+87,Swift,-1
+88,Zephir,-1
+89,DM,-1
+90,RenderScript,-1
+91,Python,2
+92,SuperCollider,-1
+93,Batchfile,-1
+94,SQL,-1
+95,XQuery,1
+96,Eagle,-1
+97,Scheme,-1
+98,Augeas,-1
+99,ChucK,4
+100,Tea,0
+101,LiveScript,-1
+102,TLA,-1
+103,REXX,7
+104,Myghty,8
+105,Matlab,-1
+106,Objective-J,-1
+107,Crystal,-1
+108,GCC Machine Description,-1
+109,EmberScript,-1
+110,Self,-1
+111,SRecode Template,-1
+112,CLIPS,-1
+113,PicoLisp,9
+114,XML,-1
+115,NewLisp,-1
+116,Forth,1
+117,ABAP,1
+118,MoonScript,-1
+119,Verilog,1
+120,Brainfuck,-1
+121,COBOL,1
+122,Pascal,-1
+123,RAML,-1
+124,Ragel,7
+125,Objective-C,2
+126,Eiffel,1
+127,GDScript,9
+128,Clojure,-1
+129,Thrift,-1
+130,Csound Document,-1
+131,Xtend,-1
+132,AGS Script,-1
+133,CSS,2
+134,Genshi,8
+135,TeX,10
+136,ANTLR,-1
+137,HyPhy,-1
+138,Limbo,-1
+139,Mako,-1
+140,Ioke,0
+141,OCaml,-1
+142,PigLatin,-1
+143,Dart,-1
+144,PowerShell,-1
+145,SaltStack,-1
+146,VimL,-1
+147,Cucumber,-1
+148,Nu,-1
+149,Stata,-1
+150,M4,-1
+151,Groff,-1
+152,Metal,-1
+153,Cycript,5
+154,ApacheConf,-1
+155,FLUX,-1
+156,Arduino,-1
+157,Cap'n Proto,-1
+158,R,10
+159,eC,-1
+160,RobotFramework,-1
+161,Go,-1
+162,AutoIt,-1
+163,Slash,-1
+164,Logos,-1
+165,LOLCODE,0
+166,JavaScript,2
+167,Opa,0
+168,Boo,0
+169,Mask,1
+170,Ada,1
+171,Idris,0
+172,Fantom,0
+173,Lasso,0
+174,M,-1
+175,Omgrofl,0
+176,Brightscript,-1
+177,Redcode,-1
+178,Lean,1
+179,Befunge,0
+180,Vue,-1
+181,LilyPond,-1
+182,PLSQL,-1
+183,C++,2
+184,PAWN,-1
+185,Smalltalk,-1
+186,D,-1
+187,Cirru,1
+188,KiCad,-1
+189,Gettext Catalog,-1
+190,Lex,11
+191,Bison,-1
+192,OpenEdge ABL,-1
+193,BlitzBasic,3
+194,Rust,-1
+195,Racket,-1
+196,OpenSCAD,1
+197,Fancy,5
+198,Clean,-1
+199,Groovy,-1
+200,Awk,-1
+201,NSIS,-1
+202,XS,-1
+203,Assembly,-1
+204,FreeMarker,-1
+205,C#,-1
+206,Haskell,-1
+207,Web Ontology Language,-1
+208,DIGITAL Command Language,-1
+209,Graphviz (DOT),-1
+210,AutoHotkey,1
+211,LabVIEW,-1
+212,Pony,-1
+213,Cuda,-1
+214,Smali,-1
+215,GLSL,-1
+216,KRL,4
+217,Gosu,-1
+218,Yacc,11
+219,HCL,-1
+220,F#,-1
+221,Kotlin,-1
+222,Module Management System,6
+223,C,2
+224,AMPL,-1
+225,ColdFusion,-1
+226,MAXScript,-1
+227,GAP,-1
+228,xBase,-1
+229,Makefile,2
+230,Bro,-1
+231,Arc,-1
+232,Squirrel,0
+233,Alloy,-1
+234,Factor,0
+235,API Blueprint,-1
+236,Jupyter Notebook,-1
+237,Rebol,-1
+238,POV-Ray SDL,-1
+239,nesC,-1
+240,QML,-1
+241,LLVM,-1
+242,Liquid,1
+243,Lua,-1
+244,Coq,-1
+245,Scilab,-1
+246,Parrot,-1
+247,PureScript,0
+248,Hy,-1
+249,Mercury,-1
+250,Component Pascal,-1
+251,Smarty,-1
+252,Csound,0
+253,XC,-1
+254,Propeller Spin,-1
+255,Mathematica,-1
+256,Elm,1
+257,LSL,1
+258,Terra,-1
+259,Ragel in Ruby Host,-1
+260,Haxe,1
+261,HLSL,-1
+262,APL,-1
+263,Game Maker Language,-1
+264,Dogescript,0

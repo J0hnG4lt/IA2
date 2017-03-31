@@ -11,7 +11,7 @@ from sklearn import metrics
 
 
 print("Reading JSON file with repo and language info")
-data = readLanguages("languagesUsersGithub.json")
+data = readLanguages("DATASET_FINAL/languagesUsersGithub.json")
 print("Building Feature Matrix")
 featureMatrix = getFeatureVectors(data)
 

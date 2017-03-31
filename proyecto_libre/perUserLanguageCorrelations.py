@@ -15,6 +15,8 @@ def plot_correlation(dataframe, filename, title='', corr_type='',numberOfLanguag
     plt.pcolor(dataframe.values, cmap='RdBu', vmin=-1, vmax=1)
     colorbar = plt.colorbar()
     colorbar.set_label(corr_type)
+    plt.gcf().subplots_adjust(bottom=0.20)
+    plt.gcf().subplots_adjust(left=0.20)
     plt.title(title)
     plt.xticks(indices, lang_names, rotation='vertical')
     plt.yticks(indices, lang_names)
@@ -47,6 +49,8 @@ if __name__ == '__main__':
 
     if not os.path.exists("corridas/Correlaciones/" + str(nroLenguajes) + " Lenguajes"):
         os.makedirs("corridas/Correlaciones/" + str(nroLenguajes) + " Lenguajes")
+
+
 
     pearson_corr = dataset.corr()
     plot_correlation(

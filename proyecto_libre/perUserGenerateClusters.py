@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 
 print("Reading JSON file with repo and language info")
-data = readLanguages("languagesUsersGithub.json")
+data = readLanguages("DATASET_FINAL/languagesUsersGithub.json")
 print("Building Feature Matrix")
 condMatrix = calculateCondProbMatrix(data,pruneLanguages = 40)
 
@@ -21,8 +21,6 @@ ff = open("instancesConditionalProbability.txt","w")
 ff.write(json.dumps(condMatrix,indent=4))
 ff.close()
 
-#langs = [lang for lang in featureMatrix]
-#dataset = pd.DataFrame.from_dict(dataset,orient="index")
 dataset = pd.DataFrame.from_dict(condMatrix,orient="index")
 
 # k-means

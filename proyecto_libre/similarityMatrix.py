@@ -28,7 +28,7 @@ def calculateCondProbMatrix(data,pruneLanguages = -1) :
     probAllLangs = {lang:(langAllUses[lang]/amountOfUsers) for lang in langAllUses}
     
 
-    print ("Read data from: ",amountOfUsers)
+    print ("Read data from: ",amountOfUsers,"users")
 
     if pruneLanguages > 0:
         languages = sorted(langAllUses, key=langAllUses.get,reverse=True)[:pruneLanguages]
